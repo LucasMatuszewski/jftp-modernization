@@ -1,0 +1,3464 @@
+{
+  "inspected_on": "2026-10-06",
+  "baseline_commit": "14e62ceba4e371c2a0b955604b10f065f46f4f7d",
+  "branch": "Luna-subagents-modernization",
+  "purpose": "Original tracked paths and index blob IDs; no application files changed during analysis",
+  "entries": [
+    {
+      "mode": "100644",
+      "blob": "fadfbe330a9d29338d6a98156f3d13f82d78df67",
+      "stage": 0,
+      "path": ".classpath"
+    },
+    {
+      "mode": "100644",
+      "blob": "3fb68fa7ad3db3c6fd4fc3586446ce08a12dc8f8",
+      "stage": 0,
+      "path": ".project"
+    },
+    {
+      "mode": "100644",
+      "blob": "0ac89c2858972e884077a6b814a05235da805310",
+      "stage": 0,
+      "path": ".settings/org.eclipse.core.resources.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "68fd534b459c3e34b9578d4f78240b442b94f6dc",
+      "stage": 0,
+      "path": ".settings/org.eclipse.jdt.core.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "4497b571a131f76248db264e0421c724254bd5ea",
+      "stage": 0,
+      "path": ".settings/org.eclipse.jdt.ui.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "b196c64a3418b865f0476d2e21d11eae3dd4b2da",
+      "stage": 0,
+      "path": ".settings/org.eclipse.ltk.core.refactoring.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "f897a7f1cb2389f85fe6381425d29f0a9866fb65",
+      "stage": 0,
+      "path": ".settings/org.eclipse.m2e.core.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "4b77a15914c579a5468994567f3a1ac40aa61644",
+      "stage": 0,
+      "path": ".settings/org.eclipse.wst.sse.core.prefs"
+    },
+    {
+      "mode": "100644",
+      "blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "stage": 0,
+      "path": "LICENSE.txt"
+    },
+    {
+      "mode": "100644",
+      "blob": "70c63c7a9fb20221edd9f2e3e3dfb45c93745204",
+      "stage": 0,
+      "path": "NOTICE.txt"
+    },
+    {
+      "mode": "100644",
+      "blob": "7927f02009434e460214ab3eacbc85ee3e8c8985",
+      "stage": 0,
+      "path": "README.md"
+    },
+    {
+      "mode": "100644",
+      "blob": "524bf486c8ab9cf49e7e854a1bca08beda35f3ad",
+      "stage": 0,
+      "path": "pom.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "0cd6eeac80725c561549356530cc6c5fb6be9d2b",
+      "stage": 0,
+      "path": "src/main/assembly/binary.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/LICENSE.txt"
+    },
+    {
+      "mode": "100644",
+      "blob": "ba940f62d6b6ba58c955c67e72808a6acfbcfc7a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/connect/connectionDialog.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "6a8bb734225ff67adcb5bcc311c178285154be9a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/connect/disconnect.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "45f6e12bd9484b7d0463d4ff1dc87a917650ce41",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/connect/favorite.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "396b1ae33598d5991c39986a1336d20dc70eca69",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/connect/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "33508b55b1bc5f3a440bb34f70a06d79957aa249",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/connect/reconnect.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d99ddc139357f1ab7a973a7bceabfc8f7bc54db4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/credits.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "32f86e56ff999a6a653d8b28e1a3ed4c4ab3371b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/default.css"
+    },
+    {
+      "mode": "100644",
+      "blob": "8838a1390a6bce42d8d3bceee8138e3825512441",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/faq.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "1a453876863cdf858e9c613d881893a37efe751c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/add.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "1e98d6ecaa67bed30697600da43f0082c63b3bcc",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/connect.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "cee720369ed3252a0326c5e6e8e0d7876c054b7b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/delete.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d6902080798426947d4a33f3a3e808d02bd6a582",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/edit.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "49290757d31270e411cb73729ff6e45ba5be511e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/favoriteManager.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "99992484376880edf12f052674baea08458e4bfe",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/favorites/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "ba3eb78d585111221c7f7b40e97d82d5ddab7275",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/feedback.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d1f0d05714a1d3ca583df65210da4b394748fbd3",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/abort16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4f5c21de66d0a9ce8056bff2498302964e22418e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/certificate16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "b1c94401a53074f95274b4f0cf96fa90c9e0562a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/changeLocalDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "2d4c97c0c41a1889e174b3bfecde20b097e2791c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/changeRemoteDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "81fdd61ccd555b4e38f2c02397d62adc3bf8426d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/closedBook16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "6d18d3ea107113507ccef38abfaa48bf2504a37b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/connect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3de75fffb9ed19148040615f77e14db2da581afc",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/deleteLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "6a720135bc7cb0082c8a98cc9dc73698d5a25936",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/deleteRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "b0b07c0db484eae4e80992c52a20bd0d7625f674",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/directory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "80f7c37dddc4271ccf4d21ad6983b2789e4bfd1c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/directory32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3c9cd422e8609b3781cab54307da7b1d9ae70ee5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/disconnect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "b3ec1caf8f16e5abc0a6b5d120f727801059ff47",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/downArrow16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "fe542887ec77be6fecbafbd0be5a0de92113733a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/download16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "f8e1281376491168cb565eb573a6466a724f52e1",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/favorites16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "af3159b4eb3d1f4a801e99d4c4e5de77ded54540",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/file16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4aa818b94248ffe888a2fbe6adb3d47d459931c1",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/file32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3109a2d195189d8be693c4678acea19be6bd65d5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/hardDrive16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "9ae5d36062f1236458798c90487c6a4da0fb1d5b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/help16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3bacd177960f8df56f6e2dbd2a947fd60aec1665",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/host16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "48d06e54bf5522744b236e301beb271123a61468",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/indexIcon.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "e490605493aeaaaf58803276827cc743e065ebcd",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/jftp16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3e45f1313d7ce622571f122b571ba82629f2cd2d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/jftp32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "517e81a4241dc0624f6c2a63aa958d62bdf5181d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/newLocalDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "5c70f3ecd69efeaa96dafddd0b36782414428327",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/newLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "07ceb0d01db7851b71ab96d8c6b617ee1b81fe40",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/newRemoteDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3440939d24020cae225d00457901344dbe22667f",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/newRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "e90d7987a3bb1e31f6bd3edb8eebf0bc97d1940e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/newSession16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4d731bb093d628492193c13dd371a58212d2304d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/nextIcon.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "ce5d5e0b9acff5d3791f6c71a5d2ec9702eda8a5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/note32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "e548c85717bb6970e83f15175e6e7ab6afca0c6c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/openBook16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "a8d90d533145fc381d95879d7ba63ab5945faabb",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/previousIcon.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "1148c9e77d6a46678986e16f4187927e35311a43",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/reconnect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4094caba9400225ef16f9d8caffeb8ebacbf670f",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/renameLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "dd68928eca00ca0faee62d19ef2096604171d03c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/renameRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4baafc7db8d3a3f74e1cdc0f935d81a10e7fefa1",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/searchIcon.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "cb7867ec152a6c0d0dc5f2d59af8c3ed6a383125",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/server16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "ce797b145b6cd8add253e549dd965bcaab5d6170",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/splash.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "481357bc4764552183320b0b8a483a183a4bed34",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/tip32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3b2871b9b6c3f1f104e31830c8036e449b291032",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/tocIcon.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "12de73e6f9a9ef9822ce916621ce2fdabf2fa14a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/topic16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "7a8949da7dc52384d953d30be974c1913d621079",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/upArrow16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "8a90e6d057a2e7e777c1657054f55be6d41ad438",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/upDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "c21874f0e13fb27e547fd95125d703d9fc83aa03",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/images/upload16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "962a12a77af9476cad7d023f6f67f34b1a046e0b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "a35c4badb47663c9c38e0ed45a9af8a4e0eb117e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/introduction/features.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "63e2a9e7cfd788df4042897344eb2fa3175cd31c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/introduction/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "477db65b3324f59dd0b826a3f5235286a39c48f3",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/introduction/uninstall.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "0ef874889a6d943c1def8a78807b02eab333005a",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/introduction/whatIsJFTP.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "4b94290ea667ff2e756d1dfcd1bece08689d9311",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/keyboardShortcuts/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "116f7453cb0116bd98c0620f518d009fff602f45",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/browse.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "7dcb793530083d3384a64b19ac60d395196330f9",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/changeDirectory.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "51c2d8708b7a380ebd1c0e3b3420a19029c99d88",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/clearFilter.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "531763880df2d532a5d0fc36ebbbd3d68a766e2b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/delete.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "2cb591da70afcb603cc303140f07f90755e3dcd2",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/edit.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "ada91fd6c567bf8366cf49945932df6c5604300c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/email.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d71077b47978993c7ad5bf5a69e18be4d35125aa",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/filter.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "cd6ed92494e9b41e089eab5f275fffa58a014005",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "1eb92355b1cd74f3cfec11d9a14392e6eb143d58",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/newDirectory.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "79e49dced9a3b0934b7786bad1855b4afe61c99e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/newFile.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "c5a80678acbcff1e89aa93335d18e7305cf7c932",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/open.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "de3a8a9791bdb9f8ddc2ae74309849eab85f90b4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/print.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "533c06705e10f56e6d300df2434bf4ffb0f32232",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/properties.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "86f9b2b175ce794ccfa70a13cc817439a4156fbf",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/refresh.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "03b7235acbe1defb6619345277118b428a09c213",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/rename.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "b7c5148c4573c906f9bd57d4f6d291602e3c678b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/local/sort.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "56ce8a415ca8f2fc20b981cfe23f08d7593ae4e9",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/connectionSettings.advanced.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "fe2dd348c2aeac2e5150012d3d6d021a19aa88b5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/connectionSettings.general.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "11191ed9bca653561e6661bd5af1182d9e362c8e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/connectionSettings.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "6c6c64e472b3cd5790645d44c6e9127adb641688",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/connectionSettings.proxy.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "b03d94eeba41d9190e00031f9b324cd37997e41e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/connectionSettings.security.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "9a651461524e0a15e2fa8e15e3242e217ab7c5a9",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "68c89a8cb0d8526a23d482f350129a0772ab114c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/regionalSettings.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "64ed3ffaad7b5cf92b004c6aa6a7eb4297e9dc44",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/softwareUpdates.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "98d543c3c4c7fe30eb7bc81ce1e1ead2670916e7",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/transferModes.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "05237945c4769d33fdc45ab008d23c6d8e4651f7",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/preferences/userInterface.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d8ebdbe2006491d59b1dc6134a8c18d35b7903e5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/browse.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "94943180a1c2e630b115f0c186b009fcebbd92df",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/changeDirectory.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "0d2fc5275c7155a2a27c31477e89ce4e97bbeb8e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/clearFilter.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "10ad853f46db0e61ad38b6efc6f7078dbc86d861",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/delete.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "f53e449022bb7b35d58b7e9d89917fac2bb2aa15",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/edit.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "9f1de95519d008f78c24ba99d89531f60a23c1c1",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/email.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "c8a3e04afea5c0492a9d999367172d4e3c69e657",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/executeCommands.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "ef2d12f5b67f406c898aabef4405e4fa3f17ed72",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/filter.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "bd0936312afa145be431a66c374a8a615a740e5c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "2555cb1946b9721c36adc43ddd6509cf848e34b4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/newDirectory.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "69a96365374996578624a75c8dada18979a70c0c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/newFile.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "f538a03f3f121df4685ee3ff1263459216e4242e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/open.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "4d2e5b95244cf10934415179daab1b337aa27e27",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/print.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d57ea68f0a164949bf35138dc2db81d7ec1c0d0b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/properties.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "2433db288b41f462daf50ff4256166dafcde696f",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/refresh.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "e36080b0b7ffa42ff1bd340778e872265d57c04f",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/rename.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "b7c5148c4573c906f9bd57d4f6d291602e3c678b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/remote/sort.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "0b52fcfcca860bb63f4040ad8f1f18a992257042",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/screenshots/mainWindowExplanation.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "2d837f65c287426f261bc0b0ba36832f2d6a4655",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/screenshots/mainWindowExplanation.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "0b2cbe65f7c3c76773e84fe12f6597e97a1253ab",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/certificatesManager.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "1a2239ba6540709b99757c3cab2a4a9d24a9cf1b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/deleteCertificates.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "46759dde6eb7ffcd811e5cc8ba94834229ba439e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/importCertificates.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "b97f23e336160ae8eebe5469553b29bf46ee1d5f",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "f9f217cea5b0ed41bcd9160e442784d3cf768e95",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/installCertificate.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "ff8e098bef9df5889755d1238a7765f8de8db3da",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/introduction.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "b78dafde327662e7635f87aac5aa2a7d22d674a5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/sslConnection.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "7503857793217e6400b2b058c17e305e09c940be",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/security/viewCertificate.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "71bede4e618355ce0112ab3e20f399c27e5983d4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/activate.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "a790b793ae2e73be7a81a2da67a333dc759d17d2",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/close.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "8af5007267496064bc0405da8c4b75233eca054d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/images/cascade.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "5f48c3882e8c2bd760af5f8bca3599176ac6295d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/images/tileHorizontal.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "918e8935dd0336fbcf610a7abb193e92e4fad8bf",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/images/tileVertical.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "8e60ebe77bceaf79ece136fc1e15e973ba224d9b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "51f158c3f2773518198b4ec00d9d42595657aaea",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/sessions/open.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "6d91387da60b26cdae35038aaa30812e4c8cbea5",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/support.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "57dbd463d171455435ec2c3bf0c7e3c8c06dfd10",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/tips.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "23cca3a3cb64e89d37eee8b8fd38de683959fb88",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/abort.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d75871c4d3c8bb8270c8dd169f04a0e2164be773",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/download.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "a70c4d29da223492b746b098ff0b84a84f018366",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/downloadAndUnzip.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "d2dd84050248d6fc2b0cf0a69eb92ed28ff5d7e4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/downloadAs.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "e6470d35e43801a9f801bcc777dc96474dd21368",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "47203f691a9d9ea59a6576b977e849a99f584feb",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/transferModes.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "5f24030d0f20fe08fe80cf5daf2722ae840836a8",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/upload.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "e01fcf1730b997659807009b07c001191eb890ca",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/uploadAs.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "ded266e0fddef870965874996239d57365d2bdb4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/transfer/zipAndUpload.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "c4b81098bec56fe29db927f4dc42b327c8155e4b",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/index.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "71e947ec80401323f0020f0c0265d509127e322d",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/localPane.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "f74e37528022dcb83af61d18555269e017ed7286",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/logPane.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "a3608f70fba950cbe68878be130bbd1bab2593c0",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/mainWindow.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "8dece05c6a0e57150d45b363765bd80f050a802e",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/menuBar.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "af4d19d2719a939a48019a23c943f0480e7712c4",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/remotePane.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "352c8634129118f3b759966adee1f4b7facf5ee1",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/sessionTabs.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "9e955538d31005b5d38bd718ec2942e00ac56a26",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/statusBar.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "a79045b592856e2a56789190abaa1a64ee3da32c",
+      "stage": 0,
+      "path": "src/main/help/helpset/content/userInterface/toolBar.html"
+    },
+    {
+      "mode": "100644",
+      "blob": "526b344579b5a1149123c3041b4325b19ea26171",
+      "stage": 0,
+      "path": "src/main/help/helpset/favorites_2_0.dtd"
+    },
+    {
+      "mode": "100644",
+      "blob": "df86d6f6d04089325f74202e58a71b7c1111d5ef",
+      "stage": 0,
+      "path": "src/main/help/helpset/glossary.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "b3ac907714f2f1c0935393d6d44787393270e9c4",
+      "stage": 0,
+      "path": "src/main/help/helpset/helpSet.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "1f37f9321004f1491c943d8d0f43ab9c5f02472e",
+      "stage": 0,
+      "path": "src/main/help/helpset/helpset_2_0.dtd"
+    },
+    {
+      "mode": "100644",
+      "blob": "e88873607ebfd9893e18a94dcc44522b07d94647",
+      "stage": 0,
+      "path": "src/main/help/helpset/index.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "2f95859f5d44acc302082895156e27aa7881618f",
+      "stage": 0,
+      "path": "src/main/help/helpset/index_2_0.dtd"
+    },
+    {
+      "mode": "100644",
+      "blob": "287774c6fbcd82485916830e356e199766b67ab4",
+      "stage": 0,
+      "path": "src/main/help/helpset/map.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "d241d8374014434640c36a63af5fdc6763a06b7d",
+      "stage": 0,
+      "path": "src/main/help/helpset/map_2_0.dtd"
+    },
+    {
+      "mode": "100644",
+      "blob": "bc9e3f455e96349a25a56d1a9aa82a2b1b0febae",
+      "stage": 0,
+      "path": "src/main/help/helpset/toc.xml"
+    },
+    {
+      "mode": "100644",
+      "blob": "e9fb331eeac0ea18f63e5acdfbd6793f4c499800",
+      "stage": 0,
+      "path": "src/main/help/helpset/toc_2_0.dtd"
+    },
+    {
+      "mode": "100644",
+      "blob": "d1f0d05714a1d3ca583df65210da4b394748fbd3",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/abort16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4f5c21de66d0a9ce8056bff2498302964e22418e",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/certificate16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "b1c94401a53074f95274b4f0cf96fa90c9e0562a",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/changeLocalDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "2d4c97c0c41a1889e174b3bfecde20b097e2791c",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/changeRemoteDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "413be230eb44cdf6aee677f4f288be28d89b92ea",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/changeRemoteDirectory16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "6d18d3ea107113507ccef38abfaa48bf2504a37b",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/connect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3de75fffb9ed19148040615f77e14db2da581afc",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/deleteLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "6a720135bc7cb0082c8a98cc9dc73698d5a25936",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/deleteRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "08485506118a363ed99ab1920cdb3b68946a38b1",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/deleteRemoteFile16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "b0b07c0db484eae4e80992c52a20bd0d7625f674",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/directory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "80f7c37dddc4271ccf4d21ad6983b2789e4bfd1c",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/directory32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3c9cd422e8609b3781cab54307da7b1d9ae70ee5",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/disconnect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "b3ec1caf8f16e5abc0a6b5d120f727801059ff47",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/downArrow16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "fe542887ec77be6fecbafbd0be5a0de92113733a",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/download16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "f8e1281376491168cb565eb573a6466a724f52e1",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/favorites16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "af3159b4eb3d1f4a801e99d4c4e5de77ded54540",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/file16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4aa818b94248ffe888a2fbe6adb3d47d459931c1",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/file32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3109a2d195189d8be693c4678acea19be6bd65d5",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/hardDrive16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "9ae5d36062f1236458798c90487c6a4da0fb1d5b",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/help16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3bacd177960f8df56f6e2dbd2a947fd60aec1665",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/host16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "114084e6dd3586ac1a944a68ff537175e09d8213",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp.icns"
+    },
+    {
+      "mode": "100644",
+      "blob": "b25c4743bdd6d9330b650af27c1081c32801a680",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp128.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "5ed1b7a99cf8121c7b707ab2756ea8247c929203",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp128.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "e490605493aeaaaf58803276827cc743e065ebcd",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "3aac2ba478ea2ddb3540a43d15ba2ae4bd512ef8",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "3e45f1313d7ce622571f122b571ba82629f2cd2d",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp32.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "c2547ca3ef8b958c658c972d2029278790dccac6",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp32.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "61a73525d298dec5df18646b98eaa17e45a79b1d",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp48.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "9f2efaa498e0aefc86ae1639dc07f4fbfab31ae1",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp48.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "922f6550c86629a406e0edd1bff8d46b5de45e74",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/jftp60.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "ded02f80081b891be3b57fc8a81523c4660ed4fd",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/key16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "51dea4fff2e9e54aadafc73634beb7f3f291b3f0",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/launch.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "e5ef1e273d2721f1f54ef48ab34b818289474e87",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/lock16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "517e81a4241dc0624f6c2a63aa958d62bdf5181d",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newLocalDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "5c70f3ecd69efeaa96dafddd0b36782414428327",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "07ceb0d01db7851b71ab96d8c6b617ee1b81fe40",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newRemoteDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "c5ee3147fc9f01fa9580e5af488ef412dbd44283",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newRemoteDirectory16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "3440939d24020cae225d00457901344dbe22667f",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "9ce93dc499ea923fb50083fdf4dfaafafab9ecef",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newRemoteFile16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "e90d7987a3bb1e31f6bd3edb8eebf0bc97d1940e",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/newSession16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "1148c9e77d6a46678986e16f4187927e35311a43",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/reconnect16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "4094caba9400225ef16f9d8caffeb8ebacbf670f",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/renameLocalFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "dd68928eca00ca0faee62d19ef2096604171d03c",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/renameRemoteFile16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "2d399e7d65466e23ffbf378816d694fbaf2fa932",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/renameRemoteFile16.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "cb7867ec152a6c0d0dc5f2d59af8c3ed6a383125",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/server16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "44168ce1c19c1de63bcab05fef2c1d6b7dcfab7e",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/splash.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "589ece57240a2c3fc20e717f44bc1f7bf92489eb",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/splash.png"
+    },
+    {
+      "mode": "100644",
+      "blob": "7a8949da7dc52384d953d30be974c1913d621079",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/upArrow16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "8a90e6d057a2e7e777c1657054f55be6d41ad438",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/upDirectory16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "c21874f0e13fb27e547fd95125d703d9fc83aa03",
+      "stage": 0,
+      "path": "src/main/images/com/myjavaworld/jftp/upload16.gif"
+    },
+    {
+      "mode": "100644",
+      "blob": "91c3cefb50b20224f821520e8ea94e4054064ea6",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/DateCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "68e8e5ccb8d18e18dad7e3e06e82e958c7546d48",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/DefaultLargeTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "44cd42bd2e6b8068907d1a760e04c0ea165f109e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/DefaultTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8353a3fb79abbf61e27ef4c70afe8dc8852bcc2a",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/EditPopupMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e78d303182853a87275a2f8576f24fb9fa93341e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/GUIUtil.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7fa3734d9a67b13bfcdf1d1efd0560446d6f63f8",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/GreenMetalLargeTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ef44ebb1d979462e7fa1ddfcf8c7d5f19b8834ad",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/GreenMetalTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7a9d8f3d440ad60c1476fac36f42ff8fc1954314",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/HighContrastLargeTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f189dedcf42cb6767e2958ec90affc39a0617257",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/HighContrastTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "845c5c4cfaf717e809f9da9981d6020857210066",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/IDTreeNode.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e7b298c5204bd260664b367df95c881b760523bc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/ImageCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "cf8e0459917ebdb21f7cb2680f475035f60e4b85",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/IndentIcon.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "0890fc8ff71e4f5173f7e584866d8c0a19f9d1ab",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/IntegerField.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a173774340ccf23d38c300d41d781dd84968374e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/LicenseAgreementDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "38758581c7433e129c2c7ef1bd1cbfa4aff109c9",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MButton.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1bcda83c819ef0254138e8467c24be007f157b44",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MCheckBox.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7182ccf9f7e4906c50cacab5d0c3194aadcac005",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MComboBox.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "b4d6356d6a9f8fb986ef9ed4f19188d9c80e8d80",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MDefaultRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "27f3098e0de76107ca82dbbd23e6be246f7493e5",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MDesktopPane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "851ec887ab0626b8f53e6c8c3ce78f9a9dd754f5",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MDialog.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "34724e2d96ad6464218fd991af5820e996a93980",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MFrame.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "177cec52e619b4bbca00bf61cef6f8a25f2303fc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MGlassPane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "4d74ee60f436f26fa1188417431166a0f3626c0f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MInternalFrame.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3a84dcf525914f3a2df8eb21af6db1c56939df2c",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MLabel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6a33375a0f927f8df32f1eaa48e67366310e5cfd",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MLabelTextField.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7438b0481496481d8846cb8483469f47d27e4b59",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MList.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6ef0693e5e1b94fdbad51e4f60d10b130acf9e94",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "82b3dbeb5f3fdc0741402184556c021939f39813",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MMenuItem.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "cf76b0504b16463d83a115962e48388940629acd",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MOptionPane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "dccae9f18ae67eb1d37c86d4239a6fa3f0ab9f25",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MPasswordField.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3632d67ae0ad47eb870ab8a25384ec3cc7488669",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MPlainDocument.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1ef9c454bad67afdcf895eb1b2b91962846eb261",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MPopupMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "cce396f9b508d6b13ba067cf9dbb322af4d96f65",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MRadioButton.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "5ef25559731bc4b73afd310c2ba6a6efe5a912ef",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f596dbf46250b1a6a573686b0a10b4fd8aec1a56",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MScrollPane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d701d65b9525e974ec111b77ccd771259429de50",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTable.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "5d23bb174d1a08fc843fb35680bf766d891d25b9",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTableCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "50b4bbd59391a0e7886537fb52b04c4f35ebc870",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTableHeaderRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "0b10faf140ec7d98c1a40767d54ad466b0044a75",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTextArea.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "84b9256d9b721e50e433f0d697567179bb75c1a1",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTextComponent.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "dc24e2580cba67b43377e25c3a05afd7c7583e1d",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTextField.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f5e9c93380e5ee667128a71a777ce1b38e03c7f6",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/MTree.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a3f6d132567a76f83403bebdb8f56107314d2ba3",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/NumericCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ab2b9b89c6cec606e56b45a7008fd619f242b009",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/ProgressDialog.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "9aaef05f88c6581412fadbcde4ab2d22cb83ef13",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/SandstoneLargeTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "adbe1420c60962cbbb6045a7511c32dadd299b8b",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/SandstoneTheme.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1fad1670b4206398925b3c0861eef55f169d45f7",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/SingleLineDocument.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d6b5151e9b2f1a933c82ed5493a7519693edfcfd",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/SplashWindow.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "5cdcfbe60697d2fa5d22138752ac792be2a49a24",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ba5451ac5f12116c0ecf287156082991dec681ca",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/gui/package-info.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "bde08838f6b346f9098f96561f0378df1d95f23f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/AboutDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "c998e9df81243408242cfcd5a6252ebacd4c4296",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "b0803b4081bbac3c5b8b01fa9a9183e48883fe43",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/AutoUpdater.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8fa70f21448529d8c891d0003385ce7e6ae81100",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "cc35dcb15efff95462ff9d730343fccf9ac820ba",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ChangeLocalDirectoryDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "97e8301c243ffc486e63444f54e782063a1b2c5f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d418ff4c9b880f049a6159262f4b072edbc1d834",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ConnectionDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1d2517e4ca63354c2d33f26ba473480aa0d4919e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/DnDTransferHandler.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "43c18c0a342999516843e0a5ef83da61d196ad36",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d7f21725ad4bdb43bcd5baee00858c67b8d28bbc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "0ae163731c38b2de0aa1c80091d3c699bc5cf897",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/DriveCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "4beda0603aa2d860aed9543fd7cff1141ac8ae71",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d5f57ff936c326ff9fcbdfabbe11c8e09df5ddb5",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/FTPMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a280edd8bda2a19c2a415bc96b60ca904405b2cb",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/FTPSession.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "754750ee887985975c49e36ccd728975eac57757",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/Favorite.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "0bfe51c331adb5f789679f5e90cc8a68b490e7e5",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "61fdc3aead4eb75a7fcf370a6c8b017113e01c15",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritesDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8d900ea742bdc2dc80f833f0072bcdb6817a4a06",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritesManager.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "65925c9c483f4d739e24ef775244d87998e9ba36",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "bafdacc71d22e98c0f7655103ae38dacd0eb95dc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/HelpMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "85f920d0f6bc34e2c74e5569b62938da131deb5c",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTP.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "90dc0f2c48197afd74c929d2ea7c9494531a48ae",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPApplet.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "589169b9a1cd190d90e8cf8e5bf6e12465f72df6",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPApplication.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "818f8a68d47c700c3507d8c3bb153c325190144a",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPConstants.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a81b1ab46e839cf4909fcd1934a54d57662d18cc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPHelp2.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "c11477dec1d080304a82c60d7a76d3db9e2549db",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPPreferences.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e6f1ec6c2e86e86c691a3d66ea7a903d1cc83a4b",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPToolBar.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ec58e662c832f0e5f656cc2a54b1dcbbb8e5fee8",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPUtil.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "273132d9dd1e924ddfc887a9b61efbb8471058c7",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFile.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "44e8034bb9af038f3f0c190a7504370301ca4349",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ace5a06a9efcf44d12f32049c910c48f88bfcf04",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileComparator.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "af6fc52850abc970b488a252d2e093e1a52b24fc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileFilter.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f9f7d5c75050bc39b9777c6ca79a515aafad7ea0",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileFilterDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "398bee8d8c5309be0803ec13f39071e5b071b1ab",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "2283e8ffcc248bd0c4c0800b77c2eb230395b3e3",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileTableModel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "9da60720b3e8c6235f0794fdfd44722d5dfee03e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalPane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "2292e4c9a9bd14e1b64dfe46c83ad1bd97f1cbfc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalSystemMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "34dbdcdd9fe2a357bbc7de2195480ef48ceec6b2",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalSystemPopupMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "848ae220876a56b104b7457689b6782b57e20da7",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocaleCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d21046b4730b3619b3f97c4635be18c6c0d0b1ea",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/LocalePrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6ad816746f485f5c08e5636d271a554742ee1952",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/NewLocalDirectoryDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "fc9a69ce1fdf199177d819026430335ff65d0d69",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "133b0324fcc27805452a29a1a868111f1a87784d",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/NewRemoteDirectoryDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "5a259203068b7d92eb70aac63e2f604584f9ce4c",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/NewRemoteFileDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "24079ec1337f91d97a31d9c28693b0409216e376",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/OSXAdapter.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6515ab6e2e107a9367bd6ac99e186c34ddefc5ed",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "4a7eac1f761cf47397f2c95d186d8cfc324b8adc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/PreferencesDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "766a33d88e0ce4b7f6405f37e13a1132c94ce9fe",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ProxyPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "12fe2de42bdb6a356861e1ea457012abd6093590",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileCellRenderer.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "847337eca1fa7c9c45f5350c474d81c2ec3f99c2",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "606b4ea644bd1fd1f2471a59dfc337054204db0b",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileFilterDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "5b7c1559eade1465a2b5025ad601367ef373a392",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e51a582ed924c95c853d8ae1d84a02a131c3164e",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileTableModel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "205ab61388def078bb1aa9bbcf7f4b3b6369f2a9",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteHost.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "4c24fc66c3cfc559b6eebe09998d389aa2b67d4f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemotePane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "75e85e6501f2d9d3ffcdd225a2d978cb167e9f8f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteSystemMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8ed3aecb3dd692146d546b9aa3adf9acbb69f204",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteSystemPopupMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "78bf74a6f8ab1b25bae8f478e0db743c3762a861",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8afb36e43c518481c70c85a24a235e933d4f8799",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3b2f4ba5e3d9ba1fd1b1ac7871900330ba3633db",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "daf49318a9dd894fcc4fd4e105144b4409b10c12",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/SessionPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f418169a281991cf43a327f504fd1a3ce2246420",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3d73b67a92d96159f6b01fc39977b8868d1a5139",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/StatusBar.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "68b8d467c34591fb72b048019198568ace6e4dd8",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/StatusWindow.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "52995e6f631c23e7423a02bd9ea0447f17fd06a3",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ToolsMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "9bc77f09b48c4fd88c9c39b1d427586c4e58fc61",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/TransferModeMenu.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "64982a8da6f13045ef55e36a220a49836716face",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "58c4e74216a08b481c1cf4480d0dc9962302d59a",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/TransferObject.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "2fb8050800c49a5a415aac95708e462e32fb6f43",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/UIPrefsPanel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6e79b4bcdf8e8fb8823ab8fa3cbf54e37526b405",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/UploadAsDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "4c814c0298c926efd479e3c1a6982d2be9b0145d",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ZipAndUploadDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d156f74895f138c969bb7e3678b7fc2259366d34",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/AbortAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f5e20b73d9b9071a7cabbf7318e13ded597c4ae1",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ChangeLocalDirectoryAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "46fb33448761af8db9fd34ea981a6e45ea005c1a",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ChangeRemoteDirectoryAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "c4be89d736bd44a47cf9297bbefba24e4f8e7c6b",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ConnectAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "708840967fe01c5a781afc5fed01347fcadc7aa9",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DeleteLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "77babdd3e4ceecbfd29ebd25822bc9f73a4a7dcd",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DeleteRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "452ab37e405ba689f6fbc46bb61a7afa5a2a5501",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "89db2ee7e992611ee1f9f83f529ca6e4802fa214",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "99e570238e62afd7e39a6caa6e991fb39155fa38",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAndUnzipAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "69e6594bb06b7fd351fbffc1a1728fffc3057e4d",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAsAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "951087d8425242de67715cb9ffd278628ed0cc89",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EditLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "879ebf68406a69c02e37f92eb037f7291648eb61",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EditRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "439ff65ea4a82ebf88f464fdd2d9bd4183b0f32c",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EmailLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ea017f0507d81f5725bd787c3f3abd10686220db",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EmailRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "fa141351d0cfedd6dbb43b2a92550c6529a333a5",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3662ff5ed7009fde02fc3156fc7518ec48be3c0b",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ManageFavoritesAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "2cc2defc1d9afa49e252f268e97eae8026b18783",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewLocalDirectoryAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e7b54bae60b01c6cc54fbcbf5ea17779dca35236",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "cf0b5855bdad8643305e642f9eae791528d72d12",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewRemoteDirectoryAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "dbbfae583d989865652cda4ee40c42afb296f2f3",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a7a2e89b82b68e7f921e91cff4f2f77ad07575bc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewSessionAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a6917ed165f79565c6e59f6c36561c78417e18ba",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/OpenLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "8b61e62134ea7b88906bba1b5a001bda4f3d0325",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/OpenRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "03ce610abb2ba1f10e2b3b8c2cfd945fe1d73223",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7c6c2e4ec01bf234d001288bfb2125ceaafe0d60",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/PrintRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a8be8a83baa3a67c07802da5c2cd037cca3825ad",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ReconnectAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e0f6ec26d6f2667bec33197d5e5dfa83cefd76cc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/RenameLocalFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6ea330482bcef8364ec45c44f1fd951fd26a9ccb",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/RenameRemoteFileAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1587f106912cf82efe24f409bf634a12b12904e7",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/UploadAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "dff8cbe7ad2d7c0d9cd1f561f2d516373a224fcf",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/UploadAsAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "0ab953296a4cfb78232f7a3f5650229a6b6e5ae1",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ZipAndUploadAction.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "84b266e2dc2d4445f36871ad7d71bbc31a5f3b20",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/package-info.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3eab37d56d46ab9357f90cc53a5369399a00c1f4",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "243a2549ae483b8fbb96730d49bfcf872488406a",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateManagerDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7eef50b187b57db3ea074103461f52daab844679",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificatePane.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "249e076910f29b401805446cbbd7dfd5ae04277f",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateTableModel.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "c5d71d4bcfa7dd4f69be787339b141b0ff7a70ae",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/DNParser.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "21400a7bb12a79adfb5c426d69cde3f4807f33b3",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPKeyManager.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3bca21d90b1e59199dd1d2e2e398f1cec683d546",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPSSLContext.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "16350337e8065e053a01ba8718a82e40be294729",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPTrustManager.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "f55086d068d9690668d857736d4c79aa81a2fd62",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d0039272efc5ebceceeacb6d10452c1c498a53ca",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/SecurityWarningDlg.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "9b76b2c1f4fa014b98d28255a0e1cb5db415acba",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/CommonResources.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a0d7e20f24b5b8116d1f758ad56f4b4af31e5cd2",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/Encoder.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "01f47d7ee952d1b748c971cc50ae2c8b9922f2e2",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/FileChangeEvent.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "d152b7f2a7b0296075a5859fbe9a0c69fdc0c926",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/FileChangeListener.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "bcd1ae4bce6272a0cd5d7c48b00135631f5dc757",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/FileChangeMonitor.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "fb570217db9cbb7cdcfc912a8f5587cabde30992",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/FileUtilities.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "dda6ef1fec90ca7eae7d25cf7bbe1fe76fa36fda",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/ProgressEvent.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "36788821829a42ef0f990ddf93a8e2c80e163c88",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/ProgressListener.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "1a9b2519fb9373e031fbbf0b02a60ead61c7a7c9",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/RandomKeyGenerator.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "417c1e2b0666b6b1bad77f5ec3dff045568abca0",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/ResourceLoader.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "48fda7abb89a199997af21cd20230210ff400477",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/StatusEvent.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "3b627b83855a1b8d91533bbd933cc6f716e127db",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/StatusListener.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "683e4a1c76362ed82fc41540b6118c82d8f2b1dc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/StringUtilities.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "e0d6a71d1661a079f777478529b8d361046d95c6",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/SystemUtil.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "a9b3c01f615d168d8ff2022d19eb23a1c0f6b7db",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/util/package-info.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "7cbea6eb7925b8c58d9546e21ca4c13b41e71cfc",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/zip/Unzip.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "c6659c3a8b413ba1b8578319271f0143b7552271",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "6bc5bf7f5aea856bbcb27b3354f3c11205083c73",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/zip/ZipEvent.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "79ddbc7bc5a12e01c23fcab60b8527861ef49720",
+      "stage": 0,
+      "path": "src/main/java/com/myjavaworld/zip/ZipListener.java"
+    },
+    {
+      "mode": "100644",
+      "blob": "ce04bdcd50fc6a45a5bd69d5eb5899a61e30e499",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/gui/EditPopupMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4de7a5ba34fe0bf773c91230a119cfd5582dada4",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/gui/LicenseAgreementDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7406ce6fc18bf5972a49052f555c1da637a656e0",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/gui/ProgressDialog.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9110f4df8fda2fa05a340884f1fc2793c5f0b6f6",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/AboutDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d36c3b0dfe2ecf1deb0e09c9a71e8855be2d9950",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "33f589a465fb7646568ed576d24cf4e4d4871efc",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/AutoUpdater.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7e7521c0682692a0484c14f8588b1c17fe469475",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/CertificatePrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3fc95abcd3d64af23a5b0c7c5447c19fd29cd34d",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ChangeLocalDirectoryDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1be3e344d387ed88a108bf0a2998fd5ff012f097",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "724fef77c8bc3d2da69f85d2b460049af043b043",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ConnectionDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7c6eb57c6f54e9aef4d3cc702a7401b54a097a46",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/DownloadAndUnzipDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b89be9178d83a9a49de8d61bd99266e6ce48f623",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/DownloadAsDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7207ab072df1608d39647f915ac65a2998dca710",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ExecuteCommandDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7dfb6ab3e69142e45ad759482a795ff58a6b5a5e",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/FTPMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "2e8b9f2a68c0a5410c6aca3440b0a0d20bfef344",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/FTPSession.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "000083f730bebe96babfea29c9a20722e30fcc27",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/FavoritePropertiesDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "274b6553d6779cf77ac7396726f18b321399c64c",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/FavoritesDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "049a50fa315b0057220748949285f221f28aada0",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "22e74f63bc76121ef80cea0eec558cdb65e706d6",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/HelpMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "662dc8206190c248a8602c690af37a074d085791",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/JFTP.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e8f45b83b2f3016a624f945969bb90cb0f0c0603",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/JFTPApplet.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "6974355b4a09aa5db2d8079dc2bbf97bcb56ab2c",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/JFTPToolBar.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9d8973e71fb5fb31795498ffad6ceb97318b007b",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalFileFilterDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "eb69a706cd0ef98f6469e993a9f78d83eac942bb",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalFilePropertiesDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "14b0ea43f30fe1a6ca1f632e5294ce6f536f2461",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalFileTableModel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "21703234d32680035935837f744c0bd335314812",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalPane.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d1bd674dde3144304a3c8f71998b827406474e63",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalSystemMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "8ee27e9ac7fcb00fe5356b64712f63008d17282f",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/LocalePrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "06ebbf43b23b31c34624b9aa080d92e65b70d547",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/NewLocalDirectoryDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c502f04c50a5c7d397d61a00d2885ffbd974f91f",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/NewLocalFileDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "73ffc9ca8f1968733d101d5ceac9b790d50df5c3",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/NewRemoteDirectoryDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "23553e76f6a2d164d7fbcbba9d9e99a2ab64acfb",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/NewRemoteFileDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c8983fd7eb1262d75753ad9061ca858a84fd4738",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/PreferencesDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a1ca6e362572d01b95842f5ac9119648f2ccfd29",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ProxyPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e34bb6f3d43a9956feadd2f49e44d0595ebe1954",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RemoteFileFilterDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4f1308ff38c6f19fedcb01e19b2c5e834faf15e9",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RemoteFilePropertiesDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d3635bc3e4fddd52b3d9a14c9a9d432cbb563561",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RemoteFileTableModel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "6c4d6b256445d5806cc425f7d6fae60fa340b839",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RemotePane.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d40629b3658ef2663a7207d687731101f4b398f4",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RemoteSystemMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "16b7894fca3148f8adf52fa318404aef9a35ba38",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RenameLocalFileDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3bac08825e7f44352144b42a1d214fbba19875fa",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/RenameRemoteFileDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b990de735ef4d4312779deb2f6a6e6199a724210",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/SecurityPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "01039faffe9481242ecf8bf49b9bd9597a26b3c8",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a4581afcf7428a245c2932684113e93f2e51b704",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/StatusBar.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "03091dae863153412a8b1580f2d97234e17c5414",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/StatusWindow.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d4d31fe5dc0ae703999f2431f33af940f57572b7",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ToolsMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "6e2a9435825d5db31ee0bf5d9b787b971cbfdcce",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/TransferModeMenu.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "0a1de87e4d96cab0f32daa366405a76dd318dbe6",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/TransferModesPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e4964837c205be91fd1463dec5accb35a956c4f1",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/UIPrefsPanel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "0661f4438052eefb97452816cee606c4f9017700",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/UploadAsDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "aadc38870ea792cadd6aa617a3a9b235ae73e3fb",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ZipAndUploadDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1dc2ffb29ad96d8ded8ded55461937ee23659c2f",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ssl/CertificateDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4882b779de42d0cfec203c4bae5176290e6e5700",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ssl/CertificateManagerDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "462cb68e548a31c94564f5205278a74b0840de23",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ssl/CertificatePane.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b855599738d1b112b057d17fd5ec3e412390e4de",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ssl/CertificateTableModel.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1b717aa012c20ec4824303d7024a85e373db0405",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/jftp/ssl/SecurityWarningDlg.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ffa8c2f3d6b9c098a4c136725b8fbb6212f08c2d",
+      "stage": 0,
+      "path": "src/main/resources/com/myjavaworld/util/CommonResources.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "8cdf96a1b78d1162ac303e16550be82dfd5cecd2",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/gui/EditPopupMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4a0d447c78e612298d85aac9e33fe177448574dd",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/gui/LicenseAgreementDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7ecabdaf7244967060cbe77b0b8521c837b1a83e",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/gui/ProgressDialog_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f8a7bd18ab2f08a48fb0681a281ddc857e908f01",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/AboutDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "36ae0ad95387d4dcc7ee5ea8c66babbb142a9fcf",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5ac4c94448ab81627606d3e690700bc617bcaf67",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/AutoUpdater_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "690d477b3390494ab645b432d8919b67c42cd67b",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/CertificatePrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "205c8a3b5dfbb8d66965a5d25e7a7941fd582fcb",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ChangeLocalDirectoryDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "bd79ef04115e3b39ec9278a85ce4036b87738681",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a327b5059d5d95722c4bf1d681bc898c8a150ece",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ConnectionDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "844c7c41cbef7f6c2f93fec4a3b592ef5e7be41a",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/DownloadAndUnzipDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "6b058e06d01353b5ca8ed1b25abc6a0750efa9a1",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/DownloadAsDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7109fba285b3a8f831a013c242fd491d6ae2120f",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ExecuteCommandDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e2d47e03f6b7bd3ddeaed39050d02daa8d06b111",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/FTPMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "11276cb537394ac271e58db87262b257ec46adb2",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/FTPSession_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3da4f1ebc6b15dbc49e58766b604ae91e901c438",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/FavoritePropertiesDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b4421d242464c56c976dad7408468310e813d47e",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/FavoritesDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "65716976f9eddf3319529e64f1237dbd4d44899c",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/GeneralConnectionPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3ccbbca6fc4b764f3b5e442a5543bb9dc4b937e9",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/HelpMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a19856a17269f6ac234ed19673680fac9672283d",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/JFTPApplet_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5d80a9448885ffd809cebcf0531126dabc1f095a",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/JFTPToolBar_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5f5aa5f18a5b769a9d1b4bd7a88826f2658c983d",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/JFTP_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a8f853d8e13f9558deaf2947b3de390b7ba4f6e0",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalFileFilterDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "41181993d8e7bb37a052019c3e5636b22d1784b2",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalFilePropertiesDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5ac583b5aca2abca58af57c11bf5804bf994a16a",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalFileTableModel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "45d2dbff33d35aa012b7984609f4092ff8ea94ec",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalPane_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d4e076c9f6b1c29797cd3e67efaa64e7650d8308",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalSystemMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1b4827173c328bd7c37fb6e9f0f47688569e4337",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/LocalePrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "95e16cf8192fb8a91964be6fddc28a80fcbd4e2e",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/NewLocalDirectoryDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "eec534575f2064cb7dee183c78ccdd4a101a2887",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/NewLocalFileDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7efde4c4f909b9fcf0cbd605d6fd752d2859a473",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/NewRemoteDirectoryDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f979c7ff2923edd744608995b8fd6727842d43c0",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/NewRemoteFileDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e3c71eeaa5d4d23875cce4c1f464c0acf666c65b",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/PreferencesDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5218a4ffc7700472c2e9d182bdfc9e7bfa2c3f49",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ProxyPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1ac208bbcff4e4932eac873bca832528e3b7b613",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RemoteFileFilterDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3f62742135486722417701ab6e96430f7527a704",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RemoteFilePropertiesDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "601ec89a2ce9a19119d59aa013dd73568e550a40",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RemoteFileTableModel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "28077511428a9598f73305d914caf5bd264d780a",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RemotePane_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "911bdd81f2ee938b2320c3e88c4e9444772cb380",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RemoteSystemMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "13a32fbf35fdcfc839cbf8f5ea491ac9d34211ae",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RenameLocalFileDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "8064d0bff4e5834c815bc53de4da1576f0783fe4",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/RenameRemoteFileDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "7ab5fe3e2c5311ad0f86ca05125096d50af235ad",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/SecurityPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b1f312f6f5cdf658ef8a252ed1acd4d3c5a30bae",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9dcecd3cbb1b0128f985a353493442a941af672e",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/StatusBar_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "2fb024a4ca86393cf92112068c217046236e4061",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/StatusWindow_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "81d83e9df75d9791cdd8ff836d50c87870b54ceb",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ToolsMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "facae82f5beaec6f70ffd762a5e29c34341b8b86",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/TransferModeMenu_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "da685cb44821d2df621b44956874f24da988c4e5",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/TransferModesPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e4964837c205be91fd1463dec5accb35a956c4f1",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/UIPrefsPanel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d586d980b0222bc4c40bd0ef370485af9e9bb484",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/UploadAsDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a1709ff7237e6d91cfd5786743279492336de037",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ZipAndUploadDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "19321acd28f24bb5c5a56081e8c3bcc2b88df417",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ssl/CertificateDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a03bd935681d054dd7bb5705cb03f740207d292e",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ssl/CertificateManagerDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9f511f6e4c31fdf39dc22b79c2964909a32fd1ee",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ssl/CertificatePane_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b00ff4af0500ab1214b0a08189b64d8eda1f06c5",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ssl/CertificateTableModel_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c9d142e7cd235accdaf110e11adaf47ef5eced52",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/jftp/ssl/SecurityWarningDlg_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e64959ef8ededaa8800b2f283aab42521800811d",
+      "stage": 0,
+      "path": "src/main/resources_de/com/myjavaworld/util/CommonResources_de.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "87b33056a621e4d2fbbcf4ec5ec278f34fb134ce",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/gui/EditPopupMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4f9df60bd1ce6c5195d087abf4d76b8f7a508483",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/gui/LicenseAgreementDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d32ee2e1c0de2caaf44b21fe4a8485ed7a90e666",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/gui/ProgressDialog_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ad89cb4d193dc821f82a737d661f7f5c154e9f44",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/AboutDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d01a6934709701d0b2ca4e6db0dcf13daba6d3b6",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9644c8ccab75e8ed569b7f03f3e76fb86a18d034",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/AutoUpdater_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "df806aad4433abe769f769adc1388615be6fe56e",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/CertificatePrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "9ee7d1a55fc2759522f1b3f2be4b5e1331d7cd5e",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ChangeLocalDirectoryDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "d842dcc839b9f3b285faf46330d18ff2ec2e8f98",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "4b65774ee4c2550be6d8fa95bc98b89a00337438",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ConnectionDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "6c5925d2d15a49390cf65108b89ba9a8e0888a43",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/DownloadAndUnzipDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f73cac4782fb49bb24510b51b17afae1655cb30e",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/DownloadAsDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "62e27ccdc393200b0563944947a2ecf4005ed86f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ExecuteCommandDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "81c72d5cdcb10098ee0f2ccbe13b0e4692cbc4c3",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/FTPMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f250f714cf846709925d3385a0f305bd5407f05b",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/FTPSession_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "473a739460920401af3352f590c8139bcc2959b7",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/FavoritePropertiesDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "1aec68cf9cc2fa9ce574b3232045dedafcc5c8b8",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/FavoritesDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "e20e1f0de2af540efa114e33c279dcf1ddad78aa",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/GeneralConnectionPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c151747cdb2147c6dcab0a2b6d5510327ab17407",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/HelpMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "062d09dd8b59cf42e788fa2a1529c3e418ceedd9",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/InstallLicenseDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "29e6055c1de17eca937ba752134f82c5f2d07371",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/JFTPApplet_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "a271c080e7844bd148c01b039957ac94de63a9a6",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/JFTPToolBar_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "07ed8bfe359048c771e712ad344ffccfd5ea1d4f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/JFTP_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ba1b0b1059e0dd807bf2fa9316a5ff167929dc75",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalFileFilterDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "bd0e75defbe2cd44f8cabacfe6a4e36b25f1bd3d",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalFilePropertiesDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c61016c3af06b1ef27e617c90c7b01a8d573b992",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalFileTableModel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "183a97e1471fc9a1b22a54a5179721ab8ff371ac",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalPane_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b3522eab47cc13d629eb54388297bc4c72e82c4f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalSystemMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "2dcc021eeaf206932b61ef8106d5e5ddeb95a6bf",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/LocalePrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "96ce1515b2bc605f4fa7ff59536cceb781d55f2f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/NewLocalDirectoryDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b57fa8ddda078b601fa4f1970232aac8757f98c8",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/NewLocalFileDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "be9709cd4067302c133b6db1335321bf7b712777",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/NewRemoteDirectoryDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b7c54be6674b4d0f35a08727a74f725fceaa933b",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/NewRemoteFileDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "bdafb8bb0332ebe917ab1b6ba4ffb4ba81e27c2f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/PreferencesDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "0484f889f58dc6b9ac366e7df1f62ee2903a434b",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ProxyPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "0e65e4ab2679e0c07084f5b93b43d32f37bdde0f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RemoteFileFilterDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ab5d02d49b80f6e17f0414ddbc294029fb25c451",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RemoteFilePropertiesDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "21fa3a02101332056d5cbdef416f6075312e81ab",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RemoteFileTableModel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "bf465afe9cf0520d8c26407737e7491fc402bcd2",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RemotePane_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "79c34118ae4ca942ede883d8765a4112b4d6873d",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RemoteSystemMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "2ffc913aa95e100f1eff6b9e024ae6722c320c3b",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RenameLocalFileDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "5498c11ff1d110cb99020198614c2512011aa30f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/RenameRemoteFileDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "2182179c9910c4b193883a934c91659d8fcd2de9",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/SecurityPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "471e12e48d5ef3bdfee3c773d66586fa4f4ad161",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "8136b4ff75ac2200acaf2a5780827a4a9af3cb52",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/StatusBar_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "95ca35d7276ede4b794fa89de3361aaf773f2329",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/StatusWindow_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "8cbe0cebeecd1b0f795da5ab16de4e9289b8fd11",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ToolsMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "28e986c88e477dd7ff59fd965b94dd05767eeacd",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/TransferModeMenu_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "3bd7250f7383f6c42ba440a28a6fcaf31a312dad",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/TransferModesPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "b632f34849ce0fc2f7440871a6c38a0f35750fb8",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/UIPrefsPanel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f190918ab83d4e4892694f7e2b2f462d7b138220",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/UploadAsDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "0abb68431de71a405736f6270c3e89ef6ac40d29",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ZipAndUploadDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "fae32a1dc4647426ed61e600bc34c770e72e6a4b",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ssl/CertificateDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ebcfd97800df43d6976367d2b56be7fd833e426f",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ssl/CertificateManagerDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "ce0a0f0c3afa34eb371985227deec6fb8d263460",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ssl/CertificatePane_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "c45d05b93386cfa4bd842b797a03c0459a7c717c",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ssl/CertificateTableModel_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "afe6a35dea579d2eb00e0073e8b7349a7c9f5fc0",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/jftp/ssl/SecurityWarningDlg_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "35e53258baa15f0f9188179f7c34eb4963abfed4",
+      "stage": 0,
+      "path": "src/main/resources_zh_TW/com/myjavaworld/util/CommonResources_zh_TW.properties"
+    },
+    {
+      "mode": "100644",
+      "blob": "f5212239b773ead944cf95b89bd5570092208eb1",
+      "stage": 0,
+      "path": "src/main/scripts/jftp.bat"
+    },
+    {
+      "mode": "100644",
+      "blob": "87dad71bab4a3a6b2a8765bd6b5004720aa71919",
+      "stage": 0,
+      "path": "src/main/scripts/jftp.sh"
+    },
+    {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "stage": 0,
+      "path": "src/test/java/.gitkeep"
+    },
+    {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "stage": 0,
+      "path": "src/test/resources/.gitkeep"
+    }
+  ]
+}

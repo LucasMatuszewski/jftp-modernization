@@ -1,0 +1,47 @@
+# Assigned UI source coverage ledger
+# Scope: tracked top-level jftp UI files matching the ui-details brief, excluding ssl and actions.
+# Total: 44 source files; all files were read in full. No omissions.
+READ	src/main/java/com/myjavaworld/jftp/AboutDlg.java
+READ	src/main/java/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/ChangeLocalDirectoryDlg.java
+READ	src/main/java/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg.java
+READ	src/main/java/com/myjavaworld/jftp/ConnectionDlg.java
+READ	src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
+READ	src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java
+READ	src/main/java/com/myjavaworld/jftp/DriveCellRenderer.java
+READ	src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java
+READ	src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java
+READ	src/main/java/com/myjavaworld/jftp/FavoritesDlg.java
+READ	src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/LocaleCellRenderer.java
+READ	src/main/java/com/myjavaworld/jftp/LocalePrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFile.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFileCellRenderer.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFileFilter.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFileFilterDlg.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+READ	src/main/java/com/myjavaworld/jftp/LocalFileTableModel.java
+READ	src/main/java/com/myjavaworld/jftp/LocalPane.java
+READ	src/main/java/com/myjavaworld/jftp/NewLocalDirectoryDlg.java
+READ	src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java
+READ	src/main/java/com/myjavaworld/jftp/NewRemoteDirectoryDlg.java
+READ	src/main/java/com/myjavaworld/jftp/NewRemoteFileDlg.java
+READ	src/main/java/com/myjavaworld/jftp/PreferencesDlg.java
+READ	src/main/java/com/myjavaworld/jftp/ProxyPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/RemoteFileCellRenderer.java
+READ	src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java
+READ	src/main/java/com/myjavaworld/jftp/RemoteFileFilterDlg.java
+READ	src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+READ	src/main/java/com/myjavaworld/jftp/RemoteFileTableModel.java
+READ	src/main/java/com/myjavaworld/jftp/RemotePane.java
+READ	src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java
+READ	src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+READ	src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/SessionPanel.java
+READ	src/main/java/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/UIPrefsPanel.java
+READ	src/main/java/com/myjavaworld/jftp/UploadAsDlg.java
+READ	src/main/java/com/myjavaworld/jftp/ZipAndUploadDlg.java
