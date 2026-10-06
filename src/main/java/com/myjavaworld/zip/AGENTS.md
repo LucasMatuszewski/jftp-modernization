@@ -1,0 +1,7 @@
+# ZIP creation and extraction
+
+This package creates and extracts archives used by the JFTP desktop application. These are source packages in one application, not an independent module. Read the [repository instructions](../../../../../../AGENTS.md), [Java boundary instructions](../../../AGENTS.md), and [support-library behavior notes](../../../../../../docs/support-libraries.md) before changing this package.
+
+Preserve normal archive entry naming, recursive filtering, overwrite behavior, timestamps, and synchronous event/progress contracts unless callers and regression cases establish a deliberate change. Progress is per file; listeners run inline on the caller thread. `Zip.setRelativeTo` currently does not validate containment and `Unzip` currently permits entry traversal; treat extraction traversal as a security defect to correct, not a contract to retain. Define safe destination containment, overwrite behavior, partial-file cleanup, failure reporting, and event completion semantics together. Test only with isolated temporary trees and synthetic archives.
+
+When an authorized implementation change alters archive behavior, APIs, or package responsibility, update this file, the root and Java-parent instructions, and [support-library documentation](../../../../../../docs/support-libraries.md) in the same logical change. No archive implementation or tests are authorized in the present analysis phase.

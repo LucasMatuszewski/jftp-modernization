@@ -1,0 +1,11 @@
+# Behavioral test instructions
+
+The original `java/` and `resources/` subtrees contain only empty placeholders; there are no implemented baseline tests. The current phase writes documentation and plans only. Read the [root instructions](../../AGENTS.md), [four suite designs](../../docs/regression-test-design.md) and [modernization plan](../../docs/modernization-plan.md) before later test implementation.
+
+Keep four example behavioral areas: startup/session/preferences/favorites, local/remote browser operations, transfer/archive workflows, and FTPS trust decisions. Pure unit checks may support them, but transfer tests must exercise JFTP session/actions or the visible UI against a controlled local server, rather than prove only the external FTP library works. Assert output bytes, filesystem state, visible outcomes and persisted-data round trips. Avoid private fields, helper class identities, algorithm steps and worker-thread counts.
+
+Use synthetic preferences/favorites/certificates and isolated temporary user homes/local and remote roots. Account for static environment snapshots by selecting the home before application classes load; use a fresh JVM where needed. GUI-dependent cases need a display and Swing event synchronization. Cancellation uses a deterministic gated transfer rather than sleep-based timing. Give failures bounded waits and release fixtures/ports/processes reliably.
+
+Characterize existing intended behavior before refactoring. Record compile/bootstrap limitations honestly; tests that never ran are not green. Keep known-defect correction cases separate from baseline characterization. A changed application that fails existing tests is the first suspect: do not remove tests, relax assertions, skip failures or replace expectations to mask regressions. Verify test discovery and a deliberately failing assertion before accepting the runner's success.
+
+**Update this file, root/applicable source `AGENTS.md`, test designs and build/modernization documentation in the same logical change whenever real tests, runner versions, commands, fixture boundaries or behavior expectations change.** `CLAUDE.md` imports `@AGENTS.md`; keep the import valid. Runtime reports belong in verification evidence, and work status belongs in the shared tracker.

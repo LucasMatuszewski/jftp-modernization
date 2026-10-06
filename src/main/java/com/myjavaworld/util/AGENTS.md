@@ -1,0 +1,9 @@
+# Shared utilities and event helpers
+
+This package contains resource lookup, file helpers, string/encoding utilities, environment snapshots, and event contracts shared across the application. These are source packages in one desktop application, not an independent module. Read the [repository instructions](../../../../../../AGENTS.md), [Java boundary instructions](../../../AGENTS.md), and [support-library behavior notes](../../../../../../docs/support-libraries.md) before changing this package.
+
+Preserve observable output and failure behavior: ResourceLoader currently logs and exits on a missing bundle; Encoder emits uppercase two-digit hex; RandomKeyGenerator actually uses A-Z only and rejects non-positive lengths; FileUtilities overwrites the destination and does not stage atomically. Treat serialized preference and favorite data as sensitive and keep real profile files out of fixtures/logs. Do not silently change charsets, line wrapping, paths, or event payload methods.
+
+FileChangeMonitor uses a one-second Swing Timer and synchronously invokes listeners on the EDT. It detects only strictly increasing last-modified timestamps. Preserve or explicitly redesign EDT ordering, duplicate registration, removal, stopping, and callback semantics with application-level evidence. Keep event APIs such as the existing `FileChangeEvent.getnewDate()` source-compatible until all callers are migrated.
+
+When an authorized implementation change alters package structure, responsibilities, APIs, dependencies, persistence, or behavior, update this file, the root and Java-parent instructions, and [support-library documentation](../../../../../../docs/support-libraries.md) in the same logical change. Add behavior coverage before replacement; no implementation tests are authorized in the present analysis phase.
