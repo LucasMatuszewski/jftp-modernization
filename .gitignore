@@ -1,1 +1,3 @@
 micro
+# Private mapping evidence stays local, including inside archived folders.
+/docs/repo-maps/**/edukey-*

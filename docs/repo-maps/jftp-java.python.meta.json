@@ -1,0 +1,96 @@
+{
+  "coverage": {
+    "candidates_seen": 196,
+    "definitions_found": 1586,
+    "definitions_in_map": 159,
+    "files_with_definitions": 179,
+    "parsed_files": 182,
+    "selected_files": 196
+  },
+  "dependencies": {
+    "networkx": "3.4.2",
+    "tree-sitter": "0.25.2",
+    "tree-sitter-c-sharp": "0.23.5",
+    "tree-sitter-language-pack": "0.13.0"
+  },
+  "descriptors": [],
+  "dirty": true,
+  "estimated_tokens": 4096,
+  "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+  "export": {
+    "artifact_dir": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-4",
+    "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+    "generation_elapsed_seconds": 5.034215599996969,
+    "implementation": "python",
+    "raw_estimated_tokens": 4096,
+    "raw_file": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp\\docs\\repo-maps\\jftp-java.python.raw.md",
+    "raw_unicode_characters": 16381,
+    "raw_utf8_bytes": 16381,
+    "report_estimated_tokens": 4395,
+    "report_file": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp\\docs\\repo-maps\\jftp-java.python.md",
+    "report_sha256": "9f7054258e910f6b6ffbf9171b2b82aa7dd4757392168fda1e1199845db20223",
+    "report_unicode_characters": 17579,
+    "report_utf8_bytes": 17579,
+    "schema_version": 1
+  },
+  "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+  "focus_not_found": {
+    "files_not_parsed": [],
+    "symbols_without_definitions": []
+  },
+  "git_notes": [],
+  "inventory_summary": {
+    "languages": {
+      "java": 182,
+      "other": 14
+    },
+    "modules": [
+      {
+        "files": 196,
+        "path": "src/main"
+      }
+    ],
+    "modules_omitted": 0
+  },
+  "limits": {
+    "budget": 4096,
+    "max_file_bytes": 2000000,
+    "max_files": 10000,
+    "max_tags_per_file": 20000,
+    "max_total_tags": 200000
+  },
+  "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+  "parse_failures": [],
+  "revision": "19b31aefbe50e37daf60b1e65fbe6f76c87e24ea",
+  "selection": {
+    "excludes": [],
+    "focus_files": [],
+    "focus_symbols": [],
+    "subtrees": [
+      "src/main/java"
+    ]
+  },
+  "skipped": [],
+  "source_root": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp",
+  "status": "complete",
+  "tool": "legacy-codebase-workflows repo_map",
+  "truncated": true,
+  "unsupported_languages": [
+    "src/main/java/AGENTS.md",
+    "src/main/java/CLAUDE.md",
+    "src/main/java/com/myjavaworld/gui/AGENTS.md",
+    "src/main/java/com/myjavaworld/gui/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/actions/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/actions/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/CLAUDE.md",
+    "src/main/java/com/myjavaworld/util/AGENTS.md",
+    "src/main/java/com/myjavaworld/util/CLAUDE.md",
+    "src/main/java/com/myjavaworld/zip/AGENTS.md",
+    "src/main/java/com/myjavaworld/zip/CLAUDE.md"
+  ],
+  "version": "1.0.0",
+  "working_copy_fingerprint": "101dbfcc1c7aeff75e2680eb1c734b205a263bd72c8ccdd2b1a0aa27a662dd4d"
+}

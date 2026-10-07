@@ -1,0 +1,2055 @@
+[
+  {
+    "name": "jftp-java",
+    "platform": "Windows x86-64",
+    "repository": "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+    "subtree": "src/main/java",
+    "runs": [
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 5.200473399832845,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-0\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-0\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 1.1038408000022173,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-0\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-0\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":236.191,\"rank\":6.67,\"select_read_hash_parse\":943.336,\"total\":1063.192,\"write\":2.871},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 5.264316499931738,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-0\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-0\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 1.3556966001633555,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-0\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-0\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":350.093,\"rank\":11.422,\"select_read_hash_parse\":1154.172,\"total\":1318.371,\"write\":3.335},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 1.1704560997895896,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-1\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-1\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":235.157,\"rank\":11.014,\"select_read_hash_parse\":1011.482,\"total\":1127.502,\"write\":2.935},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 4.465791600057855,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-1\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-1\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 1.1550534998532385,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-1\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-1\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":261.096,\"rank\":6.858,\"select_read_hash_parse\":1010.007,\"total\":1121.129,\"write\":2.422},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 4.970142799895257,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-1\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-1\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 5.824442599900067,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-2\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-2\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 1.182366699911654,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-2\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-2\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":286.621,\"rank\":8.075,\"select_read_hash_parse\":1029.082,\"total\":1144.785,\"write\":2.622},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 4.3308091999497265,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-2\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-2\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 1.162601799936965,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-2\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-2\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":269.171,\"rank\":7.456,\"select_read_hash_parse\":986.954,\"total\":1124.302,\"write\":3.027},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 1.199377599870786,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-3\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-3\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":320.332,\"rank\":6.791,\"select_read_hash_parse\":1053.898,\"total\":1160.08,\"write\":2.756},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 4.955302699934691,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-3\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-3\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 1.2152543999254704,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-3\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-3\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":277.704,\"rank\":8.0,\"select_read_hash_parse\":1067.369,\"total\":1182.347,\"write\":2.589},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 4.276483200024813,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-3\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-3\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 5.154987999936566,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-4\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-4\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 1.2653915998525918,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-4\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-4\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":299.755,\"rank\":8.402,\"select_read_hash_parse\":1096.801,\"total\":1228.382,\"write\":4.628},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 5.034215599996969,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/python-env/Scripts/python.exe",
+          "-B",
+          "C:/Users/BiuroEdukey/.agents/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 196, \"definitions_found\": 1586, \"definitions_in_map\": 159, \"files_with_definitions\": 179, \"parsed_files\": 182, \"selected_files\": 196}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"java\": 182, \"other\": 14}, \"modules\": [{\"files\": 196, \"path\": \"src/main\"}], \"modules_omitted\": 0}, \"map\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-4\\\\repo-map.md\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\python-4\\\\map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 1.2214846001006663,
+        "exit": 0,
+        "command": [
+          "C:/Users/BiuroEdukey/AppData/Local/Temp/legacy-skill-review-20261007-05bd/ci-current-windows/unpacked/legacy-repo-map-windows-x86_64/legacy-repo-map.exe",
+          "C:/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+          "--output-dir",
+          "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/main/java",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":159,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":4096,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-4\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\timings-windows\\\\jftp-java\\\\rust-4\\\\map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":252.197,\"rank\":6.918,\"select_read_hash_parse\":1071.27,\"total\":1183.443,\"write\":2.476},\"truncated\":true}\n",
+        "stderr": ""
+      }
+    ],
+    "summary": {
+      "cold": {
+        "medians": {
+          "python": 5.154987999936566,
+          "rust": 1.182366699911654
+        },
+        "min_max": {
+          "python": [
+            4.465791600057855,
+            5.824442599900067
+          ],
+          "rust": [
+            1.1038408000022173,
+            1.2653915998525918
+          ]
+        },
+        "python_over_rust": 4.3598893645446415,
+        "rust_time_reduction_percent": 77.06363817090936
+      },
+      "warm": {
+        "medians": {
+          "python": 4.970142799895257,
+          "rust": 1.2152543999254704
+        },
+        "min_max": {
+          "python": [
+            4.276483200024813,
+            5.264316499931738
+          ],
+          "rust": [
+            1.1550534998532385,
+            1.3556966001633555
+          ]
+        },
+        "python_over_rust": 4.08979617782093,
+        "rust_time_reduction_percent": 75.54890374676798
+      }
+    },
+    "artifacts": {
+      "python": {
+        "directory": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\python-4",
+        "metadata": {
+          "coverage": {
+            "candidates_seen": 196,
+            "definitions_found": 1586,
+            "definitions_in_map": 159,
+            "files_with_definitions": 179,
+            "parsed_files": 182,
+            "selected_files": 196
+          },
+          "dependencies": {
+            "networkx": "3.4.2",
+            "tree-sitter": "0.25.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-language-pack": "0.13.0"
+          },
+          "descriptors": [],
+          "dirty": true,
+          "estimated_tokens": 4096,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git_notes": [],
+          "inventory_summary": {
+            "languages": {
+              "java": 182,
+              "other": 14
+            },
+            "modules": [
+              {
+                "files": 196,
+                "path": "src/main"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+          "parse_failures": [],
+          "revision": "19b31aefbe50e37daf60b1e65fbe6f76c87e24ea",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/main/java"
+            ]
+          },
+          "skipped": [],
+          "source_root": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp",
+          "status": "complete",
+          "tool": "legacy-codebase-workflows repo_map",
+          "truncated": true,
+          "unsupported_languages": [
+            "src/main/java/AGENTS.md",
+            "src/main/java/CLAUDE.md",
+            "src/main/java/com/myjavaworld/gui/AGENTS.md",
+            "src/main/java/com/myjavaworld/gui/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/actions/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/actions/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/ssl/CLAUDE.md",
+            "src/main/java/com/myjavaworld/util/AGENTS.md",
+            "src/main/java/com/myjavaworld/util/CLAUDE.md",
+            "src/main/java/com/myjavaworld/zip/AGENTS.md",
+            "src/main/java/com/myjavaworld/zip/CLAUDE.md"
+          ],
+          "version": "1.0.0",
+          "working_copy_fingerprint": "101dbfcc1c7aeff75e2680eb1c734b205a263bd72c8ccdd2b1a0aa27a662dd4d"
+        },
+        "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+        "map_bytes": 16381,
+        "map_characters": 16381,
+        "last_seconds": 5.034215599996969
+      },
+      "rust": {
+        "directory": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-4",
+        "metadata": {
+          "baseline_contract": "repo_map.py 1.0.0",
+          "cache": "none; every run reads and parses the selected files",
+          "coverage": {
+            "candidates_seen": 196,
+            "definitions_found": 1586,
+            "definitions_in_map": 159,
+            "files_with_definitions": 179,
+            "parsed_files": 182,
+            "selected_files": 196
+          },
+          "dependencies": {
+            "tree-sitter": "0.25.10",
+            "tree-sitter-c": "0.24.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-cpp": "0.23.4",
+            "tree-sitter-go": "0.25.0",
+            "tree-sitter-java": "0.23.5",
+            "tree-sitter-javascript": "0.25.0",
+            "tree-sitter-python": "0.25.0",
+            "tree-sitter-rust": "0.24.2",
+            "tree-sitter-typescript": "0.23.2"
+          },
+          "descriptors": [],
+          "dirty": true,
+          "estimated_tokens": 4096,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git": true,
+          "git_notes": [],
+          "implementation": "rust (experimental)",
+          "inventory_summary": {
+            "languages": {
+              "java": 182,
+              "other": 14
+            },
+            "modules": [
+              {
+                "files": 196,
+                "path": "src/main"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_edges": 200000,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+          "parse_failures": [],
+          "queries": {
+            "c": {
+              "path": "tree-sitter-language-pack/c-tags.scm",
+              "sha256": "108cf8e68e61061f3212e724e5947fe08a5c1b259278daf3c459ad90a646b769"
+            },
+            "c_sharp": {
+              "path": "tree-sitter-language-pack/csharp-tags.scm",
+              "sha256": "28e45f2b77a12a8afa3dfe93e629e2ba842bd7a11c1ed51ed2add722c0a33c9b"
+            },
+            "cpp": {
+              "path": "tree-sitter-language-pack/cpp-tags.scm",
+              "sha256": "d9f4aa4d471cd35001307900d09786f1ac443845d17c422e97c50a73dfed2862"
+            },
+            "go": {
+              "path": "tree-sitter-language-pack/go-tags.scm",
+              "sha256": "4c4e1f43b3ed42f1ca3deb6b847783aa3333d35285285b31163ca99c932ff292"
+            },
+            "java": {
+              "path": "tree-sitter-language-pack/java-tags.scm",
+              "sha256": "5e277c72738f2f5bf948eb717eaf1d3a2f7c6d6ad43cbed778ef3f236a81adf1"
+            },
+            "javascript": {
+              "path": "tree-sitter-language-pack/javascript-tags.scm",
+              "sha256": "d2a9592300ddb2fa0418cd1c603decd9ecf6ec56d8bb3f1ea59028f9c2cfd6e2"
+            },
+            "python": {
+              "path": "tree-sitter-language-pack/python-tags.scm",
+              "sha256": "2830ab33b89a5305d9fe16f6c151eb136fc4542abf012a37f8199bcec2ed164d"
+            },
+            "rust": {
+              "path": "tree-sitter-language-pack/rust-tags.scm",
+              "sha256": "debcf55ea29a38f28f59150d3d35b9397fd36040e3e6d4197ccc411f710c07a8"
+            },
+            "tsx": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            },
+            "typescript": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            }
+          },
+          "ranking": "Aider-derived PageRank over identifier definitions and references; bare identifier text is matched, not a resolved call graph",
+          "revision": "19b31aefbe50e37daf60b1e65fbe6f76c87e24ea",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/main/java"
+            ]
+          },
+          "skipped": [],
+          "source_notes": [],
+          "source_root": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp",
+          "status": "complete",
+          "syntax_error_files": [],
+          "tool": "legacy-codebase-workflows legacy-repo-map",
+          "truncated": true,
+          "unsupported_languages": [
+            "src/main/java/AGENTS.md",
+            "src/main/java/CLAUDE.md",
+            "src/main/java/com/myjavaworld/gui/AGENTS.md",
+            "src/main/java/com/myjavaworld/gui/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/actions/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/actions/CLAUDE.md",
+            "src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md",
+            "src/main/java/com/myjavaworld/jftp/ssl/CLAUDE.md",
+            "src/main/java/com/myjavaworld/util/AGENTS.md",
+            "src/main/java/com/myjavaworld/util/CLAUDE.md",
+            "src/main/java/com/myjavaworld/zip/AGENTS.md",
+            "src/main/java/com/myjavaworld/zip/CLAUDE.md"
+          ],
+          "version": "0.1.0",
+          "working_copy_fingerprint": "101dbfcc1c7aeff75e2680eb1c734b205a263bd72c8ccdd2b1a0aa27a662dd4d"
+        },
+        "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+        "map_bytes": 16381,
+        "map_characters": 16381,
+        "last_seconds": 1.2214846001006663
+      }
+    },
+    "parity": {
+      "map_bytes_equal": true,
+      "fingerprint_equal": true,
+      "coverage_equal": true
+    }
+  },
+  {
+    "name": "flask-python",
+    "platform": "Ubuntu-26.04 WSL2 x86-64",
+    "repository": "/home/lucas/.cache/legacy-map-review-20261007/flask",
+    "subtree": "src/flask",
+    "runs": [
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 0.4348633100744337,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 0.0774707009550184,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":49.26,\"rank\":0.684,\"select_read_hash_parse\":71.874,\"total\":74.677,\"write\":0.645},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 0.37356970901601017,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-0/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 0.08747490216046572,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-0/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":57.462,\"rank\":0.647,\"select_read_hash_parse\":81.848,\"total\":84.381,\"write\":0.339},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 0.08338750107213855,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":53.399,\"rank\":0.869,\"select_read_hash_parse\":77.788,\"total\":80.7,\"write\":0.268},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 0.3936319090425968,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 0.07639060192741454,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-1/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":49.862,\"rank\":0.812,\"select_read_hash_parse\":70.827,\"total\":73.724,\"write\":0.361},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 0.41495110909454525,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-1/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 0.41356650879606605,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 0.07880100188776851,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":49.493,\"rank\":0.625,\"select_read_hash_parse\":72.849,\"total\":75.907,\"write\":0.837},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 0.4128932091407478,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-2/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 0.10062530194409192,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-2/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":68.525,\"rank\":0.729,\"select_read_hash_parse\":94.133,\"total\":97.28,\"write\":0.564},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 0.09869860205799341,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":61.485,\"rank\":0.916,\"select_read_hash_parse\":92.198,\"total\":95.51,\"write\":0.457},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 0.4273715098388493,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 0.11679580202326179,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-3/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":82.269,\"rank\":0.869,\"select_read_hash_parse\":110.434,\"total\":113.868,\"write\":0.498},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 0.45816081017255783,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-3/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 0.4438374100718647,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 0.0998427018057555,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":67.392,\"rank\":0.811,\"select_read_hash_parse\":93.859,\"total\":96.752,\"write\":0.507},\"truncated\":true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 0.4163457090035081,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 26, \"definitions_found\": 416, \"definitions_in_map\": 233, \"files_with_definitions\": 20, \"parsed_files\": 24, \"selected_files\": 26}, \"estimated_tokens\": 4096, \"inventory_summary\": {\"languages\": {\"other\": 2, \"python\": 24}, \"modules\": [{\"files\": 26, \"path\": \"src/flask\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4/map.meta.json\", \"status\": \"complete\", \"truncated\": true}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 0.0998110028449446,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/flask",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":26,\"definitions_found\":502,\"definitions_in_map\":225,\"files_with_definitions\":23,\"parsed_files\":24,\"selected_files\":26},\"estimated_tokens\":4094,\"inventory_summary\":{\"languages\":{\"other\":2,\"python\":24},\"modules\":[{\"files\":26,\"path\":\"src/flask\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":59.515,\"rank\":0.927,\"select_read_hash_parse\":94.033,\"total\":97.06,\"write\":0.444},\"truncated\":true}\n",
+        "stderr": ""
+      }
+    ],
+    "summary": {
+      "cold": {
+        "medians": {
+          "python": 0.4273715098388493,
+          "rust": 0.08338750107213855
+        },
+        "min_max": {
+          "python": [
+            0.3936319090425968,
+            0.4438374100718647
+          ],
+          "rust": [
+            0.0774707009550184,
+            0.0998427018057555
+          ]
+        },
+        "python_over_rust": 5.125126719760196,
+        "rust_time_reduction_percent": 80.48828732088815
+      },
+      "warm": {
+        "medians": {
+          "python": 0.41495110909454525,
+          "rust": 0.0998110028449446
+        },
+        "min_max": {
+          "python": [
+            0.37356970901601017,
+            0.45816081017255783
+          ],
+          "rust": [
+            0.07639060192741454,
+            0.11679580202326179
+          ]
+        },
+        "python_over_rust": 4.15736839894463,
+        "rust_time_reduction_percent": 75.94632219136858
+      }
+    },
+    "artifacts": {
+      "python": {
+        "directory": "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/python-4",
+        "metadata": {
+          "coverage": {
+            "candidates_seen": 26,
+            "definitions_found": 416,
+            "definitions_in_map": 233,
+            "files_with_definitions": 20,
+            "parsed_files": 24,
+            "selected_files": 26
+          },
+          "dependencies": {
+            "networkx": "3.4.2",
+            "tree-sitter": "0.25.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-language-pack": "0.13.0"
+          },
+          "descriptors": [],
+          "dirty": false,
+          "estimated_tokens": 4096,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git_notes": [],
+          "inventory_summary": {
+            "languages": {
+              "other": 2,
+              "python": 24
+            },
+            "modules": [
+              {
+                "files": 26,
+                "path": "src/flask"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "04e9c8c515ef2398a18b8b3c19f91809a9d8c908f5b4b3a62e02a01a10ae0efe",
+          "parse_failures": [],
+          "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/flask"
+            ]
+          },
+          "skipped": [],
+          "source_root": "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "status": "complete",
+          "tool": "legacy-codebase-workflows repo_map",
+          "truncated": true,
+          "unsupported_languages": [
+            "src/flask/py.typed",
+            "src/flask/sansio/README.md"
+          ],
+          "version": "1.0.0",
+          "working_copy_fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795"
+        },
+        "map_sha256": "04e9c8c515ef2398a18b8b3c19f91809a9d8c908f5b4b3a62e02a01a10ae0efe",
+        "map_bytes": 16384,
+        "map_characters": 16384,
+        "last_seconds": 0.4163457090035081
+      },
+      "rust": {
+        "directory": "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/flask-python/rust-4",
+        "metadata": {
+          "baseline_contract": "repo_map.py 1.0.0",
+          "cache": "none; every run reads and parses the selected files",
+          "coverage": {
+            "candidates_seen": 26,
+            "definitions_found": 502,
+            "definitions_in_map": 225,
+            "files_with_definitions": 23,
+            "parsed_files": 24,
+            "selected_files": 26
+          },
+          "dependencies": {
+            "tree-sitter": "0.25.10",
+            "tree-sitter-c": "0.24.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-cpp": "0.23.4",
+            "tree-sitter-go": "0.25.0",
+            "tree-sitter-java": "0.23.5",
+            "tree-sitter-javascript": "0.25.0",
+            "tree-sitter-python": "0.25.0",
+            "tree-sitter-rust": "0.24.2",
+            "tree-sitter-typescript": "0.23.2"
+          },
+          "descriptors": [],
+          "dirty": false,
+          "estimated_tokens": 4094,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git": true,
+          "git_notes": [],
+          "implementation": "rust (experimental)",
+          "inventory_summary": {
+            "languages": {
+              "other": 2,
+              "python": 24
+            },
+            "modules": [
+              {
+                "files": 26,
+                "path": "src/flask"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_edges": 200000,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "296ccce7f3698ec4759bd3458376f5210a96e82e1369387ec646061a12f94cd5",
+          "parse_failures": [],
+          "queries": {
+            "c": {
+              "path": "tree-sitter-language-pack/c-tags.scm",
+              "sha256": "108cf8e68e61061f3212e724e5947fe08a5c1b259278daf3c459ad90a646b769"
+            },
+            "c_sharp": {
+              "path": "tree-sitter-language-pack/csharp-tags.scm",
+              "sha256": "28e45f2b77a12a8afa3dfe93e629e2ba842bd7a11c1ed51ed2add722c0a33c9b"
+            },
+            "cpp": {
+              "path": "tree-sitter-language-pack/cpp-tags.scm",
+              "sha256": "d9f4aa4d471cd35001307900d09786f1ac443845d17c422e97c50a73dfed2862"
+            },
+            "go": {
+              "path": "tree-sitter-language-pack/go-tags.scm",
+              "sha256": "4c4e1f43b3ed42f1ca3deb6b847783aa3333d35285285b31163ca99c932ff292"
+            },
+            "java": {
+              "path": "tree-sitter-language-pack/java-tags.scm",
+              "sha256": "5e277c72738f2f5bf948eb717eaf1d3a2f7c6d6ad43cbed778ef3f236a81adf1"
+            },
+            "javascript": {
+              "path": "tree-sitter-language-pack/javascript-tags.scm",
+              "sha256": "d2a9592300ddb2fa0418cd1c603decd9ecf6ec56d8bb3f1ea59028f9c2cfd6e2"
+            },
+            "python": {
+              "path": "tree-sitter-language-pack/python-tags.scm",
+              "sha256": "2830ab33b89a5305d9fe16f6c151eb136fc4542abf012a37f8199bcec2ed164d"
+            },
+            "rust": {
+              "path": "tree-sitter-language-pack/rust-tags.scm",
+              "sha256": "debcf55ea29a38f28f59150d3d35b9397fd36040e3e6d4197ccc411f710c07a8"
+            },
+            "tsx": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            },
+            "typescript": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            }
+          },
+          "ranking": "Aider-derived PageRank over identifier definitions and references; bare identifier text is matched, not a resolved call graph",
+          "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/flask"
+            ]
+          },
+          "skipped": [],
+          "source_notes": [],
+          "source_root": "/home/lucas/.cache/legacy-map-review-20261007/flask",
+          "status": "complete",
+          "syntax_error_files": [],
+          "tool": "legacy-codebase-workflows legacy-repo-map",
+          "truncated": true,
+          "unsupported_languages": [
+            "src/flask/py.typed",
+            "src/flask/sansio/README.md"
+          ],
+          "version": "0.1.0",
+          "working_copy_fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795"
+        },
+        "map_sha256": "296ccce7f3698ec4759bd3458376f5210a96e82e1369387ec646061a12f94cd5",
+        "map_bytes": 16373,
+        "map_characters": 16373,
+        "last_seconds": 0.0998110028449446
+      }
+    },
+    "parity": {
+      "map_bytes_equal": false,
+      "fingerprint_equal": true,
+      "coverage_equal": false
+    }
+  },
+  {
+    "name": "toolbox-rust",
+    "platform": "Ubuntu-26.04 WSL2 x86-64",
+    "repository": "/home/lucas/DEV/Projects/agent-toolbox",
+    "subtree": "src/legacy-repo-map",
+    "runs": [
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 0.45722031011246145,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "cold",
+        "seconds": 0.1317653029691428,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":105.291,\"rank\":0.495,\"select_read_hash_parse\":125.672,\"total\":127.432,\"write\":0.382},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 0.4514747099019587,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-0/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 0,
+        "cache": "warm",
+        "seconds": 0.09306800202466547,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-0/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":71.536,\"rank\":0.561,\"select_read_hash_parse\":87.644,\"total\":89.448,\"write\":0.327},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 0.08923540194518864,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":64.279,\"rank\":0.339,\"select_read_hash_parse\":84.673,\"total\":86.253,\"write\":0.414},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "cold",
+        "seconds": 0.4328628091607243,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 0.07557100220583379,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-1/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":55.899,\"rank\":0.408,\"select_read_hash_parse\":70.71,\"total\":72.498,\"write\":0.744},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 1,
+        "cache": "warm",
+        "seconds": 0.35663550812751055,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-1/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 0.6492460248991847,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "cold",
+        "seconds": 0.09835380408912897,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":68.835,\"rank\":0.377,\"select_read_hash_parse\":91.403,\"total\":93.118,\"write\":0.622},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 0.39551191590726376,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-2/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 2,
+        "cache": "warm",
+        "seconds": 0.08659950410947204,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-2/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":64.0,\"rank\":0.328,\"select_read_hash_parse\":81.298,\"total\":83.133,\"write\":0.61},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 0.09693850390613079,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":72.864,\"rank\":0.598,\"select_read_hash_parse\":90.072,\"total\":92.739,\"write\":0.754},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "cold",
+        "seconds": 0.43437011702917516,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 0.1556265060789883,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-3/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":123.607,\"rank\":0.41,\"select_read_hash_parse\":149.787,\"total\":151.706,\"write\":0.44},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 3,
+        "cache": "warm",
+        "seconds": 0.41557381581515074,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-3/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 0.4752051190007478,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "cold",
+        "seconds": 0.08008650317788124,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":59.384,\"rank\":0.437,\"select_read_hash_parse\":75.146,\"total\":76.725,\"write\":0.414},\"truncated\":false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "python",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 0.41768461698666215,
+        "exit": 0,
+        "command": [
+          "python3",
+          "-B",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/repo_map.py",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map"
+        ],
+        "stdout": "{\"coverage\": {\"candidates_seen\": 17, \"definitions_found\": 182, \"definitions_in_map\": 182, \"files_with_definitions\": 6, \"parsed_files\": 6, \"selected_files\": 17}, \"estimated_tokens\": 3934, \"inventory_summary\": {\"languages\": {\"descriptor\": 4, \"other\": 7, \"rust\": 6}, \"modules\": [{\"files\": 17, \"path\": \"src/legacy-repo-map\"}], \"modules_omitted\": 0}, \"map\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4/repo-map.md\", \"metadata\": \"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4/map.meta.json\", \"status\": \"complete\", \"truncated\": false}\n",
+        "stderr": ""
+      },
+      {
+        "implementation": "rust",
+        "sample": 4,
+        "cache": "warm",
+        "seconds": 0.092765002977103,
+        "exit": 0,
+        "command": [
+          "/home/lucas/.cache/legacy-map-review-20261007/bin/legacy-repo-map-linux-x86_64/legacy-repo-map",
+          "/home/lucas/DEV/Projects/agent-toolbox",
+          "--output-dir",
+          "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4",
+          "--budget",
+          "4096",
+          "--subtree",
+          "src/legacy-repo-map",
+          "--timings"
+        ],
+        "stdout": "{\"coverage\":{\"candidates_seen\":17,\"definitions_found\":182,\"definitions_in_map\":182,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":17},\"estimated_tokens\":3934,\"inventory_summary\":{\"languages\":{\"descriptor\":4,\"other\":7,\"rust\":6},\"modules\":[{\"files\":17,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4/repo-map.md\",\"metadata\":\"/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4/map.meta.json\",\"status\":\"complete\",\"timings_ms\":{\"parse_and_query_only\":70.782,\"rank\":0.331,\"select_read_hash_parse\":87.71,\"total\":89.078,\"write\":0.291},\"truncated\":false}\n",
+        "stderr": ""
+      }
+    ],
+    "summary": {
+      "cold": {
+        "medians": {
+          "python": 0.45722031011246145,
+          "rust": 0.09693850390613079
+        },
+        "min_max": {
+          "python": [
+            0.4328628091607243,
+            0.6492460248991847
+          ],
+          "rust": [
+            0.08008650317788124,
+            0.1317653029691428
+          ]
+        },
+        "python_over_rust": 4.716601677236582,
+        "rust_time_reduction_percent": 78.79829444096937
+      },
+      "warm": {
+        "medians": {
+          "python": 0.41557381581515074,
+          "rust": 0.092765002977103
+        },
+        "min_max": {
+          "python": [
+            0.35663550812751055,
+            0.4514747099019587
+          ],
+          "rust": [
+            0.07557100220583379,
+            0.1556265060789883
+          ]
+        },
+        "python_over_rust": 4.4798555756822,
+        "rust_time_reduction_percent": 77.6778518167359
+      }
+    },
+    "artifacts": {
+      "python": {
+        "directory": "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/python-4",
+        "metadata": {
+          "coverage": {
+            "candidates_seen": 17,
+            "definitions_found": 182,
+            "definitions_in_map": 182,
+            "files_with_definitions": 6,
+            "parsed_files": 6,
+            "selected_files": 17
+          },
+          "dependencies": {
+            "networkx": "3.4.2",
+            "tree-sitter": "0.25.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-language-pack": "0.13.0"
+          },
+          "descriptors": [
+            "src/legacy-repo-map/Cargo.lock",
+            "src/legacy-repo-map/Cargo.toml",
+            "src/legacy-repo-map/licenses/manifest.json",
+            "src/legacy-repo-map/rustfmt.toml"
+          ],
+          "dirty": true,
+          "estimated_tokens": 3934,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git_notes": [],
+          "inventory_summary": {
+            "languages": {
+              "descriptor": 4,
+              "other": 7,
+              "rust": 6
+            },
+            "modules": [
+              {
+                "files": 17,
+                "path": "src/legacy-repo-map"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "3bb4274fae0cd559aeddf329b063d4b8fb57a930567bc0e510c03fd85d8d8db9",
+          "parse_failures": [],
+          "revision": "8d922e517fe81d6fa978b37611e57bd6f1f7bfbc",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/legacy-repo-map"
+            ]
+          },
+          "skipped": [],
+          "source_root": "/home/lucas/DEV/Projects/agent-toolbox",
+          "status": "complete",
+          "tool": "legacy-codebase-workflows repo_map",
+          "truncated": false,
+          "unsupported_languages": [
+            "src/legacy-repo-map/LICENSE.txt",
+            "src/legacy-repo-map/NOTICE.txt",
+            "src/legacy-repo-map/README.md",
+            "src/legacy-repo-map/licenses/networkx-LICENSE.txt",
+            "src/legacy-repo-map/licenses/regex-syntax-LICENSE-UNICODE.txt",
+            "src/legacy-repo-map/licenses/tree-sitter-LICENSE.txt",
+            "src/legacy-repo-map/licenses/tree-sitter-unicode-LICENSE.txt"
+          ],
+          "version": "1.0.0",
+          "working_copy_fingerprint": "29ae7d2f54479ac3ac3f235488c654dfee06ce7a351143e422fa18e7f8762cfc"
+        },
+        "map_sha256": "3bb4274fae0cd559aeddf329b063d4b8fb57a930567bc0e510c03fd85d8d8db9",
+        "map_bytes": 15734,
+        "map_characters": 15734,
+        "last_seconds": 0.41768461698666215
+      },
+      "rust": {
+        "directory": "/home/lucas/.cache/legacy-map-review-20261007/timings-linux/toolbox-rust/rust-4",
+        "metadata": {
+          "baseline_contract": "repo_map.py 1.0.0",
+          "cache": "none; every run reads and parses the selected files",
+          "coverage": {
+            "candidates_seen": 17,
+            "definitions_found": 182,
+            "definitions_in_map": 182,
+            "files_with_definitions": 6,
+            "parsed_files": 6,
+            "selected_files": 17
+          },
+          "dependencies": {
+            "tree-sitter": "0.25.10",
+            "tree-sitter-c": "0.24.2",
+            "tree-sitter-c-sharp": "0.23.5",
+            "tree-sitter-cpp": "0.23.4",
+            "tree-sitter-go": "0.25.0",
+            "tree-sitter-java": "0.23.5",
+            "tree-sitter-javascript": "0.25.0",
+            "tree-sitter-python": "0.25.0",
+            "tree-sitter-rust": "0.24.2",
+            "tree-sitter-typescript": "0.23.2"
+          },
+          "descriptors": [
+            "src/legacy-repo-map/Cargo.lock",
+            "src/legacy-repo-map/Cargo.toml",
+            "src/legacy-repo-map/licenses/manifest.json",
+            "src/legacy-repo-map/rustfmt.toml"
+          ],
+          "dirty": true,
+          "estimated_tokens": 3934,
+          "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+          "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+          "focus_not_found": {
+            "files_not_parsed": [],
+            "symbols_without_definitions": []
+          },
+          "git": true,
+          "git_notes": [],
+          "implementation": "rust (experimental)",
+          "inventory_summary": {
+            "languages": {
+              "descriptor": 4,
+              "other": 7,
+              "rust": 6
+            },
+            "modules": [
+              {
+                "files": 17,
+                "path": "src/legacy-repo-map"
+              }
+            ],
+            "modules_omitted": 0
+          },
+          "limits": {
+            "budget": 4096,
+            "max_edges": 200000,
+            "max_file_bytes": 2000000,
+            "max_files": 10000,
+            "max_tags_per_file": 20000,
+            "max_total_tags": 200000
+          },
+          "map_sha256": "3bb4274fae0cd559aeddf329b063d4b8fb57a930567bc0e510c03fd85d8d8db9",
+          "parse_failures": [],
+          "queries": {
+            "c": {
+              "path": "tree-sitter-language-pack/c-tags.scm",
+              "sha256": "108cf8e68e61061f3212e724e5947fe08a5c1b259278daf3c459ad90a646b769"
+            },
+            "c_sharp": {
+              "path": "tree-sitter-language-pack/csharp-tags.scm",
+              "sha256": "28e45f2b77a12a8afa3dfe93e629e2ba842bd7a11c1ed51ed2add722c0a33c9b"
+            },
+            "cpp": {
+              "path": "tree-sitter-language-pack/cpp-tags.scm",
+              "sha256": "d9f4aa4d471cd35001307900d09786f1ac443845d17c422e97c50a73dfed2862"
+            },
+            "go": {
+              "path": "tree-sitter-language-pack/go-tags.scm",
+              "sha256": "4c4e1f43b3ed42f1ca3deb6b847783aa3333d35285285b31163ca99c932ff292"
+            },
+            "java": {
+              "path": "tree-sitter-language-pack/java-tags.scm",
+              "sha256": "5e277c72738f2f5bf948eb717eaf1d3a2f7c6d6ad43cbed778ef3f236a81adf1"
+            },
+            "javascript": {
+              "path": "tree-sitter-language-pack/javascript-tags.scm",
+              "sha256": "d2a9592300ddb2fa0418cd1c603decd9ecf6ec56d8bb3f1ea59028f9c2cfd6e2"
+            },
+            "python": {
+              "path": "tree-sitter-language-pack/python-tags.scm",
+              "sha256": "2830ab33b89a5305d9fe16f6c151eb136fc4542abf012a37f8199bcec2ed164d"
+            },
+            "rust": {
+              "path": "tree-sitter-language-pack/rust-tags.scm",
+              "sha256": "debcf55ea29a38f28f59150d3d35b9397fd36040e3e6d4197ccc411f710c07a8"
+            },
+            "tsx": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            },
+            "typescript": {
+              "path": "tree-sitter-languages/typescript-tags.scm",
+              "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+            }
+          },
+          "ranking": "Aider-derived PageRank over identifier definitions and references; bare identifier text is matched, not a resolved call graph",
+          "revision": "8d922e517fe81d6fa978b37611e57bd6f1f7bfbc",
+          "selection": {
+            "excludes": [],
+            "focus_files": [],
+            "focus_symbols": [],
+            "subtrees": [
+              "src/legacy-repo-map"
+            ]
+          },
+          "skipped": [],
+          "source_notes": [],
+          "source_root": "/home/lucas/DEV/Projects/agent-toolbox",
+          "status": "complete",
+          "syntax_error_files": [],
+          "tool": "legacy-codebase-workflows legacy-repo-map",
+          "truncated": false,
+          "unsupported_languages": [
+            "src/legacy-repo-map/LICENSE.txt",
+            "src/legacy-repo-map/NOTICE.txt",
+            "src/legacy-repo-map/README.md",
+            "src/legacy-repo-map/licenses/networkx-LICENSE.txt",
+            "src/legacy-repo-map/licenses/regex-syntax-LICENSE-UNICODE.txt",
+            "src/legacy-repo-map/licenses/tree-sitter-LICENSE.txt",
+            "src/legacy-repo-map/licenses/tree-sitter-unicode-LICENSE.txt"
+          ],
+          "version": "0.1.0",
+          "working_copy_fingerprint": "29ae7d2f54479ac3ac3f235488c654dfee06ce7a351143e422fa18e7f8762cfc"
+        },
+        "map_sha256": "3bb4274fae0cd559aeddf329b063d4b8fb57a930567bc0e510c03fd85d8d8db9",
+        "map_bytes": 15734,
+        "map_characters": 15734,
+        "last_seconds": 0.092765002977103
+      }
+    },
+    "parity": {
+      "map_bytes_equal": true,
+      "fingerprint_equal": true,
+      "coverage_equal": true
+    }
+  }
+]

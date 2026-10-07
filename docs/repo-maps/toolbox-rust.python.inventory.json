@@ -1,0 +1,135 @@
+{
+  "dirty": true,
+  "files": [
+    {
+      "kind": "descriptor",
+      "language": null,
+      "path": "src/legacy-repo-map/Cargo.lock",
+      "sha256": "790617f49d3ab97a1fcc1f82bd570511f0de08e35ce31cb845f21c73f7a94b45",
+      "size": 15183
+    },
+    {
+      "kind": "descriptor",
+      "language": null,
+      "path": "src/legacy-repo-map/Cargo.toml",
+      "sha256": "6954a901052e29d7892ba4cc915981be2d8ab5186e98eadb0b392834eb095b90",
+      "size": 812
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/NOTICE.txt",
+      "sha256": "20f4cb549b835ca9d6e2a52d58edfe938ef9564cf5532c170bfe5a6246743b3f",
+      "size": 663
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/README.md",
+      "sha256": "d061aaa52d6a2f8d13274ec996310c64929f6ddceddf75ecd1c28ae0d69d09e4",
+      "size": 10597
+    },
+    {
+      "kind": "descriptor",
+      "language": null,
+      "path": "src/legacy-repo-map/licenses/manifest.json",
+      "sha256": "e0e2b6ad16fbe34aecce6a8c49d08f9ec353eb17df7fc4d81c4f92b51f4c2f14",
+      "size": 5746
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/licenses/networkx-LICENSE.txt",
+      "sha256": "5b433b90f755eb9bbd06feff1d1a4f5f232c5208a185694199e45fa95d762792",
+      "size": 1763
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/licenses/regex-syntax-LICENSE-UNICODE.txt",
+      "sha256": "74db5baf44a41b1000312c673544b3374e4198af5605c7f9080a402cec42cfa3",
+      "size": 2847
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/licenses/tree-sitter-LICENSE.txt",
+      "sha256": "5f9cf9fb6acb1972b35ae29119ce563bb60ec097656bc4b69b9bac2d04c7a147",
+      "size": 1085
+    },
+    {
+      "kind": "other",
+      "language": null,
+      "path": "src/legacy-repo-map/licenses/tree-sitter-unicode-LICENSE.txt",
+      "sha256": "6a18c5fac70d7860b57f5b72b4e2c9a1ba6b3d2741eef7ff9767c5379364f10d",
+      "size": 21001
+    },
+    {
+      "kind": "descriptor",
+      "language": null,
+      "path": "src/legacy-repo-map/rustfmt.toml",
+      "sha256": "e090969e99df9360705680cc0097cfaddae10c22dc2e01470592cf3b9787fd36",
+      "size": 16
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/src/inventory.rs",
+      "sha256": "372ffd79f96ef15a35d66373715d444ffe800ca99bf06f02db677098339dc2e7",
+      "size": 34225
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/src/main.rs",
+      "sha256": "ccfd7380bc6ab3ac80b9991667a7a4d2c2f0de911e1ca5e8e7d61ba5f5deb4bf",
+      "size": 40359
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/src/policy.rs",
+      "sha256": "c8a3645aa9f60ba1c69ef425041c9a38d15d1cc41f20004ba44b1ce8918427ad",
+      "size": 11933
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/src/rank.rs",
+      "sha256": "17c4d393ecb0ff93c917254277da81236a13635150cd68b364a3f03dc5ab5705",
+      "size": 17588
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/src/tags.rs",
+      "sha256": "d9be228fd19a21b11a68a647f05d93cb46fe64c03a40cd94bde77e81d0f7d53d",
+      "size": 11862
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/legacy-repo-map/tests/cli.rs",
+      "sha256": "2163fed3f412ed861815297a260a4b1f32ba5f80d20f8ad01ad6f273caf949c7",
+      "size": 48721
+    }
+  ],
+  "fingerprint": "29ae7d2f54479ac3ac3f235488c654dfee06ce7a351143e422fa18e7f8762cfc",
+  "git": true,
+  "git_notes": [],
+  "revision": "8d922e517fe81d6fa978b37611e57bd6f1f7bfbc",
+  "root": "/home/lucas/DEV/Projects/agent-toolbox",
+  "skipped": [],
+  "totals": {
+    "candidates_seen": 17,
+    "selected_files": 17,
+    "skipped_files": 0
+  }
+}

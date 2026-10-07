@@ -34,3 +34,5 @@ The [baseline manifest](analysis/repository-baseline.json) records 576 original 
 Execution state is held in the shared tracker under **Document JFTP architecture and design behavior-preserving modernization (sacs-qy7v)**. This index and the modernization plan provide engineering context, not a second task-status list.
 
 The [documentation-phase verification report](analysis/verification.md) records coverage, instruction/link checks, unchanged application files and the limits of this static analysis.
+
+The [repository-map comparison](repo-maps/README.md) contains named Python/Rust maps, repeated timing measurements across four language scopes, and the legacy-codebase-workflows skill review. These generated snapshots support navigation; they do not establish application runtime behavior.

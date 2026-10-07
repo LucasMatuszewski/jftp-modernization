@@ -1,0 +1,152 @@
+{
+  "baseline_contract": "repo_map.py 1.0.0",
+  "cache": "none; every run reads and parses the selected files",
+  "coverage": {
+    "candidates_seen": 196,
+    "definitions_found": 1586,
+    "definitions_in_map": 159,
+    "files_with_definitions": 179,
+    "parsed_files": 182,
+    "selected_files": 196
+  },
+  "dependencies": {
+    "tree-sitter": "0.25.10",
+    "tree-sitter-c": "0.24.2",
+    "tree-sitter-c-sharp": "0.23.5",
+    "tree-sitter-cpp": "0.23.4",
+    "tree-sitter-go": "0.25.0",
+    "tree-sitter-java": "0.23.5",
+    "tree-sitter-javascript": "0.25.0",
+    "tree-sitter-python": "0.25.0",
+    "tree-sitter-rust": "0.24.2",
+    "tree-sitter-typescript": "0.23.2"
+  },
+  "descriptors": [],
+  "dirty": true,
+  "estimated_tokens": 4096,
+  "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+  "export": {
+    "artifact_dir": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\timings-windows\\jftp-java\\rust-4",
+    "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+    "generation_elapsed_seconds": 1.2214846001006663,
+    "implementation": "rust",
+    "raw_estimated_tokens": 4096,
+    "raw_file": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp\\docs\\repo-maps\\jftp-java.rust.raw.md",
+    "raw_unicode_characters": 16381,
+    "raw_utf8_bytes": 16381,
+    "report_estimated_tokens": 4393,
+    "report_file": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp\\docs\\repo-maps\\jftp-java.rust.md",
+    "report_sha256": "d1d35b6869156b0bce5ae793c16dc0fd1ee3dfbf3435a59e0e026d037a7f7392",
+    "report_unicode_characters": 17571,
+    "report_utf8_bytes": 17571,
+    "schema_version": 1
+  },
+  "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+  "focus_not_found": {
+    "files_not_parsed": [],
+    "symbols_without_definitions": []
+  },
+  "git": true,
+  "git_notes": [],
+  "implementation": "rust (experimental)",
+  "inventory_summary": {
+    "languages": {
+      "java": 182,
+      "other": 14
+    },
+    "modules": [
+      {
+        "files": 196,
+        "path": "src/main"
+      }
+    ],
+    "modules_omitted": 0
+  },
+  "limits": {
+    "budget": 4096,
+    "max_edges": 200000,
+    "max_file_bytes": 2000000,
+    "max_files": 10000,
+    "max_tags_per_file": 20000,
+    "max_total_tags": 200000
+  },
+  "map_sha256": "8ce57a49b26675cc3461d4b7907fef06f0be9991d34ac69e6123d2af1b8b9f5d",
+  "parse_failures": [],
+  "queries": {
+    "c": {
+      "path": "tree-sitter-language-pack/c-tags.scm",
+      "sha256": "108cf8e68e61061f3212e724e5947fe08a5c1b259278daf3c459ad90a646b769"
+    },
+    "c_sharp": {
+      "path": "tree-sitter-language-pack/csharp-tags.scm",
+      "sha256": "28e45f2b77a12a8afa3dfe93e629e2ba842bd7a11c1ed51ed2add722c0a33c9b"
+    },
+    "cpp": {
+      "path": "tree-sitter-language-pack/cpp-tags.scm",
+      "sha256": "d9f4aa4d471cd35001307900d09786f1ac443845d17c422e97c50a73dfed2862"
+    },
+    "go": {
+      "path": "tree-sitter-language-pack/go-tags.scm",
+      "sha256": "4c4e1f43b3ed42f1ca3deb6b847783aa3333d35285285b31163ca99c932ff292"
+    },
+    "java": {
+      "path": "tree-sitter-language-pack/java-tags.scm",
+      "sha256": "5e277c72738f2f5bf948eb717eaf1d3a2f7c6d6ad43cbed778ef3f236a81adf1"
+    },
+    "javascript": {
+      "path": "tree-sitter-language-pack/javascript-tags.scm",
+      "sha256": "d2a9592300ddb2fa0418cd1c603decd9ecf6ec56d8bb3f1ea59028f9c2cfd6e2"
+    },
+    "python": {
+      "path": "tree-sitter-language-pack/python-tags.scm",
+      "sha256": "2830ab33b89a5305d9fe16f6c151eb136fc4542abf012a37f8199bcec2ed164d"
+    },
+    "rust": {
+      "path": "tree-sitter-language-pack/rust-tags.scm",
+      "sha256": "debcf55ea29a38f28f59150d3d35b9397fd36040e3e6d4197ccc411f710c07a8"
+    },
+    "tsx": {
+      "path": "tree-sitter-languages/typescript-tags.scm",
+      "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+    },
+    "typescript": {
+      "path": "tree-sitter-languages/typescript-tags.scm",
+      "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+    }
+  },
+  "ranking": "Aider-derived PageRank over identifier definitions and references; bare identifier text is matched, not a resolved call graph",
+  "revision": "19b31aefbe50e37daf60b1e65fbe6f76c87e24ea",
+  "selection": {
+    "excludes": [],
+    "focus_files": [],
+    "focus_symbols": [],
+    "subtrees": [
+      "src/main/java"
+    ]
+  },
+  "skipped": [],
+  "source_notes": [],
+  "source_root": "C:\\Users\\BiuroEdukey\\.codex\\worktrees\\05bd\\jftp",
+  "status": "complete",
+  "syntax_error_files": [],
+  "tool": "legacy-codebase-workflows legacy-repo-map",
+  "truncated": true,
+  "unsupported_languages": [
+    "src/main/java/AGENTS.md",
+    "src/main/java/CLAUDE.md",
+    "src/main/java/com/myjavaworld/gui/AGENTS.md",
+    "src/main/java/com/myjavaworld/gui/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/actions/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/actions/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/CLAUDE.md",
+    "src/main/java/com/myjavaworld/util/AGENTS.md",
+    "src/main/java/com/myjavaworld/util/CLAUDE.md",
+    "src/main/java/com/myjavaworld/zip/AGENTS.md",
+    "src/main/java/com/myjavaworld/zip/CLAUDE.md"
+  ],
+  "version": "0.1.0",
+  "working_copy_fingerprint": "101dbfcc1c7aeff75e2680eb1c734b205a263bd72c8ccdd2b1a0aa27a662dd4d"
+}

@@ -1,0 +1,118 @@
+{
+  "python_tags": 1584,
+  "rust_tags": 1670,
+  "rust_only_tags": 86,
+  "python_only_tags": 0,
+  "rust_only_definitions": 86,
+  "python_only_definitions": 0,
+  "examples": [
+    {
+      "tag": {
+        "kind": "def",
+        "line": 65,
+        "name": "T_shell_context_processor",
+        "path": "src/flask/app.py"
+      },
+      "source_line": "T_shell_context_processor = t.TypeVar("
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 68,
+        "name": "T_teardown",
+        "path": "src/flask/app.py"
+      },
+      "source_line": "T_teardown = t.TypeVar(\"T_teardown\", bound=ft.TeardownCallable)"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 69,
+        "name": "T_template_filter",
+        "path": "src/flask/app.py"
+      },
+      "source_line": "T_template_filter = t.TypeVar(\"T_template_filter\", bound=ft.TemplateFilterCallable)"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 70,
+        "name": "T_template_global",
+        "path": "src/flask/app.py"
+      },
+      "source_line": "T_template_global = t.TypeVar(\"T_template_global\", bound=ft.TemplateGlobalCallable)"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 71,
+        "name": "T_template_test",
+        "path": "src/flask/app.py"
+      },
+      "source_line": "T_template_test = t.TypeVar(\"T_template_test\", bound=ft.TemplateTestCallable)"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 377,
+        "name": "F",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "F = t.TypeVar(\"F\", bound=t.Callable[..., t.Any])"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 453,
+        "name": "_app_option",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "_app_option = click.Option("
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 485,
+        "name": "_debug_option",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "_debug_option = click.Option("
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 517,
+        "name": "_env_file_option",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "_env_file_option = click.Option("
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 1118,
+        "name": "cli",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "cli = FlaskGroup("
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 375,
+        "name": "pass_script_info",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "pass_script_info = click.make_pass_decorator(ScriptInfo, ensure=True)"
+    },
+    {
+      "tag": {
+        "kind": "def",
+        "line": 283,
+        "name": "version_option",
+        "path": "src/flask/cli.py"
+      },
+      "source_line": "version_option = click.Option("
+    }
+  ]
+}
