@@ -9,6 +9,7 @@ This documentation describes the legacy application at revision `14e62ce` and a 
 | Document | Purpose |
 |---|---|
 | [Modernization plan](modernization-plan.md) | Ordered phases, prerequisites, validation gates, commit checkpoints and open decisions |
+| [Fork and upstream workflow](git-workflow.md) | Clone setup, publishing to the personal fork and reviewing original-author changes |
 | [Architecture](architecture.md) | Entry points, package boundaries, dependencies, threading and state |
 | [Build and dependencies](build-and-dependencies.md) | Exact declared Java/library/plugin versions, repositories and build constraints |
 | [Application workflows](application-workflows.md) | Desktop/session/browser/transfer actions, preferences, favorites and auxiliary features |

@@ -22,6 +22,7 @@ Load the relevant page when its trigger applies; do not load the entire document
 | When you need to... | Open |
 |---|---|
 | Choose the next modernization slice or check prerequisites and exit gates | [modernization-plan.md](docs/modernization-plan.md) |
+| Configure a clone, publish modernization work, or bring in changes from the original author | [git-workflow.md](docs/git-workflow.md) |
 | Find an unfamiliar subsystem or a documentation topic | [README.md](docs/README.md) |
 | Change entry points, session ownership, cross-package calls, or threading | [architecture.md](docs/architecture.md) |
 | Repair compilation, resolve artifacts, choose versions, or change Maven configuration | [build-and-dependencies.md](docs/build-and-dependencies.md) |
@@ -70,4 +71,5 @@ Before committing, run checks relevant to the changed scope and investigate fail
 - Update affected documentation and repository instructions in the same logical change when actual behavior, structure, dependencies, commands, or verification practices change. Keep exact versions and environment observations in the appropriate documentation, not here. Preserve `docs/analysis/` baseline manifests and coverage ledgers as historical evidence.
 - Keep execution state in the shared tracker, not Markdown status lists. When delegating, give disjoint ownership; delegates return evidence and changes, and the coordinator verifies and commits them.
 - Commit only verified, focused changes. Use `Area: short summary`, such as `Docs:`, `Build:`, `Tests:`, or `FTP:`; explain significant decisions in the body. Stage explicit paths and preserve unrelated work. Do not push unless explicitly requested.
+- Publish modernization work to the personal fork through `origin`. Keep the original author's repository as fetch-only `upstream`; do not push there. Review upstream changes before integrating them.
 - A task is complete when it meets the agreed behavior, passes relevant verification honestly, includes Manual QA for runtime changes, has aligned documentation, and leaves a consistent, reviewable commit. Report remaining blockers and pending defect cases explicitly; never present planned or unexecuted checks as passing.
