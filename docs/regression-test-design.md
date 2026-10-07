@@ -10,6 +10,8 @@ Use integration tests that invoke JFTP application/session actions against a con
 
 Use UI smoke tests for startup, tab/session navigation, preferences/favorites dialogs, help, status display, Desktop handoff where the OS supports it, certificate prompts, and menu/toolbar enablement. Run headless only for tests that do not require native desktop services. Do not claim Java applet/browser smoke support on a current JDK; treat the applet target as a compatibility question.
 
+After every runtime change, also exercise the real Swing application through the affected flow using available computer-use tooling or a Computer Commander MCP, under isolated synthetic state. Capture changed screens, verify completion/cancellation and relevant failures, and inspect application/server logs; transfer changes require destination-byte/path checks, and packaging changes require launching an extracted distribution outside the IDE. Record steps, outcomes, environment, and screenshot/log locations. If desktop access is unavailable, report the blocked Manual QA and obtain human verification before declaring runtime work complete. Automated tests alone do not prove the running application works. Documentation-only changes require content/link/consistency checks, not an application launch.
+
 When the app APIs require a displayed Swing session, classify the suite as integration/UI and show the session under a test display. Do not replace that boundary with direct calls to FTPAPI alone. Assert transferred bytes or server filesystem state, selected-session output, status/transcript messages, prompt outcomes, or persisted compatibility state. Avoid assertions on private fields, helper class choice, or thread implementation.
 
 ## Four example behavioral suites

@@ -1,59 +1,73 @@
-# JFTP agent instructions
+# Repository Guidelines
 
-## Authority and current phase
+## Project and scope
 
-This is the existing JFTP Java desktop application. The current branch is `Luna-subagents-modernization`. The authorized phase is repository analysis, documentation and modernization planning. Do not implement tests, change application/build/resource files, install tools, run the application, or start the later refactor until the user requests the next phase.
+JFTP is a legacy Java Swing FTP/FTPS application being modernized as a Codex + GitHub Copilot course exercise. Preserve existing functionality and saved user data. Adding SFTP, removing legacy entry points, or changing visible trust policies requires an explicit scope decision.
 
-The modernization must preserve existing functionality. Do not introduce new protocols, redesign the UI, remove commands or silently change transfer, persistence, archive or TLS behavior. Document existing defects separately from intended contracts. When a compatibility change would remove a legacy entry point or platform behavior, explain the choice and obtain a concrete scope decision before implementing it.
+Use Polish for user-facing chat and English for repository documentation. Preserve the application's existing UI locales.
 
-## Current repository map
+Follow the phase authorized by the current user request. Documentation/planning work does not authorize test implementation, startup repairs, or the larger refactor.
 
-This is one Maven JAR project, `com.myjavaworld:jftp:5.0.2-SNAPSHOT`, rather than a multi-module system. `pom.xml` currently requests Java 5 source/target and declares FTPAPI 3.0.0, JavaHelp 2.0.05 and test-scoped JUnit 3.8.1. These are baseline declarations, not recommended modern versions or successfully resolved dependencies. There are no implemented tests or Maven wrapper in the original tree; `src/test` contains placeholders.
+## Project-specific boundaries
 
-Java packages live under `src/main/java/com/myjavaworld`. The desktop entry point is `jftp.JFTPApplication`; `jftp.JFTPApplet` is a separate legacy entry point. The client supports FTP/FTPS; do not confuse FTPS with SFTP or add a new protocol. Default/German/Traditional Chinese resource trees, `src/main/images`, and `src/main/help` supply classpath resources; `src/main/assembly` and `src/main/scripts` define distribution packaging and launchers. See the build documentation for the legacy repository, missing-artifact risks and launch-layout mismatch.
+- FTPAPI supplies the protocol client and listing parser through configurable class names. Its provenance and redistribution rights must be established before replacement or packaging; an absent tracked JAR does not prove the dependency is unavailable.
+- The `com.myjavaworld.gui`, `util`, and `zip` packages are in-repository support code. The custom `SwingWorker` is not the JDK worker; verify callback, completion, and cancellation behavior before replacing it.
+- `src/main/images` and `src/main/help` are additional classpath resource roots. German and Traditional Chinese bundles live in sibling resource trees; preserve lookup paths and locale suffixes. Consult the distribution documentation before moving them.
+- Preferences and favorites use legacy serialization; certificate stores use configurable paths. Changing field types, serial UIDs, credentials, or store formats requires synthetic compatibility fixtures and a deliberate migration policy.
 
-## Read the documentation
+## Documentation triggers
 
-Start with [documentation index](docs/README.md), [architecture](docs/architecture.md), [build and dependencies](docs/build-and-dependencies.md), [modernization plan](docs/modernization-plan.md), and [four behavioral regression suites](docs/regression-test-design.md). For protocol/certificate choices, read [the brief security options](docs/security-modernization-options.md): SFTP is an optional new feature outside the behavior-preserving baseline. These describe the repository as inspected; proposed commands and versions are not evidence of successful execution.
+Load the relevant page when its trigger applies; do not load the entire documentation set by default.
 
-Detailed instructions live next to the relevant code:
-
-| Scope | Instructions |
+| When you need to... | Open |
 |---|---|
-| Build, resources, locale trees and distribution | [src/main/AGENTS.md](src/main/AGENTS.md) |
-| Java packages and cross-package boundaries | [src/main/java/AGENTS.md](src/main/java/AGENTS.md) |
-| Application/session/browser/persistence | [jftp/AGENTS.md](src/main/java/com/myjavaworld/jftp/AGENTS.md) |
-| User commands | [actions/AGENTS.md](src/main/java/com/myjavaworld/jftp/actions/AGENTS.md) |
-| TLS/certificates/keystores | [ssl/AGENTS.md](src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md) |
-| Shared Swing widgets | [gui/AGENTS.md](src/main/java/com/myjavaworld/gui/AGENTS.md) |
-| Files, encoding, events and resources | [util/AGENTS.md](src/main/java/com/myjavaworld/util/AGENTS.md) |
-| ZIP operations | [zip/AGENTS.md](src/main/java/com/myjavaworld/zip/AGENTS.md) |
-| Default resource bundles | [resources/AGENTS.md](src/main/resources/AGENTS.md) |
-| Launch scripts | [scripts/AGENTS.md](src/main/scripts/AGENTS.md) |
-| Distribution assembly | [assembly/AGENTS.md](src/main/assembly/AGENTS.md) |
-| Future behavioral tests and fixtures | [src/test/AGENTS.md](src/test/AGENTS.md) |
-| Documentation maintenance | [docs/AGENTS.md](docs/AGENTS.md) |
+| Choose the next modernization slice or check prerequisites and exit gates | [modernization-plan.md](docs/modernization-plan.md) |
+| Find an unfamiliar subsystem or a documentation topic | [README.md](docs/README.md) |
+| Change entry points, session ownership, cross-package calls, or threading | [architecture.md](docs/architecture.md) |
+| Repair compilation, resolve artifacts, choose versions, or change Maven configuration | [build-and-dependencies.md](docs/build-and-dependencies.md) |
+| Define observable connection, transfer, command, or saved-settings behavior | [application-workflows.md](docs/application-workflows.md) |
+| Change dialogs, validation, selection, sorting, filters, or browser models | [ui-and-browser-details.md](docs/ui-and-browser-details.md) |
+| Write characterization tests or choose fixtures and test boundaries | [regression-test-design.md](docs/regression-test-design.md) |
+| Change shared Swing helpers, filesystem utilities, events, or archives | [support-libraries.md](docs/support-libraries.md) |
+| Change certificate trust, hostname checks, keystores, credentials, or serialization | [tls-and-persistence.md](docs/tls-and-persistence.md) |
+| Evaluate protocol/TLS direction or a replacement FTP library | [security-modernization-options.md](docs/security-modernization-options.md) |
+| Change resource roots, translations, help, launchers, or archive layout | [resources-and-distribution.md](docs/resources-and-distribution.md) |
+| Assess what the original analysis covered and what still needs runtime proof | [analysis-method.md](docs/analysis-method.md) and [analysis/verification.md](docs/analysis/verification.md) |
 
-Read the nearest instructions as well as their ancestors. `CLAUDE.md` imports the colocated `AGENTS.md`; do not maintain competing instruction copies.
+## TDD and modernization workflow
 
-## Mandatory documentation maintenance
+1. Define expected observable behavior from the relevant documentation and acceptance criteria. For undocumented legacy behavior, characterize it first; distinguish intended contracts from known defects.
+2. Write or extend behavioral tests before production changes. Assert user-visible state, transferred bytes, filesystem results, and persisted compatibility rather than private fields or implementation choices.
+3. Run the tests and record failure for the expected reason. If legacy compilation prevents execution, make only the narrow bootstrap changes needed to run them; a compiler failure is not a behavioral red test.
+4. Implement the minimum fix, run the same tests, and then verify the affected scope. If tests fail after a code change, investigate the changed application first; never weaken assertions or skip failures to obtain green results.
+5. Refactor only with a passing characterization checkpoint. Keep deliberate security/correctness fixes and their fail-first cases separate from behavior-preserving refactors; named pending defects must remain visible.
+6. Finish runtime changes with desktop Manual QA. If suitable test infrastructure is missing, add it within the authorized implementation task and report any execution blocker explicitly.
 
-**Update this root file, every affected nested `AGENTS.md`, and the relevant `/docs` files in the same logical change whenever modernization changes the actual project structure, package responsibilities, dependencies/versions, build or launch commands, persistence formats, behavior contracts or verification procedure.** Review these instructions at every phase boundary. Replace obsolete facts; do not leave them presented as current. Keep `CLAUDE.md` imports valid when moving directories. Update links, diagrams, dependency tables, test designs and compatibility decisions as appropriate. A modernization change is incomplete when its instructions or documentation disagree with the resulting code.
+Keep the four regression suites as the shared baseline: startup/settings/favorites, browser operations, transfers/archives, and FTPS trust decisions. Establish minimal startup and a passing baseline before broad dependency or Java upgrades. Use granular checkpoints to isolate failures.
 
-The analysis coverage records in `docs/analysis/` describe the original baseline, not an automatically current inventory. Preserve their baseline identity; document later changes in the relevant current-state pages. Keep execution state in the shared tracker, not duplicate Markdown task-status files. The requested modernization plan is an engineering design with ordering and validation gates.
+## Verification and desktop Manual QA
 
-## Workflow and verification
+| Layer | Required boundary |
+|---|---|
+| Unit | Deterministic behavior; doubles only at irrelevant external boundaries |
+| Integration | Actual JFTP session/actions and protocol client against controlled loopback FTP/FTPS fixtures |
+| Desktop end-to-end | Real running Swing app and local server; no mocked transfers, certificate decisions, or persisted state |
 
-- Analyze and characterize behavior before changing implementations. Keep four stable behavioral suites; add edge cases within them as needed. Prefer observable output/state over private fields or algorithm details.
-- Establish a runnable, minimally changed baseline and passing tests before dependency replacement or broad Java cleanup. If the original build cannot compile, record that limitation and restrict the first bootstrap changes to what makes characterization possible.
-- When tests fail after an application change, investigate the changed application first. Do not loosen assertions, skip failures or regenerate expectations merely to obtain green results.
-- Use small, descriptive commits by logical change, with a passing checkpoint before and after each refactor. Stage explicit paths only; never `git add .`, `git add -A` or `git commit -a`. Delegates do not commit or push.
-- Agents share this checkout. Assign disjoint write ownership and never revert another actor's edits. The untracked `micro` file predates this work; leave it untouched.
-- Use isolated temporary user homes/preferences/keystores, temporary directories and controlled local FTP/FTPS fixtures when later tests or startup checks are authorized. Do not test against real credentials or remote customer files.
-- Report exactly what was tested, the environment, and known gaps. Static inspection is not a passing runtime test. Verify modern-version recommendations against official sources before pinning.
+Use isolated temporary homes, files, favorites, and keystores with synthetic credentials/certificates. Never run tests against a developer's real profile or customer files.
 
-## Environment
+After every task affecting the running app:
 
-This session uses the user-selected Windows checkout `C:\Users\BiuroEdukey\DEV\COURSES\Sages\jftp`; do not move it to another checkout on your own. Shared machine rules are in `C:\Users\BiuroEdukey\AGENTS.md`. Necessary Windows shell calls use narrowly justified `sandbox_permissions: require_escalated` because the native sandbox launch path is known to fail with errors 1326/1056. Do not disable approvals globally.
+1. Start the app using the verified launcher/build procedure for the current phase, with isolated state and a graphical desktop. Headless checks do not prove GUI behavior.
+2. Drive the real window with available computer-use tooling or a Computer Commander MCP. If desktop access/tooling is unavailable, record the blocked check and obtain human verification before declaring runtime work complete.
+3. Capture each changed screen and exercise the affected flow through completion, cancellation, and relevant failure paths. For transfer changes, verify destination bytes and paths; for packaging changes, launch the extracted distribution outside the IDE.
+4. Check session routing, dialogs, status/progress, responsiveness, existing localized text, and application/server logs. Preserve the existing interface unless a change is authorized.
+5. Fix observed regressions and report the steps, environment, outcomes, and screenshot/log locations. Automated tests alone are insufficient evidence that the application works.
 
-At inspection on 2026-10-06, `java -version` reported Microsoft OpenJDK 21.0.10+7 LTS and `mvn` was unavailable on the current PowerShell PATH. No application build, launch or tests were attempted during this documentation phase. Recheck tooling when implementation starts; this observation is not proof Maven is absent from every environment.
+Before committing, run checks relevant to the changed scope and investigate failures or new warnings. Runtime changes require successful startup, applicable tests, and Manual QA. Documentation-only changes require content, link, and consistency checks; they do not require starting the legacy app.
+
+## Documentation, commits, and completion
+
+- Update affected documentation and repository instructions in the same logical change when actual behavior, structure, dependencies, commands, or verification practices change. Keep exact versions and environment observations in the appropriate documentation, not here. Preserve `docs/analysis/` baseline manifests and coverage ledgers as historical evidence.
+- Keep execution state in the shared tracker, not Markdown status lists. When delegating, give disjoint ownership; delegates return evidence and changes, and the coordinator verifies and commits them.
+- Commit only verified, focused changes. Use `Area: short summary`, such as `Docs:`, `Build:`, `Tests:`, or `FTP:`; explain significant decisions in the body. Stage explicit paths and preserve unrelated work. Do not push unless explicitly requested.
+- A task is complete when it meets the agreed behavior, passes relevant verification honestly, includes Manual QA for runtime changes, has aligned documentation, and leaves a consistent, reviewable commit. Report remaining blockers and pending defect cases explicitly; never present planned or unexecuted checks as passing.
