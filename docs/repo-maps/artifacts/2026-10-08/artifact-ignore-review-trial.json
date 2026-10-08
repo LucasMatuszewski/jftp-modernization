@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "scope": "actual Linux Git manual regression trial for Codex PR15 finding4217957376",
+  "cases": [
+    {
+      "case": "brackets",
+      "literal_destination": "docs/[internal]/maps",
+      "escaped_rule": "/docs/\\[internal\\]/maps/artifacts/",
+      "unescaped_rule_wrongly_ignored_unrelated_path": true,
+      "artifact_ignored": true,
+      "primary_visible": true,
+      "similar_unrelated_path_visible": true
+    },
+    {
+      "case": "wildcards",
+      "literal_destination": "docs/a*b?c/maps",
+      "escaped_rule": "/docs/a\\*b\\?c/maps/artifacts/",
+      "unescaped_rule_wrongly_ignored_unrelated_path": true,
+      "artifact_ignored": true,
+      "primary_visible": true,
+      "similar_unrelated_path_visible": true
+    },
+    {
+      "case": "literal-posix-backslash",
+      "literal_destination": "docs/a\\b/maps",
+      "escaped_rule": "/docs/a\\\\b/maps/artifacts/",
+      "unescaped_rule_wrongly_ignored_unrelated_path": true,
+      "artifact_ignored": true,
+      "primary_visible": true,
+      "similar_unrelated_path_visible": true
+    },
+    {
+      "case": "exact-documentation-rule-copied-on-Windows",
+      "rule": "/docs/\\[internal\\]/maps/artifacts/",
+      "artifact_ignored": true,
+      "primary_visible": true,
+      "similar_unrelated_path_visible": true
+    }
+  ],
+  "source_files_sha256": {
+    "SKILL.md": "8090fd7bcffdad0e791c5150529979cffd14716f3e35b4dafaf77ae173e66f2e",
+    "references/repo-map.md": "0f80962f553b29793028248b84e11bb29c0390d8504ca44592e7ba20430cbae4"
+  },
+  "local_links_and_anchors_checked": 20
+}
