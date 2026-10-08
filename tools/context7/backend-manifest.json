@@ -1,0 +1,10 @@
+{
+  "origin": "EdukeyTeam/agent-toolbox: legacy-codebase-workflows",
+  "files": {
+    "scripts/context7_backend.py": "c449a0605f7815e112d95fc58c5a5ff7f9d9251c4e8207ee55e5fb96513ca6e9",
+    "scripts/repo_files.py": "7e11a6edf1110e27b03996c3767f4117c2c1eca3588db4140e0ba7019d17c379",
+    "scripts/legacy_common.py": "e9248978ed882953c53da266e1c368d789ec87725f4fe7c31423484c01ab19f0",
+    "LICENSE.txt": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+    "THIRD_PARTY.md": "b986e12e478cb1d1c06c8e76be422fdf787678a3a9ad6591c5dea50a661ae518"
+  }
+}

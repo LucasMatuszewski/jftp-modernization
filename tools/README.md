@@ -1,5 +1,11 @@
 # Offline Codex context audit
 
+For repository source retrieval, see [Local Context7](../docs/local-context7.md).
+`local_context7.py` provides explicit setup/index/status, local Context7 CLI
+searches, and a session-owned MCP runtime. Its client dependencies and backend
+hashes are pinned in `context7/`; the runtime and database stay outside this
+checkout. This is independent of the rollout audit described below.
+
 `analyze_codex_context.py` analyzes a selected local Codex rollout and its
 recorded fork ancestry. It produces `context-audit.json` and `context-audit.md`
 with aggregate statistics, log line references and token-usage timelines.

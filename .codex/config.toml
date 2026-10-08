@@ -3,3 +3,11 @@
 # See docs/codex-context.md before interpreting this as a full million tokens.
 model_context_window = 1000000
 model_auto_compact_token_limit = 800000
+
+# Local JFTP source retrieval; see docs/local-context7.md.
+[mcp_servers.context7-local]
+command = "python"
+args = ['C:\Users\BiuroEdukey\DEV\COURSES\Sages\jftp\tools\local_context7.py', "mcp"]
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+enabled_tools = ["resolve-library-id", "query-docs"]

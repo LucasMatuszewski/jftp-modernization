@@ -40,3 +40,5 @@ The [repository maps](repo-maps/README.md) provide a whole-repository structure 
 Start with RepoMap for inexpensive symbol navigation. [RepoMix](RepoMix/README.md) provides broader implementation context in two Java/Maven source packs: selective comment reduction with all code retained, and full original source text. Its helpers, experiments and verification evidence are in [artifacts](RepoMix/artifacts/README.md).
 
 [Codex context configuration](codex-context.md) documents the repository's larger-window preference, verified client limits, and global, CLI, and desktop configuration controls.
+
+[Local Context7](local-context7.md) configures an offline source/documentation index and the official Context7 MCP client against a private loopback backend. Use `/local/jftp` on `context7-local` for repository queries; results include original source ranges and hashes. This developer tool does not establish application build or runtime correctness.

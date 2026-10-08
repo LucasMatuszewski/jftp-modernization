@@ -1,10 +1,8 @@
-// Example generic MCP configuration for Context7 
-
-// {
-//   "mcpServers": {
-//     "Context7": {
-//       "command": "npx",
-//       "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
-//     }
-//   }
-// }
+{
+  "mcpServers": {
+    "context7-local": {
+      "command": "python",
+      "args": ["tools/local_context7.py", "mcp"]
+    }
+  }
+}
