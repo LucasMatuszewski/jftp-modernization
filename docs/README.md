@@ -37,4 +37,6 @@ The [documentation-phase verification report](analysis/verification.md) records 
 
 The [repository maps](repo-maps/README.md) provide a whole-repository structure inventory, compact native root overview and complete captured-definition index (Java and tracked JavaScript tooling), earlier Java-only snapshots, archived Python/native timing comparisons on three public language scopes, complementary-tool trials and the legacy-codebase-workflows skill audit. These generated snapshots support navigation; they do not establish application runtime behavior.
 
+Start with RepoMap for inexpensive symbol navigation. [RepoMix](RepoMix/README.md) provides broader implementation context in two Java/Maven source packs: selective comment reduction with all code retained, and full original source text. Its helpers, experiments and verification evidence are in [artifacts](RepoMix/artifacts/README.md).
+
 [Codex context configuration](codex-context.md) documents the repository's larger-window preference, verified client limits, and global, CLI, and desktop configuration controls.

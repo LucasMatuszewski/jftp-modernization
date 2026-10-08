@@ -53,11 +53,11 @@ All packs cover the same **183 paths**. Tokens below use Repomix's **o200k_base*
 | Selective comments, structural compression | 113,395 | No | No |
 | Selective hybrid, two full-file overrides | 114,182 | Yes, in those two files | Only the two overridden files were verified as complete; other files remain structurally compressed |
 
-For behavior analysis, use [selective full code](jftp-source.selective-full.xml): **13.93% fewer tokens** than the original full reference while preserving useful comments and every non-comment Java token/AST structure. The strip-all alternative saves 20.67% but removes contract/rationale documentation too.
+For behavior analysis, use [selective full code](../jftp-source.selective-full.xml): **13.93% fewer tokens** than the original full reference while preserving useful comments and every non-comment Java token/AST structure. The strip-all alternative saves 20.67% but removes contract/rationale documentation too.
 
 For navigation, [selective structural compression](jftp-source.selective-compressed.xml) is **22.46% smaller** than the original compressed pack. It still loses method details. [The hybrid example](jftp-source.hybrid.xml) costs 787 extra tokens and restores the two known examples, with the same limitation in other files. Restoring those examples is not proof that all other useful logic survived.
 
-Built-in alternative packs remain in external measurement staging; their configs, logs and statistics are saved here. The three selective packs are published here. No application compilation, execution or modernization was performed.
+Built-in alternative packs remain in external measurement staging; their configs, logs and statistics are saved here. Selective-full is published in the parent directory; the two lossy selective variants are archived here. No application compilation, execution or modernization was performed.
 
 ## Edit and reproduce
 
@@ -81,18 +81,18 @@ Built-in alternative packs remain in external measurement staging; their configs
 
 ```powershell
 npx --yes repomix@1.18.1 --version
-python docs/RepoMix/generate.py
-python docs/RepoMix/optimize.py
+python docs/RepoMix/artifacts/generate.py
+python docs/RepoMix/artifacts/optimize.py
 ```
 
 The optimizer rebuilds its experiment configs from the original base config and the policy; edits to generated variant configs are for direct CLI trials and are overwritten by the optimizer. To change persistent file exceptions, edit `full_file_patterns` in the JSON policy. Its globs become full-file overrides preceding the compressed Java catch-all. Brace expansion was tested against both known file paths. The comment part of this policy is implemented by our external adapter; it is not a native Repomix query override.
 
-For a single selective profile, set `REPOMIX_PACKAGE_ROOT` to the cached pinned npm **package directory**, then run the local CLI with [repomix.selective-full.config.json](repomix.selective-full.config.json) or [repomix.selective-compressed.config.json](repomix.selective-compressed.config.json). The configured command is `node docs/RepoMix/java-comments.mjs {file}`. The Python optimizer discovers the pinned package and supplies the environment variable automatically. The adapter uses the installed parser without modifying its queries or source. Processor errors fail packing.
+For a single selective profile, set `REPOMIX_PACKAGE_ROOT` to the cached pinned npm **package directory**, then run the local CLI with [repomix.selective-full.config.json](repomix.selective-full.config.json) or [repomix.selective-compressed.config.json](repomix.selective-compressed.config.json). The configured command is `node docs/RepoMix/artifacts/java-comments.mjs {file}`. The Python optimizer discovers the pinned package and supplies the environment variable automatically. The adapter uses the installed parser without modifying its queries or source. Processor errors fail packing.
 
 ## Verification boundaries
 
 [Verification evidence](optimization-verification.json) records **182 Java files**, **141,001 non-comment AST leaf tokens**, matching token-sequence hashes, matching non-comment AST structure, and original source hashes. This checks actual generated selective-full and built-in-full output, not only a preprocessing intermediate. All retained comment text also matches after whitespace normalization, and [five source citations](optimization-citations.json) identify example contracts. Every original byte hash remains unchanged. Both full-file hybrid overrides were checked independently.
 
-Ten [behavioral tests](java-comments.test.mjs) cover native brace globs/first-match priority as well as comment-looking strings/URLs, escaped quotes, character literals, non-ASCII offsets, token adjacency, multiline metadata, retention precedence, constructor scoping, default/description retention, empty programs, and failing uncertain syntax. Run `node --test docs/RepoMix/java-comments.test.mjs` with `REPOMIX_PACKAGE_ROOT` set. The adapter deliberately rejects Java Unicode escape preprocessing, which does not occur in these sources, rather than assume its parser handles Java's pre-lexing rules.
+Ten [behavioral tests](java-comments.test.mjs) cover native brace globs/first-match priority as well as comment-looking strings/URLs, escaped quotes, character literals, non-ASCII offsets, token adjacency, multiline metadata, retention precedence, constructor scoping, default/description retention, empty programs, and failing uncertain syntax. Run `node --test docs/RepoMix/artifacts/java-comments.test.mjs` with `REPOMIX_PACKAGE_ROOT` set. The adapter deliberately rejects Java Unicode escape preprocessing, which does not occur in these sources, rather than assume its parser handles Java's pre-lexing rules.
 
 The repeated common license text and all removal/rewrite decisions are auditable. These checks prove parser-token/structure retention within the measured corpus, not a passing JFTP build or resolution of legacy defects. Structural/hybrid files remain navigation artifacts. Original source lines/hashes are used for evidence; removal and blank-line cleanup change packed line numbering.

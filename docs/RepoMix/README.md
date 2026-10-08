@@ -1,36 +1,16 @@
-# JFTP Repomix source packs
+# JFTP RepoMix source packs
 
-Generated 2026-10-08 from revision `1b5b4f0b26ae85df8ddff09014dd6b547d9c2690` using Repomix **1.18.1**. All Java sources below `src/` plus `pom.xml` are included. This snapshot contains 182 Java sources and one Maven descriptor. Resources, images, help, assembly/launcher files, third-party binaries, agent tooling and documentation are outside this source-code scope.
+Use [RepoMap](../repo-maps/README.md) first for paths and declaration/signature lookup. These larger packs provide implementation context across the application when reading individual files is insufficient.
 
-- [Compressed source](jftp-source.compressed.xml): reduced structural context.
-- [Full source reference](jftp-source.full.xml): complete text for behavior/signature checks.
-- [Manifest](manifest.json): original paths/hashes, commands, measured statistics and verification.
+Recorded snapshot: 2026-10-08. Token counts use `o200k_base`; see [manifests](artifacts/README.md) for source hashes and measurements.
 
-For comment-aware optimization, read [customization and measured profiles](customization.md). Use [selective full code](jftp-source.selective-full.xml) when behavior matters; [selective structural compression](jftp-source.selective-compressed.xml) and [the hybrid example](jftp-source.hybrid.xml) still omit implementation outside explicit full-file overrides.
+| Pack | Contents | Snapshot tokens (o200k_base) |
+|---|---|---:|
+| [Selective full code](jftp-source.selective-full.xml) | Recommended for broad behavior analysis: all code retained, reviewed comment boilerplate removed, meaningful comments preserved, blank lines reduced | 198,551 |
+| [Full source reference](jftp-source.full.xml) | Original source text, including all comments; use for comparison or original documentation | 230,673 |
 
-| Pack | Files | o200k_base tokens | UTF-8 bytes | Generation wall time |
-|---|---:|---:|---:|---:|
-| Full | 183 | 230,673 | 905,129 | 0.996 s |
-| Compressed | 183 | 146,244 | 592,874 | 1.347 s |
+Both snapshots include all 182 Java files under `src/` and `pom.xml` (183 paths). Resources, translations, images, help, launchers, third-party binaries and agent tooling are outside this scope. Read relevant sections when the entire pack would exceed the available context.
 
-Compression saved **84,429 tokens (36.60%)** in this source scope. Counts are reported by Repomix using `o200k_base`; they are not model-independent billing/context counts. Timings are individual subprocess measurements with the npm package cache already populated, not a benchmark.
+Selective-full uses comment reduction without Repomix structural compression. Its non-comment Java tokens and AST structure were verified against the originals; the full reference was compared with source text after newline normalization. These are static source checks, not a passing application build. Verify original definitions/callers before editing and regenerate after source changes; packed line numbers differ from source line numbers.
 
-## Verification and compression limits
-
-Both packs parse as XML, contain each expected path exactly once, and omit no selected file. Every full-pack file equals its original after CRLF-to-LF and trailing-newline normalization. Original byte hashes were unchanged before and after packing. Security scanning remained enabled; inspect [full.log](full.log) and [compressed.log](compressed.log) for the actual CLI reports.
-
-Compression is lossy within files. The manifest records source-hash/line evidence and retention checks for `ResourceLoader.getBundle`'s `ClassLoader loader` parameter continuation and `LocalFile.compareTo`'s null guard. In this snapshot both are retained in the full pack and omitted from the compressed pack. Other logic can also disappear; file coverage does not prove declaration or behavior coverage. Use original source/full XML for edits and behavior analysis. Packed output line numbers are not original-source line numbers.
-
-## Reproduce
-
-From the repository root with Node.js and Python 3.12+ available:
-
-```powershell
-npx --yes repomix@1.18.1 --version
-python docs/RepoMix/generate.py
-python docs/RepoMix/optimize.py
-```
-
-The first command obtains the pinned npm package when absent. The generator uses that cached package's Node entrypoint, validates its version, and applies [the explicit configuration](repomix.config.json). For a custom npm cache, pass `--repomix-cli /path/to/repomix/bin/repomix.cjs`. Generation stages outside the repository and publishes artifacts here only after source/coverage validation. It never builds or launches JFTP. Concurrent edits outside the source scope are excluded; source changes during generation fail verification. Regeneration updates these files and this measured report.
-
-Only `docs/RepoMix/` is owned by this task; RepoMap work remains separate. Generated XML and JSON bytes are preserved by this directory's Git attributes so hashes survive platform checkout.
+[Supporting artifacts](artifacts/README.md) contain scripts, configurations, comment/license audits, measured evidence and lossy compression experiments. Load them when regenerating or adjusting packing, rather than as routine application context.

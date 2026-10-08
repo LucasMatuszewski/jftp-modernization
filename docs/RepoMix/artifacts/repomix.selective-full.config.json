@@ -3,7 +3,7 @@
     "processors": [
       {
         "pattern": "**/*.java",
-        "command": "node docs/RepoMix/java-comments.mjs {file}",
+        "command": "node docs/RepoMix/artifacts/java-comments.mjs {file}",
         "timeout": 30000,
         "onError": "fail"
       }
@@ -40,7 +40,7 @@
     "files": true,
     "removeComments": false,
     "removeEmptyLines": true,
-    "compress": true,
+    "compress": false,
     "showLineNumbers": false,
     "truncateBase64": false,
     "copyToClipboard": false,
@@ -49,7 +49,7 @@
       "includeDiffs": false,
       "includeLogs": false
     },
-    "headerText": "Java notices are consolidated here; original attribution is indexed in docs/RepoMix/license-notices.json. Original source and the full reference retain all notices.\n/*\r\n * Copyright 2012 jMethods, Inc. \r\n *\r\n * Licensed under the Apache License, Version 2.0 (the \"License\");\r\n * you may not use this file except in compliance with the License.\r\n * You may obtain a copy of the License at\r\n * \r\n *      http://www.apache.org/licenses/LICENSE-2.0\r\n * \r\n * Unless required by applicable law or agreed to in writing, software\r\n * distributed under the License is distributed on an \"AS IS\" BASIS,\r\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n * See the License for the specific language governing permissions and\r\n * limitations under the License.\r\n */"
+    "headerText": "Java notices are consolidated here; original attribution is indexed in docs/RepoMix/artifacts/license-notices.json. Original source and the full reference retain all notices.\n/*\r\n * Copyright 2012 jMethods, Inc. \r\n *\r\n * Licensed under the Apache License, Version 2.0 (the \"License\");\r\n * you may not use this file except in compliance with the License.\r\n * You may obtain a copy of the License at\r\n * \r\n *      http://www.apache.org/licenses/LICENSE-2.0\r\n * \r\n * Unless required by applicable law or agreed to in writing, software\r\n * distributed under the License is distributed on an \"AS IS\" BASIS,\r\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n * See the License for the specific language governing permissions and\r\n * limitations under the License.\r\n */"
   },
   "security": {
     "enableSecurityCheck": true

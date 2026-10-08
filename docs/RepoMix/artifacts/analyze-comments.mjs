@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { javaParser, inspect, normalized, transformComment, hash, here } from './java-comments.mjs';
 
-const repo = path.resolve(here, '../..');
+const repo = path.resolve(here, '../../..');
 const packageRoot = process.argv[2];
 if (!packageRoot) throw new Error('Pass the pinned Repomix package root');
 const adapter = await javaParser(packageRoot);

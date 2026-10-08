@@ -1,7 +1,7 @@
 """Generate and verify pinned Repomix packs; writes only this report directory.
 
 Populate the npm cache first: npx --yes repomix@1.18.1 --version
-Then run: python docs/RepoMix/generate.py
+Then run: python docs/RepoMix/artifacts/generate.py
 Requires Python 3.12+ and Node.js. No application build or startup is performed.
 """
 
@@ -21,7 +21,8 @@ import xml.etree.ElementTree as ET
 
 
 VERSION = "1.18.1"
-OUTPUT = Path(__file__).resolve().parent
+ARTIFACTS = Path(__file__).resolve().parent
+OUTPUT = ARTIFACTS.parent
 REPOSITORY = OUTPUT.parent.parent
 
 
@@ -100,7 +101,7 @@ def main() -> None:
         text=True,
     ).splitlines()
     # Fixed scope, regardless of any config/history edits by other repository agents.
-    config_path = OUTPUT / "repomix.config.json"
+    config_path = ARTIFACTS / "repomix.config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
     if config["include"] != ["src/**/*.java", "pom.xml"]:
         raise RuntimeError("Unexpected include scope; update verification before changing it")
@@ -192,8 +193,9 @@ def main() -> None:
     # Publish only after both outputs, source retention and coverage checks succeed.
     for mode in ("full", "compressed"):
         for filename in (f"jftp-source.{mode}.xml", f"{mode}.log"):
-            shutil.copyfile(staging / filename, OUTPUT / filename)
-    (OUTPUT / "manifest.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+            destination = OUTPUT if filename == "jftp-source.full.xml" else ARTIFACTS
+            shutil.copyfile(staging / filename, destination / filename)
+    (ARTIFACTS / "manifest.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     rows = []
     for mode in ("full", "compressed"):
         stats = result["runs"][mode]
@@ -210,10 +212,10 @@ def main() -> None:
         "Resources, images, help, assembly/launcher files, third-party binaries, agent tooling "
         "and documentation are outside this source-code scope.\n\n"
         "- [Compressed source](jftp-source.compressed.xml): reduced structural context.\n"
-        "- [Full source reference](jftp-source.full.xml): complete text for behavior/signature checks.\n"
+        "- [Full source reference](../jftp-source.full.xml): complete text for behavior/signature checks.\n"
         "- [Manifest](manifest.json): original paths/hashes, commands, measured statistics and verification.\n\n"
         "For comment-aware optimization, read [customization and measured profiles](customization.md). "
-        "Use [selective full code](jftp-source.selective-full.xml) when behavior matters; "
+        "Use [selective full code](../jftp-source.selective-full.xml) when behavior matters; "
         "[selective structural compression](jftp-source.selective-compressed.xml) and "
         "[the hybrid example](jftp-source.hybrid.xml) still omit implementation outside "
         "explicit full-file overrides.\n\n"
@@ -241,14 +243,14 @@ def main() -> None:
         "From the repository root with Node.js and Python 3.12+ available:\n\n"
         "```powershell\n"
         f"npx --yes repomix@{VERSION} --version\n"
-        "python docs/RepoMix/generate.py\n"
-        "python docs/RepoMix/optimize.py\n"
+        "python docs/RepoMix/artifacts/generate.py\n"
+        "python docs/RepoMix/artifacts/optimize.py\n"
         "```\n\n"
         "The first command obtains the pinned npm package when absent. The generator "
         "uses that cached package's Node entrypoint, validates its version, and applies "
         "[the explicit configuration](repomix.config.json). For a custom npm cache, pass "
         "`--repomix-cli /path/to/repomix/bin/repomix.cjs`. Generation stages outside the "
-        "repository and publishes artifacts here only after source/coverage validation. "
+        "repository and publishes packs and evidence only after source/coverage validation. "
         "It never builds or launches JFTP. Concurrent edits outside the source scope "
         "are excluded; source changes during generation fail verification. Regeneration "
         "updates these files and this measured report.\n\n"
@@ -256,7 +258,7 @@ def main() -> None:
         "Generated XML and JSON bytes are preserved by this directory's Git attributes "
         "so hashes survive platform checkout.\n"
     )
-    (OUTPUT / "README.md").write_text(readme, encoding="utf-8")
+    (ARTIFACTS / "baseline-report.md").write_text(readme, encoding="utf-8")
     print(f"Token reduction: {result['token_reduction_percent']:.2f}%", flush=True)
     print(f"Verified packs saved in {OUTPUT}; generation staging: {staging}", flush=True)
 

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-08",
+  "scope": "RepoMix layout reorganization; application source unchanged",
+  "packs": {
+    "full": {
+      "sha256_unchanged": true,
+      "paths": 183
+    },
+    "compressed": {
+      "sha256_unchanged": true,
+      "paths": 183
+    },
+    "selective-full": {
+      "sha256_unchanged": true,
+      "paths": 183
+    },
+    "selective-compressed": {
+      "sha256_unchanged": true,
+      "paths": 183
+    },
+    "hybrid": {
+      "sha256_unchanged": true,
+      "paths": 183
+    }
+  },
+  "full_reference_matches_source": true,
+  "source_hashes_match_original_manifests": true,
+  "processor_tests_passed": 10,
+  "relocated_cli_profiles_checked": [
+    "selective-full",
+    "hybrid"
+  ],
+  "cli_check_scope": [
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java"
+  ],
+  "cli_scope_note": "Test configs narrow include; CLI include flags augment persisted patterns.",
+  "external_verification_staging": "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-layout-scoped-yxbinaiz",
+  "application_built_or_launched": false,
+  "markdown_links_checked": 100
+}

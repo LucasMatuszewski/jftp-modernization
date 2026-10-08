@@ -19,12 +19,15 @@ Follow the phase authorized by the current user request. Documentation/planning 
 
 Load the relevant page when its trigger applies; do not load the entire documentation set by default.
 
+Use **RepoMap first** for unfamiliar code: its compact inventory lists paths and captured classes, enums, methods and other declarations/signatures, without implementation bodies. Use **RepoMix** when you need broad application-code context: the selective pack retains all code while removing reviewed comment boilerplate; the full reference also retains original comments. Both packs cover Java sources and `pom.xml`, not resources or the entire repository. Load only the context needed, verify original bodies/callers before editing, and refresh affected snapshots after source changes.
+
 | When you need to... | Open |
 |---|---|
 | Choose the next modernization slice or check prerequisites and exit gates | [modernization-plan.md](docs/modernization-plan.md) |
 | Configure a clone, publish modernization work, or bring in changes from the original author | [git-workflow.md](docs/git-workflow.md) |
 | Find an unfamiliar subsystem or a documentation topic | [README.md](docs/README.md) |
 | Navigate the whole repository, locate declarations, or find a symbol missing from the overview | [Whole-repository structure](docs/repo-maps/jftp.structure.md), [native overview](docs/repo-maps/jftp.compact.rust.md), then search the [complete captured-definition index](docs/repo-maps/jftp.full.compact.rust.md); verify original bodies/callers before editing and refresh after path/signature changes |
+| Read implementation across many Java files in one pack | [RepoMix guide](docs/RepoMix/README.md), then [selective full code](docs/RepoMix/jftp-source.selective-full.xml); use [full source reference](docs/RepoMix/jftp-source.full.xml) when original comments are needed. Helpers, experiments and evidence are in `docs/RepoMix/artifacts/` |
 | Change entry points, session ownership, cross-package calls, or threading | [architecture.md](docs/architecture.md) |
 | Repair compilation, resolve artifacts, choose versions, or change Maven configuration | [build-and-dependencies.md](docs/build-and-dependencies.md) |
 | Define observable connection, transfer, command, or saved-settings behavior | [application-workflows.md](docs/application-workflows.md) |

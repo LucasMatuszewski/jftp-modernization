@@ -1,7 +1,7 @@
 """Measure selective comment policies and verify actual Repomix output.
 
 All repository writes stay in docs/RepoMix; temporary staging is external.
-Run after the pinned npm package is cached: python docs/RepoMix/optimize.py
+Run after the pinned npm package is cached: python docs/RepoMix/artifacts/optimize.py
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import subprocess
 import tempfile
 import time
 
-from generate import VERSION, OUTPUT, REPOSITORY, locate_cli, parse_pack, source_snapshot
+from generate import VERSION, ARTIFACTS, OUTPUT, REPOSITORY, locate_cli, parse_pack, source_snapshot
 
 
 def main():
@@ -25,17 +25,17 @@ def main():
     node = shutil.which('node')
     env = {**os.environ, 'REPOMIX_PACKAGE_ROOT': str(package)}
     before = source_snapshot()
-    subprocess.run([node, str(OUTPUT / 'analyze-comments.mjs'), str(package)], env=env, check=True)
+    subprocess.run([node, str(ARTIFACTS / 'analyze-comments.mjs'), str(package)], env=env, check=True)
     revision = subprocess.check_output(['git', '-C', str(REPOSITORY), 'rev-parse', 'HEAD'], text=True).strip()
     staging = Path(tempfile.mkdtemp(prefix='jftp-repomix-optimization-'))
     if staging.is_relative_to(REPOSITORY):
         raise RuntimeError('Staging must be outside the source repository')
-    baseline = json.loads((OUTPUT / 'manifest.json').read_text(encoding='utf-8'))
+    baseline = json.loads((ARTIFACTS / 'manifest.json').read_text(encoding='utf-8'))
     if baseline['source_files'] != before:
         raise RuntimeError('Baseline pack is stale; regenerate it before comparing')
-    config = json.loads((OUTPUT / 'repomix.config.json').read_text(encoding='utf-8'))
-    policy = json.loads((OUTPUT / 'comment-rules.json').read_text(encoding='utf-8'))
-    notices = json.loads((OUTPUT / 'license-notices.json').read_text(encoding='utf-8'))['notices']
+    config = json.loads((ARTIFACTS / 'repomix.config.json').read_text(encoding='utf-8'))
+    policy = json.loads((ARTIFACTS / 'comment-rules.json').read_text(encoding='utf-8'))
+    notices = json.loads((ARTIFACTS / 'license-notices.json').read_text(encoding='utf-8'))['notices']
     notice = '\n\n'.join(item['notice'] for item in notices)
     variants = ['builtin-no-comments-full', 'builtin-no-comments-compressed',
                 'selective-full', 'selective-compressed', 'hybrid']
@@ -50,11 +50,11 @@ def main():
         else:
             current['output']['headerText'] = (
                 'Java notices are consolidated here; original attribution is indexed in '
-                'docs/RepoMix/license-notices.json. Original source and the full reference retain all notices.\n' + notice
+                'docs/RepoMix/artifacts/license-notices.json. Original source and the full reference retain all notices.\n' + notice
             )
             current['input']['processors'] = [{
                 'pattern': '**/*.java',
-                'command': 'node docs/RepoMix/java-comments.mjs {file}',
+                'command': 'node docs/RepoMix/artifacts/java-comments.mjs {file}',
                 'timeout': 30000, 'onError': 'fail',
             }]
         if mode == 'hybrid':
@@ -62,7 +62,7 @@ def main():
                 {'pattern': pattern, 'compress': False}
                 for pattern in policy['full_file_patterns']
             ] + [{'pattern': '**/*.java', 'compress': True}]
-        config_path = OUTPUT / f'repomix.{mode}.config.json'
+        config_path = ARTIFACTS / f'repomix.{mode}.config.json'
         config_path.write_text(json.dumps(current, indent=2) + '\n', encoding='utf-8', newline='\n')
         pack = staging / f'jftp-source.{mode}.xml'
         command = [node, str(cli), str(REPOSITORY), '--config', str(config_path), '--output', str(pack)]
@@ -87,7 +87,7 @@ def main():
         print(f'{mode}: {tokens:,} tokens, {elapsed:.2f}s', flush=True)
     content_path = staging / 'pack-contents.json'
     content_path.write_text(json.dumps(contents), encoding='utf-8', newline='\n')
-    subprocess.run([node, str(OUTPUT / 'validate-optimization.mjs'), str(package), str(content_path)],
+    subprocess.run([node, str(ARTIFACTS / 'validate-optimization.mjs'), str(package), str(content_path)],
                    env=env, check=True)
     if before != source_snapshot():
         raise RuntimeError('Original source changed during optimization; regenerate')
@@ -101,12 +101,13 @@ def main():
                 'sources_unchanged': True, 'token_encoding': 'o200k_base',
                 'baseline_tokens': {mode: stats['tokens'] for mode, stats in baseline['runs'].items()},
                 'variants': reports, 'known_boundary_checks': flags,
-                'rules_sha256': hashlib.sha256((OUTPUT / 'comment-rules.json').read_bytes()).hexdigest()}
+                'rules_sha256': hashlib.sha256((ARTIFACTS / 'comment-rules.json').read_bytes()).hexdigest()}
     for mode in variants:
-        shutil.copyfile(staging / f'{mode}.log', OUTPUT / f'{mode}.log')
+        shutil.copyfile(staging / f'{mode}.log', ARTIFACTS / f'{mode}.log')
         if reports[mode]['published']:
-            shutil.copyfile(staging / f'jftp-source.{mode}.xml', OUTPUT / f'jftp-source.{mode}.xml')
-    (OUTPUT / 'optimization-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8', newline='\n')
+            destination = OUTPUT if mode == 'selective-full' else ARTIFACTS
+            shutil.copyfile(staging / f'jftp-source.{mode}.xml', destination / f'jftp-source.{mode}.xml')
+    (ARTIFACTS / 'optimization-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(f'Optimization verified; staged measurements: {staging}', flush=True)
 
 

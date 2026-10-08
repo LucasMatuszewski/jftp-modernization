@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { javaParser, inspect, transform, normalized, hash, here } from './java-comments.mjs';
 
 const [packageRoot, stagedContents] = process.argv.slice(2);
-const repo = path.resolve(here, '../..');
+const repo = path.resolve(here, '../../..');
 const packs = JSON.parse(fs.readFileSync(stagedContents, 'utf8'));
 const rules = JSON.parse(fs.readFileSync(path.join(here, 'comment-rules.json'), 'utf8'));
 const adapter = await javaParser(packageRoot);
