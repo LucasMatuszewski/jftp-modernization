@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-08",
+  "baseline_revision": "c823596cc017cd858326292c7de8976a1e71fbcc",
+  "source_working_copy": "Bootstrap changes recorded by current source hashes; main application Java bodies unchanged.",
+  "platform": "Windows 11 amd64",
+  "jdk": "Microsoft OpenJDK 21.0.10+7-LTS",
+  "maven": "3.10.0",
+  "tests": {
+    "tests": "3",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "runner_canary": {
+    "tests": 3,
+    "failures": 1,
+    "expected_message": "Test discovery canary",
+    "temporary_assertion_removed": true
+  },
+  "desktop": {
+    "entrypoint": "com.myjavaworld.jftp.JFTPApplication.main",
+    "isolated_home": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\jftp-bootstrap-20261008\\profile-final",
+    "input": "AWT Robot mouse/keyboard plus native Windows keyboard/window activation",
+    "observed": [
+      "Visible main window and synthetic hello.txt listing",
+      "Second disconnected session added",
+      "Preferences opened and canceled",
+      "Preferences Save displayed restart-information dialog",
+      "About showed Windows 11 and Java 21.0.10",
+      "One remaining session observed after keyboard interaction",
+      "Standalone entrypoint closed following WM_CLOSE within 5 seconds",
+      "Standalone entrypoint restarted with the same synthetic profile; visible and responding"
+    ],
+    "close_exit_code": null,
+    "close_exit_code_note": "Process disappearance was verified; exit status was not available from Get-Process.",
+    "left_running_pid": 138856,
+    "stderr_empty": true
+  },
+  "dependency_provenance": {
+    "publisher_url": "https://www.jmethods.com/ftpapi/download.html",
+    "repository": "https://www.jmethods.com/mvn-repo",
+    "license_evidence": "Publisher POM and inspected FTPClient.java source declare Apache License 2.0.",
+    "sha256": {
+      "ftpapi-3.0.0.jar": "496782add046e211b5f7a686c483522cca8879048f12286249aa50c8f86b505c",
+      "ftpapi-3.0.0.pom": "8f0fc4453198537be6eb2946a707a410f25edeb7dfbc052e3de622fdc6d28d77",
+      "ftpapi-3.0.0-sources.jar": "41b34998036524f55d8de1843d145d68ded85e9f79303a154ec189c84084a863",
+      "apache-maven-3.10.0-bin.zip": "1f6d9909266510f039f59aa0e13dcd2c66da85f043e56276e41f2918f8bddaff"
+    }
+  },
+  "scope_limits": [
+    "No real FTP/FTPS traffic",
+    "No package/distribution launch",
+    "No full four-suite baseline",
+    "No macOS/Linux/Java 8 runtime proof"
+  ],
+  "citations": [
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPApplication.java",
+      "sha256": "a917c338b788b34890fdf8747e35862ff5abf3ca62aa3230fefa23c6c1d13e0a",
+      "start_line": 88,
+      "end_line": 88,
+      "quote": "OSXAdapter.init(this);",
+      "claim": "The desktop launcher calls the reflective adapter.",
+      "status": "observed"
+    },
+    {
+      "path": "pom.xml",
+      "sha256": "d809cb382dc612a666c92bdb81bf0cc745b0bd37d1b7e0884b596c3d47140e96",
+      "start_line": 112,
+      "end_line": 112,
+      "quote": "<release>8</release>",
+      "claim": "Bootstrap compilation explicitly targets Java 8 APIs/bytecode.",
+      "status": "observed"
+    },
+    {
+      "path": "pom.xml",
+      "sha256": "d809cb382dc612a666c92bdb81bf0cc745b0bd37d1b7e0884b596c3d47140e96",
+      "start_line": 214,
+      "end_line": 214,
+      "quote": "<exclude>com/myjavaworld/jftp/OSXAdapterOld.java</exclude>",
+      "claim": "Only the old adapter is excluded in the Windows profile.",
+      "status": "observed"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTP.java",
+      "sha256": "845ae223525ea119e310178201fa0f5010fc13888fa27d12d6c18e1cf108350b",
+      "start_line": 67,
+      "end_line": 67,
+      "quote": "System.getProperty(\"user.home\"));",
+      "claim": "The legacy application snapshots its selected home.",
+      "status": "observed"
+    }
+  ],
+  "artifact_sha256": {
+    "about.png": "8323f636e5295e24233f89d9fecd5667488f413b2d84539a117636ff1fce5ed0",
+    "baseline.log": "bb1944fd429953134f9b3643a59d30cbe5188f0f8cd8fecbf6c511591a2bfe02",
+    "clean-wrapper-build.log": "ef0b96c09508d7fe4398dcd7275592e6081a192b7aa0e4184a188d433f91826e",
+    "compiler.log": "cd85346756a406cbcb81dfca61ef604fa6db218eb8dc3be2c08a6be5613c3e74",
+    "desktop.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "desktop.stdout.log": "37e342a759e957f7601b6a92b3719e69cf941687a946b6725c378041243ec76e",
+    "final-wrapper-build.log": "dfc22a3f6e3e0559b4bd7876b4703eb5eaf03c398cb71554e8a84134dd364a87",
+    "https.log": "439c391a5a43990269f9ed4591b61de69012a166003055d204e27d45fc5bb856",
+    "preferences-save.png": "8f6489d7e4f50900e60c7e68fa6c04c6f89d7bc3240bc97cc02e30211c3df69f",
+    "preferences.png": "5fadd39d1ac28fe6c1e528ab14da5ec901e70ad48284c1d2a533079216f0d6ff",
+    "README.md": "7b16f17f97d0e9f3b9ea2ff4b10cee8a5e6f5ba83ca6fc4038af317cf2a25878",
+    "restart-app.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restart.png": "e5f979a05b5a9374f8fa0e022e9ee0ff3bce58250eeea1e1a5e32c3b13cb56c5",
+    "runner-canary.log": "ebf3c981317ea1f8bbfb474663245b6264bc13419d824fdddf23dfe410a92419",
+    "startup-green.log": "1957d8174b128757c676cb29a9735e01bf6fd078e3a33dc8da175a793ad5ef5b",
+    "startup-state-tests.xml": "8d15f5212d36fdd8a673035668cb7acc07044f555109626e3f6d0cc8ff037af7",
+    "two-sessions.png": "5612f38113601f5dc2bdb049d9a909ce79bf414183eea54e187ac46ac3b6f0b8",
+    "windows-tests.log": "1b2dc08d8ac794b295b92dce062d45f60895e9e4fdf8f40c4cb00136675ff133"
+  }
+}

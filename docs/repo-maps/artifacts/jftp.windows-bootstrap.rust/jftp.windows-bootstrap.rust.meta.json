@@ -1,0 +1,166 @@
+{
+  "baseline_contract": "repo_map.py 1.1.0",
+  "cache": "none; every run reads and parses the selected files",
+  "coverage": {
+    "candidates_seen": 199,
+    "definitions_found": 1595,
+    "definitions_in_map": 1595,
+    "definitions_omitted": 0,
+    "files_with_definitions": 181,
+    "parsed_files": 184,
+    "selected_files": 199
+  },
+  "dependencies": {
+    "tree-sitter": "0.25.10",
+    "tree-sitter-c": "0.24.2",
+    "tree-sitter-c-sharp": "0.23.5",
+    "tree-sitter-cpp": "0.23.4",
+    "tree-sitter-go": "0.25.0",
+    "tree-sitter-java": "0.23.5",
+    "tree-sitter-javascript": "0.25.0",
+    "tree-sitter-python": "0.25.0",
+    "tree-sitter-rust": "0.24.2",
+    "tree-sitter-typescript": "0.23.2"
+  },
+  "descriptors": [],
+  "dirty": true,
+  "estimated_tokens": 27408,
+  "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+  "export": {
+    "artifact_dir": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\jftp-bootstrap-20261008\\source-map",
+    "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+    "evidence_dir": "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\repo-maps\\artifacts\\jftp.windows-bootstrap.rust",
+    "generation_elapsed_seconds": 0.8453562,
+    "implementation": "rust",
+    "raw_estimated_tokens": 27408,
+    "raw_file": "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\repo-maps\\artifacts\\jftp.windows-bootstrap.rust\\jftp.windows-bootstrap.rust.raw.md",
+    "raw_unicode_characters": 109630,
+    "raw_utf8_bytes": 109630,
+    "report_estimated_tokens": 27780,
+    "report_file": "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\repo-maps\\jftp.windows-bootstrap.rust.md",
+    "report_sha256": "a9e84936675d42e6beecfbbcf76014712be028a8a6e3557d2b9ae04d1eb0d075",
+    "report_unicode_characters": 111118,
+    "report_utf8_bytes": 111118,
+    "schema_version": 1
+  },
+  "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+  "focus_not_found": {
+    "files_not_parsed": [],
+    "symbols_without_definitions": []
+  },
+  "git": true,
+  "git_notes": [],
+  "implementation": "rust (experimental)",
+  "inventory_summary": {
+    "languages": {
+      "java": 184,
+      "other": 15
+    },
+    "modules": [
+      {
+        "files": 196,
+        "path": "src/main"
+      },
+      {
+        "files": 3,
+        "path": "src/test"
+      }
+    ],
+    "modules_omitted": 0
+  },
+  "limits": {
+    "budget": 65536,
+    "max_edges": 200000,
+    "max_file_bytes": 2000000,
+    "max_files": 10000,
+    "max_tags_per_file": 20000,
+    "max_total_tags": 200000
+  },
+  "map_sha256": "79af7a20cc15c19c0a14e5f1a44538b93f06142aa08051ca1d3341c80b3985f6",
+  "parse_failures": [],
+  "queries": {
+    "c": {
+      "path": "tree-sitter-language-pack/c-tags.scm",
+      "sha256": "108cf8e68e61061f3212e724e5947fe08a5c1b259278daf3c459ad90a646b769"
+    },
+    "c_sharp": {
+      "path": "tree-sitter-language-pack/csharp-tags.scm",
+      "sha256": "28e45f2b77a12a8afa3dfe93e629e2ba842bd7a11c1ed51ed2add722c0a33c9b"
+    },
+    "cpp": {
+      "path": "tree-sitter-language-pack/cpp-tags.scm",
+      "sha256": "d9f4aa4d471cd35001307900d09786f1ac443845d17c422e97c50a73dfed2862"
+    },
+    "go": {
+      "path": "tree-sitter-language-pack/go-tags.scm",
+      "sha256": "4c4e1f43b3ed42f1ca3deb6b847783aa3333d35285285b31163ca99c932ff292"
+    },
+    "java": {
+      "path": "tree-sitter-language-pack/java-tags.scm",
+      "sha256": "5e277c72738f2f5bf948eb717eaf1d3a2f7c6d6ad43cbed778ef3f236a81adf1"
+    },
+    "javascript": {
+      "path": "tree-sitter-language-pack/javascript-tags.scm",
+      "sha256": "d2a9592300ddb2fa0418cd1c603decd9ecf6ec56d8bb3f1ea59028f9c2cfd6e2"
+    },
+    "python": {
+      "path": "tree-sitter-language-pack/python-tags.scm",
+      "sha256": "2830ab33b89a5305d9fe16f6c151eb136fc4542abf012a37f8199bcec2ed164d"
+    },
+    "rust": {
+      "path": "tree-sitter-language-pack/rust-tags.scm",
+      "sha256": "debcf55ea29a38f28f59150d3d35b9397fd36040e3e6d4197ccc411f710c07a8"
+    },
+    "tsx": {
+      "path": "tree-sitter-languages/typescript-tags.scm",
+      "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+    },
+    "typescript": {
+      "path": "tree-sitter-languages/typescript-tags.scm",
+      "sha256": "38c74279e74f880db8932f360e981330a5cafe5db2493b85db3ad0d9f2408bd1"
+    }
+  },
+  "ranking": "Aider-derived PageRank over identifier definitions and references; bare identifier text is matched, not a resolved call graph",
+  "rendering": {
+    "clipped_declarations": [],
+    "declaration_character_limit": 8000,
+    "declaration_line_limit": 80,
+    "format": "grouped"
+  },
+  "revision": "c823596cc017cd858326292c7de8976a1e71fbcc",
+  "selection": {
+    "excludes": [],
+    "focus_files": [],
+    "focus_symbols": [],
+    "mode": "all-definitions",
+    "subtrees": [
+      "src/main/java",
+      "src/test/java"
+    ]
+  },
+  "skipped": [],
+  "source_notes": [],
+  "source_root": "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+  "status": "complete",
+  "syntax_error_files": [],
+  "tool": "legacy-codebase-workflows legacy-repo-map",
+  "truncated": false,
+  "unsupported_languages": [
+    "src/main/java/AGENTS.md",
+    "src/main/java/CLAUDE.md",
+    "src/main/java/com/myjavaworld/gui/AGENTS.md",
+    "src/main/java/com/myjavaworld/gui/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/actions/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/actions/CLAUDE.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/AGENTS.md",
+    "src/main/java/com/myjavaworld/jftp/ssl/CLAUDE.md",
+    "src/main/java/com/myjavaworld/util/AGENTS.md",
+    "src/main/java/com/myjavaworld/util/CLAUDE.md",
+    "src/main/java/com/myjavaworld/zip/AGENTS.md",
+    "src/main/java/com/myjavaworld/zip/CLAUDE.md"
+  ],
+  "version": "0.2.0",
+  "working_copy_fingerprint": "d06059cf092b2fe4218c8c88ac56b6ed0a0dc769fc2961df0d2a62151db74e0c"
+}

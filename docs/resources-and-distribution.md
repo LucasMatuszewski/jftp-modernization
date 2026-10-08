@@ -2,6 +2,8 @@
 
 This is the observed resource/distribution inventory as of 2026-10-06. Binary assets were inventoried by path, file type, and count; their visual content was not treated as source. No build, startup, or tests were attempted in this documentation phase.
 
+The [Windows bootstrap](windows-startup.md) verifies startup resources on the compiled classpath and a real desktop launch, with the original resource roots intact. The archive/launcher inventory below remains historical and unverified; this slice does not repair packaging.
+
 ## Resource roots and localization
 
 The POM's explicit Maven resource roots are `src/main/resources`, `src/main/resources_de`, `src/main/resources_zh_TW`, `src/main/images`, and `src/main/help` ([pom.xml](../pom.xml), `<build><resources>`). They have no includes, excludes, filtering, or per-resource encoding overrides. The project source encoding property is UTF-8. Because `<resources>` is explicitly configured, these five roots define the intended resource inputs; there is no explicit test resource customization. Eclipse metadata separately lists each resource/image/help root as a source folder with `excluding="**"`, so Eclipse does not copy these folders as classes by itself. Current documentation-phase nested `AGENTS.md`/`CLAUDE.md` files under `src/main` can also be included by Maven's broad resource roots and by the assembly's root `*.md` pattern. When build configuration is next changed, explicitly exclude agent instructions from the shipped classpath/archive if preserving the product footprint is intended; the descriptor is unchanged in this phase.

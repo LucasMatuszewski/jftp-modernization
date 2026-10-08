@@ -2,7 +2,11 @@
 
 This document records the tracked build inputs as inspected on 2026-10-06. It separates repository facts from implications and proposals. No build, startup, or tests were attempted in this documentation phase. The working environment reported by the coordinator has Microsoft OpenJDK `21.0.10+7`; Maven is not recognized on its PowerShell `PATH`.
 
-## Current build contract
+## Windows bootstrap
+
+The [Windows startup guide](windows-startup.md) describes the current narrow bootstrap: checksum-pinned Maven Wrapper, HTTPS publisher repository, explicit compiler release, Windows-only legacy adapter exclusion and basic startup-state tests. Application dependencies retain FTPAPI 3.0.0 and JavaHelp 2.0.05. The historical inventory below describes the original baseline, not the updated POM.
+
+## Original build contract
 
 The Maven project is `com.myjavaworld:jftp:5.0.2-SNAPSHOT`, packaging `jar`, with `com.myjavaworld.jftp.JFTPApplication` as the manifest main class ([pom.xml](../pom.xml), project coordinates and jar manifest configuration). The POM sets `project.build.sourceEncoding=UTF-8`, but compiler source and target are both `1.5` using `maven-compiler-plugin:2.4`. Eclipse metadata independently requests Java 6: [.classpath](../.classpath) binds JavaSE-1.6 and [.settings/org.eclipse.jdt.core.prefs](../.settings/org.eclipse.jdt.core.prefs) sets source, compliance, and target to `1.6`. These settings disagree; Maven is the declared build, Eclipse metadata is a separate legacy project configuration.
 

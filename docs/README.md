@@ -1,8 +1,6 @@
 # JFTP documentation
 
-This documentation describes the legacy application at revision `14e62ce` and a proposed modernization that preserves its functionality. Inspection date: 2026-10-06. Work is on `Luna-subagents-modernization`.
-
-**Only analysis, documentation and planning are authorized in this phase.** Tests, build repairs, startup and the larger refactor are future work. No passing build or working application is claimed.
+The original analysis describes revision `14e62ce` as inspected on 2026-10-06. The user authorized a narrow Windows build/startup attempt and basic regression tests on 2026-10-08; [Windows startup](windows-startup.md) records the resulting commands and evidence. The complete four-suite baseline, broader modernization and release packaging remain separate scopes.
 
 ## Read in this order
 
@@ -11,6 +9,7 @@ This documentation describes the legacy application at revision `14e62ce` and a 
 | [Modernization plan](modernization-plan.md) | Ordered phases, prerequisites, validation gates, commit checkpoints and open decisions |
 | [Fork and upstream workflow](git-workflow.md) | Clone setup, publishing to the personal fork and reviewing original-author changes |
 | [Architecture](architecture.md) | Entry points, package boundaries, dependencies, threading and state |
+| [Windows startup](windows-startup.md) | Reproducible isolated build/start, basic state tests and desktop evidence |
 | [Build and dependencies](build-and-dependencies.md) | Exact declared Java/library/plugin versions, repositories and build constraints |
 | [Application workflows](application-workflows.md) | Desktop/session/browser/transfer actions, preferences, favorites and auxiliary features |
 | [UI and browser details](ui-and-browser-details.md) | Dialog validation, local/remote browser models, filtering, selection and preference controls |

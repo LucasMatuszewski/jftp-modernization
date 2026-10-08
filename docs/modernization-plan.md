@@ -6,7 +6,7 @@ beads: sacs-qy7v
 
 # JFTP modernization plan
 
-This is a proposed engineering sequence for the existing JFTP desktop application at baseline revision `14e62ce`, on branch `Luna-subagents-modernization`. The documentation and planning phase is the only phase currently authorized. No later test implementation, tool installation, build/startup work, dependency change, application refactor, or migration should begin until the user gives a new instruction. This plan does not claim that the application builds, starts, transfers files, or passes tests.
+This is a proposed engineering sequence for the existing JFTP desktop application at baseline revision `14e62ce`, on branch `Luna-subagents-modernization`. The original authorization covered documentation and planning. On 2026-10-08 the user authorized the first Windows build/startup attempt, minimal necessary repairs and useful basic tests. The [Windows startup guide](windows-startup.md) records this bounded execution slice. The rest of this plan remains a draft; this instruction does not authorize broad modernization, protocol replacement or state migration, and the limited startup checks do not establish the four-suite gates.
 
 ## Objective and completion boundary
 
@@ -14,7 +14,7 @@ Modernize the existing Java Swing FTP/FTPS application while preserving its usef
 
 The proposed compatibility path is JDK 21 as the initial bootstrap because it is available on the current Windows checkout; JDK 25 LTS is the candidate end target. JDK 26 is a non-LTS release and removes `java.applet` and `javax.swing.JApplet`; retaining and compiling `JFTPApplet` therefore constrains the proposed ceiling to JDK 25 unless the owner explicitly decides to remove or replace that entry point. Browser applet deployment is already unsupported by current browser/JDK deployment technology and is not implied by keeping the source. Recheck tool versions, licenses, support, and platform needs when implementation begins. ([Oracle Java SE roadmap](https://www.oracle.com/java/technologies/java-se-support-roadmap.html), [Oracle removed APIs in JDK 26](https://docs.oracle.com/en/java/javase/26/migrate/removed-apis.html), researched 2026-10-06.)
 
-## Current evidence and authority
+## Original baseline evidence and authority
 
 The baseline has 576 tracked files: 182 Java sources and 394 non-Java paths. The three source-reading ledgers cover 79 support/security, 59 application/workflow, and 44 UI/browser Java files; the build/resources ledger records the remaining inventory and binary assets. The analysis and current-state pages are in [the documentation index](README.md). Analysis was static. The current environment report says Microsoft OpenJDK 21.0.10+7 is available and `mvn` is not recognized on this PowerShell `PATH`; no Maven wrapper exists in the repository. Maven dependency resolution, compilation, startup, test execution, GUI behavior, network behavior, and distribution launch remain unverified. The untracked `micro` file predates this work and stays untouched.
 
@@ -22,7 +22,7 @@ Use only synthetic preferences, favorites, certificates, keystores, local trees,
 
 Protocol/source and repository-asset evidence, plus primary-source options for TLS, FTP client maintenance, and optional SFTP, are summarized in [security modernization options](security-modernization-options.md). In this checkout, built-in support evidenced by source is FTP/FTPS; no runtime TLS version is proven, and SFTP would be a separate new feature outside this plan.
 
-## Dependency and compatibility map
+## Original dependency and compatibility map
 
 | Dependency or blocker | What it blocks | Required evidence or gate |
 |---|---|---|
@@ -57,7 +57,7 @@ The completed source analyses were disjoint. During implementation, independent 
 
 ### Phase 0 — Baseline documentation and design
 
-This is the current authorized phase. Its deliverables are the architecture, dependency, workflow, UI/browser, support/security, regression design, resources/distribution, analysis-method pages, root and nested instructions, and coverage ledgers. The baseline identity remains `14e62ce`; the per-file ledgers are read/inventory evidence, not runtime verification.
+This was the original documentation phase. Its deliverables are the architecture, dependency, workflow, UI/browser, support/security, regression design, resources/distribution, analysis-method pages, root and nested instructions, and coverage ledgers. The baseline identity remains `14e62ce`; the per-file ledgers are read/inventory evidence, not runtime verification.
 
 **Validation artifact:** coordinator checks the combined ledgers against the 576-path baseline manifest, confirms 182 Java reads and 394 non-Java inventory paths with no duplicate/omitted owned files, checks all relative documentation links, and checks that only the authorized docs/instruction outputs changed. Report tool facts and all runtime gaps plainly.
 
@@ -160,7 +160,7 @@ Inventory the final artifacts and dependencies, notices/licenses, runtime/JDK re
 
 The coordinator owns commits and tracker updates. Delegates do not commit or push; the coordinator reviews and may commit their scoped outputs. Keep each logical step reviewable with explicit changed paths and descriptive commit messages: current-state documentation; test/fixture harness; each compile/bootstrap blocker; startup/resource correction; passing-test checkpoint; each Maven/plugin/dependency group; each Java API area; each TLS/archive/storage policy correction; and distribution assembly/launch fixes. Stage paths explicitly. Never bundle “cleanup everything” into one commit, and checkpoint before and after refactors. Use one execution record per change with command, environment, test count, outcome, output artifact/log path, and rollback hash.
 
-The repository currently has no Maven wrapper or verified test command. After a new execution instruction and after Maven/profile/toolchain setup, illustrative future commands could be `mvn -version`, `mvn -f pom.xml clean test`, and `mvn -f pom.xml clean package`; they are examples only, have not been executed, and are not established as working until prerequisites and profiles exist. Substitute the approved wrapper/tool path when selected. Distinguish unit, loopback integration, and visible GUI smoke evidence. A passing unit test cannot stand in for file transfer, FTPS prompting, packaged startup, or UI state.
+The original baseline had no Maven wrapper or verified test command. The Windows bootstrap now provides both; see [the verified commands and limits](windows-startup.md). After a new execution instruction and after Maven/profile/toolchain setup, illustrative future commands could be `mvn -version`, `mvn -f pom.xml clean test`, and `mvn -f pom.xml clean package`; they are examples only, have not been executed, and are not established as working until prerequisites and profiles exist. Substitute the approved wrapper/tool path when selected. Distinguish unit, loopback integration, and visible GUI smoke evidence. A passing unit test cannot stand in for file transfer, FTPS prompting, packaged startup, or UI state.
 
 ## Phase dependency gates
 

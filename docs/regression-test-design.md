@@ -1,6 +1,6 @@
 # Behavioral regression test design
 
-This is a proposal for four whole-application regression suites. No test code was added or run during the documentation phase. The current POM declares JUnit 3.8.1 but the repository has no tracked test classes; the two tracked test files are empty placeholders ([build and dependencies](build-and-dependencies.md)). Design and write the suites first. If legacy compiler or dependency issues prevent them from compiling, make only the narrow bootstrap changes needed to execute the baseline before launcher/startup fixes or broader changes. Do not interpret bootstrap failures as application regressions.
+This is the original design for four whole-application regression suites. No tests ran during the documentation phase. The later [Windows bootstrap](windows-startup.md) introduces three isolated startup-state/resource tests, JUnit 4.13.2 and pinned Surefire, plus a synthetic desktop fixture. It is a limited first slice of suite 1, not implementation or verification of all four suites. Design and write the suites first. If legacy compiler or dependency issues prevent them from compiling, make only the narrow bootstrap changes needed to execute the baseline before launcher/startup fixes or broader changes. Do not interpret bootstrap failures as application regressions.
 
 ## Test layers and evidence
 

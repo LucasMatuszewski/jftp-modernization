@@ -1,6 +1,6 @@
 # Behavioral test instructions
 
-The original `java/` and `resources/` subtrees contain only empty placeholders; there are no implemented baseline tests. The current phase writes documentation and plans only. Read the [root instructions](../../AGENTS.md), [four suite designs](../../docs/regression-test-design.md) and [modernization plan](../../docs/modernization-plan.md) before later test implementation.
+The original baseline had only empty placeholders. The Windows bootstrap now includes isolated startup-state characterization and a synthetic desktop-profile fixture; read [Windows startup](../../docs/windows-startup.md) for commands and limits. Read the [root instructions](../../AGENTS.md), [four suite designs](../../docs/regression-test-design.md) and [modernization plan](../../docs/modernization-plan.md) before expanding coverage. The current user request defines permitted execution.
 
 Keep four example behavioral areas: startup/session/preferences/favorites, local/remote browser operations, transfer/archive workflows, and FTPS trust decisions. Pure unit checks may support them, but transfer tests must exercise JFTP session/actions or the visible UI against a controlled local server, rather than prove only the external FTP library works. Assert output bytes, filesystem state, visible outcomes and persisted-data round trips. Avoid private fields, helper class identities, algorithm steps and worker-thread counts.
 

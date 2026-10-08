@@ -13,6 +13,8 @@ This package contains the desktop/applet launch paths, the main window, session 
 
 ## Change and verification guidance
 
+The [Windows bootstrap](../../../../../../docs/windows-startup.md) compiles the retained desktop/app source with a Windows-only exclusion for the unreferenced `OSXAdapterOld`. Its startup-state checks and visible desktop smoke do not establish the four-suite baseline or macOS compatibility.
+
 Keep application changes no-feature-change until the four suites in the regression design exist and pass against the baseline. Exercise transfers through an application session/action against an isolated controlled FTP/FTPS server and temporary local/user-home directories; assert output bytes, server state, visible session result and callbacks rather than helper algorithms or private fields. Keep separate unit, integration and UI-smoke coverage. Treat unsafe TLS validation, ZIP extraction, updater endpoints, old macOS APIs, serialized passwords, and the applet as explicit security/compatibility decisions instead of desired regression behavior.
 
 Do not install tools, build, run the app or tests in a documentation-only phase. When implementation is authorized, first resolve the declared FTPAPI artifact's availability and redistribution terms, then bootstrap only enough compiler/tooling to establish an executable baseline.

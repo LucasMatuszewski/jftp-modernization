@@ -1,0 +1,88 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24027 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] ------------------------< com.myjavaworld:jftp >------------------------
+[INFO] Building jftp 5.0.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jftp ---
+[INFO] Copying 59 resources from src\main\resources to target\classes
+[INFO] Copying 57 resources from src\main\resources_de to target\classes
+[INFO] Copying 58 resources from src\main\resources_zh_TW to target\classes
+[INFO] Copying 50 resources from src\main\images to target\classes
+[INFO] Copying 155 resources from src\main\help to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ jftp ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 182 source files with javac [debug release 8] to target\classes
+[INFO] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/FavoritesDlg.java: C:\Users\BiuroEdukey\DEV\COURSES\Sages\jftp\src\main\java\com\myjavaworld\jftp\FavoritesDlg.java uses or overrides a deprecated API.
+[INFO] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/FavoritesDlg.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/gui/MComboBox.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/gui/MComboBox.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 3 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[58,22] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[59,22] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[61,36] cannot find symbol
+  symbol: class ApplicationAdapter
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[66,38] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[78,33] cannot find symbol
+  symbol:   class ApplicationEvent
+  location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[89,39] cannot find symbol
+  symbol:   class ApplicationEvent
+  location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[100,32] cannot find symbol
+  symbol:   class ApplicationEvent
+  location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[77,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[88,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[99,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[123,60] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[136,60] package com.apple.eawt does not exist
+[INFO] 12 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.256 s
+[INFO] Finished at: 2026-10-08T14:40:26+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project jftp: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[58,22] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[59,22] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[61,36] cannot find symbol
+[ERROR]   symbol: class ApplicationAdapter
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[66,38] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[78,33] cannot find symbol
+[ERROR]   symbol:   class ApplicationEvent
+[ERROR]   location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[89,39] cannot find symbol
+[ERROR]   symbol:   class ApplicationEvent
+[ERROR]   location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[100,32] cannot find symbol
+[ERROR]   symbol:   class ApplicationEvent
+[ERROR]   location: class com.myjavaworld.jftp.OSXAdapterOld
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[77,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[88,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[99,9] method does not override or implement a method from a supertype
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[123,60] package com.apple.eawt does not exist
+[ERROR] /C:/Users/BiuroEdukey/DEV/COURSES/Sages/jftp/src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java:[136,60] package com.apple.eawt does not exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
