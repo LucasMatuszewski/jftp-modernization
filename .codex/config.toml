@@ -1,0 +1,5 @@
+# Repository-only context preference; the model catalog can cap this request.
+# Verified effective limit: 828400 tokens in Codex CLI 0.160.1 (2026-10-08).
+# See docs/codex-context.md before interpreting this as a full million tokens.
+model_context_window = 1000000
+model_auto_compact_token_limit = 800000

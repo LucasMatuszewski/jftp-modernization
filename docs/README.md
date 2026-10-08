@@ -36,3 +36,5 @@ Execution state is held in the shared tracker under **Document JFTP architecture
 The [documentation-phase verification report](analysis/verification.md) records coverage, instruction/link checks, unchanged application files and the limits of this static analysis.
 
 The [repository maps](repo-maps/README.md) provide a whole-repository structure inventory, compact native root overview and complete captured-definition index (Java and tracked JavaScript tooling), earlier Java-only snapshots, archived Python/native timing comparisons on three public language scopes, complementary-tool trials and the legacy-codebase-workflows skill audit. These generated snapshots support navigation; they do not establish application runtime behavior.
+
+[Codex context configuration](codex-context.md) documents the repository's larger-window preference, verified client limits, and global, CLI, and desktop configuration controls.
