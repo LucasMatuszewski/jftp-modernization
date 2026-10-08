@@ -1,0 +1,52 @@
+{
+  "input": {
+    "processors": []
+  },
+  "include": [
+    "src/**/*.java",
+    "pom.xml"
+  ],
+  "ignore": {
+    "useGitignore": true,
+    "useDotIgnore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "docs/**",
+      ".agents/**",
+      ".claude/**",
+      ".codex/**",
+      "target/**",
+      "**/.env",
+      "**/.env.*",
+      "**/*.jks",
+      "**/*.keystore",
+      "**/*.pem",
+      "**/*.key"
+    ]
+  },
+  "output": {
+    "style": "xml",
+    "filePathStyle": "target-relative",
+    "parsableStyle": true,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "files": true,
+    "removeComments": true,
+    "removeEmptyLines": true,
+    "compress": false,
+    "showLineNumbers": false,
+    "truncateBase64": false,
+    "copyToClipboard": false,
+    "git": {
+      "sortByChanges": false,
+      "includeDiffs": false,
+      "includeLogs": false
+    }
+  },
+  "security": {
+    "enableSecurityCheck": true
+  },
+  "tokenCount": {
+    "encoding": "o200k_base"
+  }
+}

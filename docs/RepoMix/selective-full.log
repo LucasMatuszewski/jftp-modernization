@@ -1,0 +1,918 @@
+
+📦 Repomix v1.18.1
+
+⚙️  1 file processor(s) active:
+   **/*.java → node docs/RepoMix/java-comments.mjs {file}
+
+⠋ Initializing...
+
+
+⠙ Searching for files...
+
+
+⠹ Searching for files...
+
+
+⠸ Collecting files...
+
+
+⠼ Collect file... (183/183) pom.xml
+
+
+⠴ Collect file... (183/183) pom.xml
+
+
+⠦ Collect file... (183/183) pom.xml
+
+
+⠧ Collect file... (183/183) pom.xml
+
+
+⠇ Collect file... (183/183) pom.xml
+
+
+⠏ Collect file... (183/183) pom.xml
+
+
+⠋ Collect file... (183/183) pom.xml
+
+
+⠙ Collect file... (183/183) pom.xml
+
+
+⠹ Collect file... (183/183) pom.xml
+
+
+⠸ Collect file... (183/183) pom.xml
+
+
+⠼ Collect file... (183/183) pom.xml
+
+
+⠴ Processing file with command... (2/182) src/main/java/com/myjavaworld/gui/DateCellRenderer.java
+
+
+⠦ Processing file with command... (4/182) src/main/java/com/myjavaworld/gui/DefaultTheme.java
+
+
+⠧ Processing file with command... (6/182) src/main/java/com/myjavaworld/gui/GreenMetalTheme.java
+
+
+⠇ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠏ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠋ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠙ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠹ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠸ Processing file with command... (8/182) src/main/java/com/myjavaworld/gui/GUIUtil.java
+
+
+⠼ Processing file with command... (9/182) src/main/java/com/myjavaworld/gui/HighContrastTheme.java
+
+
+⠴ Processing file with command... (11/182) src/main/java/com/myjavaworld/gui/IDTreeNode.java
+
+
+⠦ Processing file with command... (11/182) src/main/java/com/myjavaworld/gui/IDTreeNode.java
+
+
+⠧ Processing file with command... (12/182) src/main/java/com/myjavaworld/gui/IndentIcon.java
+
+
+⠇ Processing file with command... (14/182) src/main/java/com/myjavaworld/gui/LicenseAgreementDlg.java
+
+
+⠏ Processing file with command... (14/182) src/main/java/com/myjavaworld/gui/LicenseAgreementDlg.java
+
+
+⠋ Processing file with command... (14/182) src/main/java/com/myjavaworld/gui/LicenseAgreementDlg.java
+
+
+⠙ Processing file with command... (16/182) src/main/java/com/myjavaworld/gui/MButton.java
+
+
+⠹ Processing file with command... (16/182) src/main/java/com/myjavaworld/gui/MButton.java
+
+
+⠸ Processing file with command... (16/182) src/main/java/com/myjavaworld/gui/MButton.java
+
+
+⠼ Processing file with command... (16/182) src/main/java/com/myjavaworld/gui/MButton.java
+
+
+⠴ Processing file with command... (18/182) src/main/java/com/myjavaworld/gui/MComboBox.java
+
+
+⠦ Processing file with command... (19/182) src/main/java/com/myjavaworld/gui/MDesktopPane.java
+
+
+⠧ Processing file with command... (19/182) src/main/java/com/myjavaworld/gui/MDesktopPane.java
+
+
+⠇ Processing file with command... (19/182) src/main/java/com/myjavaworld/gui/MDesktopPane.java
+
+
+⠏ Processing file with command... (20/182) src/main/java/com/myjavaworld/gui/MDialog.java
+
+
+⠋ Processing file with command... (21/182) src/main/java/com/myjavaworld/gui/MFrame.java
+
+
+⠙ Processing file with command... (22/182) src/main/java/com/myjavaworld/gui/MGlassPane.java
+
+
+⠹ Processing file with command... (22/182) src/main/java/com/myjavaworld/gui/MGlassPane.java
+
+
+⠸ Processing file with command... (23/182) src/main/java/com/myjavaworld/gui/MInternalFrame.java
+
+
+⠼ Processing file with command... (23/182) src/main/java/com/myjavaworld/gui/MInternalFrame.java
+
+
+⠴ Processing file with command... (25/182) src/main/java/com/myjavaworld/gui/MLabelTextField.java
+
+
+⠦ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠧ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠇ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠏ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠋ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠙ Processing file with command... (26/182) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠹ Processing file with command... (27/182) src/main/java/com/myjavaworld/gui/MMenu.java
+
+
+⠸ Processing file with command... (28/182) src/main/java/com/myjavaworld/gui/MMenuItem.java
+
+
+⠼ Processing file with command... (30/182) src/main/java/com/myjavaworld/gui/MPasswordField.java
+
+
+⠴ Processing file with command... (31/182) src/main/java/com/myjavaworld/gui/MPlainDocument.java
+
+
+⠦ Processing file with command... (33/182) src/main/java/com/myjavaworld/gui/MRadioButton.java
+
+
+⠧ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠇ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠏ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠋ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠙ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠹ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠸ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠼ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠴ Processing file with command... (34/182) src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java
+
+
+⠦ Processing file with command... (35/182) src/main/java/com/myjavaworld/gui/MTable.java
+
+
+⠧ Processing file with command... (39/182) src/main/java/com/myjavaworld/gui/MTableCellRenderer.java
+
+
+⠇ Processing file with command... (41/182) src/main/java/com/myjavaworld/gui/MScrollPane.java
+
+
+⠏ Processing file with command... (41/182) src/main/java/com/myjavaworld/gui/MScrollPane.java
+
+
+⠋ Processing file with command... (42/182) src/main/java/com/myjavaworld/gui/MTree.java
+
+
+⠙ Processing file with command... (42/182) src/main/java/com/myjavaworld/gui/MTree.java
+
+
+⠹ Processing file with command... (42/182) src/main/java/com/myjavaworld/gui/MTree.java
+
+
+⠸ Processing file with command... (42/182) src/main/java/com/myjavaworld/gui/MTree.java
+
+
+⠼ Processing file with command... (42/182) src/main/java/com/myjavaworld/gui/MTree.java
+
+
+⠴ Processing file with command... (43/182) src/main/java/com/myjavaworld/gui/package-info.java
+
+
+⠦ Processing file with command... (43/182) src/main/java/com/myjavaworld/gui/package-info.java
+
+
+⠧ Processing file with command... (43/182) src/main/java/com/myjavaworld/gui/package-info.java
+
+
+⠇ Processing file with command... (44/182) src/main/java/com/myjavaworld/gui/ProgressDialog.java
+
+
+⠏ Processing file with command... (45/182) src/main/java/com/myjavaworld/gui/SandstoneLargeTheme.java
+
+
+⠋ Processing file with command... (48/182) src/main/java/com/myjavaworld/gui/SingleLineDocument.java
+
+
+⠙ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠹ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠸ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠼ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠴ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠦ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠧ Processing file with command... (50/182) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠇ Processing file with command... (51/182) src/main/java/com/myjavaworld/jftp/actions/ChangeLocalDirectoryAction.java
+
+
+⠏ Processing file with command... (53/182) src/main/java/com/myjavaworld/jftp/actions/ChangeRemoteDirectoryAction.java
+
+
+⠋ Processing file with command... (53/182) src/main/java/com/myjavaworld/jftp/actions/ChangeRemoteDirectoryAction.java
+
+
+⠙ Processing file with command... (56/182) src/main/java/com/myjavaworld/jftp/actions/DeleteLocalFileAction.java
+
+
+⠹ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠸ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠼ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠴ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠦ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠧ Processing file with command... (58/182) src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java
+
+
+⠇ Processing file with command... (60/182) src/main/java/com/myjavaworld/jftp/actions/DownloadAsAction.java
+
+
+⠏ Processing file with command... (60/182) src/main/java/com/myjavaworld/jftp/actions/DownloadAsAction.java
+
+
+⠋ Processing file with command... (61/182) src/main/java/com/myjavaworld/jftp/actions/EditLocalFileAction.java
+
+
+⠙ Processing file with command... (65/182) src/main/java/com/myjavaworld/jftp/actions/EditRemoteFileAction.java
+
+
+⠹ Processing file with command... (65/182) src/main/java/com/myjavaworld/jftp/actions/EditRemoteFileAction.java
+
+
+⠸ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠼ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠴ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠦ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠧ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠇ Processing file with command... (66/182) src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java
+
+
+⠏ Processing file with command... (67/182) src/main/java/com/myjavaworld/jftp/actions/NewLocalDirectoryAction.java
+
+
+⠋ Processing file with command... (68/182) src/main/java/com/myjavaworld/jftp/actions/NewLocalFileAction.java
+
+
+⠙ Processing file with command... (69/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteDirectoryAction.java
+
+
+⠹ Processing file with command... (72/182) src/main/java/com/myjavaworld/jftp/actions/NewSessionAction.java
+
+
+⠸ Processing file with command... (72/182) src/main/java/com/myjavaworld/jftp/actions/NewSessionAction.java
+
+
+⠼ Processing file with command... (73/182) src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java
+
+
+⠴ Processing file with command... (73/182) src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java
+
+
+⠦ Processing file with command... (73/182) src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java
+
+
+⠧ Processing file with command... (74/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+
+
+⠇ Processing file with command... (74/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+
+
+⠏ Processing file with command... (74/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+
+
+⠋ Processing file with command... (74/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+
+
+⠙ Processing file with command... (74/182) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+
+
+⠹ Processing file with command... (76/182) src/main/java/com/myjavaworld/jftp/actions/PrintRemoteFileAction.java
+
+
+⠸ Processing file with command... (78/182) src/main/java/com/myjavaworld/jftp/actions/RenameRemoteFileAction.java
+
+
+⠼ Processing file with command... (79/182) src/main/java/com/myjavaworld/jftp/actions/UploadAction.java
+
+
+⠴ Processing file with command... (79/182) src/main/java/com/myjavaworld/jftp/actions/UploadAction.java
+
+
+⠦ Processing file with command... (79/182) src/main/java/com/myjavaworld/jftp/actions/UploadAction.java
+
+
+⠧ Processing file with command... (79/182) src/main/java/com/myjavaworld/jftp/actions/UploadAction.java
+
+
+⠇ Processing file with command... (80/182) src/main/java/com/myjavaworld/jftp/actions/ZipAndUploadAction.java
+
+
+⠏ Processing file with command... (81/182) src/main/java/com/myjavaworld/jftp/actions/UploadAsAction.java
+
+
+⠋ Processing file with command... (81/182) src/main/java/com/myjavaworld/jftp/actions/UploadAsAction.java
+
+
+⠙ Processing file with command... (82/182) src/main/java/com/myjavaworld/jftp/ssl/CertificateDlg.java
+
+
+⠹ Processing file with command... (82/182) src/main/java/com/myjavaworld/jftp/ssl/CertificateDlg.java
+
+
+⠸ Processing file with command... (83/182) src/main/java/com/myjavaworld/jftp/ssl/CertificateManagerDlg.java
+
+
+⠼ Processing file with command... (84/182) src/main/java/com/myjavaworld/jftp/ssl/CertificateTableModel.java
+
+
+⠴ Processing file with command... (85/182) src/main/java/com/myjavaworld/jftp/ssl/JFTPKeyManager.java
+
+
+⠦ Processing file with command... (86/182) src/main/java/com/myjavaworld/jftp/ssl/DNParser.java
+
+
+⠧ Processing file with command... (86/182) src/main/java/com/myjavaworld/jftp/ssl/DNParser.java
+
+
+⠇ Processing file with command... (86/182) src/main/java/com/myjavaworld/jftp/ssl/DNParser.java
+
+
+⠏ Processing file with command... (87/182) src/main/java/com/myjavaworld/jftp/ssl/CertificatePane.java
+
+
+⠋ Processing file with command... (88/182) src/main/java/com/myjavaworld/jftp/ssl/JFTPSSLContext.java
+
+
+⠙ Processing file with command... (89/182) src/main/java/com/myjavaworld/jftp/ssl/JFTPTrustManager.java
+
+
+⠹ Processing file with command... (90/182) src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java
+
+
+⠸ Processing file with command... (90/182) src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java
+
+
+⠼ Processing file with command... (90/182) src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java
+
+
+⠴ Processing file with command... (90/182) src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java
+
+
+⠦ Processing file with command... (92/182) src/main/java/com/myjavaworld/jftp/AboutDlg.java
+
+
+⠧ Processing file with command... (93/182) src/main/java/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel.java
+
+
+⠇ Processing file with command... (94/182) src/main/java/com/myjavaworld/jftp/AutoUpdater.java
+
+
+⠏ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠋ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠙ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠹ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠸ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠼ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠴ Processing file with command... (95/182) src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java
+
+
+⠦ Processing file with command... (96/182) src/main/java/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg.java
+
+
+⠧ Processing file with command... (99/182) src/main/java/com/myjavaworld/jftp/ConnectionDlg.java
+
+
+⠇ Processing file with command... (99/182) src/main/java/com/myjavaworld/jftp/ConnectionDlg.java
+
+
+⠏ Processing file with command... (101/182) src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java
+
+
+⠋ Processing file with command... (101/182) src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java
+
+
+⠙ Processing file with command... (101/182) src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java
+
+
+⠹ Processing file with command... (101/182) src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java
+
+
+⠸ Processing file with command... (103/182) src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java
+
+
+⠼ Processing file with command... (103/182) src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java
+
+
+⠴ Processing file with command... (103/182) src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java
+
+
+⠦ Processing file with command... (103/182) src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java
+
+
+⠧ Processing file with command... (104/182) src/main/java/com/myjavaworld/jftp/Favorite.java
+
+
+⠇ Processing file with command... (104/182) src/main/java/com/myjavaworld/jftp/Favorite.java
+
+
+⠏ Processing file with command... (104/182) src/main/java/com/myjavaworld/jftp/Favorite.java
+
+
+⠋ Processing file with command... (106/182) src/main/java/com/myjavaworld/jftp/FavoritesManager.java
+
+
+⠙ Processing file with command... (107/182) src/main/java/com/myjavaworld/jftp/FavoritesDlg.java
+
+
+⠹ Processing file with command... (108/182) src/main/java/com/myjavaworld/jftp/FTPMenu.java
+
+
+⠸ Processing file with command... (108/182) src/main/java/com/myjavaworld/jftp/FTPMenu.java
+
+
+⠼ Processing file with command... (109/182) src/main/java/com/myjavaworld/jftp/FTPSession.java
+
+
+⠴ Processing file with command... (110/182) src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+
+
+⠦ Processing file with command... (110/182) src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+
+
+⠧ Processing file with command... (110/182) src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+
+
+⠇ Processing file with command... (110/182) src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+
+
+⠏ Processing file with command... (111/182) src/main/java/com/myjavaworld/jftp/HelpMenu.java
+
+
+⠋ Processing file with command... (112/182) src/main/java/com/myjavaworld/jftp/JFTP.java
+
+
+⠙ Processing file with command... (112/182) src/main/java/com/myjavaworld/jftp/JFTP.java
+
+
+⠹ Processing file with command... (113/182) src/main/java/com/myjavaworld/jftp/JFTPApplet.java
+
+
+⠸ Processing file with command... (114/182) src/main/java/com/myjavaworld/jftp/JFTPConstants.java
+
+
+⠼ Processing file with command... (115/182) src/main/java/com/myjavaworld/jftp/JFTPApplication.java
+
+
+⠴ Processing file with command... (116/182) src/main/java/com/myjavaworld/jftp/JFTPHelp2.java
+
+
+⠦ Processing file with command... (117/182) src/main/java/com/myjavaworld/jftp/JFTPPreferences.java
+
+
+⠧ Processing file with command... (117/182) src/main/java/com/myjavaworld/jftp/JFTPPreferences.java
+
+
+⠇ Processing file with command... (118/182) src/main/java/com/myjavaworld/jftp/JFTPToolBar.java
+
+
+⠏ Processing file with command... (118/182) src/main/java/com/myjavaworld/jftp/JFTPToolBar.java
+
+
+⠋ Processing file with command... (118/182) src/main/java/com/myjavaworld/jftp/JFTPToolBar.java
+
+
+⠙ Processing file with command... (118/182) src/main/java/com/myjavaworld/jftp/JFTPToolBar.java
+
+
+⠹ Processing file with command... (119/182) src/main/java/com/myjavaworld/jftp/LocaleCellRenderer.java
+
+
+⠸ Processing file with command... (120/182) src/main/java/com/myjavaworld/jftp/LocalePrefsPanel.java
+
+
+⠼ Processing file with command... (120/182) src/main/java/com/myjavaworld/jftp/LocalePrefsPanel.java
+
+
+⠴ Processing file with command... (121/182) src/main/java/com/myjavaworld/jftp/JFTPUtil.java
+
+
+⠦ Processing file with command... (122/182) src/main/java/com/myjavaworld/jftp/LocalFileCellRenderer.java
+
+
+⠧ Processing file with command... (123/182) src/main/java/com/myjavaworld/jftp/LocalFile.java
+
+
+⠇ Processing file with command... (124/182) src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+
+
+⠏ Processing file with command... (124/182) src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+
+
+⠋ Processing file with command... (124/182) src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+
+
+⠙ Processing file with command... (124/182) src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+
+
+⠹ Processing file with command... (126/182) src/main/java/com/myjavaworld/jftp/LocalFileFilter.java
+
+
+⠸ Processing file with command... (126/182) src/main/java/com/myjavaworld/jftp/LocalFileFilter.java
+
+
+⠼ Processing file with command... (127/182) src/main/java/com/myjavaworld/jftp/LocalPane.java
+
+
+⠴ Processing file with command... (127/182) src/main/java/com/myjavaworld/jftp/LocalPane.java
+
+
+⠦ Processing file with command... (127/182) src/main/java/com/myjavaworld/jftp/LocalPane.java
+
+
+⠧ Processing file with command... (130/182) src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+
+
+⠇ Processing file with command... (130/182) src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+
+
+⠏ Processing file with command... (130/182) src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+
+
+⠋ Processing file with command... (130/182) src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+
+
+⠙ Processing file with command... (130/182) src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java
+
+
+⠹ Processing file with command... (131/182) src/main/java/com/myjavaworld/jftp/LocalSystemPopupMenu.java
+
+
+⠸ Processing file with command... (132/182) src/main/java/com/myjavaworld/jftp/NewLocalDirectoryDlg.java
+
+
+⠼ Processing file with command... (133/182) src/main/java/com/myjavaworld/jftp/NewRemoteDirectoryDlg.java
+
+
+⠴ Processing file with command... (133/182) src/main/java/com/myjavaworld/jftp/NewRemoteDirectoryDlg.java
+
+
+⠦ Processing file with command... (134/182) src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java
+
+
+⠧ Processing file with command... (134/182) src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java
+
+
+⠇ Processing file with command... (134/182) src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java
+
+
+⠏ Processing file with command... (136/182) src/main/java/com/myjavaworld/jftp/package-info.java
+
+
+⠋ Processing file with command... (136/182) src/main/java/com/myjavaworld/jftp/package-info.java
+
+
+⠙ Processing file with command... (136/182) src/main/java/com/myjavaworld/jftp/package-info.java
+
+
+⠹ Processing file with command... (137/182) src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java
+
+
+⠸ Processing file with command... (137/182) src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java
+
+
+⠼ Processing file with command... (138/182) src/main/java/com/myjavaworld/jftp/OSXAdapter.java
+
+
+⠴ Processing file with command... (138/182) src/main/java/com/myjavaworld/jftp/OSXAdapter.java
+
+
+⠦ Processing file with command... (140/182) src/main/java/com/myjavaworld/jftp/PreferencesDlg.java
+
+
+⠧ Processing file with command... (141/182) src/main/java/com/myjavaworld/jftp/RemoteFileCellRenderer.java
+
+
+⠇ Processing file with command... (141/182) src/main/java/com/myjavaworld/jftp/RemoteFileCellRenderer.java
+
+
+⠏ Processing file with command... (142/182) src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java
+
+
+⠋ Processing file with command... (142/182) src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java
+
+
+⠙ Processing file with command... (142/182) src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java
+
+
+⠹ Processing file with command... (143/182) src/main/java/com/myjavaworld/jftp/RemoteFileFilterDlg.java
+
+
+⠸ Processing file with command... (143/182) src/main/java/com/myjavaworld/jftp/RemoteFileFilterDlg.java
+
+
+⠼ Processing file with command... (144/182) src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+
+
+⠴ Processing file with command... (144/182) src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+
+
+⠦ Processing file with command... (144/182) src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+
+
+⠧ Processing file with command... (144/182) src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+
+
+⠇ Processing file with command... (145/182) src/main/java/com/myjavaworld/jftp/RemoteHost.java
+
+
+⠏ Processing file with command... (147/182) src/main/java/com/myjavaworld/jftp/RemotePane.java
+
+
+⠋ Processing file with command... (147/182) src/main/java/com/myjavaworld/jftp/RemotePane.java
+
+
+⠙ Processing file with command... (148/182) src/main/java/com/myjavaworld/jftp/RemoteSystemMenu.java
+
+
+⠹ Processing file with command... (150/182) src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java
+
+
+⠸ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠼ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠴ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠦ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠧ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠇ Processing file with command... (151/182) src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java
+
+
+⠏ Processing file with command... (152/182) src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java
+
+
+⠋ Processing file with command... (152/182) src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java
+
+
+⠙ Processing file with command... (152/182) src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java
+
+
+⠹ Processing file with command... (153/182) src/main/java/com/myjavaworld/jftp/StatusBar.java
+
+
+⠸ Processing file with command... (156/182) src/main/java/com/myjavaworld/jftp/SessionPanel.java
+
+
+⠼ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠴ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠦ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠧ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠇ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠏ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠋ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠙ Processing file with command... (159/182) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠹ Processing file with command... (160/182) src/main/java/com/myjavaworld/jftp/ZipAndUploadDlg.java
+
+
+⠸ Processing file with command... (163/182) src/main/java/com/myjavaworld/jftp/UploadAsDlg.java
+
+
+⠼ Processing file with command... (165/182) src/main/java/com/myjavaworld/util/FileChangeListener.java
+
+
+⠴ Processing file with command... (165/182) src/main/java/com/myjavaworld/util/FileChangeListener.java
+
+
+⠦ Processing file with command... (166/182) src/main/java/com/myjavaworld/util/Encoder.java
+
+
+⠧ Processing file with command... (166/182) src/main/java/com/myjavaworld/util/Encoder.java
+
+
+⠇ Processing file with command... (167/182) src/main/java/com/myjavaworld/util/FileChangeEvent.java
+
+
+⠏ Processing file with command... (167/182) src/main/java/com/myjavaworld/util/FileChangeEvent.java
+
+
+⠋ Processing file with command... (167/182) src/main/java/com/myjavaworld/util/FileChangeEvent.java
+
+
+⠙ Processing file with command... (167/182) src/main/java/com/myjavaworld/util/FileChangeEvent.java
+
+
+⠹ Processing file with command... (167/182) src/main/java/com/myjavaworld/util/FileChangeEvent.java
+
+
+⠸ Processing file with command... (168/182) src/main/java/com/myjavaworld/util/FileChangeMonitor.java
+
+
+⠼ Processing file with command... (171/182) src/main/java/com/myjavaworld/util/ProgressEvent.java
+
+
+⠴ Processing file with command... (172/182) src/main/java/com/myjavaworld/util/RandomKeyGenerator.java
+
+
+⠦ Processing file with command... (173/182) src/main/java/com/myjavaworld/util/FileUtilities.java
+
+
+⠧ Processing file with command... (173/182) src/main/java/com/myjavaworld/util/FileUtilities.java
+
+
+⠇ Processing file with command... (174/182) src/main/java/com/myjavaworld/util/ResourceLoader.java
+
+
+⠏ Processing file with command... (174/182) src/main/java/com/myjavaworld/util/ResourceLoader.java
+
+
+⠋ Processing file with command... (174/182) src/main/java/com/myjavaworld/util/ResourceLoader.java
+
+
+⠙ Processing file with command... (174/182) src/main/java/com/myjavaworld/util/ResourceLoader.java
+
+
+⠹ Processing file with command... (174/182) src/main/java/com/myjavaworld/util/ResourceLoader.java
+
+
+⠸ Processing file with command... (175/182) src/main/java/com/myjavaworld/util/StatusListener.java
+
+
+⠼ Processing file with command... (177/182) src/main/java/com/myjavaworld/zip/Unzip.java
+
+
+⠴ Processing file with command... (179/182) src/main/java/com/myjavaworld/util/StringUtilities.java
+
+
+⠦ Processing file with command... (181/182) src/main/java/com/myjavaworld/zip/ZipEvent.java
+
+
+⠧ Processing file... (183/183) pom.xml
+
+
+⠇ Processing file... (183/183) pom.xml
+
+
+⠏ Processing file... (183/183) pom.xml
+
+
+⠋ Running security check... (50/183) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠙ Writing output file...
+
+
+⠹ Calculating metrics... (100/183) src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
+
+
+⠸ Calculating metrics... (183/183) pom.xml
+
+
+⠼ Calculating metrics... (183/183) pom.xml
+
+
+✔ Packing completed successfully!
+
+📈 Top 5 Files by Token Count:
+──────────────────────────────
+1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (10,678 tokens, 43,487 chars, 5.4%)
+2.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (6,425 tokens, 22,739 chars, 3.2%)
+3.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (6,374 tokens, 21,051 chars, 3.2%)
+4.  src/main/java/com/myjavaworld/jftp/ConnectionDlg.java (5,811 tokens, 20,590 chars, 2.9%)
+5.  src/main/java/com/myjavaworld/jftp/JFTP.java (5,324 tokens, 21,618 chars, 2.7%)
+
+🔎 Security Check:
+──────────────────
+✔ No suspicious files detected.
+
+
+📊 Pack Summary:
+────────────────
+  Total Files: 183 files
+ Total Tokens: 198,551 tokens
+  Total Chars: 764,320 chars
+       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-optimization-tep_6kbx\jftp-source.selective-full.xml
+     Security: ✔ No suspicious files detected
+
+🎉 All Done!
+Your repository has been successfully packed.
+
+💡 Repomix is now available in your browser! Try it at https://repomix.com

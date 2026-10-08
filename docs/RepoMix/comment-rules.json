@@ -1,0 +1,43 @@
+{
+  "description": "External JFTP comment policy, not Repomix Tree-sitter queries. Regexes apply only to parser-identified normalized comment text. Keep rules win; unrecognized comments are retained.",
+  "keep_comments": [
+    {
+      "id": "behavior-contract",
+      "pattern": "\\b(?:must|never|before|after|thread|synchronization|interrupt|interrupts|interrupted|event dispatching|cancel|cancellation|workaround|TODO|FIXME|XXX|null|IllegalStateException|serialization|serializable)\\b",
+      "flags": "i"
+    }
+  ],
+  "remove_comments": [
+    {
+      "id": "repeated-apache-header",
+      "pattern": "^Copyright 2012 jMethods, Inc\\. Licensed under the Apache License, Version 2\\.0 \\(the \"License\"\\); you may not use this file except in compliance with the License\\. You may obtain a copy of the License at http:\\/\\/www\\.apache\\.org\\/licenses\\/LICENSE-2\\.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied\\. See the License for the specific language governing permissions and limitations under the License\\.$"
+    },
+    {
+      "id": "identity-only-constructor",
+      "next_type": "constructor_declaration",
+      "pattern": "^(?:Constructs (?:a|an)(?: object of)?|Creates (?:a new instance of|an instance of)|Created an instance of) (?:<code>)?[A-Za-z_$][A-Za-z0-9_$]*(?:</code>)?(?: object)?\\.?$"
+    },
+    {
+      "id": "date-style-constructor-template",
+      "next_type": "constructor_declaration",
+      "pattern": "^Constructs a <code>DateCellRenderer</code> object with the given date and time styles\\. @param dateStyle Date style to use when rendering @param timeStyle Time style to use when rendering$"
+    },
+    {
+      "id": "copied-action-template",
+      "next_type": "class_declaration",
+      "pattern": "^An Action Implementation for uploading a signle file with a different name\\.(?: @(?:author|version) [^@]*)*$"
+    },
+    {
+      "id": "empty-or-decoration",
+      "pattern": "^[\\s=*_\\-]*$"
+    }
+  ],
+  "remove_javadoc_tags": [
+    "author",
+    "version"
+  ],
+  "full_file_patterns": [
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java"
+  ]
+}

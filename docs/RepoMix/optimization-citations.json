@@ -1,0 +1,44 @@
+{
+  "citations": [
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTableHeaderRenderer.java",
+      "sha256": "6629fc95295497783bbcafa0ed5c3124f8024fcb47ab4ef065444bdb4c30f718",
+      "start_line": 85,
+      "end_line": 90,
+      "quote": "/**\n\t * Returns the current icon set on this renderer.\n\t * \n\t * @return Current icon. May return null if no icon was set.\n\t * \n\t */",
+      "claim": "Comment retained after whitespace normalization; contract text preserved, not runtime verified."
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java",
+      "sha256": "7af6d4940056dfd7cb13663695cc23888c18a4dccbb1fd1f349629eae4ef8ac4",
+      "start_line": 79,
+      "end_line": 82,
+      "quote": "/**\n\t * Called on the event dispatching thread (not on the worker thread) after\n\t * the <code>construct</code> method has returned.\n\t */",
+      "claim": "Comment retained after whitespace normalization; contract text preserved, not runtime verified."
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java",
+      "sha256": "7af6d4940056dfd7cb13663695cc23888c18a4dccbb1fd1f349629eae4ef8ac4",
+      "start_line": 98,
+      "end_line": 104,
+      "quote": "/**\n\t * Return the value created by the <code>construct</code> method. Returns\n\t * null if either the constructing thread or the current thread was\n\t * interrupted before a value was produced.\n\t * \n\t * @return the value created by the <code>construct</code> method\n\t */",
+      "claim": "Comment retained after whitespace normalization; contract text preserved, not runtime verified."
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java",
+      "sha256": "e40ddf030df75e8d5ece1df597b8bad7e5bde795261cdd9fec2ca406bffad50e",
+      "start_line": 152,
+      "end_line": 158,
+      "quote": "/**\n\t * Opens this <code>ZipFile</code> for writing. This method must be called\n\t * before adding any entries to this <code>CompressedFile</code>.\n\t * \n\t * @throws IOException\n\t *             propogated.\n\t */",
+      "claim": "Comment retained after whitespace normalization; contract text preserved, not runtime verified."
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java",
+      "sha256": "e40ddf030df75e8d5ece1df597b8bad7e5bde795261cdd9fec2ca406bffad50e",
+      "start_line": 190,
+      "end_line": 190,
+      "quote": "// Let's not try to add the file that we are creating to itself.",
+      "claim": "Comment retained after whitespace normalization; contract text preserved, not runtime verified."
+    }
+  ]
+}

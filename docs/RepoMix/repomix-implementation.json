@@ -1,0 +1,36 @@
+{
+  "package": "repomix",
+  "version": "1.18.1",
+  "modules": [
+    {
+      "path": "lib/config/configSchema.js",
+      "sha256": "a09e63dce6e3f4408e05bb187522e88f7d617a3b32483e33acf6bd520e654ceb"
+    },
+    {
+      "path": "lib/core/file/fileLevelResolve.js",
+      "sha256": "807d1a39a0fd3bd2ddc7d1c8bca966d1258383d617167006016f3f4a534ec7cb"
+    },
+    {
+      "path": "lib/core/file/fileProcessorRun.js",
+      "sha256": "efdd5e8c4c85f57b6eea61fd8e2654886f36ea2de313cfd69329401979a753f1"
+    },
+    {
+      "path": "lib/core/file/fileProcessContent.js",
+      "sha256": "c5f44ed2b85faf5e8885eb0ce8d4e493d851ffb9fa0f6020ed827f1917f2a376"
+    },
+    {
+      "path": "lib/core/treeSitter/queries/queryJava.js",
+      "sha256": "8d7bb03c788b9973faf21d84c6a5b34d7add04e186a4793dcdcd75397c2bf8d9"
+    },
+    {
+      "path": "lib/core/treeSitter/parseStrategies/DefaultParseStrategy.js",
+      "sha256": "1d751e0f804321ff26759958f48e420437d58e83358cf4daeabc2c864459a32b"
+    }
+  ],
+  "observed_contracts": [
+    "output.patterns are ordered file globs, first match wins, compress:false overrides global compress",
+    "input.processors apply only to local CLI, take temp input files and stdout output",
+    "Java query captures every comment; default strategy selects rows of name/comment/import captures, including only the row of an identifier in a multiline declaration",
+    "schema has no configurable Java query replacement or content-level comment regex option"
+  ]
+}

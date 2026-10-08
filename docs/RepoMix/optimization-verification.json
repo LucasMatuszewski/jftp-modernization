@@ -1,0 +1,1338 @@
+{
+  "java_files_verified": 182,
+  "comments": 912,
+  "counts": {
+    "remove:repeated-apache-header": 180,
+    "rewrite:javadoc-metadata": 107,
+    "keep:default-retain": 482,
+    "remove:date-style-constructor-template": 1,
+    "remove:empty-javadoc": 53,
+    "remove:identity-only-constructor": 23,
+    "keep:behavior-contract": 43,
+    "remove:copied-action-template": 12,
+    "remove:empty-or-decoration": 11
+  },
+  "non_comment_token_count": 141001,
+  "selective_full_preserves_all_non_comment_tokens_and_ast": true,
+  "selective_full_preserves_all_retained_comment_text_after_whitespace_normalization": true,
+  "builtin_no_comments_full_preserves_all_non_comment_tokens_and_ast": true,
+  "hybrid_overrides_verified": 2,
+  "sources": [
+    {
+      "path": "src/main/java/com/myjavaworld/gui/DateCellRenderer.java",
+      "source_sha256": "2ed458986e3d5257ec794fe38858f570f0cb4d7312d86007a0319e644417008c",
+      "non_comment_tokens": 187,
+      "executable_tokens_sha256": "226aee7637f94f1f72144f1b38bc5420ee55d1aca7d70ddae4dd15d699f24ae9",
+      "ast_structure_sha256": "54ed4713e1311d89994724a15e2ce24cacd1bb76ccf508370feb19eaa7cf5027"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/DefaultLargeTheme.java",
+      "source_sha256": "5f96d765a6cfd70753616948dc32cbac4a531ba6b9e34ffaebb4ba7acbf9d1c1",
+      "non_comment_tokens": 196,
+      "executable_tokens_sha256": "a14af58cd4bf824d6a107a3a1aa26b14592f0e383d2ff1f4da6b786ebd1160aa",
+      "ast_structure_sha256": "c01fb761a6cfd2151d04d6418d85bcc129bcfe55192ae8f28729d31fa0da685d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/DefaultTheme.java",
+      "source_sha256": "66ccb12ed6708e8f82b405b89e44229e46618cef72eec9a62a254eec89ac1c5a",
+      "non_comment_tokens": 207,
+      "executable_tokens_sha256": "6b33d86c6107f91cf11985cdfee8dbf0d09926e1c6e8a381e1ce48040aaebf16",
+      "ast_structure_sha256": "2d518e3fd5fe1cc5f9892d81b8ec168c9d1171d3c22daa088404746ee377716f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/EditPopupMenu.java",
+      "source_sha256": "bbca75d06ce507fb5a78225c07f1d956a03e366d405c385de6fa05350d8c7013",
+      "non_comment_tokens": 760,
+      "executable_tokens_sha256": "6ba102aa065172f621e54f227063586ddbea90b450bb7a5b317623fdd0feda3d",
+      "ast_structure_sha256": "4cf405842cb6f22524fde21c9d0e765b1685feac522d88566d783e28f5da8bbe"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/GreenMetalLargeTheme.java",
+      "source_sha256": "74282d6fa890edbfbcd9967b7cd8a97a2436aa01d367d067ceb4d119361cbff5",
+      "non_comment_tokens": 196,
+      "executable_tokens_sha256": "9823bc3da0ae267ff63a3f366890f5db263cba09ceeb2922650146e6c069e350",
+      "ast_structure_sha256": "c01fb761a6cfd2151d04d6418d85bcc129bcfe55192ae8f28729d31fa0da685d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/GreenMetalTheme.java",
+      "source_sha256": "dd32d0c204994887cf687fcdfdb0d1e914114b2e527cb743a280a4f4df738afb",
+      "non_comment_tokens": 121,
+      "executable_tokens_sha256": "fb32c7859d74c7226eca2b47d045975bafb37d35579d4f6b1d4c1a7a2830be9e",
+      "ast_structure_sha256": "7dd658e833c0a1ddb1473b98785d59a29dd3ac2e29a1549c28a6a406cc513098"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/GUIUtil.java",
+      "source_sha256": "9eb1239d526e7b687b7f95891707a6bd1b59c1ece8895032007e6e03250986a7",
+      "non_comment_tokens": 834,
+      "executable_tokens_sha256": "cf024691e45c7d0c8064ad7259a9a6b1a91463722747cf36234acfe392ca57b8",
+      "ast_structure_sha256": "fad044262ea3133b4286c68d10e7e6e15d22f6b586b00c1c731ed472befd3a32"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/HighContrastLargeTheme.java",
+      "source_sha256": "29684a2b1048f198ad236bbea7fa3cd8ccf26e5cd9e7b614329725421d8aba8b",
+      "non_comment_tokens": 196,
+      "executable_tokens_sha256": "69bdf971a223b02790dd6dd3050f84a6f75f3a18335073786056ae5d10cfc63b",
+      "ast_structure_sha256": "c01fb761a6cfd2151d04d6418d85bcc129bcfe55192ae8f28729d31fa0da685d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/HighContrastTheme.java",
+      "source_sha256": "373f7f9942ff98ec92638856d566089cddba9793583d7403b29335a1644fe98c",
+      "non_comment_tokens": 205,
+      "executable_tokens_sha256": "49d705afa4996756c8f8586325ad3027fb1b692782ce1a26986cbc13554a98c1",
+      "ast_structure_sha256": "a1705935f6a0b56a7ab2e77fbb9cf293aa0883bd59ccb1a20a1c794e913c935f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/IDTreeNode.java",
+      "source_sha256": "d0daaa2adceecd2c622ba92615e2c82d884baab61c0a57dfa8cddd2682d1d75c",
+      "non_comment_tokens": 113,
+      "executable_tokens_sha256": "3f04deffbaeb0bcc7c24737b5318b8bf852b85c4b8ff883eb510343a99d490cf",
+      "ast_structure_sha256": "9dfc122eb9a1a79aab8694e002a16ef242b33dd8ae2e193f362e1b0fd3a1a617"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/ImageCellRenderer.java",
+      "source_sha256": "43b9b26b4ae7ecb05fb2ce5b25f3616417d4e0047182db7e8f292282bc2e90b8",
+      "non_comment_tokens": 501,
+      "executable_tokens_sha256": "8ebacd158b61ebfc38caf90d64a172d78ef535dee006a9b73a7e8f00029b6753",
+      "ast_structure_sha256": "52110799d30b6d319f0f1e795f9c8897e428d9032543141227c8865c9c5c8d39"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/IndentIcon.java",
+      "source_sha256": "b4596c5863c7e68bad8c0cea6ee5c430528b975f1987914350d3ea801ce383e8",
+      "non_comment_tokens": 212,
+      "executable_tokens_sha256": "fdf267840fa232e8b1a648f4142901f21f32c85c93476c1182fe0078230759ea",
+      "ast_structure_sha256": "5fe68b57be0b302e632b49b8688cc5323f265ab27cd3ac28a11a787da5e0d7ca"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/IntegerField.java",
+      "source_sha256": "3a0b72cc90e703244dddef89a980d33ae34df5a5f31155bf62e7a327682e385e",
+      "non_comment_tokens": 246,
+      "executable_tokens_sha256": "90fad08cd77394237e2cb8f628feae06d4af5447c8cf44a68dad9390b27a87d2",
+      "ast_structure_sha256": "13146f2e29b3721fb3bae433747ac239c96cad6040fbf1b24c834061fa23b9ff"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/LicenseAgreementDlg.java",
+      "source_sha256": "a34aa6685b25e2cfe03029f9b9620f24c878df4302c8bf7f589f5c1607934ebe",
+      "non_comment_tokens": 691,
+      "executable_tokens_sha256": "94486b10875ca3481b325f038d48cee19a1302e85c5789a4143387227f9f1707",
+      "ast_structure_sha256": "01dd6753b8d4688bfe7e3e0b33c9ea29170990d1d18bb431067bb16579a96089"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MButton.java",
+      "source_sha256": "c63e0b7a987e322252f1d8de8f12abd61cc3d59eda07a93457574811d6c70d4c",
+      "non_comment_tokens": 233,
+      "executable_tokens_sha256": "d27932d17034b0577f6dd8aae41d53a31873e0de507ecf3968be4bb9e16cb03e",
+      "ast_structure_sha256": "8017d4d0a77b6aaddd103c3bfa76c93655e19f928fd88150bffc51137f79b990"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MCheckBox.java",
+      "source_sha256": "75aa925ceb160e29601b14459758a4bfdbc9bedb6946ce50c0d11983583961aa",
+      "non_comment_tokens": 312,
+      "executable_tokens_sha256": "ad9448e74669437e5d65d90ffcb7b05e6b80117a5ad54a81af47deeed0e5bd78",
+      "ast_structure_sha256": "eecd4eb805ef1f188dd59116037454a72683968a264f82787f49e25b60c2644c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MComboBox.java",
+      "source_sha256": "35cf935ee150867eb6710c2e44ef64767223d3bdb623b2cf2babe9830486fa1a",
+      "non_comment_tokens": 170,
+      "executable_tokens_sha256": "18b8e794cb3ce80dbc151a0013bbda87ef852408cbd42f15e4958cf5d16c5136",
+      "ast_structure_sha256": "55543bb189d1975daca85261aaf4908b3d3112bc3763e2ee89715961c1e4fc75"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MDefaultRenderer.java",
+      "source_sha256": "1e1facd349f9e66a070900f1a815e6249776ecdfdb1e81009eef42546251a852",
+      "non_comment_tokens": 329,
+      "executable_tokens_sha256": "ac5a845780f4c6b174081d1c7baa20ade56b2ff60caf75f62607c216b26ae688",
+      "ast_structure_sha256": "49f7e09ab98c08923f6f8a40a510e6b6469398a5b27b4ab5764fb9d124416253"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MDesktopPane.java",
+      "source_sha256": "9b03382535661632cc2c8b56045566d18c5ebeadb0a0a869b0af482efe29e552",
+      "non_comment_tokens": 814,
+      "executable_tokens_sha256": "07e1ea6d1fbbe7da522cd433d4fe72ba216ed64c4770676024cfd707320f17e8",
+      "ast_structure_sha256": "cc677fbcb6d54ff2756cf0f9ee5857312b523135cb602a5505fa4b614afeb6a6"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MDialog.java",
+      "source_sha256": "85e56a2c99ccf96a11a27e20609f38a0f63b4e32bf216a43676981f811daf9bb",
+      "non_comment_tokens": 402,
+      "executable_tokens_sha256": "9f83c71f62a5e6b818362576d6ab8dc6daaa101945b811d52418822b813f514c",
+      "ast_structure_sha256": "357562323cd7af85ed16e554415fc8b36216cf28fd7d3e3a419edd5dfcb6becc"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MFrame.java",
+      "source_sha256": "c59a49f8d8c4c9d33deeb2f4a62e780060f6761a645c20c6d357f602ffcd1f95",
+      "non_comment_tokens": 169,
+      "executable_tokens_sha256": "ace2f9a7017bac2522a8897962f220d5d6ab114fa9b94e441ef5c78b813baba4",
+      "ast_structure_sha256": "9329fb25abe9b71d953571475026f9ad288a095c99cadbfd0b143f38e1b0aa23"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MGlassPane.java",
+      "source_sha256": "0a49c451b17090c2f57e71ed4efef8cd63d4a82bfc1ab4ba802a6ab5e58807c8",
+      "non_comment_tokens": 238,
+      "executable_tokens_sha256": "ed99e9a92562661cb767c93174ab9b3f0e67b1e6b961e5bf082016d21ef3b2ca",
+      "ast_structure_sha256": "8bf64582ebf4d21d19415502e7ddf3847b2def55d555554a85ab9df0f4ec4113"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MInternalFrame.java",
+      "source_sha256": "5eb676eba87fcf24f790182f61743bc6667598010bb12d137a4b8445d4c4445b",
+      "non_comment_tokens": 216,
+      "executable_tokens_sha256": "a5e4bc179f1ef5223869a331ddd4a8dab0864b9c296f8cec392df796d8e2962f",
+      "ast_structure_sha256": "9285a9f185bad5b9058c17abc7ee3d4231d0f1382da4d49732c22751f7516993"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MLabel.java",
+      "source_sha256": "f039ef4e8a710d129b709eb4147488c3958df33d14811ba194be627dd6249998",
+      "non_comment_tokens": 251,
+      "executable_tokens_sha256": "f2f7b4572f2017653339c14d9ec1ce40c3b3b7b4a00989641783d24f0892a923",
+      "ast_structure_sha256": "d22a15727cb43ae20d362a41c1f0d97c66df09ea880d635c150226931af72d56"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MLabelTextField.java",
+      "source_sha256": "faaaed1f63cb39b32da589690ae5b5c016cac17358ba7addedf800f62d4305a1",
+      "non_comment_tokens": 861,
+      "executable_tokens_sha256": "7f8b25e55e5d2c496245f59379c078ea57cfb28ce98606329f96b196afbcd152",
+      "ast_structure_sha256": "34aa21df976a4336f516356a8d4406a6775a03dedb46a28d43cf6e126fb0472e"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MList.java",
+      "source_sha256": "e0944ba343180e6ec0d77294633c4d986afaa3804fcca44738437838dc8742f5",
+      "non_comment_tokens": 66,
+      "executable_tokens_sha256": "56d6229e5ccecf4845fdd31b51297c91ee2f1664c5673e4055801ade06218be5",
+      "ast_structure_sha256": "bfc87d76ca763a89fdba49ae29bc86fc2da92db545a476e3f94f5d8ed3b12118"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MMenu.java",
+      "source_sha256": "6ec81b899a72911c753086b62b4ac7ec5dcd8937adc5d320632becae57354799",
+      "non_comment_tokens": 275,
+      "executable_tokens_sha256": "542f852c9d20f00ff1c8229b7545820c6caceadddfa3df7bfebba17b62519a2d",
+      "ast_structure_sha256": "7eb9c948e84731c85cfb0cef10ec8565a68271e4bbb660fb87c368c1a200b984"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MMenuItem.java",
+      "source_sha256": "c9987fa472c48065fea1701a81efe17156517c159b5ce1f043100078ffcb2408",
+      "non_comment_tokens": 271,
+      "executable_tokens_sha256": "63d278798e0179bf2694599155385a2cacae34b39f3ad098dca083e54b6f0911",
+      "ast_structure_sha256": "615ff6489bc136d1ef13571c5bd657b2b2efe710ac18fb51c52dbd2afca249ff"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MOptionPane.java",
+      "source_sha256": "898c3b7ca7e59452c44b0c6baae4b5410c11ff656fbc1467e0ec7582db84208c",
+      "non_comment_tokens": 74,
+      "executable_tokens_sha256": "3cb79205088be3eaae00a541515229a210923db4a70a803894d99caa9cb5637e",
+      "ast_structure_sha256": "7659b5b9ba295763945bc2fb4d5fee917164c7e6b45addb18631d69dc1e18b29"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MPasswordField.java",
+      "source_sha256": "043310f260473bcba07e5123a713960c55a213ad3bf44860b0f17e51a6627a44",
+      "non_comment_tokens": 720,
+      "executable_tokens_sha256": "3adee7e578170ec83213da06ffbcc76eadfd23ce19adaeb417c140e9192ebf11",
+      "ast_structure_sha256": "72850adbbc6a12b1902401bad971e6fa2a5c03aad803e8a738606a19c2d139d9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MPlainDocument.java",
+      "source_sha256": "513afa92189995e3ae0c1b874013624543dcd1a6d4d621d104b693cb9eb3c00c",
+      "non_comment_tokens": 258,
+      "executable_tokens_sha256": "6eef00eac33e850bea91f8a1497097ff96e0bdd1a805ad372ed7e8d613768e29",
+      "ast_structure_sha256": "4abfeb0d1229b7fe5313f09be0fb94aef51ed252447c44ca8253ed308ae98097"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MPopupMenu.java",
+      "source_sha256": "f791b75e37f661ac2e13ea8644b0fcaad098ae5e9e6983b012a9af0ad8868db2",
+      "non_comment_tokens": 266,
+      "executable_tokens_sha256": "420abfb54d6c5f6f0f4ef239e5ecd267a13c6033abd36918532d485be487782f",
+      "ast_structure_sha256": "68a80299cbe9459d833cbedd6b4ce60111121330a39f0e1a7d59a3be10e859f9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MRadioButton.java",
+      "source_sha256": "64295ac8c49902bd65f692f29b7b5325a2cd373bf540eaa2ebe3daaad81befb3",
+      "non_comment_tokens": 312,
+      "executable_tokens_sha256": "e1f9a2538a8e82f5c67a9b0667adae5b47bd0c6a9d9f5bfa06e816b862759ead",
+      "ast_structure_sha256": "7c9e72e37950dda647c5dc19739c12607d2bb92921d8e366274de8c6e866086d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MRadioButtonMenuItem.java",
+      "source_sha256": "021ed210020f65d5c39674db30b9111cc898b33c89774a08384470fed401eefe",
+      "non_comment_tokens": 312,
+      "executable_tokens_sha256": "07fefec40d78a8fae6a7ab712bd52f0277d9dcac43de747d779476f82426b533",
+      "ast_structure_sha256": "9f3722256d5d0e44b19c47ccaed3032ebb76d2c9e08e83cdffe964e58b7e9df7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MScrollPane.java",
+      "source_sha256": "821aa9c41d3f23550bf9e0a6be2e6a2bb813b021ff93b6f9993fbd35aed343d5",
+      "non_comment_tokens": 107,
+      "executable_tokens_sha256": "0ba82a4b661457c8959a0c86cc43ba1c14b10991a824b0b011a92807f0f99d57",
+      "ast_structure_sha256": "a0911b0eb09518e37b4897bfc8482956bb9e2d9b88a9aefd936e0df97d0c1b81"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTable.java",
+      "source_sha256": "788cfbb4e61261f5ab095c976eea5302a47c0154dcd8379fe41adf4b25c6d789",
+      "non_comment_tokens": 377,
+      "executable_tokens_sha256": "d9c59a3dfda6e733fef67eb9f17096e3c639a9b3a5660d5072fbd62076ebeb43",
+      "ast_structure_sha256": "5d01b78c5b10a74008451496c5020bdd42f6352c3141dc4e086e7eb7722fdcac"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTableCellRenderer.java",
+      "source_sha256": "8082ede54820f47041eb909ea34a1d205c698e596c931ede1e2593b437a725f7",
+      "non_comment_tokens": 171,
+      "executable_tokens_sha256": "6750b943c33bd6e867218fdef41554ecdf6af853df53d5dc9d75c9affb4b62bd",
+      "ast_structure_sha256": "d122a30d775461ba66d69942ba9e58e6e3afcc937ff72ee69a02506013d1523b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTableHeaderRenderer.java",
+      "source_sha256": "6629fc95295497783bbcafa0ed5c3124f8024fcb47ab4ef065444bdb4c30f718",
+      "non_comment_tokens": 228,
+      "executable_tokens_sha256": "639f2d1087a6b226287b3d0ac5968f9fa7d7e1e17d2f46f71ac08a7e2b9b27ee",
+      "ast_structure_sha256": "18df16bde2883017b731c51ed62d29043943c6543fafb470c0a69631c05b069b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTextArea.java",
+      "source_sha256": "799694adebde8ffdcff8bb7d3479f99e1d2d4b28fb8bb7b70a6c3afc0b15b151",
+      "non_comment_tokens": 739,
+      "executable_tokens_sha256": "44f6a8990004c42b5bedc728d6783bdd55995bf96c9eb81305f2ad5a38d8366a",
+      "ast_structure_sha256": "dd2cc51a92c8ccde18ca09c60f8913c27b65a740a9061799930870f5700391cd"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTextComponent.java",
+      "source_sha256": "d0c0d9495e2dc8af6521cebf2237d021a04887faa0e567eaa0b2a5380ade926d",
+      "non_comment_tokens": 162,
+      "executable_tokens_sha256": "aa2e4701eed150b21dd6dda4ebbe10f9cbfab89105df176a4d0c7b8eb77ce597",
+      "ast_structure_sha256": "ac44f26903a7b108cbbbba44b6cc7664fa2f2e449939f37f63ce336ac9ac9743"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTextField.java",
+      "source_sha256": "3e794c07a0f14f67cda5230cb9645d90d729f820ae2806bf02747c6f3eba78ac",
+      "non_comment_tokens": 905,
+      "executable_tokens_sha256": "adb82956e6d8b5e53ed0c8b3c07e95d453bf6be370049bbe51a1bc6528277eb7",
+      "ast_structure_sha256": "72f1097b8678c4ec6b05d567da983c11282582c5b1d6fc4a07af71efead9efdf"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTree.java",
+      "source_sha256": "8ff5861ecd2374e74553c4707ad8def50eee3ef491f3e07b23b00ce3492987cc",
+      "non_comment_tokens": 148,
+      "executable_tokens_sha256": "afbdfe37809850d6610d20e94da45bb1d63ad40a75e5113a6bb322fc0ec6980d",
+      "ast_structure_sha256": "63f9db6f8c7ec0df26ca6843927b2cf72fec86bc7f8e8d8f91651e0e07239ec1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/NumericCellRenderer.java",
+      "source_sha256": "dedc2f92d1c9418b9c10b4bf322a494a7dad484eca96bf230bbddaecb565c339",
+      "non_comment_tokens": 163,
+      "executable_tokens_sha256": "cce94c584d82784ad6e26126532efada2c30515080d33d406368939b9e0d91d5",
+      "ast_structure_sha256": "33447c825554c1d5f3bb1e0cea4fe303a215b63f38f703401f4a53cc7be99870"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/package-info.java",
+      "source_sha256": "57b4767b285ff74bde628858201ff580153213241588ec7a9b09f0401291e93b",
+      "non_comment_tokens": 7,
+      "executable_tokens_sha256": "8dfc376803c3d63812925f48e664bb7af571baf900025787e8c4716db5947a4a",
+      "ast_structure_sha256": "cf3ed95a3ee8b081a963c333b04edfacce57a18c5355360088d8042732e9c9e5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/ProgressDialog.java",
+      "source_sha256": "fe27e7941189e1c2d376d1417268d65bb01e629a9c38886d3d9658118cf2fc58",
+      "non_comment_tokens": 702,
+      "executable_tokens_sha256": "f2dc1165da80cc23ffdd8bc905e291e510c2efb653f133b641e6c376e77cb01f",
+      "ast_structure_sha256": "adf611463be8d786bee25306da116fb9854a67b42310b25390d1c7d15ee506b3"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SandstoneLargeTheme.java",
+      "source_sha256": "e0e450e00f4df3aa4a296454de324f0575f6ad5f6b6b55b614974d549ee6fcca",
+      "non_comment_tokens": 192,
+      "executable_tokens_sha256": "706034441898fee11cf48a300953f17cbd2543ff2a269e162bd9c24c9ef309d6",
+      "ast_structure_sha256": "9f78b502a890bc45f97cfcbb5a5d40ba6a1dfffd14a40df803ee489c09c00db8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SandstoneTheme.java",
+      "source_sha256": "0bf316927f565fc1c16625843e707422171e6653f16e6206da9581655adb294e",
+      "non_comment_tokens": 199,
+      "executable_tokens_sha256": "6cc9d5d0017cd323854742658d755ee5df0a289f82a49c2d9e17ee78dfb52377",
+      "ast_structure_sha256": "9ae0389abf1983bb7ccb4ad2b96d1985c86a6b6f75eb0430e2685421824c6306"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SingleLineDocument.java",
+      "source_sha256": "85c35d7d906b98272469de43c20043f746deb180389df1dbe0d4e86fe9e776e1",
+      "non_comment_tokens": 142,
+      "executable_tokens_sha256": "5338dbe70796c014c5473a59e04494f0998500c42ef94678b7d1f5b900f5407c",
+      "ast_structure_sha256": "9d9b072ef9ee60a17d7784911b46f9c6cd174a98c3ea8b7aa25c82466a05eee9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SplashWindow.java",
+      "source_sha256": "9fb411edd38f93f3c4b834f9158728f9e128e404f57a7787266809ed3e8e285b",
+      "non_comment_tokens": 163,
+      "executable_tokens_sha256": "d430d03ec5f84ee7c79927d575a5b37226b0edfc3e043082e4ef09016f468b67",
+      "ast_structure_sha256": "e5db36b0d6e0dbe9ddb4184851aee0da2d5a41eec89308b2e855ab5153f82a1f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java",
+      "source_sha256": "7af6d4940056dfd7cb13663695cc23888c18a4dccbb1fd1f349629eae4ef8ac4",
+      "non_comment_tokens": 327,
+      "executable_tokens_sha256": "0add44ceb189ac803519e69e6063854a2421752c17f26405e24d9659fb643628",
+      "ast_structure_sha256": "dffb04e0c9324296b5e04a3cd5dce821bd62a112d0be8254374b5a4b40c200d4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/AbortAction.java",
+      "source_sha256": "abbcced8f22417bdf10f21e09b9f5f6adeaea0bf4b9c7ca6c4e114771da93ca9",
+      "non_comment_tokens": 289,
+      "executable_tokens_sha256": "b2e3cd5424a9f6ca19ac3a0f503d000a7613fdfd7bf4c6e6ec659f21c81ecf53",
+      "ast_structure_sha256": "d99e421e7611d50b2a27903b31d6dfd59f6f56291ce672708f86423240bdf128"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ChangeLocalDirectoryAction.java",
+      "source_sha256": "f7c92033915b270d0794a56f9152b08a72d612c7c687d8be3139888ffc859e44",
+      "non_comment_tokens": 207,
+      "executable_tokens_sha256": "21c69afd27a6995d8edb0730f37dae5914d3db1df9ea07a0b28dfdac2dfe580d",
+      "ast_structure_sha256": "326868b1210e899d9cd0dfc47e5f3a3e165151cd0c5a77a9bd72a1d22ba76ba7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ChangeRemoteDirectoryAction.java",
+      "source_sha256": "0498967f9134c652c54d6dcd0994b823e2cebdc3a2487100521ce841a8a7f6ee",
+      "non_comment_tokens": 214,
+      "executable_tokens_sha256": "493acc4802db1d03a31a4f3fb0aa9d3dffee1000f255902537713ab42a479d26",
+      "ast_structure_sha256": "55ba96b4c314f71a5bbff699ecb54664634296b98bef0eb28d01a3373362e773"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ConnectAction.java",
+      "source_sha256": "1c6d72787d08f8a9096dff14d50bad8853bcb9b3be9b5d9c5c9270c576fc868f",
+      "non_comment_tokens": 312,
+      "executable_tokens_sha256": "d6b62800a9f8de83eb17bbad66b1359f44d0bd97c730c73ef996229cf5ef945f",
+      "ast_structure_sha256": "c97bdca60ebed8eba988b615e7eaa745d3f9f4d8ed355817e31ea2fd41ffa79c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DeleteLocalFileAction.java",
+      "source_sha256": "fc8ef697c457489c728ac78bf151de730c48a8e3d15562b5c0bbab6610c40c99",
+      "non_comment_tokens": 151,
+      "executable_tokens_sha256": "3f404502db6098d6ce0ba090364acdd6ebf4dcfc53388849555cb19c98d0cd12",
+      "ast_structure_sha256": "1d70dbbefa704489c165d1afd76d49b034f1cde70f28ff24240f757bb3d1a7d5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DeleteRemoteFileAction.java",
+      "source_sha256": "4745a5c04c6d84de501bc8689e457444142df620e6c56c924f98439aae8446c4",
+      "non_comment_tokens": 158,
+      "executable_tokens_sha256": "6f3e6936501687d24770cd755605b9b0d68151ccbf8a35966d44c524acf71e06",
+      "ast_structure_sha256": "468847e9fcfa354e705bb6b407db1a8b9f0af0d41e78b5f313d8467e2ac1ca02"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DisconnectAction.java",
+      "source_sha256": "3e3a7f07a2b09f9b6356eb9f2dc2922865d604c39a5047f7a7f94ac6325467ac",
+      "non_comment_tokens": 151,
+      "executable_tokens_sha256": "53367c02f36ff5a276b91480d41bf4abed94cc7a75b09915c4156483e3ca3384",
+      "ast_structure_sha256": "1d70dbbefa704489c165d1afd76d49b034f1cde70f28ff24240f757bb3d1a7d5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAction.java",
+      "source_sha256": "1bb7e4eb38ac7e74bca79f274b1513e09c842a0baec70900ca9f256f28dde9a0",
+      "non_comment_tokens": 158,
+      "executable_tokens_sha256": "5e8692020be9c74fc231c6d38a86382b22a38f2b4412c86964814dfd8a81da19",
+      "ast_structure_sha256": "468847e9fcfa354e705bb6b407db1a8b9f0af0d41e78b5f313d8467e2ac1ca02"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAndUnzipAction.java",
+      "source_sha256": "e9c8b022ff79e580e461f1eaec5947dd1605e1caed16d66b85068100506140cc",
+      "non_comment_tokens": 506,
+      "executable_tokens_sha256": "be069bdd65542439a6bea2c8aa9faa409fff4e038de5b9306a83b123e1c4b17d",
+      "ast_structure_sha256": "0b2053acf4ee5466bddaca4d5983606ebe224cd192483168950d41c0dcde0e0b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/DownloadAsAction.java",
+      "source_sha256": "29964b38175dc2c27f13c373350762e3d26011b2022459df5a3e239cc07a913a",
+      "non_comment_tokens": 343,
+      "executable_tokens_sha256": "a8fe58b0bb80168d0e90972a96957e5035181f4322a89d5457cf5ec8627d54d9",
+      "ast_structure_sha256": "695609e36367ec289120366ee0b80dbfc0b449fedf6939019fda405584ddc91d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EditLocalFileAction.java",
+      "source_sha256": "5507cb50f37de1ed007433f887d66a51283b7c60d9cb19ee5e9e8082318789a9",
+      "non_comment_tokens": 242,
+      "executable_tokens_sha256": "e7986f39268f9346d27a1ec49e88d3d8c34bc3810e68272de8e4e433f931402c",
+      "ast_structure_sha256": "5acb7853df635f4c0e66b1a4851d88acf55499547d4fb0c6bd2ba48b733a864d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EditRemoteFileAction.java",
+      "source_sha256": "ee6fa7331b5a21e8bcb0b6b25ca60a90e202c297a0481ea6bc75e7487d91d323",
+      "non_comment_tokens": 339,
+      "executable_tokens_sha256": "67d3b6645352a67c856b900e63c4d388d4dee2625915a8d063573d0088e4dcc3",
+      "ast_structure_sha256": "cd1032e573e52ded613a9e28bca922b4a4fa338088bad8467339c47d58c77f61"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EmailLocalFileAction.java",
+      "source_sha256": "ca47bfb3a42a99e06a84da8ee9cadfa83ae66d49a5c559295c211a80b959ed60",
+      "non_comment_tokens": 117,
+      "executable_tokens_sha256": "0ad7fc9b434120784974c2f2e700250480c884500fed42e5dbf87f3a650164a0",
+      "ast_structure_sha256": "d656b2eceb27b9981b04b4e6b5a7749ae759a79acb5e789adfd283fc604941e3"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/EmailRemoteFileAction.java",
+      "source_sha256": "eadc4b21bb0632a27e0f4962314084310648aa15c79a8403fbfd4f9f4634aa32",
+      "non_comment_tokens": 117,
+      "executable_tokens_sha256": "0b9a3ba215b5fa059c3a39581c05525ae27a43ef82412a275f29e7ce024f733a",
+      "ast_structure_sha256": "d656b2eceb27b9981b04b4e6b5a7749ae759a79acb5e789adfd283fc604941e3"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ManageCertificatesAction.java",
+      "source_sha256": "52307a95db0658e95fad51f11855f65fb783b488f16930caf6f8090076b06810",
+      "non_comment_tokens": 155,
+      "executable_tokens_sha256": "bdbe41633fca23e494d30cfdb0b540fcd61f375afd66c4743c9ad5c8c2f4827e",
+      "ast_structure_sha256": "6495a527efe3168f59a9cb17017f6e7db61c99ccdbb4c39997ae970429acf316"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ManageFavoritesAction.java",
+      "source_sha256": "fc4eaa49588dc8638aa98d460f38373909812dc7aaf517612652d6a9c79e4b72",
+      "non_comment_tokens": 153,
+      "executable_tokens_sha256": "f2abe1776452063cf4bebc1e611ebda039b8d56b87e801ba7672de0ad61a7e98",
+      "ast_structure_sha256": "4d7046df154c5500af5815be15023010f5d63b22be1bcb998db27da4267ecbe6"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewLocalDirectoryAction.java",
+      "source_sha256": "6e9b4e4cd2700015bedee2861dce0684b3bcb0a1b7a137942a62816d57b5ccd3",
+      "non_comment_tokens": 207,
+      "executable_tokens_sha256": "9e6d32b04d8fc989453202169be08bd49c11aa3ed78ae55855109a5ae6580786",
+      "ast_structure_sha256": "326868b1210e899d9cd0dfc47e5f3a3e165151cd0c5a77a9bd72a1d22ba76ba7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewLocalFileAction.java",
+      "source_sha256": "89c701153da56cc1653ca7b7f13771c0b114f0da70e5968e4059fabe11383850",
+      "non_comment_tokens": 211,
+      "executable_tokens_sha256": "f63cf19df23ae7524608c1e105899c1c8da129024f9ecc1aef59df44533d94a3",
+      "ast_structure_sha256": "8aea908617391e4878d4a1fcfd0af7ee721089e24428b37d222edc7aa73fe07f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewRemoteDirectoryAction.java",
+      "source_sha256": "611aa794690d2cf30148043b614d300e5e99352081d504dc627cf6836cf03ef2",
+      "non_comment_tokens": 214,
+      "executable_tokens_sha256": "6ca2a7ac897c0db3d85e6a187995fc18211c3509f4a2596beddbcc9dfef56efd",
+      "ast_structure_sha256": "55ba96b4c314f71a5bbff699ecb54664634296b98bef0eb28d01a3373362e773"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java",
+      "source_sha256": "af8d77b519bcac85f8916c1e25cc409b94f55f9d7d2b9e27171a519c47f677fd",
+      "non_comment_tokens": 214,
+      "executable_tokens_sha256": "361faa61db68ee85e59b8b234096dba3ccf2235dd4f6669443b51670974cefa6",
+      "ast_structure_sha256": "55ba96b4c314f71a5bbff699ecb54664634296b98bef0eb28d01a3373362e773"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/NewSessionAction.java",
+      "source_sha256": "a87f20154e05a2f161afbce9bc83490a7f52ce5152c5cc1ac0f7ef6ecc7479b2",
+      "non_comment_tokens": 123,
+      "executable_tokens_sha256": "73ed5fc7d6d62a1b4b6b01346eb9b510af53cbdf128d4e78eeeae568ec3a3bad",
+      "ast_structure_sha256": "9f2c1776ee920da39f67d9f2e952786cb0ed2613d71f2d8a701455bf64a707dc"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/OpenLocalFileAction.java",
+      "source_sha256": "2a84b52385132679c39b89b3497dfa1e5520539929b93d9f5d551a850f820110",
+      "non_comment_tokens": 255,
+      "executable_tokens_sha256": "a741e715c714bb24ec757befbae8978d9aafecabfc2d671eb32a00d92b3a53d8",
+      "ast_structure_sha256": "40fd54d3ad5108749577da3cdae43146bedc8200f39c6ba0a8bd719b132ef1b9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/OpenRemoteFileAction.java",
+      "source_sha256": "366099610a3962bc7c350ca2a23a506a698efcfcad8f37162c4dfa08684c90d2",
+      "non_comment_tokens": 352,
+      "executable_tokens_sha256": "1e20b076c87b31c761bbff3f72c09cc8800d1d6d9ffa55561c0338b19c369d62",
+      "ast_structure_sha256": "4dff23d1058a6dbb0ccc7dd9f5efd02aee22bd09be537a2fdbb517863919818b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java",
+      "source_sha256": "290fc20bdf59f9029e51d1a303f78368f1f2f97a65d95b6162b8920c1cad3d29",
+      "non_comment_tokens": 242,
+      "executable_tokens_sha256": "a65815a077d5855a23f483b3e1448303276d84135be8fc4edf662d3d8cb9148d",
+      "ast_structure_sha256": "5acb7853df635f4c0e66b1a4851d88acf55499547d4fb0c6bd2ba48b733a864d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/PrintRemoteFileAction.java",
+      "source_sha256": "86a430f5a9cfed855f2fb636434e10a1ab0f11693a42bacbe65e7b9997d8551e",
+      "non_comment_tokens": 339,
+      "executable_tokens_sha256": "ad0573315f6e1990618fd5963994181d4bd1ef9d4a509329f461520fb20ea788",
+      "ast_structure_sha256": "cd1032e573e52ded613a9e28bca922b4a4fa338088bad8467339c47d58c77f61"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ReconnectAction.java",
+      "source_sha256": "a5f8cf38cc71fb2fedd40a86adcc448398c7bf8cd928132deb93e014e88a82a9",
+      "non_comment_tokens": 151,
+      "executable_tokens_sha256": "b56579a51256afbfa1b1f508e75ef300e7f6a6e47ad7387f78ebe42857fcc901",
+      "ast_structure_sha256": "1d70dbbefa704489c165d1afd76d49b034f1cde70f28ff24240f757bb3d1a7d5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/RenameLocalFileAction.java",
+      "source_sha256": "a0a5c156afcacf29681a4ed39a78d8d589954e0a992d73bdbe6695922c2b7b22",
+      "non_comment_tokens": 271,
+      "executable_tokens_sha256": "29871e4217142e3f18181c6aef689b0c89250c54805e977c6f031e647655f70b",
+      "ast_structure_sha256": "3116704c035539a14bdd692f7dd1108b307afb8c6146c97b148229ca9913d6b8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/RenameRemoteFileAction.java",
+      "source_sha256": "b404ea7eaa024e0f6f920915ce0e6e7230c9986d4d16355a6454745c9a6f0955",
+      "non_comment_tokens": 278,
+      "executable_tokens_sha256": "c8d8ed25c8c572667d15e338391eb7925805fa10fbb30846ce2652512ddf744d",
+      "ast_structure_sha256": "55c7cf3aab88d37d59c973fb0a46fd9fcfd23504ee2a3e90b99227028f275c29"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/UploadAction.java",
+      "source_sha256": "6e17c73a7cf61f9a79c27ddd47f4efefd50e2958ae222d625726cee67d2dcc1b",
+      "non_comment_tokens": 162,
+      "executable_tokens_sha256": "2cabb7bc00a2bbf57e0b93e8a2346a40aba899539204ccb8e4afd074a6202e64",
+      "ast_structure_sha256": "15939ad13d96a3bdd8d2ccdb63e6457aea9612e1dc41ba294f02f618065209f6"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/UploadAsAction.java",
+      "source_sha256": "670e558e81d2c1d959245d97d3d0a75f70f7e4d5661f8e9ce8aa31043fbc74c4",
+      "non_comment_tokens": 339,
+      "executable_tokens_sha256": "413aa38efd705654136cc9c99e7f25aaadefc33ca58ff7bda6f646e1d789a107",
+      "ast_structure_sha256": "d184c7c914f8bc16e6c59541e1b3dc31365e0bd63d5fbb618ac24074a7bdfc2b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/actions/ZipAndUploadAction.java",
+      "source_sha256": "eb48431e7b52908f2a56be35bbad69c2130cc97fa87bf46047b38809cf445a8f",
+      "non_comment_tokens": 591,
+      "executable_tokens_sha256": "eec2a95357e26b5716b118859ded7398ace45da586574d1c882f28a538c8945d",
+      "ast_structure_sha256": "50885cf37adf5c3c243ccf6853f323cf3d7ee21830dbfe3dc4fc6817f21c0d53"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateDlg.java",
+      "source_sha256": "f2470e7c194e5470f18fce0ed899fa258d8f5bbe221bfe28a7689b343939ffd6",
+      "non_comment_tokens": 763,
+      "executable_tokens_sha256": "0ed5840ee8dc485038176c51282137ad036605e9c1518061529db7370253dc88",
+      "ast_structure_sha256": "b3ae8752d12cd4ba737efdde14e9fe4d7f86ea5927026bcc5f263956f57cf87b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateManagerDlg.java",
+      "source_sha256": "6475885e89e5c00112e1500342641ac863bcf3ce4d0d88bdfa97f9287b50f985",
+      "non_comment_tokens": 2774,
+      "executable_tokens_sha256": "b8c4f1eeab1e6eafae03078935c438a606e898ddda0276e8bfb225d38bc2482b",
+      "ast_structure_sha256": "93aadd784ac9f687c6d3bb391d173688f8c81ed8346f71bb01cd2397896252d2"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificatePane.java",
+      "source_sha256": "3e97c2f63441e688793b8cb7bdef37f5a2daae57d56a6cbb33350745331259f5",
+      "non_comment_tokens": 2823,
+      "executable_tokens_sha256": "2e81480629b03d17e00629f8040a25ee05ae3cf55ec52e9d6cd531fc058da452",
+      "ast_structure_sha256": "4ea8d1e791f557f4623e516a19e2ba84b07f2786455dcf0d53aacadaeb1226b5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/CertificateTableModel.java",
+      "source_sha256": "cde4b01399310c1670604eef9c859cd475a065ef7e81b18e69fddfb9b8a721e5",
+      "non_comment_tokens": 595,
+      "executable_tokens_sha256": "2be6000b94399f36e77e8d9a68138f6fc95a0cede762793158818036b75490c1",
+      "ast_structure_sha256": "e2d8edab214b3cb25aa48a86bc4cbb324a19d2984f9a2f32e65119a94e62f492"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/DNParser.java",
+      "source_sha256": "bdc06050d8ec1e7d6faf94049f06cb2f8cecc9725749832169bc617a886f48bc",
+      "non_comment_tokens": 402,
+      "executable_tokens_sha256": "172589c1fba7214a00f395940445661ae8a7f4d8ed2068bfad1352e64cb947db",
+      "ast_structure_sha256": "ea7556cbad211bd75888cadbc5a2a8d963e1f8efbb63b1e291935a73c9be59d1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPKeyManager.java",
+      "source_sha256": "f8493ba16eb23fd6e3209a575928fa7d4eb681d88de0c8215eac70c0a8add1bb",
+      "non_comment_tokens": 309,
+      "executable_tokens_sha256": "326ae329afb37701db824fd5e28ec483516cd3d7060924ef87473fc341dca444",
+      "ast_structure_sha256": "bf365010e2a4b7112d576e4125517996959249e58a7c975131c916c4d861144d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPSSLContext.java",
+      "source_sha256": "5dd20e780d671faf24efc80807bdae4e74aedf4a56b68895b5925c34bbea2729",
+      "non_comment_tokens": 146,
+      "executable_tokens_sha256": "843275ece3f6500c6c89272cffd844231b3e7fec968e3b11353e9935f396c890",
+      "ast_structure_sha256": "38e98239ec2d222e63a9eb3352cfc0f2d8efcde873c901c870585666626e27a5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/JFTPTrustManager.java",
+      "source_sha256": "11f0a81044f6bb02c0d778732d3ad36b65eec6cb9c63c7d0a5a87e73e226d77a",
+      "non_comment_tokens": 575,
+      "executable_tokens_sha256": "16b8ac9afb27b76afc6d9055f295932edc2f417fc08eb22234b702a77ecdc5dd",
+      "ast_structure_sha256": "d57815761a940feec42d278af0800a2c8d47e2636a517b37ca393b15a4c171ba"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/KeyStoreManager.java",
+      "source_sha256": "b31467500e6ca1c282b3b8009352e91ad9c3ee6193f12ed181be8ba0d458448d",
+      "non_comment_tokens": 1012,
+      "executable_tokens_sha256": "7faa5dbf1bd01ce4b744a833cd82a5940bcc81d0817f1a028ebacfc3e27bb555",
+      "ast_structure_sha256": "81da85f4fe362cab1d9c86dc925b3b92551219d1d3b2caa867ab4293d42712a9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ssl/SecurityWarningDlg.java",
+      "source_sha256": "5024d65710f49a54281793033fa314a1e002ef933b892a81ab94a9fd9009a1b1",
+      "non_comment_tokens": 1554,
+      "executable_tokens_sha256": "fa2861a184f7281dc17f034fb6a8fceacf108eba5bbfa930bb8bd81b8daf8677",
+      "ast_structure_sha256": "2eec2f6dc883b30bfedc598c1cf9fc1ab095554165d8918cb2d5a2c20196c819"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/AboutDlg.java",
+      "source_sha256": "777454dceddb0761adaed951d9a25faf85d1e1c8ee2dfc7b6131e40e11ee9a6d",
+      "non_comment_tokens": 2447,
+      "executable_tokens_sha256": "db5d7f327f8902a7e6e553f62ebdb8dd9f167d8aa5ae7d109d71b6fb3c55bd48",
+      "ast_structure_sha256": "11bcdd4ca42791473d0c90c08c025195ecfc9bad20816b342e6666eba2b5405c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/AdvancedConnectionPrefsPanel.java",
+      "source_sha256": "b1d37c89408360da209c8735b6ba1665609c2ade00bcab285d222c51c2b6bfe3",
+      "non_comment_tokens": 1309,
+      "executable_tokens_sha256": "2c76302fd3e197ac333d1755864f849b7f06a7cfaddc06883ba266afac9dec13",
+      "ast_structure_sha256": "c29a7a5e5ac1643390350f3ec41ebb1934100d0ff9a41d651a44c935a583d0c7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/AutoUpdater.java",
+      "source_sha256": "8a073796374ea54e89587bbb0671d097f42c8f23496ee3ef447b61f482834906",
+      "non_comment_tokens": 426,
+      "executable_tokens_sha256": "de0d8e98bf4bf530ab74b8bc14cc179f3a075640b4d806d604d2e7a4b62a8325",
+      "ast_structure_sha256": "2939effbdd83c03ce35de23b919b75af85e8544a855d80f47001da412ca81305"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/CertificatePrefsPanel.java",
+      "source_sha256": "213eed4ce5be5bfb70169d7f24a8327fc9ef635dfa909f1e222a73cc321d4607",
+      "non_comment_tokens": 1214,
+      "executable_tokens_sha256": "7cb6426d2bb45131fce8e34458908191d8561e6c0ae5996d6e6c7c4410f79981",
+      "ast_structure_sha256": "06cc6c06f3d8cdc15cf8064edd23da7abae9818615c7c87033b2c49b5aa08b65"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ChangeLocalDirectoryDlg.java",
+      "source_sha256": "fccf9199d47792f3ba968e134b20130a6725602196fb51b4f15ab82f7f82e7ab",
+      "non_comment_tokens": 988,
+      "executable_tokens_sha256": "8c730db2465d9b3ea72652a30685ecc0af3ac559ca01d02d9e13ce49a1742cf0",
+      "ast_structure_sha256": "189b7aeb15388d97e8e208c4bca4dfc0790416059e93f40a0560f748c20fada0"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ChangeRemoteDirectoryDlg.java",
+      "source_sha256": "0afbd4116508cf3b47b73a966d752208333710d4117251dddd9ec89a1f02bcd0",
+      "non_comment_tokens": 988,
+      "executable_tokens_sha256": "6fabdc2e1c4d3e988c4fe51bbc11bec6023cdc8c2f703f977a254c1b9fa1e122",
+      "ast_structure_sha256": "3984073f3f8594f8b4eb2034f6911b505c9d4a1170bb7e111669c9d04fcc407c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ConnectionDlg.java",
+      "source_sha256": "86ac13c31712364d68c20646cd4809af12e47afd41b2eb0dd07955494d967f39",
+      "non_comment_tokens": 4642,
+      "executable_tokens_sha256": "796ce128ec7a875223329bffb0ec907c66339d3529e165694ab3f4a9734e2ec3",
+      "ast_structure_sha256": "2a793aded94db3d227e053c4ac964bdad19b70f4c3ba61e1d128ca7f809c94e4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/DnDTransferHandler.java",
+      "source_sha256": "004dc2a3cfead33f673686644a83e8698df5fdd35f30b87959da66120c5fe322",
+      "non_comment_tokens": 809,
+      "executable_tokens_sha256": "f3bff35eed60d56a78d187c53025afccf901f5529e81ee57652dd1119e32c8af",
+      "ast_structure_sha256": "de66d39ab0684296d3d989f5e8f833cfa84287729e703207ab0d75ec140e93ca"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java",
+      "source_sha256": "14a9be71ddd61df35215cd99f9f0026931d80673ad55233d3364e5629a1ab8a5",
+      "non_comment_tokens": 2563,
+      "executable_tokens_sha256": "cff78c54a252e026da7bb148c4ef1254a7aa27fd6cfdd4dc91a49a58877791b2",
+      "ast_structure_sha256": "972857196c7d2ac6fdfaf3dd7584e690f91e5d294ae5cbc553007b15589c4543"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/DownloadAsDlg.java",
+      "source_sha256": "7a4e1f73d3af55fa72d2abca8532bb59cb77cdc0bf35716a7f65e718e09f1913",
+      "non_comment_tokens": 947,
+      "executable_tokens_sha256": "00b07a353e07cbf342121d81250919288804009dd4a513b012c16ec94ebe5bc7",
+      "ast_structure_sha256": "2d6df7232956d1adfce33068b94c016f77d07866476dd3fc48868ecbc57ee1c7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/DriveCellRenderer.java",
+      "source_sha256": "592126991d8f3eaf0e8868f9147b522c97a49c826f2c169a7a6aeeeb20bc4907",
+      "non_comment_tokens": 184,
+      "executable_tokens_sha256": "dd8fad63ac39f8184efe99eb502926c385256031b0f6db94c7da9933ae26d63b",
+      "ast_structure_sha256": "5dd4d6851a8c80f7010e09b394fdae54611a0dd95438abd535ccf1a7a471ba39"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ExecuteCommandDlg.java",
+      "source_sha256": "63c11169b00d9a6924396e6327952348e3b78bd51cbdbbf42a51f9922693f65b",
+      "non_comment_tokens": 1017,
+      "executable_tokens_sha256": "a40337f0432da61dcbc7293ec00cd08a5b11fd1644d6dfd44d380b8c05275366",
+      "ast_structure_sha256": "cac3cb3cc6aa23a42b40d08db6f64690387fb2a152fabf13ff43fca88b71c3f9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/Favorite.java",
+      "source_sha256": "911b98c99a75607dcd9fc57c02858c06678c998ab6825f3b8a891b86738a53f0",
+      "non_comment_tokens": 143,
+      "executable_tokens_sha256": "a76e617bb3eacf632aa9c5965b83804ea73fe2525c5b858546ae1cf40e8e74e1",
+      "ast_structure_sha256": "854124d195ed95855aa017ea5efc219f5b99a902f178af708c9906ffa13698e9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java",
+      "source_sha256": "014f43a2111de86b9e4ee804d5b185cdb369e7f020dc5dc80077c223130ea1c2",
+      "non_comment_tokens": 4994,
+      "executable_tokens_sha256": "9fdd94f9b1762167ab09638a458673189f66e68083a24618655610688428d05d",
+      "ast_structure_sha256": "282264fbbdf36688546e26b7acf4289931eab108ff0d8c17d76f835d3444ea8d"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritesDlg.java",
+      "source_sha256": "6af5844028d74575fcb4fc9320629c98347aa74cb61f70a82c547db781d4f137",
+      "non_comment_tokens": 2234,
+      "executable_tokens_sha256": "7e9c25eaf23abef834431f81c4729701427a1fb4752068cffe7a37e86629ef41",
+      "ast_structure_sha256": "837bb3c1bf8d8e76ac53c01906ff16cabbca2eb77488ad0dabce6a756f7818da"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/FavoritesManager.java",
+      "source_sha256": "c50d233ee0488c87df61defaa9440b5eb76f5e71bfa404329a68edfdf5baa126",
+      "non_comment_tokens": 720,
+      "executable_tokens_sha256": "79bcad7e48f7a3e169047918f617803ddf223aa37b2cb840509b672dde9946da",
+      "ast_structure_sha256": "a1fd45942323f3655899ae005364d753a22d79dac437301e7a38415270682c25"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/FTPMenu.java",
+      "source_sha256": "f194f09f06b4d7b433666f8d98851ec833f1073289f51ef86b810b7b8851b615",
+      "non_comment_tokens": 1901,
+      "executable_tokens_sha256": "2a9bbde3c5e301e2e19deb49eb7ecf2e160c169d9a7244da59200e7dfd0492e0",
+      "ast_structure_sha256": "f60d96815b849e8ae368df7a55515a1e2545acd9669ed34f56e1510e19009a7f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/FTPSession.java",
+      "source_sha256": "7ceb1617ec403a910846bb859cf335e5264646f9dbe6cec4611399e07f27243a",
+      "non_comment_tokens": 8658,
+      "executable_tokens_sha256": "7b93f55df2851ecf9fbee7d541114738d797e831456a7718d1a9172ff547be54",
+      "ast_structure_sha256": "389e200c918f336ae400e1a9d74e868bb7af71458709fb5c4285601442ee68d6"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java",
+      "source_sha256": "ba16d6ec1042ab9e9997888ef699cecc116d7763abd9dd72a45240fb6051f530",
+      "non_comment_tokens": 1033,
+      "executable_tokens_sha256": "b27cceee5d0da14dba586eb53c60dce82da1c80ec9881a20ae3e7b368dea5deb",
+      "ast_structure_sha256": "007e26d087bf93f82f285ec62bbe682f9aef62ed4da43f2a7ae87c4778c03f62"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/HelpMenu.java",
+      "source_sha256": "1b00c7167fc65f9ffa01483cd125ea41cb8d3453910c54c1989abb26f1694727",
+      "non_comment_tokens": 649,
+      "executable_tokens_sha256": "a37073b07ec9057bab65be60d85d8c1601be198fff907a1305f2a87b6a4915e2",
+      "ast_structure_sha256": "084ddb68ede45ed6075a653a1774559f287308382e1b2b3f058f5395c52249e8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTP.java",
+      "source_sha256": "845ae223525ea119e310178201fa0f5010fc13888fa27d12d6c18e1cf108350b",
+      "non_comment_tokens": 3909,
+      "executable_tokens_sha256": "98b005b80a100af3a411c808d00aeceb8b0c71f2852cbe2a01a07bf4a1b1296d",
+      "ast_structure_sha256": "8108a1e83e8001c05dac3ce0137cc28e718c5011fbf158bc94587c0af2af7924"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPApplet.java",
+      "source_sha256": "207a069b4b87f8e1901a56d2dccd68f416e810edbef81bbae04952ab281931c9",
+      "non_comment_tokens": 356,
+      "executable_tokens_sha256": "529677c5d1dd3b3a6196b29824d86cf95d6feaf59ec9fbd73ecae9dfde3e6fb7",
+      "ast_structure_sha256": "e34a177381b5baad6054d49b09dbb953fe82823a8eb2975ab8c6b75666d5a044"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPApplication.java",
+      "source_sha256": "a917c338b788b34890fdf8747e35862ff5abf3ca62aa3230fefa23c6c1d13e0a",
+      "non_comment_tokens": 254,
+      "executable_tokens_sha256": "1fe1e95bad0d455a609c98f36e7e6d89ffb5e6f65358164fea8ad034a6482446",
+      "ast_structure_sha256": "a74bfa25e8508baf149e49023169b4f9eb49248ad1894bc48efbfc2eca83f340"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPConstants.java",
+      "source_sha256": "05d070a23997f1a2aad85c98461977586117d663dd651026a9dc454fa3db79fb",
+      "non_comment_tokens": 122,
+      "executable_tokens_sha256": "876d5b79003cecb3b84a63e223ff724bd21a1816a97f71b47e4520cc6ae5a0cb",
+      "ast_structure_sha256": "ce1c173140fe653ad9cacdc69e2c9f879396f2649915a85573dd6bf0d9a9742b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPHelp2.java",
+      "source_sha256": "d5ad0986c9e36adf8f782ef9b1889f7c55d7cc121815dbad12a70e743503a79e",
+      "non_comment_tokens": 259,
+      "executable_tokens_sha256": "cf8aa10085348fba8c1f56667c3aaf9aa0e3c425281c3906a407b10819a68817",
+      "ast_structure_sha256": "1392c8663a68ce032015417e47f106ebcba54f44af64df8fd4637ab0d0ef76c4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPPreferences.java",
+      "source_sha256": "b94fb2d1eabfcd7484979a88e926717d9b046c6b9c91f4fb18e0caad3dbc2347",
+      "non_comment_tokens": 2112,
+      "executable_tokens_sha256": "7bc40fd8a1eab9a2295b84cf3cc9ac74623056c3e3ddcb4e7d87b3ec492cf05b",
+      "ast_structure_sha256": "8dc9c128e094bb5f14c7befbf39f7338c0c3478e81919477bf9c7fc68badc3c8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPToolBar.java",
+      "source_sha256": "3430dc4ca1a6dbb40890bf4be4c1fcb7c240c88899ec2fd7edb9feeff0968e76",
+      "non_comment_tokens": 1994,
+      "executable_tokens_sha256": "f341acf5258ba123ac07149a058071388e6213a0984fafacd6510a2945943748",
+      "ast_structure_sha256": "4cabd964f9467fa3674bcacdf27132e1c30ff4a108011cc2fb37750e8ccc35bc"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/JFTPUtil.java",
+      "source_sha256": "4cb4b2d1b6bf9d58b20fc17a5cadc9d5e2dfe9b814dc907f93aec51cfbbd75a9",
+      "non_comment_tokens": 448,
+      "executable_tokens_sha256": "46f9605919148f114618911f338b2b2a305854d7ec0682ca125228fcaec5707a",
+      "ast_structure_sha256": "ba65e233375af8cd6d11d172e01dfa9dd2d7ab62e8a0ecf19bc1766e90ff4f16"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocaleCellRenderer.java",
+      "source_sha256": "760fdaaa6b74228780fc351129d025b284ac1b8652715123a91864afa5e8c32e",
+      "non_comment_tokens": 158,
+      "executable_tokens_sha256": "b45f2fae357495c834ef3457b33c1ccd6e03b62619d9151f323ff72b4415f427",
+      "ast_structure_sha256": "f9d3298b7fbee7daba717f29d0436e376359aa4df26a37b8232f00abf59a4edf"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalePrefsPanel.java",
+      "source_sha256": "fe1c1fb0572a8ca5f615595493217dc9f5f061d4f39dad807f6b82eabd8644d3",
+      "non_comment_tokens": 1462,
+      "executable_tokens_sha256": "2a5a7c8abf524ce6d1ee64c0458ea3282249631546d26440688ac04671085810",
+      "ast_structure_sha256": "223a975123969e05de0cad85ddd3cbf4047bbf60a33b1bdc96abcd4eb6d39e35"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+      "source_sha256": "8af551de8f5d16faea6a82713d8e748d2c2eaa3967731d8da715f798bfecf341",
+      "non_comment_tokens": 1296,
+      "executable_tokens_sha256": "e503f04bbb3c71be1a8cab94e3d448bfb29ddd6fbb24e53233c8ed2f20ab51b6",
+      "ast_structure_sha256": "749dbe39be8cb9da246bce02a5f42a5672157ad29d37c08f3bb51e8dfa6d0667"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileCellRenderer.java",
+      "source_sha256": "e0896fcd9e3be4d73c185d15752d8a8c6c6701d853e40715e157b8848b8c2cb1",
+      "non_comment_tokens": 241,
+      "executable_tokens_sha256": "28f6123a70e830a361d05d465c99bd56b6397ce1d34007b62d5c513d584e3e2a",
+      "ast_structure_sha256": "0e0859a479fc3373ef67b11bc586c3b0664ce6471f9914627efb4bf9f0ef59ad"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileComparator.java",
+      "source_sha256": "99cdc022bada1194565aaac998ac4a457e7acdf5272532b428bd32b2aca9fbb4",
+      "non_comment_tokens": 904,
+      "executable_tokens_sha256": "3ca0fb6830d9cf7ff86299500fa839ab23a38a6046610485474cde8746666438",
+      "ast_structure_sha256": "08056338c501b5f33612649a894b8110911ebb1d13e84fa5b6f0ab76f6556ade"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileFilter.java",
+      "source_sha256": "0557e7b990778389a6045fcf9721362f9cb2f325c68ddfff8526626833dddeb2",
+      "non_comment_tokens": 389,
+      "executable_tokens_sha256": "be3650fa47452affed739c4be8bec611c29df3f5f6965f26284cd132b91fb466",
+      "ast_structure_sha256": "7e59e29981e1029c813e83cddafa15c8d75cd6cb4640b1c0877ecc51453601ba"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileFilterDlg.java",
+      "source_sha256": "f64d762bc2e9fb3b15622ed9b2fa50a987266cd2aebd034bceca771b2a63e08e",
+      "non_comment_tokens": 2883,
+      "executable_tokens_sha256": "08d2a7caba65d902af1ec7145d59687f21e5f647424c749cfec9626535ec1b49",
+      "ast_structure_sha256": "b90e30f8d94cd13e64d959a17102c099f01a1ec888caa7c6bb52e2eaa277397f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFilePropertiesDlg.java",
+      "source_sha256": "3751e5281bfbbc4d4dd4b535b42796275facc5a27edb5deeff018fb886a36fd8",
+      "non_comment_tokens": 2681,
+      "executable_tokens_sha256": "7eff2e9e43f81ab9e085a878145762df3753afa10e1e52b79d6fd8ded1bd2c29",
+      "ast_structure_sha256": "2089a53c791f9f55a7a4497e547eb5274b731a9e8cb41e333f315a54392d923a"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalFileTableModel.java",
+      "source_sha256": "e36ec584b78439c357ed8d9acc722b52d6a0c136d343a1420c1b40957b10104a",
+      "non_comment_tokens": 384,
+      "executable_tokens_sha256": "c384f3955afc9cc47676fee8e906d5bd40fc61b308775801ad335097fdbbc555",
+      "ast_structure_sha256": "532aa54de22d3fa7bc99197eaed97548f77e4f865c853f00d8e620f6c6d3cef8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalPane.java",
+      "source_sha256": "1c4880969e6efa0fbeac9dd6caa52ce4be7e1db057ca5816bdd2cf2d657f1161",
+      "non_comment_tokens": 3267,
+      "executable_tokens_sha256": "a42f1afc3a7a5c5e1940fefea5558244deb9c46d5be2108f8c5370ffdb530fee",
+      "ast_structure_sha256": "f4155fa3ac21918dcc60a5d36bf7cdb13d2a1533b452ebda0447660f76cf4aca"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalSystemMenu.java",
+      "source_sha256": "cdc674b6e055e56839bc97880496ebb6e60de840203bcb32cb58550e3f40c75b",
+      "non_comment_tokens": 2094,
+      "executable_tokens_sha256": "3a5c845e84bc0ea1a9bb65f5aafe565ae17f562c44d49bc27b05fb46c58adc8b",
+      "ast_structure_sha256": "b624a9922d0b21033f646a95c4544ebb98591c36eee4c938d9740b7f99ea5d4f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/LocalSystemPopupMenu.java",
+      "source_sha256": "5df9323cf86e257df9ef8308341a9a2d1687e71aa9ef8ecb82d9a24f4b8baf1d",
+      "non_comment_tokens": 1849,
+      "executable_tokens_sha256": "beb855254b346ecc4c578595641718be7b594590e2dce7d2d334ec1374d8975d",
+      "ast_structure_sha256": "8f4caf69f3132ed29926a196d4d29a22596cd3690fb80489834f0e6230b6f305"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/NewLocalDirectoryDlg.java",
+      "source_sha256": "2f4173c17aef0f7e8670b90b8bf9158f31292441dcb05976f522f2039eb52a5c",
+      "non_comment_tokens": 980,
+      "executable_tokens_sha256": "29eea5f0e97b163da502d2f6b9ed3f52d02597a836dd957739a282d52d66e02c",
+      "ast_structure_sha256": "e1518d2c6829831ff413010cf8418891dac6099c44cdb5fc2a8b7eac8d027497"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/NewLocalFileDlg.java",
+      "source_sha256": "dde5020c04f946699f87462b7d73430c30dd34f108e805352346b8ac777bc5be",
+      "non_comment_tokens": 848,
+      "executable_tokens_sha256": "b3aaacb0f968a361b9624ccf1a52be3d5ff539d0612cc2cce76483e9faf2a951",
+      "ast_structure_sha256": "4c350c57885b4cc15242b2b8ddd78503dd6c94fbee172546c19f48dee725f7f1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/NewRemoteDirectoryDlg.java",
+      "source_sha256": "acea0564d0ce8219ddfb8e0cc3f8642f00dad0dad87e55ea2b0f1c81a082b191",
+      "non_comment_tokens": 848,
+      "executable_tokens_sha256": "c84a76721782819b6f0a5a62a87ea939a81af3e3caebef1be9bc5871d65348a9",
+      "ast_structure_sha256": "4c350c57885b4cc15242b2b8ddd78503dd6c94fbee172546c19f48dee725f7f1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/NewRemoteFileDlg.java",
+      "source_sha256": "15f84400ad5fd9d5e0d7465e220b585cf7ae3aeaa4937a7cfdbf6d2641e83835",
+      "non_comment_tokens": 848,
+      "executable_tokens_sha256": "29144074db5b080ee6f2de252fe25b0e295d34f2ce780ec4e9b28cbd43e4ee37",
+      "ast_structure_sha256": "4c350c57885b4cc15242b2b8ddd78503dd6c94fbee172546c19f48dee725f7f1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/OSXAdapter.java",
+      "source_sha256": "c5e84d629d0d733e718b1bf31741bb1a744eb7098db0f801db7657c9543a1498",
+      "non_comment_tokens": 666,
+      "executable_tokens_sha256": "a2b8e9c830c900891e22b5ea66d00ebdd9e06d270d3750e068fcde14ab1c4280",
+      "ast_structure_sha256": "7126a0b5179bea376a1710cf51c48c13864e799a8c38116530b662607ec12d15"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/OSXAdapterOld.java",
+      "source_sha256": "d3fb5920533d2a5d0b196ff2b6efc62f9dab79efde40d0b4dd639f0a603de868",
+      "non_comment_tokens": 288,
+      "executable_tokens_sha256": "263c9fc538e07dbc9f7486e9e53bffc61bb2b27b85b50d0e380570343a60ba67",
+      "ast_structure_sha256": "0ad5ea8f5ed17e57c507d12ee8561c77e0a6b128faa8f21bd01bef9f518b04ab"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/package-info.java",
+      "source_sha256": "0228a31605b11911bd050155d3a7897c2ff3caa90d11cccec72408a2629ef84a",
+      "non_comment_tokens": 7,
+      "executable_tokens_sha256": "d54a74765e78608b7998cd1ec8de6bcc03add9d1ab9a91a07f62fb10f045150e",
+      "ast_structure_sha256": "cf3ed95a3ee8b081a963c333b04edfacce57a18c5355360088d8042732e9c9e5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/PreferencesDlg.java",
+      "source_sha256": "69f622dbf480bd6e86754cca493d7612eac596b33016e4f0e5fbb4579ac2869f",
+      "non_comment_tokens": 2007,
+      "executable_tokens_sha256": "ad920c1781111a867b89e76846c55da2ebb45dfa4bebc387f154763f12f11f83",
+      "ast_structure_sha256": "b3d4ba1312af6768ed476791d34785432d6eb642f9ccf08d72de36e04f5c2af8"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ProxyPrefsPanel.java",
+      "source_sha256": "a2b12989dc5a99c5c81617261c9d1e831ffde1389bcb85653296967d5ed017e5",
+      "non_comment_tokens": 1394,
+      "executable_tokens_sha256": "1d91b9d50c27689a2ffc458b56f0ab41faa01d06942ebbb3e9e3f649b0113560",
+      "ast_structure_sha256": "34b4b654d879d07fa339b01fa245711196ad84b07d9114156e75fb28e2d628d3"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileCellRenderer.java",
+      "source_sha256": "2a02b03ec2b8ea6ea2b4be66952f08fc7d794ae998cdfe8350e21198c8c7cef6",
+      "non_comment_tokens": 221,
+      "executable_tokens_sha256": "ee193666cd33879142bb65a38c8b121357636c1733a71233e368b929159799d2",
+      "ast_structure_sha256": "bf0ee5dcadf2ae80b5f9f3219bd9c471d58da596dc00797cce8d6577a51d2ffb"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java",
+      "source_sha256": "d20314facbbbd65cf8358c085c510bdf19b48905a8c17438492f768895334096",
+      "non_comment_tokens": 766,
+      "executable_tokens_sha256": "da4e1a1485c66b818019cfb55fd5041cbcee120001cecea0c458abcee73af46f",
+      "ast_structure_sha256": "a924cd79c486273e4c82c7c2d834317fed17f31f786330ec4f9f9f23dfbc05e0"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileFilterDlg.java",
+      "source_sha256": "5ed7769ecda4801891ff6b1fc9d34d73e74c332849e352b8d502863c6c678c6a",
+      "non_comment_tokens": 2645,
+      "executable_tokens_sha256": "7baf1b138787b31ff2eabcecbeacd74c736bd0477746d6ceffe911f674b82abf",
+      "ast_structure_sha256": "eb2af37b7eda52f6b41252adcc9424f3f6605fcecd554af037e77dc3b1a61ba9"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java",
+      "source_sha256": "2012edd58e0c9918e2b7cee9e2ec5f4b7503e738e369a9fe1a16dcf5910ed6b3",
+      "non_comment_tokens": 5346,
+      "executable_tokens_sha256": "620dedf5ef55dca5742225694fdf24116fbffac4b7b74f83bb9c344ae780f399",
+      "ast_structure_sha256": "fa24d54a04e26c1778a251b283a7fbd461f712157e383582cf0a9ddfcac12d6b"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteFileTableModel.java",
+      "source_sha256": "e52644a592e1e26412d97edf246b01b5c2ef104e31d10f0f924f87d8a5a16273",
+      "non_comment_tokens": 420,
+      "executable_tokens_sha256": "a6bf113bffffca179a88787adb4bacfece2a4c88b6d406cc9a5d75046e181574",
+      "ast_structure_sha256": "0e6d74504247eb03b589aa0c3d0942172226870e2cbadacbd5cd297bd9eb28f7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+      "source_sha256": "451d94d3e00274b95e0f7275aaca463d9bbac9f8d989d0640f950acc6ef5bd37",
+      "non_comment_tokens": 1143,
+      "executable_tokens_sha256": "6069ccddebd9f2c677299fe1b9b8c98b2f7568d4b90cf4b9e276a06c5bd17c64",
+      "ast_structure_sha256": "7fb9343a8654f25927aa5dadb8f3893133ba52e6553fe7c539e2a58b22dee8b4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemotePane.java",
+      "source_sha256": "5e652edf743ff88c8a30bc37720121b12db5e124a51a6c605ce30d6b554bd61e",
+      "non_comment_tokens": 2751,
+      "executable_tokens_sha256": "961b9ac4ce7c78f6c52489205410271bc6f15db2af7c96eb7b0115d3b3ba9c9a",
+      "ast_structure_sha256": "e1237878783f0a5e079acd071b042f297098e367d353a85817093a88fab05496"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteSystemMenu.java",
+      "source_sha256": "d0fd3c7c6d5366fcdfd3420f031dc8499edd10336a9040e123adacb15791646b",
+      "non_comment_tokens": 2295,
+      "executable_tokens_sha256": "09c580a5d0280335eed9d882fe9443f6f8845225135d172c4d918992a7dd55e5",
+      "ast_structure_sha256": "3c8809a60fd3f38ce5160a81f7186ff55ccfd571fc07d60bd8bdda51b8c28f02"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RemoteSystemPopupMenu.java",
+      "source_sha256": "9f754d32da25a665c179b97a58ca39802ddad5ee907dcf6ca6962858fcb1cbc7",
+      "non_comment_tokens": 2223,
+      "executable_tokens_sha256": "be75a812c171031d3a636a7ebab3d8e4ec3c5e0686567f7e4cefeff0a2d6e913",
+      "ast_structure_sha256": "a720f47c79d40a36f8a707bb52a9ec12854b39867426b7cf2162fbbe3abc458c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java",
+      "source_sha256": "3420892bc4006553a332e3d4e526d2e312af6b6587417173b9ac0f8a3f630cd5",
+      "non_comment_tokens": 1114,
+      "executable_tokens_sha256": "ca4c2873708810c587d8e899fab38fa68ea0fdfab46fca9d44a0ede4211fbb98",
+      "ast_structure_sha256": "09205b79f481aa3b895c2b0861dff94f18282e4b815d5da9a753b57ca51caf30"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/RenameRemoteFileDlg.java",
+      "source_sha256": "5a0de6d93ad9ffbec368dc4c466dcd10e397e03026cc8e2486e7fef69e7af898",
+      "non_comment_tokens": 1099,
+      "executable_tokens_sha256": "4e4d7ae2f41c11712576df30c4fd8ceb9ddfdc3369dc2a990e418af26d48048d",
+      "ast_structure_sha256": "6a8619ac988eee52b0ac0b40436d3433d48dc7e51c6b16b0bc6e1cb72e0f6297"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/SecurityPrefsPanel.java",
+      "source_sha256": "a0e2d91a770f3b44b928ab3f6e2db45c229e886a956202b882cd029bdd3b68d3",
+      "non_comment_tokens": 1026,
+      "executable_tokens_sha256": "15a76fe86ad410b1b65f2f0b58a6990d5bf7b4b57b9e742331e9b72d017b3ed0",
+      "ast_structure_sha256": "79cf742b5c0a02313810c6f3941cbc84005becab184511e3de1929ddc985f40e"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/SessionPanel.java",
+      "source_sha256": "e5375ed07b0b7ee9674bf7ba3c7ec62e228140b7f9369d191c0c0f4a2b2f05c0",
+      "non_comment_tokens": 149,
+      "executable_tokens_sha256": "f7085841d3bf905a136bde3243e866a38c28b60884395188a9ff670cb31e86bf",
+      "ast_structure_sha256": "4ac968661dba310b39ca43abf7f5900fef6763cfef5683e1e60c057572e66e50"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.java",
+      "source_sha256": "9899d951f63fbd70e797b7a86313bb576073faadfc31513e15abdeab02605301",
+      "non_comment_tokens": 510,
+      "executable_tokens_sha256": "d6c941ccb8aaf1730b827e65cd447c39048d1a9636f0d99ee25989f800023eba",
+      "ast_structure_sha256": "a17c68c9d7f3d448019837d4b8fc6e51cf5280ecd1d2b28d21c2a21f1712c077"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/StatusBar.java",
+      "source_sha256": "4159d2522c3c821565a44ebbd2e65dd69be622238ba9149cec05de3c05b7e4da",
+      "non_comment_tokens": 655,
+      "executable_tokens_sha256": "643e0f7b271d5246d75af2b642025884235f6467276b8c1c1645b7678bc95d0f",
+      "ast_structure_sha256": "1df111bed7cfa6cd941471777a87f8374261b3770bbeb7124fb805ad87723451"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/StatusWindow.java",
+      "source_sha256": "17574011dc9978828ca4253c6e3d2d1601235bc8b2b7bda746667f1258a00bee",
+      "non_comment_tokens": 611,
+      "executable_tokens_sha256": "692c311ddfe101d3e4a9a0fd99510549f5c204c60efa7c15500584dd36fa1098",
+      "ast_structure_sha256": "2f7d355f09dbdd44612c4d329290f2a492f9435bd75f8c1de17e20918c5cf788"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ToolsMenu.java",
+      "source_sha256": "3f0989b419e518e2ed5395c9850ac802c257e3f5e73f9fe4c6b9fc2ef5894c3c",
+      "non_comment_tokens": 540,
+      "executable_tokens_sha256": "b748b5b36ba1ccca6f28a36ccd7e5a11131c10f9ace8c2f7915ceac492679a75",
+      "ast_structure_sha256": "954021aed2b7d98f11f35607c3d8e6878855a2d3378e7d223c73e40fec040185"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/TransferModeMenu.java",
+      "source_sha256": "a1145fc5e5a8a849956daa1961c0e479a73e30b75ebec9bed12990cc2fdc662c",
+      "non_comment_tokens": 651,
+      "executable_tokens_sha256": "77595bee9b0c3476a7ef173e3efbdebaff454d31787ad840ff288cecbf1e403d",
+      "ast_structure_sha256": "59eb0f81deb3741b8a0f77564a875834d99a7a086f84f78b18de31f1f46483c4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java",
+      "source_sha256": "b1c7e021ffafc649de7e5d9701370ffc2f1eacc5a5abee5c9b97cd394ee33fed",
+      "non_comment_tokens": 1397,
+      "executable_tokens_sha256": "cdaf61807482b2ac7fbca00124c155d53495cc489284ef4238c68a65ea1b006d",
+      "ast_structure_sha256": "16f549e696fcc146f7e499392ca39ac7d377896196c6c0a01497f79f56938e0f"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/TransferObject.java",
+      "source_sha256": "a522421701b7e59f3052e3953eb07986fbd96fa681bad9d9e385f8719adeb47e",
+      "non_comment_tokens": 151,
+      "executable_tokens_sha256": "a9e9fb818ae7ef9e82002972ac03f3b45e8eaeed25a018054a623c7f859e51f1",
+      "ast_structure_sha256": "7bca733f8bc8606943b3e5cf15080cf08b1bbbf04d11eb0f9c30c48b2ceb2b95"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/UIPrefsPanel.java",
+      "source_sha256": "70a94c8a5c735790cc83a0bb018669e67af13c9683712f5e7957e6819dcf99f1",
+      "non_comment_tokens": 650,
+      "executable_tokens_sha256": "89b8d45d39fa587329ff8d3c3383dd8783ce05d90fa96fd662d3f5ffde8b20e5",
+      "ast_structure_sha256": "20f094ec5a353b0a456603926d328273f3592afdc66b8ed37ca821ce3e2c5793"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/UploadAsDlg.java",
+      "source_sha256": "4ca72e097c3075cc656157b68c7cdd58248fbd3516a3ccd4a2b7f6be31bb35cd",
+      "non_comment_tokens": 937,
+      "executable_tokens_sha256": "2f3b1527cd2dd0fa42bd04070b644a6a21bc4761635f4cff6a03382eff338127",
+      "ast_structure_sha256": "4f962d3b3ab034a42ec39c3b690ee3ce573b51e8490db525ab3f395327668c64"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/jftp/ZipAndUploadDlg.java",
+      "source_sha256": "e4de54a839dcc3678618505ae83d9d3588b8b185d01dfaa30468546316888501",
+      "non_comment_tokens": 2047,
+      "executable_tokens_sha256": "894935c6f30754e88ff3a8de8643e76a5a03b428efc0071756028552d0ff03a1",
+      "ast_structure_sha256": "314dc464028334f48d0a16c53b66dc24d9905a5baad2efd43f7b6831f813cb19"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/CommonResources.java",
+      "source_sha256": "8602a87700ff59ea3a963817db03a2ababb26f6666c4f46105f4caf07e004e8c",
+      "non_comment_tokens": 52,
+      "executable_tokens_sha256": "c53bae4567d2b4619cd0597df5d040aaa09d3325bdf2f4722c01dbd7e5873667",
+      "ast_structure_sha256": "155ccc1c212531f396052546d38d74db1680790f99ef038ccacf971e27ea4a96"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/Encoder.java",
+      "source_sha256": "e625cc02fa23303d6883c3da90d0abc23ffb44b229e314a57e19499fafd3bad4",
+      "non_comment_tokens": 146,
+      "executable_tokens_sha256": "b92c96068b72eb7e3ebc17950e102f0b1c05531dae83fee83f3b28a4142b538d",
+      "ast_structure_sha256": "4de3977d242146acb0e99cb4fe6b92e10a1212dff8056d749a689ea257698264"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/FileChangeEvent.java",
+      "source_sha256": "af808e63f6a60d2686c6a43e32711e496d48b248459e1ce0f7d7a5955a519696",
+      "non_comment_tokens": 116,
+      "executable_tokens_sha256": "f847a7bb771dd7aaa32a9b3a244b4ae55956ebb8d9813627083c4906c03949af",
+      "ast_structure_sha256": "855daf4d66b4df5252e82654551c64f006a399beeb9a0eee9906bbe8a6e7c8d1"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/FileChangeListener.java",
+      "source_sha256": "f1a958203f091df3636ce12f746dfb0e4bb8e679447a4968956715b4aa8c5b77",
+      "non_comment_tokens": 29,
+      "executable_tokens_sha256": "d27b5dcbb2ecda06a12516eb7f5ffb13bf33ec32a22b38539a7796e9d4732d22",
+      "ast_structure_sha256": "0427e7a4a0406c33193a025b1e2fb621959f55f0624f49f2630d2f2b82cf6d1c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/FileChangeMonitor.java",
+      "source_sha256": "23dd8aca7f66d6027cdadd07efb82b271f3131a2e26588f2acf104f7d7f0bbee",
+      "non_comment_tokens": 438,
+      "executable_tokens_sha256": "32d240ba2df9a8966ed3ae39a4e47805c434d6c7e3cc5c9e0a7f033e0325d2d5",
+      "ast_structure_sha256": "ebff72d20124c5e49371f8faf77b401a1225a11dc552ca8e7cdea64b9e163287"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/FileUtilities.java",
+      "source_sha256": "a0c718161a915d6591f7a17abfb63315a7523e7c4e5f3fa98ecb787f522357e4",
+      "non_comment_tokens": 192,
+      "executable_tokens_sha256": "ac429c49562cf0ea7fb16b44b365a6e8c44ddcd86f3f895a9a0ee66ceb1e88ef",
+      "ast_structure_sha256": "2676131a3d5931baa64c3524e10bb7931c43452dbf33359263cdbc23a25855ce"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/package-info.java",
+      "source_sha256": "fe9a2b66f7cab2f7fb13eb4111b5da1f4920e90cc02c7a18337b4586a8ebd78e",
+      "non_comment_tokens": 7,
+      "executable_tokens_sha256": "d832e350805612e58257e7f86f66e408cd052694763a020a900fc36083e61165",
+      "ast_structure_sha256": "cf3ed95a3ee8b081a963c333b04edfacce57a18c5355360088d8042732e9c9e5"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/ProgressEvent.java",
+      "source_sha256": "b5e89431d8524d6b3cc7522513aa2f404cbdaf3bdcf9d67f704cd4b9e23f7f53",
+      "non_comment_tokens": 59,
+      "executable_tokens_sha256": "86f480eec37e57094b91bcf096e59e10fcba295c8f2ce887da0d85eebbac2b21",
+      "ast_structure_sha256": "e3a56e237fa9bf3ce5dcf3db9dabc3d3f17f59d1fa51e338f097cd23e54ab60a"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/ProgressListener.java",
+      "source_sha256": "dff58a4d998d55054ac163c6625ee540b6e35862978f1a6f3d8d00a048aa59b3",
+      "non_comment_tokens": 29,
+      "executable_tokens_sha256": "e03b054f8cc69a03b7561d5042e0acdb3684676088020cc7333534acbf80d763",
+      "ast_structure_sha256": "0427e7a4a0406c33193a025b1e2fb621959f55f0624f49f2630d2f2b82cf6d1c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/RandomKeyGenerator.java",
+      "source_sha256": "b434049e060d3aa5b233aa9bb07383f07aaddc8ff13352fcc044384c5037173e",
+      "non_comment_tokens": 263,
+      "executable_tokens_sha256": "915240046d6a8f39ec12ccdfb87978e873dc3ee3038e4c2d9645f9d1561d73cf",
+      "ast_structure_sha256": "e6a72112f7e0c50a406149f0c1ee3b8fe6d12ca493ff0a5c06f025eb603b97c4"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+      "source_sha256": "987cea071f2044eddf460cf41a9688c406cf291548f144db3651688c70637dee",
+      "non_comment_tokens": 201,
+      "executable_tokens_sha256": "f849aa90d47f7402d99c791f744761b119cdbf341e21ed3c60f42444ebdfae66",
+      "ast_structure_sha256": "05afbbbf10df2d0032b0f94de7f92d2c654f08f6da90ce97228d65f4b8c0f6c3"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/StatusEvent.java",
+      "source_sha256": "8acb857623f70eb115118c5ecb7b9d2db9b74b9c4a851c06e9df49f7d63ec275",
+      "non_comment_tokens": 59,
+      "executable_tokens_sha256": "58982ad9a38cba1e68fa718c70c10c143f3c6361140f86c7f0bc680ca5a7e039",
+      "ast_structure_sha256": "2a897a9e532476d48f805db34f65789e8d97b3578a552dac9f6be73177cec7f6"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/StatusListener.java",
+      "source_sha256": "74aa3d0edb37dea2a63e0f1507b9dd27f768647fe0304f453c24d587b6a0837a",
+      "non_comment_tokens": 29,
+      "executable_tokens_sha256": "834ab7561248e238da2cca800d7515143c14b5c5564ac9fbc7399d3c4e68842f",
+      "ast_structure_sha256": "0427e7a4a0406c33193a025b1e2fb621959f55f0624f49f2630d2f2b82cf6d1c"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/StringUtilities.java",
+      "source_sha256": "ff857d2b760bd3994a9e8c4c8cb08b929abf773460be776f7a1d47df73ef8054",
+      "non_comment_tokens": 242,
+      "executable_tokens_sha256": "3aba33030b1cdf418c89f1bc57346b7e7d16757875aa70b35e6381aa738e699c",
+      "ast_structure_sha256": "8dc20259c81499e96b43090bfe6d558175a4bdc82cd0a1261ee1dc79c8a7f41a"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/util/SystemUtil.java",
+      "source_sha256": "2490778846de07bc74a08eac9aa52f7057519842fd8698a48ec517af0ea9ca6e",
+      "non_comment_tokens": 371,
+      "executable_tokens_sha256": "51bb751e08f2c1ad0b6770c41479a019533685a9979551053a64acd63794ea97",
+      "ast_structure_sha256": "ae3b0fa190f3ba5202ae736e7cb1abe76b8bb5cbca5eb15a1ff62ff5865b59e2"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Unzip.java",
+      "source_sha256": "fe6d306284a107aef809408855ccd1938632b9b779ef2b21d56e4e282d7c0c26",
+      "non_comment_tokens": 933,
+      "executable_tokens_sha256": "cb3deb7cdc62546bd9a0dcee194fe48d665951e89a8d2d985caa583f8e9285d0",
+      "ast_structure_sha256": "bf927358f96b0f590b192e9def1f2777268d8b0fb34afed73791ee7807809ff7"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java",
+      "source_sha256": "e40ddf030df75e8d5ece1df597b8bad7e5bde795261cdd9fec2ca406bffad50e",
+      "non_comment_tokens": 1077,
+      "executable_tokens_sha256": "849a856afcd33691431aa08d37ed5d2b78a52c059712014b6a6fb3e433559af5",
+      "ast_structure_sha256": "3fb3e8be0f092a415588c7fbd683b04e8052492626dd1a94fe1b3e1135d48b02"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/ZipEvent.java",
+      "source_sha256": "a7eb8e8fbfd195192eb39c719064cf6e260eb07bf104208da5df1a88a9c060b0",
+      "non_comment_tokens": 100,
+      "executable_tokens_sha256": "3b8f80e7947de4f5968bf039994216991a99627f1e4bef3207ede91864c74e66",
+      "ast_structure_sha256": "618cea70c1e0be78d31cf13bd5048705dc2a9e3eea7a634c72ca6aabe0d09a85"
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/ZipListener.java",
+      "source_sha256": "528eeed4801d55f801ee66707acb2aa17dddd2f709ca0cf678ef8dd032476ba5",
+      "non_comment_tokens": 37,
+      "executable_tokens_sha256": "2935d85878296e5c3e44dc2716e49ffefe336550888205710d86a815f5d7321e",
+      "ast_structure_sha256": "7e6e5328fc8347c08b706e71d34d86506066b90a08a3a0171a732a8a341dfce6"
+    }
+  ],
+  "retained_examples": [
+    {
+      "path": "src/main/java/com/myjavaworld/gui/MTableHeaderRenderer.java",
+      "source_sha256": "6629fc95295497783bbcafa0ed5c3124f8024fcb47ab4ef065444bdb4c30f718",
+      "start_line": 85,
+      "end_line": 90,
+      "quote": "/**\n\t * Returns the current icon set on this renderer.\n\t * \n\t * @return Current icon. May return null if no icon was set.\n\t * \n\t */",
+      "retained_in_selective_full": true
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java",
+      "source_sha256": "7af6d4940056dfd7cb13663695cc23888c18a4dccbb1fd1f349629eae4ef8ac4",
+      "start_line": 79,
+      "end_line": 82,
+      "quote": "/**\n\t * Called on the event dispatching thread (not on the worker thread) after\n\t * the <code>construct</code> method has returned.\n\t */",
+      "retained_in_selective_full": true
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/gui/SwingWorker.java",
+      "source_sha256": "7af6d4940056dfd7cb13663695cc23888c18a4dccbb1fd1f349629eae4ef8ac4",
+      "start_line": 98,
+      "end_line": 104,
+      "quote": "/**\n\t * Return the value created by the <code>construct</code> method. Returns\n\t * null if either the constructing thread or the current thread was\n\t * interrupted before a value was produced.\n\t * \n\t * @return the value created by the <code>construct</code> method\n\t */",
+      "retained_in_selective_full": true
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java",
+      "source_sha256": "e40ddf030df75e8d5ece1df597b8bad7e5bde795261cdd9fec2ca406bffad50e",
+      "start_line": 152,
+      "end_line": 158,
+      "quote": "/**\n\t * Opens this <code>ZipFile</code> for writing. This method must be called\n\t * before adding any entries to this <code>CompressedFile</code>.\n\t * \n\t * @throws IOException\n\t *             propogated.\n\t */",
+      "retained_in_selective_full": true
+    },
+    {
+      "path": "src/main/java/com/myjavaworld/zip/Zip.java",
+      "source_sha256": "e40ddf030df75e8d5ece1df597b8bad7e5bde795261cdd9fec2ca406bffad50e",
+      "start_line": 190,
+      "end_line": 190,
+      "quote": "// Let's not try to add the file that we are creating to itself.",
+      "retained_in_selective_full": true
+    }
+  ]
+}

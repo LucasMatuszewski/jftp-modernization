@@ -6,6 +6,8 @@ Generated 2026-10-08 from revision `1b5b4f0b26ae85df8ddff09014dd6b547d9c2690` us
 - [Full source reference](jftp-source.full.xml): complete text for behavior/signature checks.
 - [Manifest](manifest.json): original paths/hashes, commands, measured statistics and verification.
 
+For comment-aware optimization, read [customization and measured profiles](customization.md). Use [selective full code](jftp-source.selective-full.xml) when behavior matters; [selective structural compression](jftp-source.selective-compressed.xml) and [the hybrid example](jftp-source.hybrid.xml) still omit implementation outside explicit full-file overrides.
+
 | Pack | Files | o200k_base tokens | UTF-8 bytes | Generation wall time |
 |---|---:|---:|---:|---:|
 | Full | 183 | 230,673 | 905,129 | 0.996 s |
@@ -26,6 +28,7 @@ From the repository root with Node.js and Python 3.12+ available:
 ```powershell
 npx --yes repomix@1.18.1 --version
 python docs/RepoMix/generate.py
+python docs/RepoMix/optimize.py
 ```
 
 The first command obtains the pinned npm package when absent. The generator uses that cached package's Node entrypoint, validates its version, and applies [the explicit configuration](repomix.config.json). For a custom npm cache, pass `--repomix-cli /path/to/repomix/bin/repomix.cjs`. Generation stages outside the repository and publishes artifacts here only after source/coverage validation. It never builds or launches JFTP. Concurrent edits outside the source scope are excluded; source changes during generation fail verification. Regeneration updates these files and this measured report.
