@@ -24,6 +24,8 @@ Useful options:
 
 - `--sessions-dir`: ancestor lookup root when logs are in different dated folders.
   Without it, ancestors must exist below the selected log's own directory.
+- `--end-ordinal`: exclusive record cutoff in the selected log. Use the original
+  included-record count to reproduce a snapshot after the log gains later turns.
 - `--auxiliary-session`: record approval-review/subagent usage in a separate
   context; repeat it for multiple auxiliary logs.
 - `--tool-catalog`: optional JSON array of `{name, description}` entries for

@@ -443,6 +443,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("session", type=Path, help="Current root/fork rollout JSONL; follows inherited prefixes")
     parser.add_argument("--sessions-dir", type=Path, help="Ancestor lookup root; defaults to the input file's directory")
+    parser.add_argument("--end-ordinal", type=int, help="Exclusive record cutoff in the selected log, for a reproducible snapshot")
     parser.add_argument("--encoding", default="chars", help="chars (stdlib), or explicit tiktoken encoding such as o200k_base")
     parser.add_argument("--output-dir", type=Path, required=True, help="Local output directory, outside publishable source")
     parser.add_argument("--tool-catalog", type=Path, help="Optional [{name, description}] available-tool metadata snapshot")
@@ -454,7 +455,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         meter = TokenMeter(args.encoding)
-        records, sources = load_lineage(args.session, args.sessions_dir or args.session.parent)
+        records, sources = load_lineage(args.session, args.sessions_dir or args.session.parent, limit=args.end_ordinal)
         catalog = json.loads(args.tool_catalog.read_text(encoding="utf-8")) if args.tool_catalog else None
         if catalog is not None and (not isinstance(catalog, list) or any(not isinstance(t, dict) for t in catalog)):
             raise ValueError("Tool catalog must be an array of tool metadata objects")

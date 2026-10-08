@@ -143,6 +143,21 @@ class SessionAuditTests(unittest.TestCase):
             self.assertTrue(reads[0]["complete_excerpt"])
             self.assertEqual(audit.skill_reads(code, [{"text": "not the file"}], audit.TokenMeter("chars")), [])
 
+    def test_cli_cutoff_excludes_later_appended_activity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            session = self.write(directory, "root", [
+                {"type": "session_meta", "payload": {"id": "root"}},
+                {"type": "response_item", "payload": {"type": "message", "role": "user", "content": [{"type": "input_text", "text": "old"}]}},
+                {"type": "response_item", "payload": {"type": "message", "role": "user", "content": [{"type": "input_text", "text": "later"}]}},
+            ])
+            output = Path(directory) / "output"
+            with contextlib.redirect_stdout(io.StringIO()):
+                result = audit.main([str(session), "--end-ordinal", "2", "--output-dir", str(output)])
+            self.assertEqual(result, 0)
+            report = json.loads((output / "context-audit.json").read_text(encoding="utf-8"))
+            self.assertEqual(report["analysis"]["categories"]["user_messages"]["characters"], 3)
+            self.assertEqual(report["sources"][0]["records_included"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()
