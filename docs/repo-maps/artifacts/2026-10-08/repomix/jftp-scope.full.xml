@@ -1,0 +1,878 @@
+<repomix><file_summary>This file is a merged representation of a subset of the codebase, containing specifically included files, combined into a single document by Repomix.
+The content has been processed where content has been formatted for parsing in xml style.<purpose>This file contains a packed representation of a subset of the repository&apos;s contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.</purpose><file_format>The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Repository files, each consisting of:
+  - File path as an attribute
+  - Full contents of the file</file_format><usage_guidelines>- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.</usage_guidelines><notes>- Some files may have been excluded based on .gitignore rules and Repomix&apos;s configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Only files matching these patterns are included: src/main/java/com/myjavaworld/util/ResourceLoader.java, src/main/java/com/myjavaworld/jftp/Favorite.java, src/main/java/com/myjavaworld/jftp/LocalFile.java, src/main/java/com/myjavaworld/jftp/RemoteHost.java, pom.xml
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Content has been formatted for parsing in xml style</notes></file_summary><directory_structure>src/
+  main/
+    java/
+      com/
+        myjavaworld/
+          jftp/
+            Favorite.java
+            LocalFile.java
+            RemoteHost.java
+          util/
+            ResourceLoader.java
+pom.xml</directory_structure><files>This section contains the contents of the repository&apos;s files.<file path="src/main/java/com/myjavaworld/jftp/Favorite.java">/*
+ * Copyright 2012 jMethods, Inc. 
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.myjavaworld.jftp;
+
+/**
+ * Objects of this class encapsulate the information of FTP site parameters.
+ * 
+ * @author Sai Pullabhotla, psai [at] jMethods [dot] com
+ * @version 2.0
+ * 
+ */
+public class Favorite extends RemoteHost implements java.io.Serializable,
+		Comparable {
+
+	private static final long serialVersionUID = -8742993458243896488L;
+
+	/**
+	 * Creates a new instance of Favorite
+	 */
+	public Favorite() {
+		super();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null || !(obj instanceof Favorite)) {
+			return false;
+		}
+		Favorite that = (Favorite) obj;
+		return this.name.equalsIgnoreCase(that.name);
+	}
+
+	public int hashcode() {
+		return name.hashCode();
+	}
+
+	@Override
+	public int compareTo(Object obj) {
+		Favorite that = (Favorite) obj;
+		return this.name.toUpperCase().compareTo(that.name.toUpperCase());
+	}
+}</file><file path="src/main/java/com/myjavaworld/jftp/LocalFile.java">/*
+ * Copyright 2012 jMethods, Inc. 
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.myjavaworld.jftp;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.Icon;
+import javax.swing.filechooser.FileSystemView;
+
+import com.myjavaworld.util.Filter;
+
+/**
+ * Objects of this class represent files on the local system.
+ * 
+ * @author Sai Pullabhotla, psai [at] jMethods [dot] com
+ * @version 2.0
+ */
+public class LocalFile implements Serializable {
+
+	/**
+	 * Serial version UID 
+	 */
+	private static final long serialVersionUID = -3450118298480840794L;
+	private static final FileSystemView fsv = FileSystemView
+			.getFileSystemView();
+	private File file = null;
+	private String name = null;
+	private String extension = null;
+	private long size = 0L;
+	private long lastModified = 0L;
+	private boolean dir = false;
+	private String displayName = null;
+
+	public LocalFile(File file) {
+		this.file = file;
+		name = file.getName();
+		displayName = fsv.getSystemDisplayName(file);
+		size = file.length();
+		lastModified = file.lastModified();
+		dir = file.isDirectory();
+		if (dir) {
+			extension = null;
+		} else {
+			int index = name.lastIndexOf(&quot;.&quot;);
+			if (index &lt; 0 || index == name.length() - 1) {
+				extension = &quot;&quot;;
+			} else {
+				extension = name.substring(index + 1).toUpperCase();
+			}
+		}
+	}
+
+	public File getFile() {
+		return file;
+	}
+
+	public String getAbsolutePath() {
+		return file.getAbsolutePath();
+	}
+
+	public LocalFile getAbsoluteFile() {
+		return new LocalFile(file.getAbsoluteFile());
+	}
+
+	public String getCanonicalPath() throws IOException {
+		return file.getCanonicalPath();
+	}
+
+	public LocalFile getCanonicalFile() throws IOException {
+		return new LocalFile(file.getCanonicalFile());
+	}
+
+	public String getNameOld() {
+		return file.getName();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getDisplayName() {
+		return displayName;
+	}
+
+	public String getExtension() {
+		return extension;
+	}
+
+	public String getTypeOld() {
+		if (extension == null) {
+			return &quot;Directory&quot;;
+		}
+		if (extension.length() &gt; 0) {
+			return extension + &quot; File&quot;;
+		}
+		return &quot;File&quot;;
+	}
+
+	public String getType() {
+		String type = fsv.getSystemTypeDescription(file);
+		if (type == null) {
+			return getTypeOld();
+		}
+		return type;
+	}
+
+	public long getSize() {
+		return size;
+	}
+
+	public long getLastModified() {
+		return lastModified;
+	}
+
+	public boolean isDirectory() {
+		return dir;
+	}
+
+	public boolean isFile() {
+		return !dir;
+	}
+
+	public boolean exists() {
+		return file.exists();
+	}
+
+	public boolean canRead() {
+		return file.canRead();
+	}
+
+	public boolean canWrite() {
+		return file.canWrite();
+	}
+
+	public boolean isHidden() {
+		return file.isHidden();
+	}
+
+	public LocalFile getParentOld() {
+		File parent = file.getParentFile();
+		if (parent == null) {
+			return null;
+		}
+		return new LocalFile(parent);
+	}
+
+	public LocalFile getParent() {
+		File parent = fsv.getParentDirectory(file);
+		if (parent == null) {
+			return null;
+		}
+		return new LocalFile(parent);
+	}
+
+	public LocalFile[] listOld() {
+		File[] f = file.listFiles();
+		if (f == null) {
+			return null;
+		}
+		LocalFile[] children = new LocalFile[f.length];
+		for (int i = 0; i &lt; f.length; i++) {
+			children[i] = new LocalFile(f[i]);
+		}
+		return children;
+	}
+
+	public LocalFile[] list() {
+		File[] f = fsv.getFiles(file, false);
+		if (f == null) {
+			return null;
+		}
+		LocalFile[] children = new LocalFile[f.length];
+		for (int i = 0; i &lt; f.length; i++) {
+			children[i] = new LocalFile(f[i]);
+		}
+		return children;
+	}
+
+	public LocalFile[] listOld(Filter filter) {
+		if (filter == null) {
+			return list();
+		}
+		LocalFile[] f = list();
+		if (f == null) {
+			return null;
+		}
+		List list = new ArrayList(f.length);
+		for (int i = 0; i &lt; f.length; i++) {
+			if (filter.accept(f[i])) {
+				list.add(f[i]);
+			}
+		}
+		LocalFile[] children = new LocalFile[list.size()];
+		children = (LocalFile[]) list.toArray(children);
+		return children;
+	}
+
+	public LocalFile[] list(Filter filter) {
+		if (filter == null) {
+			return list();
+		}
+		LocalFile[] f = list();
+		if (f == null) {
+			return null;
+		}
+		List list = new ArrayList(f.length);
+		for (int i = 0; i &lt; f.length; i++) {
+			if (filter.accept(f[i])) {
+				list.add(f[i]);
+			}
+		}
+		LocalFile[] children = new LocalFile[list.size()];
+		children = (LocalFile[]) list.toArray(children);
+		return children;
+	}
+
+	public static LocalFile[] listRoots() {
+		File[] f = fsv.getRoots();
+		if (f == null) {
+			return null;
+		}
+		LocalFile[] roots = new LocalFile[f.length];
+		for (int i = 0; i &lt; f.length; i++) {
+			roots[i] = new LocalFile(f[i]);
+		}
+		return roots;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null || !(obj instanceof LocalFile)) {
+			return false;
+		}
+		LocalFile that = (LocalFile) obj;
+		return this.file.equals(that.file);
+	}
+
+	public int compareTo(Object obj) {
+		if (obj == null) {
+			return 1;
+		}
+		LocalFile that = (LocalFile) obj;
+		return name.toUpperCase().compareTo(that.name.toUpperCase());
+	}
+
+	@Override
+	public String toString() {
+		return file.getAbsolutePath();
+	}
+
+	public Icon getIcon() {
+		return fsv.getSystemIcon(file);
+	}
+
+	public boolean isTraversable() {
+		return fsv.isTraversable(file).booleanValue();
+	}
+
+	public boolean delete() {
+		return file.delete();
+	}
+
+	public boolean isDrive() {
+		return fsv.isFileSystemRoot(file);
+	}
+}</file><file path="src/main/java/com/myjavaworld/jftp/RemoteHost.java">/*
+ * Copyright 2012 jMethods, Inc. 
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.myjavaworld.jftp;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import com.myjavaworld.ftp.FTPConstants;
+
+/**
+ * Objects of this class encapsulates information of an FTP server as required
+ * by JFTP.
+ * 
+ * @author Sai Pullabhotla, psai [at] jMethods [dot] com
+ * @version 2.0
+ * 
+ */
+public class RemoteHost implements Serializable, Comparable {
+
+	private static final long serialVersionUID = -3213664402994404410L;
+	public static final String DEFAULT_FTP_CLIENT_CLASS_NAME = &quot;com.myjavaworld.ftp.DefaultFTPClient&quot;;
+	public static final String DEFAULT_LIST_PARSER_CLASS_NAME = &quot;com.myjavaworld.ftp.DefaultListParser&quot;;
+	protected String name = null;
+	protected String hostName = null;
+	protected int port = 0;
+	protected String user = null;
+	protected String password = null;
+	protected String account = null;
+	protected String ftpClientClassName = null;
+	protected String listParserClassName = null;
+	protected boolean passive = true;
+	protected String[] commands = null;
+	protected String initialLocalDirectory = null;
+	protected String initialRemoteDirectory = null;
+	protected int sslUsage = 0;
+	protected boolean dataChannelUnencrypted = true;
+	protected Integer implicitSSLPort = null;
+
+	public RemoteHost() {
+		this(&quot;&quot;, &quot;&quot;, FTPConstants.DEFAULT_PORT, &quot;&quot;, &quot;&quot;, &quot;&quot;);
+	}
+
+	public RemoteHost(String hostName, String user, String password) {
+		this(hostName, hostName, FTPConstants.DEFAULT_PORT, user, password, &quot;&quot;);
+	}
+
+	public RemoteHost(String hostName, int port, String user, String password,
+			String account) {
+		this(hostName, hostName, port, user, password, account);
+	}
+
+	public RemoteHost(String name, String hostName, int port, String user,
+			String password, String account) {
+		setName(name);
+		setHostName(hostName);
+		setPort(port);
+		setUser(user);
+		setPassword(password);
+		setAccount(account);
+		setFTPClientClassName(DEFAULT_FTP_CLIENT_CLASS_NAME);
+		setListParserClassName(DEFAULT_LIST_PARSER_CLASS_NAME);
+		initialLocalDirectory = &quot;&quot;;
+		initialRemoteDirectory = &quot;&quot;;
+		setPassive(true);
+		setCommands(new String[0]);
+		setSSLUsage(FTPConstants.USE_NO_SSL);
+		setDataChannelUnencrypted(false);
+		setImplicitSSLPort(FTPConstants.DEFAULT_IMPLICIT_SSL_PORT);
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setHostName(String hostName) {
+		this.hostName = hostName == null ? &quot;&quot; : hostName.trim();
+	}
+
+	public String getHostName() {
+		return hostName;
+	}
+
+	public void setPort(int port) {
+		this.port = port &lt;= 0 ? FTPConstants.DEFAULT_PORT : port;
+	}
+
+	public int getPort() {
+		return port;
+	}
+
+	public void setPassword(String password) {
+		this.password = password == null ? &quot;&quot; : password;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setUser(String user) {
+		this.user = user == null ? &quot;&quot; : user;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setAccount(String account) {
+		this.account = account == null ? &quot;&quot; : account;
+	}
+
+	public String getAccount() {
+		return account;
+	}
+
+	public void setFTPClientClassName(String ftpClientClassName) {
+		this.ftpClientClassName = ftpClientClassName;
+	}
+
+	public String getFTPClientClassName() {
+		return ftpClientClassName;
+	}
+
+	public void setListParserClassName(String listParserClassName) {
+		this.listParserClassName = listParserClassName;
+	}
+
+	public String getListParserClassName() {
+		return listParserClassName;
+	}
+
+	public void setCommands(String[] commands) {
+		this.commands = commands;
+	}
+
+	public void setCommands(String commands) {
+		StringTokenizer tokenizer = new StringTokenizer(commands, &quot;\r\n&quot;);
+		List commandList = new ArrayList(5);
+		while (tokenizer.hasMoreTokens()) {
+			String token = tokenizer.nextToken();
+			if (token.trim().length() &gt; 0) {
+				commandList.add(token);
+			}
+		}
+		String[] commandArray = new String[commandList.size()];
+		commandArray = (String[]) (commandList.toArray(commandArray));
+		setCommands(commandArray);
+	}
+
+	public String[] getCommands() {
+		return commands;
+	}
+
+	public String getCommandsAsString() {
+		StringBuffer buffer = new StringBuffer(256);
+		for (int i = 0; i &lt; commands.length; i++) {
+			buffer.append(commands[i]);
+			buffer.append(&quot;\n&quot;);
+		}
+		return buffer.toString();
+	}
+
+	public void setPassive(boolean passive) {
+		this.passive = passive;
+	}
+
+	public boolean isPassive() {
+		return passive;
+	}
+
+	public void setInitialLocalDirectory(String initialLocalDirectory) {
+		this.initialLocalDirectory = initialLocalDirectory;
+	}
+
+	public String getInitialLocalDirectory() {
+		return initialLocalDirectory;
+	}
+
+	public void setInitialRemoteDirectory(String initialRemoteDirectory) {
+		this.initialRemoteDirectory = initialRemoteDirectory;
+	}
+
+	public String getInitialRemoteDirectory() {
+		return initialRemoteDirectory;
+	}
+
+	public void setSSLUsage(int sslUsage) {
+		this.sslUsage = sslUsage;
+	}
+
+	public int getSSLUsage() {
+		return sslUsage;
+	}
+
+	public void setDataChannelUnencrypted(boolean dataChannelUnencrypted) {
+		this.dataChannelUnencrypted = dataChannelUnencrypted;
+	}
+
+	public boolean isDataChannelUnencrypted() {
+		return dataChannelUnencrypted;
+	}
+
+	public void setImplicitSSLPort(int implicitSSLPort) {
+		this.implicitSSLPort = new Integer(implicitSSLPort);
+	}
+
+	public int getImplicitSSLPort() {
+		if (implicitSSLPort != null) {
+			return implicitSSLPort.intValue();
+		}
+		return FTPConstants.DEFAULT_IMPLICIT_SSL_PORT;
+	}
+
+	@Override
+	public String toString() {
+		if (name.trim().length() == 0) {
+			return hostName;
+		}
+		return name + &quot; [&quot; + hostName + &quot;]&quot;;
+	}
+
+	public int compareTo(Object obj) {
+		RemoteHost that = (RemoteHost) obj;
+		return this.name.toUpperCase().compareTo(that.name.toUpperCase());
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null || !(obj instanceof RemoteHost)) {
+			return false;
+		}
+		RemoteHost that = (RemoteHost) obj;
+		return name.equals(that.name) &amp;&amp; hostName.equals(that.hostName)
+				&amp;&amp; port == that.port &amp;&amp; user.equals(that.user)
+				&amp;&amp; password.equals(that.password);
+	}
+}</file><file path="src/main/java/com/myjavaworld/util/ResourceLoader.java">/*
+ * Copyright 2012 jMethods, Inc. 
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.myjavaworld.util;
+
+import java.util.Locale;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
+
+/**
+ * An utility class used to load resources.
+ * 
+ * @author Sai Pullabhotla, psai [at] jMethods [dot] com
+ * @version 1.0
+ * 
+ */
+public class ResourceLoader {
+
+	public static ResourceBundle getBundle(String baseName) {
+		return getBundle(baseName, Locale.getDefault());
+	}
+
+	public static ResourceBundle getBundle(String baseName, Locale locale) {
+		try {
+			return ResourceBundle.getBundle(baseName, locale);
+		} catch (MissingResourceException exp) {
+			exp.printStackTrace();
+			fireResourceNotFound(baseName, locale);
+			return null;
+		}
+	}
+
+	public static ResourceBundle getBundle(String baseName, Locale locale,
+			ClassLoader loader) {
+		try {
+			return ResourceBundle.getBundle(baseName, locale, loader);
+		} catch (MissingResourceException exp) {
+			exp.printStackTrace();
+			fireResourceNotFound(baseName, locale);
+			return null;
+		}
+	}
+
+	private static void fireResourceNotFound(String baseName, Locale locale) {
+		System.err.println(&quot;Resource &quot; + baseName + &quot; Not Found for Locale &quot;
+				+ locale + &quot;. &quot;);
+		System.exit(1);
+	}
+}</file><file path="pom.xml">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+	&lt;groupId&gt;com.myjavaworld&lt;/groupId&gt;
+	&lt;artifactId&gt;jftp&lt;/artifactId&gt;
+	&lt;version&gt;5.0.2-SNAPSHOT&lt;/version&gt;
+	&lt;name&gt;jftp&lt;/name&gt;
+	&lt;description&gt;The Universal FTP Client&lt;/description&gt;
+	&lt;url&gt;http://www.jMethods.com&lt;/url&gt;
+	&lt;inceptionYear&gt;2000&lt;/inceptionYear&gt;
+	&lt;packaging&gt;jar&lt;/packaging&gt;
+	&lt;developers&gt;
+		&lt;developer&gt;
+			&lt;name&gt;Sai Pullabhotla&lt;/name&gt;
+			&lt;email&gt;Sai.Pullabhotla@gmail.com&lt;/email&gt;
+		&lt;/developer&gt;
+	&lt;/developers&gt;
+	&lt;contributors&gt;
+		&lt;contributor&gt;
+			&lt;name&gt;TM Chen&lt;/name&gt;
+			&lt;email&gt;tmchen@seed.net.tw&lt;/email&gt;
+		&lt;/contributor&gt;
+		&lt;contributor&gt;
+			&lt;name&gt;Jerry Tian&lt;/name&gt;
+			&lt;email&gt;jerrytianbupt@163.com&lt;/email&gt;
+		&lt;/contributor&gt;
+		&lt;contributor&gt;
+			&lt;name&gt;Juergen Ulbts&lt;/name&gt;
+			&lt;email&gt;magog001@web.de&lt;/email&gt;
+		&lt;/contributor&gt;
+	&lt;/contributors&gt;
+	&lt;licenses&gt;
+		&lt;license&gt;
+			&lt;name&gt;Apache License Version 2.0&lt;/name&gt;
+			&lt;url&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/url&gt;
+		&lt;/license&gt;
+	&lt;/licenses&gt;
+	&lt;organization&gt;
+		&lt;name&gt;jMethods, Inc.&lt;/name&gt;
+		&lt;url&gt;http://www.jMethods.com&lt;/url&gt;
+	&lt;/organization&gt;
+	&lt;repositories&gt;
+		&lt;repository&gt;
+			&lt;id&gt;jMethods&lt;/id&gt;
+			&lt;name&gt;jMethods Maven Repository&lt;/name&gt;
+			&lt;url&gt;http://www.jMethods.com/mvn-repo&lt;/url&gt;
+		&lt;/repository&gt;
+	&lt;/repositories&gt;
+	&lt;scm&gt;
+		&lt;connection&gt;scm:git:https://spullabhotla@github.com/jftp.git&lt;/connection&gt;
+		&lt;developerConnection&gt;scm:git:git@github.com:spullabhotla/jftp.git&lt;/developerConnection&gt;
+		&lt;tag&gt;HEAD&lt;/tag&gt;
+	&lt;/scm&gt;
+	&lt;distributionManagement&gt;
+		&lt;repository&gt;
+			&lt;id&gt;jMethods&lt;/id&gt;
+			&lt;name&gt;Public Maven Repo&lt;/name&gt;
+			&lt;url&gt;ftp://ftp.kattare.com/jmethods_com/mvn-repo&lt;/url&gt;
+			&lt;uniqueVersion&gt;false&lt;/uniqueVersion&gt;
+		&lt;/repository&gt;
+	&lt;/distributionManagement&gt;
+	&lt;properties&gt;
+		&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+	&lt;/properties&gt;
+	&lt;dependencies&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;junit&lt;/groupId&gt;
+			&lt;artifactId&gt;junit&lt;/artifactId&gt;
+			&lt;version&gt;3.8.1&lt;/version&gt;
+			&lt;scope&gt;test&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;com.myjavaworld&lt;/groupId&gt;
+			&lt;artifactId&gt;ftpapi&lt;/artifactId&gt;
+			&lt;version&gt;3.0.0&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.help&lt;/groupId&gt;
+			&lt;artifactId&gt;javahelp&lt;/artifactId&gt;
+			&lt;version&gt;2.0.05&lt;/version&gt;
+		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+
+	&lt;build&gt;
+		&lt;resources&gt;
+			&lt;resource&gt;
+				&lt;directory&gt;src/main/resources&lt;/directory&gt;
+			&lt;/resource&gt;
+			&lt;resource&gt;
+				&lt;directory&gt;src/main/resources_de&lt;/directory&gt;
+			&lt;/resource&gt;
+			&lt;resource&gt;
+				&lt;directory&gt;src/main/resources_zh_TW&lt;/directory&gt;
+			&lt;/resource&gt;
+			&lt;resource&gt;
+				&lt;directory&gt;src/main/images&lt;/directory&gt;
+			&lt;/resource&gt;
+			&lt;resource&gt;
+				&lt;directory&gt;src/main/help&lt;/directory&gt;
+			&lt;/resource&gt;
+		&lt;/resources&gt;
+		&lt;plugins&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.4&lt;/version&gt;
+				&lt;configuration&gt;
+					&lt;source&gt;1.5&lt;/source&gt;
+					&lt;target&gt;1.5&lt;/target&gt;
+				&lt;/configuration&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.4&lt;/version&gt;
+				&lt;configuration&gt;
+					&lt;archive&gt;
+						&lt;manifest&gt;
+							&lt;addDefaultImplementationEntries&gt;true&lt;/addDefaultImplementationEntries&gt;
+							&lt;addDefaultSpecificationEntries&gt;true&lt;/addDefaultSpecificationEntries&gt;
+							&lt;addClasspath&gt;true&lt;/addClasspath&gt;
+							&lt;classpathPrefix&gt;lib/&lt;/classpathPrefix&gt;
+							&lt;mainClass&gt;com.myjavaworld.jftp.JFTPApplication&lt;/mainClass&gt;
+						&lt;/manifest&gt;
+					&lt;/archive&gt;
+				&lt;/configuration&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.1.2&lt;/version&gt;
+				&lt;executions&gt;
+					&lt;execution&gt;
+						&lt;goals&gt;
+							&lt;goal&gt;jar&lt;/goal&gt;
+						&lt;/goals&gt;
+					&lt;/execution&gt;
+				&lt;/executions&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.3&lt;/version&gt;
+				&lt;configuration&gt;
+					&lt;descriptors&gt;
+						&lt;descriptor&gt;${basedir}/src/main/assembly/binary.xml&lt;/descriptor&gt;
+					&lt;/descriptors&gt;
+				&lt;/configuration&gt;
+				&lt;executions&gt;
+					&lt;execution&gt;
+						&lt;id&gt;assemble&lt;/id&gt;
+						&lt;phase&gt;package&lt;/phase&gt;
+						&lt;goals&gt;
+							&lt;goal&gt;single&lt;/goal&gt;
+						&lt;/goals&gt;
+					&lt;/execution&gt;
+				&lt;/executions&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-scm-plugin&lt;/artifactId&gt;
+				&lt;version&gt;1.7&lt;/version&gt;
+				&lt;configuration&gt;
+					&lt;connectionType&gt;developerConnection&lt;/connectionType&gt;
+				&lt;/configuration&gt;
+				&lt;executions&gt;
+					&lt;execution&gt;
+						&lt;id&gt;tag&lt;/id&gt;
+						&lt;goals&gt;
+							&lt;goal&gt;tag&lt;/goal&gt;
+						&lt;/goals&gt;
+					&lt;/execution&gt;
+				&lt;/executions&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-deploy-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.7&lt;/version&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+				&lt;version&gt;2.3&lt;/version&gt;
+				&lt;configuration&gt;
+					&lt;releaseProfiles&gt;release&lt;/releaseProfiles&gt;
+					&lt;goals&gt;deploy&lt;/goals&gt;
+				&lt;/configuration&gt;
+			&lt;/plugin&gt;
+		&lt;/plugins&gt;
+		&lt;extensions&gt;
+			&lt;extension&gt;
+				&lt;groupId&gt;org.apache.maven.wagon&lt;/groupId&gt;
+				&lt;artifactId&gt;wagon-ftp&lt;/artifactId&gt;
+				&lt;version&gt;2.2&lt;/version&gt;
+			&lt;/extension&gt;
+		&lt;/extensions&gt;
+	&lt;/build&gt;
+&lt;/project&gt;</file></files></repomix>

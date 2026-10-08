@@ -1,5 +1,7 @@
 # Legacy codebase workflows: first installation review
 
+**Historical first-use evidence (2026-10-07).** Later grouped maps, timings, setup changes and validation are indexed in [repository maps](repo-maps/README.md) and recorded in the [current audit](repo-maps/artifacts/2026-10-08/review.md). Original observations below remain unchanged.
+
 Date: 2026-10-07. Platform: Windows / PowerShell. Repository revision: `08899cc9b09a977bf33f12ebcb855ba1b4a10b29`.
 
 This is an evidence log for the first use of the published and merged skill, not an execution backlog. Scope: installed package, repository inventory/maps, native executable availability, local build requirements, and distribution improvements. JFTP application changes and startup are outside scope.

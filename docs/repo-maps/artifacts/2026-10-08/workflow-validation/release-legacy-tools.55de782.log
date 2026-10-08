@@ -1,0 +1,4 @@
+../../../.cache/legacy-map-review-20261008/actionlint-review/release-legacy-tools.55de782.yml:39:29: context "runner" is not allowed here. available contexts are "github", "inputs", "matrix", "needs", "secrets", "strategy", "vars". see https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability for more details [expression]
+   |
+39 |       CARGO_TARGET_DIR: ${{ runner.temp }}/legacy-cargo-target
+   |                             ^~~~~~~~~~~

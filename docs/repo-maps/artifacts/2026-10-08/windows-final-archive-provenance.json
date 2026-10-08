@@ -1,0 +1,21 @@
+{
+  "description": "Re-export of unchanged WSL benchmark raw generations under archived names. Headers/evidence links are regenerated for new locations; original timings, source revision, fingerprint and raw hashes preserved. Original benchmark sidecars untouched. Canonical reports not yet overwritten.",
+  "archives": [
+    {
+      "original": "jftp-java.rust",
+      "archive": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/jftp-java.wsl-benchmark.rust.md",
+      "evidence": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.wsl-benchmark.rust",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "seconds": 17.239781256997958,
+      "source_revision": null
+    },
+    {
+      "original": "jftp-java.full.rust",
+      "archive": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/jftp-java.full.wsl-benchmark.rust.md",
+      "evidence": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.wsl-benchmark.rust",
+      "raw_sha256": "eef199e8d18b7cceddd706220a1ab4acf9696cfff991d2ba0afb2cde209bcd74",
+      "seconds": 20.08179550198838,
+      "source_revision": null
+    }
+  ]
+}

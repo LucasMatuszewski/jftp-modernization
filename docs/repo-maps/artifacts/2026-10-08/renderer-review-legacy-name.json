@@ -1,0 +1,11 @@
+{
+  "python": {
+    "expected_rejection": "all-definitions cannot show the full identifier at Long.java:L1 within legacy lines' 240-character limit; use --format grouped",
+    "metadata": "failed"
+  },
+  "rust": {
+    "exit_code": 2,
+    "stderr": "legacy-repo-map: all-definitions cannot show the full identifier at Long.java:L1 within legacy lines' 240-character limit; use --format grouped\n",
+    "metadata": "failed"
+  }
+}

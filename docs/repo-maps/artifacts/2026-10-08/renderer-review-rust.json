@@ -1,0 +1,101 @@
+{
+  "export-js": {
+    "exit_code": 0,
+    "status": "complete",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 2,
+      "definitions_in_map": 2,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "stderr": "",
+    "text": "# Repository map\n\n## export.js\n\n```text\nL1: export const alpha = () => \u2026 beta = () =>\n```\n\n"
+  },
+  "inline-java": {
+    "exit_code": 0,
+    "status": "complete",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 3,
+      "definitions_in_map": 3,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "stderr": "",
+    "text": "# Repository map\n\n## inline.java\n\n```text\nL1: class C { void a(){ \u2026 void b(){\n```\n\n"
+  },
+  "long-java": {
+    "exit_code": 2,
+    "status": "failed",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": null,
+      "parsed_files": null,
+      "selected_files": 1
+    },
+    "stderr": "legacy-repo-map: definition name at long.java:L1 exceeds the 512-character name limit; complete mapping cannot silently filter it\n",
+    "text": "# Repository inventory\n\nNo symbol map generated. Inspect inventory.json and choose a subtree.\n"
+  },
+  "multi-js": {
+    "exit_code": 0,
+    "status": "complete",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 2,
+      "definitions_in_map": 2,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "stderr": "",
+    "text": "# Repository map\n\n## multi.js\n\n```text\nL1: const alpha = () => \u2026 beta = () =>\n```\n\n"
+  },
+  "nested-java": {
+    "exit_code": 0,
+    "status": "complete",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 4,
+      "definitions_in_map": 4,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "stderr": "",
+    "text": "# Repository map\n\n## nested.java\n\n```text\nL1: class Outer { void first(){ \u2026 class Inner { void x(){\n```\n\n"
+  },
+  "same-java": {
+    "exit_code": 2,
+    "status": "failed",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": null,
+      "parsed_files": null,
+      "selected_files": 1
+    },
+    "stderr": "legacy-repo-map: ambiguous definition identity at same.java:L1 for \"same\": distinct capture positions share the legacy line/name key\n",
+    "text": "# Repository inventory\n\nNo symbol map generated. Inspect inventory.json and choose a subtree.\n"
+  },
+  "unicode-java": {
+    "exit_code": 0,
+    "status": "complete",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 3,
+      "definitions_in_map": 3,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "stderr": "",
+    "text": "# Repository map\n\n## unicode.java\n\n```text\nL1: class Za\u017c\u00f3\u0142\u0107 { void \u03b1(){ \u2026 void \u03b2(){\n```\n\n"
+  }
+}

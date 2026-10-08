@@ -1,0 +1,93 @@
+{
+  "coverage": {
+    "candidates_seen": 26,
+    "definitions_found": 416,
+    "definitions_in_map": 416,
+    "definitions_omitted": 0,
+    "files_with_definitions": 20,
+    "parsed_files": 24,
+    "selected_files": 26
+  },
+  "dependencies": {
+    "networkx": "3.4.2",
+    "tree-sitter": "0.25.2",
+    "tree-sitter-c-sharp": "0.23.5",
+    "tree-sitter-language-pack": "0.13.0"
+  },
+  "descriptors": [],
+  "dirty": false,
+  "estimated_tokens": 11524,
+  "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+  "export": {
+    "artifact_dir": "/home/lucas/.cache/legacy-map-review-20261008/public-evidence-final/flask-python/python/sample-0",
+    "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+    "evidence_dir": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.python",
+    "generation_elapsed_seconds": 0.4196437010541558,
+    "implementation": "python",
+    "raw_estimated_tokens": 11524,
+    "raw_file": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.python/flask-python.python.raw.md",
+    "raw_unicode_characters": 46095,
+    "raw_utf8_bytes": 46095,
+    "report_estimated_tokens": 11881,
+    "report_file": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/flask-python.python.md",
+    "report_sha256": "97286bf1573f957bbb947129c81f32631e6c0d1a5fd9bc136b4e6dfedb4918ae",
+    "report_unicode_characters": 47521,
+    "report_utf8_bytes": 47521,
+    "schema_version": 1
+  },
+  "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+  "focus_not_found": {
+    "files_not_parsed": [],
+    "symbols_without_definitions": []
+  },
+  "git_notes": [],
+  "inventory_summary": {
+    "languages": {
+      "other": 2,
+      "python": 24
+    },
+    "modules": [
+      {
+        "files": 26,
+        "path": "src/flask"
+      }
+    ],
+    "modules_omitted": 0
+  },
+  "limits": {
+    "budget": 16384,
+    "max_file_bytes": 2000000,
+    "max_files": 10000,
+    "max_tags_per_file": 20000,
+    "max_total_tags": 200000
+  },
+  "map_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+  "parse_failures": [],
+  "rendering": {
+    "clipped_declarations": [],
+    "declaration_character_limit": 8000,
+    "declaration_line_limit": 80,
+    "format": "grouped"
+  },
+  "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+  "selection": {
+    "excludes": [],
+    "focus_files": [],
+    "focus_symbols": [],
+    "mode": "ranked",
+    "subtrees": [
+      "src/flask"
+    ]
+  },
+  "skipped": [],
+  "source_root": "/home/lucas/.cache/legacy-map-review-20261007/flask",
+  "status": "complete",
+  "tool": "legacy-codebase-workflows repo_map",
+  "truncated": false,
+  "unsupported_languages": [
+    "src/flask/py.typed",
+    "src/flask/sansio/README.md"
+  ],
+  "version": "1.1.0",
+  "working_copy_fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795"
+}

@@ -1,0 +1,1751 @@
+{
+  "budget": 16384,
+  "date": "2026-10-08",
+  "exports": [
+    {
+      "corpus": "jftp-java",
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.python/jftp-java.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.python/jftp-java.python.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.python/jftp-java.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/jftp-java.python.md"
+    },
+    {
+      "corpus": "jftp-java",
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.rust/jftp-java.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.rust/jftp-java.rust.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.rust/jftp-java.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/jftp-java.rust.md"
+    },
+    {
+      "corpus": "jftp-java",
+      "elapsed_seconds": 39.17591702402569,
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.python/jftp-java.full.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.python/jftp-java.full.python.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.python/jftp-java.full.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/jftp-java.full.python.md"
+    },
+    {
+      "corpus": "jftp-java",
+      "elapsed_seconds": 20.08179550198838,
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.rust/jftp-java.full.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.rust/jftp-java.full.rust.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/jftp-java.full.rust/jftp-java.full.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/jftp-java.full.rust.md"
+    },
+    {
+      "corpus": "flask-python",
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.python/flask-python.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.python/flask-python.python.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.python/flask-python.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/flask-python.python.md"
+    },
+    {
+      "corpus": "flask-python",
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.rust/flask-python.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.rust/flask-python.rust.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.rust/flask-python.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/flask-python.rust.md"
+    },
+    {
+      "corpus": "flask-python",
+      "elapsed_seconds": 0.47582150297239423,
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.python/flask-python.full.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.python/flask-python.full.python.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.python/flask-python.full.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/flask-python.full.python.md"
+    },
+    {
+      "corpus": "flask-python",
+      "elapsed_seconds": 0.11651389999315143,
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.rust/flask-python.full.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.rust/flask-python.full.rust.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/flask-python.full.rust/flask-python.full.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/flask-python.full.rust.md"
+    },
+    {
+      "corpus": "toolbox-rust",
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.python/toolbox-rust.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.python/toolbox-rust.python.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.python/toolbox-rust.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/toolbox-rust.python.md"
+    },
+    {
+      "corpus": "toolbox-rust",
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.rust/toolbox-rust.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.rust/toolbox-rust.rust.meta.json",
+      "mode": "ranked",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.rust/toolbox-rust.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/toolbox-rust.rust.md"
+    },
+    {
+      "corpus": "toolbox-rust",
+      "elapsed_seconds": 0.41052190004847944,
+      "implementation": "python",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.python/toolbox-rust.full.python.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.python/toolbox-rust.full.python.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.python/toolbox-rust.full.python.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/toolbox-rust.full.python.md"
+    },
+    {
+      "corpus": "toolbox-rust",
+      "elapsed_seconds": 0.08120770007371902,
+      "implementation": "rust",
+      "inventory": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.rust/toolbox-rust.full.rust.inventory.json",
+      "metadata": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.rust/toolbox-rust.full.rust.meta.json",
+      "mode": "all-definitions",
+      "raw": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.full.rust/toolbox-rust.full.rust.raw.md",
+      "report": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/toolbox-rust.full.rust.md"
+    }
+  ],
+  "format": "grouped",
+  "method": "Whole subprocess perf_counter; alternate implementation order; fresh output for each cold-output sample and reuse for warm-output; OS caches not flushed; no private corpus.",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "python_mapper_version": "1.1.0",
+  "rust_version": "legacy-repo-map 0.2.0 (experimental)",
+  "samples": [
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 39.03271116595715,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 37.09581602597609,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.641922468086705,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 17.239781256997958,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.947098231874406,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 19.420685980003327,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 45.70726059586741,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 38.32661819807254,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 37.75731053203344,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 35.51696035894565,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 21.084095910890028,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.702722740126774,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 20.166294183116406,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.341205534990877,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 38.17678074003197,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 36.00896653695963,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 36.78935074387118,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 36.55910481698811,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.80092295212671,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "jftp-java",
+      "coverage": {
+        "candidates_seen": 196,
+        "definitions_found": 1586,
+        "definitions_in_map": 869,
+        "definitions_omitted": 717,
+        "files_with_definitions": 179,
+        "parsed_files": 182,
+        "selected_files": 196
+      },
+      "elapsed_seconds": 18.901577810989693,
+      "estimated_tokens": 16384,
+      "fingerprint": "c981ce97fec27912208abd6d6d92bce8838933b21d300f3e4290c261cff3bd2d",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "09ea057a8cee9ef85cfbf3c5fea66ca604039e750fa983b7fb7fd7080f788ba9",
+      "revision": null,
+      "scope": [
+        "--subtree",
+        "src/main/java"
+      ],
+      "truncated": true
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.5508966010529548,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.4196437010541558,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09757590014487505,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.10694670001976192,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.10299959988333285,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09398500015959144,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.6096274009905756,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 1.5654408019036055,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.839876402867958,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.41757730208337307,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09595820005051792,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09215570101514459,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09619109984487295,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09524580114521086,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.4625747019890696,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.4234065019991249,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.47537920204922557,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 416,
+        "definitions_in_map": 416,
+        "definitions_omitted": 0,
+        "files_with_definitions": 20,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.41509650205262005,
+      "estimated_tokens": 11524,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "c4c9e0d3ad33d1057d0e90bd69718520d1c56281ca3a4455aee823fda177769b",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09599969978444278,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "flask-python",
+      "coverage": {
+        "candidates_seen": 26,
+        "definitions_found": 502,
+        "definitions_in_map": 502,
+        "definitions_omitted": 0,
+        "files_with_definitions": 23,
+        "parsed_files": 24,
+        "selected_files": 26
+      },
+      "elapsed_seconds": 0.09355090092867613,
+      "estimated_tokens": 14003,
+      "fingerprint": "37e18cbcbb0f334d744236740de699666ba0b97e7961f6830540487f2ff0e795",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "06658c9ac954abbc3e888cde0bd3ba6e4147f685d7fdf64a14c12724f475a7d5",
+      "revision": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "scope": [
+        "--subtree",
+        "src/flask"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.40881350194104016,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.36370920203626156,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07711409986950457,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07556700007990003,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 0,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07524660089984536,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07637580018490553,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.3880604018922895,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.375392901012674,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 1,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.37433360191062093,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.3396600019186735,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.0838819001801312,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.11812970112077892,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 2,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.08276839996688068,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.08293909998610616,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.3898886020760983,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.3474788009189069,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 3,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.40925330109894276,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.34767029993236065,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "python",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07822440005838871,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "cold-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    },
+    {
+      "corpus": "toolbox-rust",
+      "coverage": {
+        "candidates_seen": 6,
+        "definitions_found": 169,
+        "definitions_in_map": 169,
+        "definitions_omitted": 0,
+        "files_with_definitions": 6,
+        "parsed_files": 6,
+        "selected_files": 6
+      },
+      "elapsed_seconds": 0.07693690015003085,
+      "estimated_tokens": 3177,
+      "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+      "implementation": "rust",
+      "iteration": 4,
+      "mode": "warm-output",
+      "raw_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+      "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+      "scope": [
+        "--subtree",
+        "src"
+      ],
+      "truncated": false
+    }
+  ],
+  "samples_per_mode": 5,
+  "summary": {
+    "flask-python": {
+      "cold-output": {
+        "python": {
+          "definitions_found": 416,
+          "definitions_selected": 416,
+          "estimated_tokens": 11524,
+          "max_seconds": 0.839876402867958,
+          "median_seconds": 0.5508966010529548,
+          "min_seconds": 0.4625747019890696
+        },
+        "python_to_rust_median_ratio": 5.72710575033848,
+        "rust": {
+          "definitions_found": 502,
+          "definitions_selected": 502,
+          "estimated_tokens": 14003,
+          "max_seconds": 0.10299959988333285,
+          "median_seconds": 0.09619109984487295,
+          "min_seconds": 0.09595820005051792
+        }
+      },
+      "warm-output": {
+        "python": {
+          "definitions_found": 416,
+          "definitions_selected": 416,
+          "estimated_tokens": 11524,
+          "max_seconds": 1.5654408019036055,
+          "median_seconds": 0.4196437010541558,
+          "min_seconds": 0.41509650205262005
+        },
+        "python_to_rust_median_ratio": 4.465007185631525,
+        "rust": {
+          "definitions_found": 502,
+          "definitions_selected": 502,
+          "estimated_tokens": 14003,
+          "max_seconds": 0.10694670001976192,
+          "median_seconds": 0.09398500015959144,
+          "min_seconds": 0.09215570101514459
+        }
+      }
+    },
+    "jftp-java": {
+      "cold-output": {
+        "python": {
+          "definitions_found": 1586,
+          "definitions_selected": 869,
+          "estimated_tokens": 16384,
+          "max_seconds": 45.70726059586741,
+          "median_seconds": 38.17678074003197,
+          "min_seconds": 36.78935074387118
+        },
+        "python_to_rust_median_ratio": 2.014914382816033,
+        "rust": {
+          "definitions_found": 1586,
+          "definitions_selected": 869,
+          "estimated_tokens": 16384,
+          "max_seconds": 21.084095910890028,
+          "median_seconds": 18.947098231874406,
+          "min_seconds": 18.641922468086705
+        }
+      },
+      "warm-output": {
+        "python": {
+          "definitions_found": 1586,
+          "definitions_selected": 869,
+          "estimated_tokens": 16384,
+          "max_seconds": 38.32661819807254,
+          "median_seconds": 36.55910481698811,
+          "min_seconds": 35.51696035894565
+        },
+        "python_to_rust_median_ratio": 1.9547477297810971,
+        "rust": {
+          "definitions_found": 1586,
+          "definitions_selected": 869,
+          "estimated_tokens": 16384,
+          "max_seconds": 19.420685980003327,
+          "median_seconds": 18.702722740126774,
+          "min_seconds": 17.239781256997958
+        }
+      }
+    },
+    "toolbox-rust": {
+      "cold-output": {
+        "python": {
+          "definitions_found": 169,
+          "definitions_selected": 169,
+          "estimated_tokens": 3177,
+          "max_seconds": 0.40925330109894276,
+          "median_seconds": 0.3898886020760983,
+          "min_seconds": 0.37433360191062093
+        },
+        "python_to_rust_median_ratio": 4.984232564073044,
+        "rust": {
+          "definitions_found": 169,
+          "definitions_selected": 169,
+          "estimated_tokens": 3177,
+          "max_seconds": 0.0838819001801312,
+          "median_seconds": 0.07822440005838871,
+          "min_seconds": 0.07524660089984536
+        }
+      },
+      "warm-output": {
+        "python": {
+          "definitions_found": 169,
+          "definitions_selected": 169,
+          "estimated_tokens": 3177,
+          "max_seconds": 0.375392901012674,
+          "median_seconds": 0.34767029993236065,
+          "min_seconds": 0.3396600019186735
+        },
+        "python_to_rust_median_ratio": 4.518901843645715,
+        "rust": {
+          "definitions_found": 169,
+          "definitions_selected": 169,
+          "estimated_tokens": 3177,
+          "max_seconds": 0.11812970112077892,
+          "median_seconds": 0.07693690015003085,
+          "min_seconds": 0.07556700007990003
+        }
+      }
+    }
+  }
+}

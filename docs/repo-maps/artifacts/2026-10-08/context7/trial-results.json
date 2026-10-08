@@ -1,0 +1,479 @@
+{
+  "clientVersion": "0.5.13",
+  "source": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/src/main/java",
+  "windowsGitHead": "d6c208403099b90a2e0890a9ac3d8e132c215f0b",
+  "backendRevision": "non-git",
+  "errors": [],
+  "commands": [
+    {
+      "label": "ctx7-version",
+      "command": [
+        "node",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/client/node_modules/ctx7/dist/index.js",
+        "--version"
+      ],
+      "seconds": 0.23559649800881743,
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "label": "ctx7-library",
+      "command": [
+        "node",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/client/node_modules/ctx7/dist/index.js",
+        "--base-url",
+        "http://127.0.0.1:45175",
+        "library",
+        "jftp",
+        "ResourceLoader getBundle",
+        "--json"
+      ],
+      "seconds": 0.26431269804015756,
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "label": "ctx7-docs",
+      "command": [
+        "node",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/client/node_modules/ctx7/dist/index.js",
+        "--base-url",
+        "http://127.0.0.1:45175",
+        "docs",
+        "/local/jftp",
+        "ResourceLoader getBundle ClassLoader",
+        "--json"
+      ],
+      "seconds": 17.78118439298123,
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "label": "fixture-index",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+        "index",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness-fixture",
+        "--database",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness.sqlite",
+        "--library-id",
+        "/local/fixture"
+      ],
+      "seconds": 0.1490393050480634,
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "label": "fixture-reindex-change",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+        "index",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness-fixture",
+        "--database",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness.sqlite",
+        "--library-id",
+        "/local/fixture"
+      ],
+      "seconds": 0.13246940495446324,
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "label": "fixture-reindex-restored",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+        "index",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness-fixture",
+        "--database",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness.sqlite",
+        "--library-id",
+        "/local/fixture"
+      ],
+      "seconds": 0.13198370416648686,
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "servers": [
+    {
+      "label": "jftp-server",
+      "pid": 1109284,
+      "port": 45175,
+      "startupSeconds": 0.10688079916872084,
+      "announcement": "Local Context7 endpoint: http://127.0.0.1:45175 mode=lexical rerank=None"
+    },
+    {
+      "label": "fixture-server",
+      "pid": 1109550,
+      "port": 45251,
+      "startupSeconds": 0.09068670310080051,
+      "announcement": "Local Context7 endpoint: http://127.0.0.1:45251 mode=lexical rerank=None"
+    }
+  ],
+  "checks": {
+    "library-selected-local-id": true,
+    "ctx7-source-provenance": [
+      {
+        "path": "com/myjavaworld/util/ResourceLoader.java",
+        "startLine": 31,
+        "endLine": 61,
+        "hash_matches": true,
+        "text_matches": true,
+        "revision": "non-git"
+      },
+      {
+        "path": "com/myjavaworld/util/ResourceLoader.java",
+        "startLine": 1,
+        "endLine": 38,
+        "hash_matches": true,
+        "text_matches": true,
+        "revision": "non-git"
+      },
+      {
+        "path": "com/myjavaworld/jftp/LocalSystemMenu.java",
+        "startLine": 25,
+        "endLine": 54,
+        "hash_matches": true,
+        "text_matches": true,
+        "revision": "non-git"
+      },
+      {
+        "path": "com/myjavaworld/jftp/RemoteSystemMenu.java",
+        "startLine": 24,
+        "endLine": 52,
+        "hash_matches": true,
+        "text_matches": true,
+        "revision": "non-git"
+      },
+      {
+        "path": "com/myjavaworld/jftp/RemoteSystemMenu.java",
+        "startLine": 45,
+        "endLine": 78,
+        "hash_matches": true,
+        "text_matches": true,
+        "revision": "non-git"
+      }
+    ],
+    "ctx7-multiline-signature": true,
+    "nonloopback-host-rejected": {
+      "status": 403,
+      "body": "{\"error\": \"Only loopback Host authorities are supported\"}",
+      "seconds": 0.004907499998807907
+    },
+    "fixture-index": {
+      "libraryId": "/local/fixture",
+      "revision": "f27d85202cf8092f4fe2255c6149c95e20ac59c4",
+      "corpusId": "6285455c7f16295f6a9ae8845cf5b05f2487ed590d180fed2b78656be8259af8",
+      "files": 1,
+      "chunks": 1,
+      "chunkChars": 1200,
+      "oversizedChunks": 0,
+      "changed": 1,
+      "deleted": 0,
+      "skippedCount": 0,
+      "skipped": [],
+      "embeddingModel": null,
+      "modelRevision": null,
+      "rerankerModel": null,
+      "rerankerRevision": null,
+      "vectorEngine": "stdlib",
+      "excludes": []
+    },
+    "fixture-before-change": {
+      "status": 200,
+      "body": "{\"codeSnippets\": [{\"codeTitle\": \"code:FreshFixture.java:L1-L3 sha256:7bbf5a9e143d38feff66b4eecc8a907f7f3084d6da79c3d0d9a2dff4bb2dc2a7 revision:f27d85202cf8092f4fe2255c6149c95e20ac59c4 corpus:6285455c7f16295f6a9ae8845cf5b05f2487ed590d180fed2b78656be8259af8\", \"codeDescription\": \"code:FreshFixture.java:L1-L3 sha256:7bbf5a9e143d38feff66b4eecc8a907f7f3084d6da79c3d0d9a2dff4bb2dc2a7 revision:f27d85202cf8092f4fe2255c6149c95e20ac59c4 corpus:6285455c7f16295f6a9ae8845cf5b05f2487ed590d180fed2b78656be8259af8\", \"codeLanguage\": \"java\", \"codeTokens\": 17, \"codeId\": \"code:FreshFixture.java:L1-L3 sha256:7bbf5a9e143d38feff66b4eecc8a907f7f3084d6da79c3d0d9a2dff4bb2dc2a7 revision:f27d85202cf8092f4fe2255c6149c95e20ac59c4 corpus:6285455c7f16295f6a9ae8845cf5b05f2487ed590d180fed2b78656be8259af8\", \"pageTitle\": \"FreshFixture.java\", \"codeList\": [{\"language\": \"java\", \"code\": \"class FreshFixture {\\n  String getValue(String key) { return key; }\\n}\"}]}], \"infoSnippets\": []}",
+      "seconds": 0.013667599996551871
+    },
+    "changed-file-rejected": {
+      "status": 409,
+      "body": "{\"error\": \"Indexed files changed, appeared, or disappeared; reindex before querying\"}",
+      "seconds": 0.011502400040626526
+    },
+    "deleted-file-rejected": {
+      "status": 409,
+      "body": "{\"error\": \"Indexed files changed, appeared, or disappeared; reindex before querying\"}",
+      "seconds": 0.011905701132491231
+    },
+    "revision-change-rejected": {
+      "status": 409,
+      "body": "{\"error\": \"Repository revision changed; reindex before querying\"}",
+      "seconds": 0.006666500121355057
+    },
+    "query-result-bound-rejected": {
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+        "query",
+        "--database",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/jftp.sqlite",
+        "--query",
+        "ResourceLoader",
+        "--limit",
+        "11"
+      ],
+      "exit": 2,
+      "expectedExit": 2,
+      "seconds": 0.1283422999549657,
+      "stdout": "",
+      "stderr": "retrieval error: Limit must be 1-10\n"
+    },
+    "invalid-chunk-size-rejected": {
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+        "index",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/freshness-fixture",
+        "--database",
+        "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/invalid-chunk.sqlite",
+        "--library-id",
+        "/local/fixture",
+        "--chunk-chars",
+        "127"
+      ],
+      "exit": 2,
+      "expectedExit": 2,
+      "seconds": 0.11664399993605912,
+      "stdout": "",
+      "stderr": "retrieval error: --chunk-chars must be an integer from 128 to 12000\n"
+    },
+    "oversized-fixture-file-skipped": {
+      "libraryId": "/local/limits",
+      "revision": "102739ca44d8dc81d7955ddb542e5507171b462c",
+      "corpusId": "e014091ec076cceb2c83e0b7f8afa9b1adc8c200e8decbe69a4f220fbbc65ec0",
+      "files": 1,
+      "chunks": 1,
+      "chunkChars": 1200,
+      "oversizedChunks": 0,
+      "changed": 1,
+      "deleted": 0,
+      "skippedCount": 1,
+      "skipped": [
+        {
+          "kind": "code",
+          "path": "Oversized.java",
+          "reason": "file exceeds max_file_bytes"
+        }
+      ],
+      "embeddingModel": null,
+      "modelRevision": null,
+      "rerankerModel": null,
+      "rerankerRevision": null,
+      "vectorEngine": "stdlib",
+      "excludes": []
+    }
+  },
+  "baseline": {
+    "index": {
+      "libraryId": "/local/jftp",
+      "revision": "non-git",
+      "corpusId": "ee8166181a71135b486bedaaa98f5e1c36d4c9d247c0de6786fd7ee559758003",
+      "files": 196,
+      "chunks": 966,
+      "chunkChars": 1200,
+      "oversizedChunks": 0,
+      "changed": 196,
+      "deleted": 0,
+      "skippedCount": 0,
+      "skipped": [],
+      "embeddingModel": null,
+      "modelRevision": null,
+      "rerankerModel": null,
+      "rerankerRevision": null,
+      "vectorEngine": "stdlib",
+      "excludes": []
+    },
+    "databaseBytes": 2985984,
+    "measurements": [
+      {
+        "label": "index-jftp",
+        "command": [
+          "python3",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+          "index",
+          "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/src/main/java",
+          "--database",
+          "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/jftp.sqlite",
+          "--library-id",
+          "/local/jftp"
+        ],
+        "seconds": 18.461786642903462,
+        "exit": 0,
+        "stderr": ""
+      },
+      {
+        "label": "query-resource",
+        "command": [
+          "python3",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+          "query",
+          "--database",
+          "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/jftp.sqlite",
+          "--query",
+          "ResourceLoader getBundle ClassLoader",
+          "--limit",
+          "5"
+        ],
+        "seconds": 19.80356059106998,
+        "exit": 0,
+        "stderr": ""
+      },
+      {
+        "label": "query-localfile",
+        "command": [
+          "python3",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+          "query",
+          "--database",
+          "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/jftp.sqlite",
+          "--query",
+          "LocalFile compareTo",
+          "--limit",
+          "5"
+        ],
+        "seconds": 16.91757334303111,
+        "exit": 0,
+        "stderr": ""
+      },
+      {
+        "label": "query-absent",
+        "command": [
+          "python3",
+          "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/context7_backend.py",
+          "query",
+          "--database",
+          "/home/lucas/.cache/legacy-map-review-20261008/context7-trial/jftp.sqlite",
+          "--query",
+          "syntheticabsentApi",
+          "--limit",
+          "5"
+        ],
+        "seconds": 18.025316975079477,
+        "exit": 0,
+        "stderr": ""
+      }
+    ],
+    "queries": {
+      "resource": {
+        "query": "ResourceLoader getBundle ClassLoader",
+        "results": 5,
+        "checked": [
+          {
+            "path": "com/myjavaworld/util/ResourceLoader.java",
+            "startLine": 31,
+            "endLine": 61,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/util/ResourceLoader.java",
+            "startLine": 1,
+            "endLine": 38,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/LocalSystemMenu.java",
+            "startLine": 25,
+            "endLine": 54,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/RemoteSystemMenu.java",
+            "startLine": 24,
+            "endLine": 52,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/RemoteSystemMenu.java",
+            "startLine": 45,
+            "endLine": 78,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          }
+        ],
+        "resource_multiline_signature": true
+      },
+      "localfile": {
+        "query": "LocalFile compareTo",
+        "results": 5,
+        "checked": [
+          {
+            "path": "com/myjavaworld/jftp/LocalFile.java",
+            "startLine": 233,
+            "endLine": 280,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/Favorite.java",
+            "startLine": 35,
+            "endLine": 55,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/RemoteHost.java",
+            "startLine": 205,
+            "endLine": 252,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/LocalFileComparator.java",
+            "startLine": 134,
+            "endLine": 159,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          },
+          {
+            "path": "com/myjavaworld/jftp/LocalFile.java",
+            "startLine": 33,
+            "endLine": 80,
+            "hash_matches": true,
+            "text_matches": true,
+            "revision": "non-git"
+          }
+        ],
+        "resource_multiline_signature": false
+      },
+      "absent": {
+        "query": "syntheticabsentApi",
+        "results": 0,
+        "checked": [],
+        "resource_multiline_signature": false
+      }
+    }
+  },
+  "success": true,
+  "ownedServersStopped": true,
+  "limits": {
+    "maxFileBytes": 256000,
+    "maxFiles": 10000,
+    "maxChunks": 30000,
+    "maxSourceCandidatesPerRoot": 100000,
+    "maxQueryCharacters": 500,
+    "maxResults": 10,
+    "chunkCharactersDefault": 1200,
+    "chunkCharactersRange": [
+      128,
+      12000
+    ],
+    "chunkLinesMaximum": 48,
+    "overlapLinesMaximum": 8,
+    "selectedQueryLimit": 5
+  }
+}

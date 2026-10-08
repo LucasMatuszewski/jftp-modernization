@@ -24,6 +24,7 @@ Load the relevant page when its trigger applies; do not load the entire document
 | Choose the next modernization slice or check prerequisites and exit gates | [modernization-plan.md](docs/modernization-plan.md) |
 | Configure a clone, publish modernization work, or bring in changes from the original author | [git-workflow.md](docs/git-workflow.md) |
 | Find an unfamiliar subsystem or a documentation topic | [README.md](docs/README.md) |
+| Locate unfamiliar Java declarations or a symbol missing from the overview | [Native overview](docs/repo-maps/jftp-java.rust.md), then search the [complete index](docs/repo-maps/jftp-java.full.rust.md); verify original bodies/callers before editing and refresh after path/signature changes |
 | Change entry points, session ownership, cross-package calls, or threading | [architecture.md](docs/architecture.md) |
 | Repair compilation, resolve artifacts, choose versions, or change Maven configuration | [build-and-dependencies.md](docs/build-and-dependencies.md) |
 | Define observable connection, transfer, command, or saved-settings behavior | [application-workflows.md](docs/application-workflows.md) |

@@ -1,0 +1,41 @@
+{
+  "version": "1.7.12",
+  "official_release": "https://github.com/rhysd/actionlint/releases/tag/v1.7.12",
+  "archive_sha256": "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8",
+  "checksums_verified": true,
+  "binary_sha256": "c872d6db8c6bf83a8eaa704fc93999f027d55dffbc63b8a6abdccb47df5f4cd4",
+  "runs": [
+    {
+      "workflow": ".github/workflows/release-legacy-tools.yml",
+      "phase": "before",
+      "exit": 1,
+      "sha256": "f019113a8ac29382ce849883f8d69b4c95748e3d73f5c441e3de4a6e61d2ca76",
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/actionlint-review/release-legacy-tools.before.log",
+      "diagnostics": "../../../.cache/legacy-map-review-20261008/actionlint-review/release-legacy-tools.before.yml:39:29: context \"runner\" is not allowed here. available contexts are \"github\", \"inputs\", \"matrix\", \"needs\", \"secrets\", \"strategy\", \"vars\". see https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability for more details [expression]\n   |\n39 |       CARGO_TARGET_DIR: ${{ runner.temp }}/legacy-cargo-target\n   |                             ^~~~~~~~~~~\n"
+    },
+    {
+      "workflow": ".github/workflows/release-legacy-tools.yml",
+      "phase": "after",
+      "exit": 0,
+      "sha256": "5d759213deee74885434a4e0219d6a73bd3ec8c8723edc451493accc9caa1cc5",
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/actionlint-review/release-legacy-tools.after.log",
+      "diagnostics": ""
+    },
+    {
+      "workflow": ".github/workflows/test-skills.yml",
+      "phase": "before",
+      "exit": 0,
+      "sha256": "2e2d686af3e57ac228c8d630c57ca2afa176c93f827d1cf267583a12dc65d0a8",
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/actionlint-review/test-skills.before.log",
+      "diagnostics": ""
+    },
+    {
+      "workflow": ".github/workflows/test-skills.yml",
+      "phase": "after",
+      "exit": 0,
+      "sha256": "2e2d686af3e57ac228c8d630c57ca2afa176c93f827d1cf267583a12dc65d0a8",
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/actionlint-review/test-skills.after.log",
+      "diagnostics": ""
+    }
+  ]
+}

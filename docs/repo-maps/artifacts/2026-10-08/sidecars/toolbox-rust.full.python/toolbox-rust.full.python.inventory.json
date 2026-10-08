@@ -1,0 +1,58 @@
+{
+  "dirty": false,
+  "files": [
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/inventory.rs",
+      "sha256": "372ffd79f96ef15a35d66373715d444ffe800ca99bf06f02db677098339dc2e7",
+      "size": 34225
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/main.rs",
+      "sha256": "e327d8d19fe5b56c2e13b65fa4dfaaa499c6f2e5e20eaba616bd484b9712e0e4",
+      "size": 45403
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/policy.rs",
+      "sha256": "c4aa3f0ac9cf89b130db027f229efa71e2cab49a294efcf9d6692f426015dc36",
+      "size": 11934
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/rank.rs",
+      "sha256": "17c4d393ecb0ff93c917254277da81236a13635150cd68b364a3f03dc5ab5705",
+      "size": 17588
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/render.rs",
+      "sha256": "8975008edcf4c3726f000a52cd4fa9c0b8bd6f9fff669d91654073b0c37e4120",
+      "size": 22493
+    },
+    {
+      "kind": "source",
+      "language": "rust",
+      "path": "src/tags.rs",
+      "sha256": "12348ecd583d27d0485412c785eaf74d0497e801f49134700e7dff5bbfe9ea38",
+      "size": 15771
+    }
+  ],
+  "fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30",
+  "git": true,
+  "git_notes": [],
+  "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+  "root": "/home/lucas/DEV/Projects/agent-toolbox/src/legacy-repo-map",
+  "skipped": [],
+  "totals": {
+    "candidates_seen": 6,
+    "selected_files": 6,
+    "skipped_files": 0
+  }
+}

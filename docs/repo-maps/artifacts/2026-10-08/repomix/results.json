@@ -1,0 +1,263 @@
+{
+  "tool": "repomix",
+  "version": "1.18.1",
+  "tokenizer": "o200k_base",
+  "scope": [
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+    "src/main/java/com/myjavaworld/jftp/Favorite.java",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+    "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+    "pom.xml"
+  ],
+  "source_root": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+  "methodology": "one measured run per output; pinned npx package cache populated by CLI version/help probe; wall time includes npx startup, file selection, security scan, token counting and output writing",
+  "hashes_before": {
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java": "987cea071f2044eddf460cf41a9688c406cf291548f144db3651688c70637dee",
+    "src/main/java/com/myjavaworld/jftp/Favorite.java": "911b98c99a75607dcd9fc57c02858c06678c998ab6825f3b8a891b86738a53f0",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java": "8af551de8f5d16faea6a82713d8e748d2c2eaa3967731d8da715f798bfecf341",
+    "src/main/java/com/myjavaworld/jftp/RemoteHost.java": "451d94d3e00274b95e0f7275aaca463d9bbac9f8d989d0640f950acc6ef5bd37",
+    "pom.xml": "0e4da3203c623e02327c3876bac889c743d73fff27eb2c2c54196796d85f9019"
+  },
+  "hashes_after": {
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java": "987cea071f2044eddf460cf41a9688c406cf291548f144db3651688c70637dee",
+    "src/main/java/com/myjavaworld/jftp/Favorite.java": "911b98c99a75607dcd9fc57c02858c06678c998ab6825f3b8a891b86738a53f0",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java": "8af551de8f5d16faea6a82713d8e748d2c2eaa3967731d8da715f798bfecf341",
+    "src/main/java/com/myjavaworld/jftp/RemoteHost.java": "451d94d3e00274b95e0f7275aaca463d9bbac9f8d989d0640f950acc6ef5bd37",
+    "pom.xml": "0e4da3203c623e02327c3876bac889c743d73fff27eb2c2c54196796d85f9019"
+  },
+  "source_hashes_unchanged": true,
+  "runs": [
+    {
+      "variant": "full",
+      "command": [
+        "/usr/bin/npx",
+        "--yes",
+        "repomix@1.18.1",
+        "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+        "--style",
+        "xml",
+        "--parsable-style",
+        "--no-git-sort-by-changes",
+        "--include",
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java,src/main/java/com/myjavaworld/jftp/Favorite.java,src/main/java/com/myjavaworld/jftp/LocalFile.java,src/main/java/com/myjavaworld/jftp/RemoteHost.java,pom.xml",
+        "--token-count-encoding",
+        "o200k_base",
+        "--output",
+        "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/jftp-scope.full.xml"
+      ],
+      "elapsed_seconds": 2.1024347050115466,
+      "returncode": 0,
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/full.log",
+      "output": "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/jftp-scope.full.xml",
+      "bytes": 26805,
+      "output_sha256": "8369762f4ad945bd33ff28e054ec30aed56d155184b33c96723fd693b11f7d4a",
+      "files": 5,
+      "tokens": 6976,
+      "characters": 26805,
+      "security_report": "No suspicious files detected",
+      "per_file_statistics": [
+        {
+          "path": "pom.xml",
+          "tokens": 1750,
+          "characters": 5566
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+          "tokens": 1584,
+          "characters": 6230
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+          "tokens": 1574,
+          "characters": 6930
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+          "tokens": 417,
+          "characters": 1839
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/Favorite.java",
+          "tokens": 353,
+          "characters": 1513
+        }
+      ]
+    },
+    {
+      "variant": "compressed",
+      "command": [
+        "/usr/bin/npx",
+        "--yes",
+        "repomix@1.18.1",
+        "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp",
+        "--style",
+        "xml",
+        "--parsable-style",
+        "--no-git-sort-by-changes",
+        "--include",
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java,src/main/java/com/myjavaworld/jftp/Favorite.java,src/main/java/com/myjavaworld/jftp/LocalFile.java,src/main/java/com/myjavaworld/jftp/RemoteHost.java,pom.xml",
+        "--token-count-encoding",
+        "o200k_base",
+        "--output",
+        "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/jftp-scope.compressed.xml",
+        "--compress"
+      ],
+      "elapsed_seconds": 1.830343201989308,
+      "returncode": 0,
+      "log": "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/compressed.log",
+      "output": "/home/lucas/.cache/legacy-map-review-20261008/repomix-trial/jftp-scope.compressed.xml",
+      "bytes": 20541,
+      "output_sha256": "929ef4aa80569d7b2c0e1d3175b33cf86fb890404b464768fdc9d0363261515a",
+      "files": 5,
+      "tokens": 5445,
+      "characters": 20315,
+      "security_report": "No suspicious files detected",
+      "per_file_statistics": [
+        {
+          "path": "pom.xml",
+          "tokens": 1750,
+          "characters": 5566
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+          "tokens": 929,
+          "characters": 3847
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+          "tokens": 919,
+          "characters": 3623
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+          "tokens": 332,
+          "characters": 1422
+        },
+        {
+          "path": "src/main/java/com/myjavaworld/jftp/Favorite.java",
+          "tokens": 282,
+          "characters": 1198
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "full": {
+      "parsable_xml": true,
+      "exact_file_scope": true,
+      "file_headers": [
+        "src/main/java/com/myjavaworld/jftp/Favorite.java",
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+        "pom.xml"
+      ],
+      "resource_loader_complete_classloader_signature": true,
+      "source_equivalent_after_newline_normalization": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": true,
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": true,
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": true,
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java": true,
+        "pom.xml": true
+      },
+      "class_ownership": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": {
+          "class": "Favorite",
+          "compare_to_declarations": 1
+        },
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": {
+          "class": "LocalFile",
+          "compare_to_declarations": 1
+        },
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": {
+          "class": "RemoteHost",
+          "compare_to_declarations": 1
+        }
+      },
+      "compare_to_snippets": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": "public int compareTo(Object obj) {\n\t\tFavorite that = (Favorite) obj;\n\t\treturn this.name.toUpperCase().compareTo(that.name.toUpperCase());\n\t}\n}",
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": "public int compareTo(Object obj) {\n\t\tif (obj == null) {\n\t\t\treturn 1;\n\t\t}\n\t\tLocalFile that = (LocalFile) obj;\n\t\treturn name.toUpperCase().compareTo(that.name.toUpperCase());\n\t}",
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": "public int compareTo(Object obj) {\n\t\tRemoteHost that = (RemoteHost) obj;\n\t\treturn this.name.toUpperCase().compareTo(that.name.toUpperCase());\n\t}"
+      },
+      "copyright_headers_preserved": true,
+      "local_file_compare_to_null_guard": true,
+      "local_file_compare_to_cast": true,
+      "resource_loader_body_invocation": true,
+      "omission_marker_present": false
+    },
+    "compressed": {
+      "parsable_xml": true,
+      "exact_file_scope": true,
+      "file_headers": [
+        "src/main/java/com/myjavaworld/jftp/Favorite.java",
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java",
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java",
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java",
+        "pom.xml"
+      ],
+      "resource_loader_complete_classloader_signature": false,
+      "source_equivalent_after_newline_normalization": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": false,
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": false,
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": false,
+        "src/main/java/com/myjavaworld/util/ResourceLoader.java": false,
+        "pom.xml": true
+      },
+      "class_ownership": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": {
+          "class": "Favorite",
+          "compare_to_declarations": 1
+        },
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": {
+          "class": "LocalFile",
+          "compare_to_declarations": 1
+        },
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": {
+          "class": "RemoteHost",
+          "compare_to_declarations": 1
+        }
+      },
+      "compare_to_snippets": {
+        "src/main/java/com/myjavaworld/jftp/Favorite.java": "public int compareTo(Object obj) {\n\u22ee----\nreturn this.name.toUpperCase().compareTo(that.name.toUpperCase());",
+        "src/main/java/com/myjavaworld/jftp/LocalFile.java": "public int compareTo(Object obj) {\n\u22ee----\nreturn name.toUpperCase().compareTo(that.name.toUpperCase());\n\u22ee----",
+        "src/main/java/com/myjavaworld/jftp/RemoteHost.java": "public int compareTo(Object obj) {\n\u22ee----\nreturn this.name.toUpperCase().compareTo(that.name.toUpperCase());\n\u22ee----"
+      },
+      "copyright_headers_preserved": true,
+      "local_file_compare_to_null_guard": false,
+      "local_file_compare_to_cast": false,
+      "resource_loader_body_invocation": true,
+      "omission_marker_present": true
+    }
+  },
+  "hashes_after_verification": {
+    "src/main/java/com/myjavaworld/util/ResourceLoader.java": "987cea071f2044eddf460cf41a9688c406cf291548f144db3651688c70637dee",
+    "src/main/java/com/myjavaworld/jftp/Favorite.java": "911b98c99a75607dcd9fc57c02858c06678c998ab6825f3b8a891b86738a53f0",
+    "src/main/java/com/myjavaworld/jftp/LocalFile.java": "8af551de8f5d16faea6a82713d8e748d2c2eaa3967731d8da715f798bfecf341",
+    "src/main/java/com/myjavaworld/jftp/RemoteHost.java": "451d94d3e00274b95e0f7275aaca463d9bbac9f8d989d0640f950acc6ef5bd37",
+    "pom.xml": "0e4da3203c623e02327c3876bac889c743d73fff27eb2c2c54196796d85f9019"
+  },
+  "comparison": {
+    "tokens_saved": 1531,
+    "token_reduction_percent": 21.946674311926607,
+    "bytes_saved": 6264,
+    "byte_reduction_percent": 23.368774482372693,
+    "elapsed_seconds_difference": 0.2720915030222386,
+    "speed_claim": "Single cache-warm run per variant; no general performance claim or comparison with full-repository maps."
+  },
+  "initial_verification_failure": {
+    "assertion": "resource_loader_complete_classloader_signature",
+    "variant": "compressed",
+    "finding": "ClassLoader loader continuation omitted by compression; full XML preserves it",
+    "reported_immediately": true
+  },
+  "observations": [
+    "Full XML preserves exact selected file text after LF/trailing-newline normalization; XML escaping is reversed by parsing.",
+    "Compressed XML drops the continuation ClassLoader loader from ResourceLoader.getBundle: first line ends Locale locale, then omission marker. It retains file/class ownership for all three compareTo methods.",
+    "Compression removes LocalFile.compareTo null guard, early return 1 and cast; it also removes the Favorite and RemoteHost compareTo casts. Retained return expressions are insufficient to prove behavioral equivalence.",
+    "Compressed pom.xml is unchanged; it accounts for 32.1 percent of compressed pack tokens.",
+    "Compressed pack generic file_format text still describes Full contents of the file; other header fields correctly state compression. Agents should heed omission markers.",
+    "NO_COLOR did not suppress progress-spinner ANSI escapes in logs; machine log parsing strips them.",
+    "Security scanner reports no suspicious files; this is a scan result rather than a guarantee.",
+    "No custom repository or global Repomix configuration was found by the CLI."
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "coverage": {
+    "candidates_seen": 6,
+    "definitions_found": 169,
+    "definitions_in_map": 169,
+    "definitions_omitted": 0,
+    "files_with_definitions": 6,
+    "parsed_files": 6,
+    "selected_files": 6
+  },
+  "dependencies": {
+    "networkx": "3.4.2",
+    "tree-sitter": "0.25.2",
+    "tree-sitter-c-sharp": "0.23.5",
+    "tree-sitter-language-pack": "0.13.0"
+  },
+  "descriptors": [],
+  "dirty": false,
+  "estimated_tokens": 3177,
+  "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+  "export": {
+    "artifact_dir": "/home/lucas/.cache/legacy-map-review-20261008/public-evidence-final/toolbox-rust/python/sample-0",
+    "estimator": "ceil(Unicode characters / 4); a size estimate, not a model tokenizer",
+    "evidence_dir": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.python",
+    "generation_elapsed_seconds": 0.36370920203626156,
+    "implementation": "python",
+    "raw_estimated_tokens": 3177,
+    "raw_file": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/sidecars/toolbox-rust.python/toolbox-rust.python.raw.md",
+    "raw_unicode_characters": 12705,
+    "raw_utf8_bytes": 12705,
+    "report_estimated_tokens": 3534,
+    "report_file": "/mnt/c/Users/BiuroEdukey/.codex/worktrees/05bd/jftp/docs/repo-maps/artifacts/2026-10-08/toolbox-rust.python.md",
+    "report_sha256": "2747e089ae32ef42545b39162e3d7c421a8fd80e3113d8485f044b2899a474a1",
+    "report_unicode_characters": 14133,
+    "report_utf8_bytes": 14133,
+    "schema_version": 1
+  },
+  "fingerprint_scope": "selected readable files and skip reasons, from current bytes; ignored files and secret contents are excluded",
+  "focus_not_found": {
+    "files_not_parsed": [],
+    "symbols_without_definitions": []
+  },
+  "git_notes": [],
+  "inventory_summary": {
+    "languages": {
+      "rust": 6
+    },
+    "modules": [
+      {
+        "files": 6,
+        "path": "src"
+      }
+    ],
+    "modules_omitted": 0
+  },
+  "limits": {
+    "budget": 16384,
+    "max_file_bytes": 2000000,
+    "max_files": 10000,
+    "max_tags_per_file": 20000,
+    "max_total_tags": 200000
+  },
+  "map_sha256": "cbaa5c52c8a9cebe76e8c9cdd479d62d41cf1878e724118cf4333ffed9a67f26",
+  "parse_failures": [],
+  "rendering": {
+    "clipped_declarations": [],
+    "declaration_character_limit": 8000,
+    "declaration_line_limit": 80,
+    "format": "grouped"
+  },
+  "revision": "3df435987fe7da0bf9c4407b43a4ef35ad962ad1",
+  "selection": {
+    "excludes": [],
+    "focus_files": [],
+    "focus_symbols": [],
+    "mode": "ranked",
+    "subtrees": [
+      "src"
+    ]
+  },
+  "skipped": [],
+  "source_root": "/home/lucas/DEV/Projects/agent-toolbox/src/legacy-repo-map",
+  "status": "complete",
+  "tool": "legacy-codebase-workflows repo_map",
+  "truncated": false,
+  "unsupported_languages": [],
+  "version": "1.1.0",
+  "working_copy_fingerprint": "27a7c6e99d1d184ac071d8257b891cbef9aea8486a2e19e40f9f9221edf22e30"
+}
