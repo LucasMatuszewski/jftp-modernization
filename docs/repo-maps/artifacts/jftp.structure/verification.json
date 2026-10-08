@@ -1,0 +1,10 @@
+{
+  "source_revision": "3e1b7afe048ac1baa40d7ad515f1140d7fd8e3f8",
+  "selected_file_hashes_checked": 539,
+  "map_source_lines_checked": {
+    "jftp.rust": 964,
+    "jftp.full.rust": 1985
+  },
+  "line_check_policy": "Declaration excerpts must match the original line prefix; the renderer stops at body openers.",
+  "local_links_checked": 58
+}

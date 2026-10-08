@@ -1,6 +1,8 @@
 # JFTP repository maps
 
-For unfamiliar Java source navigation, start with [the native overview](jftp-java.rust.md). Search [the complete captured-definition index](jftp-java.full.rust.md) when a symbol is omitted from the overview. Read original bodies, callers and configuration before editing or documenting behavior. A known-file task can start with direct search instead.
+For current whole-repository navigation, start with [the structure and coverage report](jftp.structure.md), then [the native root overview](jftp.rust.md). Search [the complete root captured-definition index](jftp.full.rust.md) for omitted symbols. These root snapshots cover application sources, tracked JavaScript tooling and readable descriptors/resources; the structure inventory also retains binary and legacy-encoded file paths. Read original bodies, callers and configuration before editing or documenting behavior. A known-file task can start with direct search instead.
+
+The earlier [Java-only overview](jftp-java.rust.md) and [Java-only complete index](jftp-java.full.rust.md) remain preserved below with their original provenance. The following timing/comparison history refers to those Java-only snapshots, not the new root maps.
 
 The grouped renderer shows each path once, original line numbers, enclosing class/implementation headers and multiline declarations. It deliberately omits bodies. The overview uses a 16,384 estimated-token budget; the full index was requested with 65,536 and contains all 1,586 captured Java definitions, without declaration clipping. Its raw text is about 27,213 estimated tokens, so a 1M context window does not require truncating this particular index to 4K. Larger budgets remain optional; reserve context for the task and relevant source bodies.
 
