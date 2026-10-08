@@ -1,0 +1,208 @@
+{
+  "ci_run": "37752937879",
+  "ci_head": "49d43e69d03da4eec65ca6eb3f5ead80ac3c8a2d",
+  "build_commit": "b612871c5e93f7df2ee3c32d5bee5165a0f9a823",
+  "commands": [
+    {
+      "label": "install-verified-ci",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "install",
+        "--from-ci",
+        "37752937879",
+        "--expected-source",
+        "b612871c5e93f7df2ee3c32d5bee5165a0f9a823",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.8155704999808222,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\\\\native\\\\0.3.0\\\\windows-x86_64\", \"consumer_verified\": false, \"platform\": \"windows-x86_64\", \"program\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\\\\native\\\\0.3.0\\\\windows-x86_64\\\\package\\\\legacy-repo-map.exe\", \"publication\": \"pending-first-release\", \"release_tag\": \"legacy-tools-v0.3.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"\\\\\\\\wsl.localhost\\\\Ubuntu-26.04\\\\home\\\\lucas\\\\DEV\\\\Projects\\\\agent-toolbox\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\"], \"source_commit\": \"b612871c5e93f7df2ee3c32d5bee5165a0f9a823\", \"source_dirty\": false, \"source_kind\": \"ci\", \"state\": \"ready\", \"version\": \"0.3.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "status",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "status",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.746509499847889,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\\\\native\\\\0.3.0\\\\windows-x86_64\", \"consumer_verified\": false, \"platform\": \"windows-x86_64\", \"program\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\\\\native\\\\0.3.0\\\\windows-x86_64\\\\package\\\\legacy-repo-map.exe\", \"publication\": \"pending-first-release\", \"release_tag\": \"legacy-tools-v0.3.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"\\\\\\\\wsl.localhost\\\\Ubuntu-26.04\\\\home\\\\lucas\\\\DEV\\\\Projects\\\\agent-toolbox\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\cache\"], \"source_commit\": \"b612871c5e93f7df2ee3c32d5bee5165a0f9a823\", \"source_dirty\": false, \"source_kind\": \"ci\", \"state\": \"ready\", \"version\": \"0.3.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "map-overview",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\cache\\native\\0.3.0\\windows-x86_64\\package\\legacy-repo-map.exe",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+        "--output-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\overview",
+        "--budget",
+        "16384",
+        "--exclude",
+        "docs/repo-maps/**",
+        "--exclude",
+        ".codex/**",
+        "--exclude",
+        "tools/**",
+        "--exclude",
+        "docs/RepoMix/**"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 1.048067499883473,
+      "stdout": "{\"coverage\":{\"candidates_seen\":847,\"definitions_found\":1658,\"definitions_in_map\":975,\"definitions_omitted\":683,\"files_with_definitions\":191,\"parsed_files\":194,\"selected_files\":539},\"estimated_tokens\":16384,\"inventory_summary\":{\"languages\":{\"descriptor\":142,\"java\":182,\"javascript\":12,\"other\":203},\"modules\":[{\"files\":445,\"path\":\"src/main\"},{\"files\":22,\"path\":\".agents/skills\"},{\"files\":21,\"path\":\".claude/skills\"},{\"files\":17,\"path\":\"docs\"},{\"files\":10,\"path\":\"<root>\"},{\"files\":6,\"path\":\".settings\"},{\"files\":6,\"path\":\"docs/analysis\"},{\"files\":5,\"path\":\".agent-briefs\"},{\"files\":4,\"path\":\"src/test\"},{\"files\":3,\"path\":\"assets\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\overview\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\overview\\\\map.meta.json\",\"status\":\"complete\",\"truncated\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "export-overview",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\export_repo_map.py",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+        "--artifact-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\overview",
+        "--implementation",
+        "rust",
+        "--output-file",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\repo-maps\\jftp.compact.rust.md",
+        "--elapsed-seconds",
+        "1.048067499883473",
+        "--force"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.4160058000124991,
+      "stdout": "{\"inventory\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.compact.rust\\\\jftp.compact.rust.inventory.json\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.compact.rust\\\\jftp.compact.rust.meta.json\", \"raw\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.compact.rust\\\\jftp.compact.rust.raw.md\", \"report\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\jftp.compact.rust.md\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "map-full",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\cache\\native\\0.3.0\\windows-x86_64\\package\\legacy-repo-map.exe",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+        "--output-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\full",
+        "--budget",
+        "65536",
+        "--exclude",
+        "docs/repo-maps/**",
+        "--exclude",
+        ".codex/**",
+        "--exclude",
+        "tools/**",
+        "--exclude",
+        "docs/RepoMix/**",
+        "--all-definitions"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 1.0960689999628812,
+      "stdout": "{\"coverage\":{\"candidates_seen\":847,\"definitions_found\":1658,\"definitions_in_map\":1658,\"definitions_omitted\":0,\"files_with_definitions\":191,\"parsed_files\":194,\"selected_files\":539},\"estimated_tokens\":25275,\"inventory_summary\":{\"languages\":{\"descriptor\":142,\"java\":182,\"javascript\":12,\"other\":203},\"modules\":[{\"files\":445,\"path\":\"src/main\"},{\"files\":22,\"path\":\".agents/skills\"},{\"files\":21,\"path\":\".claude/skills\"},{\"files\":17,\"path\":\"docs\"},{\"files\":10,\"path\":\"<root>\"},{\"files\":6,\"path\":\".settings\"},{\"files\":6,\"path\":\"docs/analysis\"},{\"files\":5,\"path\":\".agent-briefs\"},{\"files\":4,\"path\":\"src/test\"},{\"files\":3,\"path\":\"assets\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\full\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\compact-37752937879\\\\full\\\\map.meta.json\",\"status\":\"complete\",\"truncated\":false}\n",
+      "stderr": ""
+    },
+    {
+      "label": "export-full",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\export_repo_map.py",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+        "--artifact-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\compact-37752937879\\full",
+        "--implementation",
+        "rust",
+        "--output-file",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\repo-maps\\jftp.full.compact.rust.md",
+        "--elapsed-seconds",
+        "1.0960689999628812",
+        "--force"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.420695599867031,
+      "stdout": "{\"inventory\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.full.compact.rust\\\\jftp.full.compact.rust.inventory.json\", \"metadata\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.full.compact.rust\\\\jftp.full.compact.rust.meta.json\", \"raw\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\artifacts\\\\jftp.full.compact.rust\\\\jftp.full.compact.rust.raw.md\", \"report\": \"C:\\\\Users\\\\BiuroEdukey\\\\DEV\\\\COURSES\\\\Sages\\\\jftp\\\\docs\\\\repo-maps\\\\jftp.full.compact.rust.md\"}\n",
+      "stderr": ""
+    }
+  ],
+  "maps": [
+    {
+      "label": "overview",
+      "filename": "jftp.compact.rust.md",
+      "elapsed_seconds": 1.048067499883473,
+      "raw_chars": 65536,
+      "raw_sha256": "29e1a82b9d94807c28d542699ee34edb950ba6d08a59f9bbc6eb2c032712e23d",
+      "estimated_tokens": 16384,
+      "whole_report_estimated_tokens": 16779,
+      "coverage": {
+        "candidates_seen": 847,
+        "definitions_found": 1658,
+        "definitions_in_map": 975,
+        "definitions_omitted": 683,
+        "files_with_definitions": 191,
+        "parsed_files": 194,
+        "selected_files": 539
+      },
+      "selection": {
+        "coverage_percent": 58.80579010856454,
+        "effective_max_definitions": 1658,
+        "excludes": [
+          "docs/repo-maps/**",
+          ".codex/**",
+          "tools/**",
+          "docs/RepoMix/**"
+        ],
+        "focus_files": [],
+        "focus_symbols": [],
+        "mode": "ranked",
+        "requested_coverage_percent": null,
+        "requested_max_definitions": null,
+        "selection_limit_reached": false,
+        "subtrees": []
+      },
+      "working_copy_fingerprint": "dde28cb6cd540f9d4bc36bce93c84648633f994d29beecee289988997b95bab1",
+      "examined_revision": "032772fda4cf26a8e9ccb00096871293e1fff8c8",
+      "dirty": true
+    },
+    {
+      "label": "full",
+      "filename": "jftp.full.compact.rust.md",
+      "elapsed_seconds": 1.0960689999628812,
+      "raw_chars": 101098,
+      "raw_sha256": "d54ae3f3fb8bde7e8c0ecae6b4030bdac51e7181ca25ac14d9aa806e0d2ad744",
+      "estimated_tokens": 25275,
+      "whole_report_estimated_tokens": 25683,
+      "coverage": {
+        "candidates_seen": 847,
+        "definitions_found": 1658,
+        "definitions_in_map": 1658,
+        "definitions_omitted": 0,
+        "files_with_definitions": 191,
+        "parsed_files": 194,
+        "selected_files": 539
+      },
+      "selection": {
+        "coverage_percent": 100.0,
+        "effective_max_definitions": 1658,
+        "excludes": [
+          "docs/repo-maps/**",
+          ".codex/**",
+          "tools/**",
+          "docs/RepoMix/**"
+        ],
+        "focus_files": [],
+        "focus_symbols": [],
+        "mode": "all-definitions",
+        "requested_coverage_percent": null,
+        "requested_max_definitions": null,
+        "selection_limit_reached": false,
+        "subtrees": []
+      },
+      "working_copy_fingerprint": "dde28cb6cd540f9d4bc36bce93c84648633f994d29beecee289988997b95bab1",
+      "examined_revision": "032772fda4cf26a8e9ccb00096871293e1fff8c8",
+      "dirty": true
+    }
+  ],
+  "program_sha256": "a868eda419ef64de5b0094c2c43552ae3a8d4617b0bfeda42dc82e55e425c2ce",
+  "program_bytes": 17316352
+}
