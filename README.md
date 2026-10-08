@@ -1,6 +1,24 @@
 JFTP - The Universal FTP Client
 ===============================
 
+Course modernization checkout
+----------------------------
+
+`main` contains the demonstrated modernization work, including the verified
+Windows/JDK 21 startup bootstrap and three basic regression tests. Start with
+[Windows build and launch instructions](docs/windows-startup.md) and the
+[documentation index](docs/README.md).
+
+`upstream-baseline` preserves the original author's code for comparison.
+[Compare the original baseline with main](https://github.com/LucasMatuszewski/jftp-modernization/compare/upstream-baseline...main).
+The baseline is updated deliberately after reviewing the author's changes;
+see [fork and upstream workflow](docs/git-workflow.md).
+
+The historical product description below belongs to the original application.
+The course bootstrap verifies Windows startup and basic saved-state/resource
+behavior; FTP/FTPS transfers, complete regression suites and release packaging
+still require their own verification.
+
 Introduction
 ------------
 

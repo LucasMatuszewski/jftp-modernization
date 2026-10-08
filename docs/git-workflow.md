@@ -1,17 +1,19 @@
 # Fork and upstream workflow
 
-Modernization work is maintained in [LucasMatuszewski/jftp-modernization](https://github.com/LucasMatuszewski/jftp-modernization), a GitHub fork of [sai-pullabhotla/jftp](https://github.com/sai-pullabhotla/jftp). The existing `LucasMatuszewski/jftp` repository is separate and was not changed by this setup.
+Course work is published in [LucasMatuszewski/jftp-modernization](https://github.com/LucasMatuszewski/jftp-modernization), a fork of [sai-pullabhotla/jftp](https://github.com/sai-pullabhotla/jftp). The separate `LucasMatuszewski/jftp` repository is not the target.
 
-| Remote | Purpose |
+| Reference | Purpose |
 |---|---|
-| `origin` | Fetch and publish branches in the personal modernization fork |
-| `upstream` | Fetch changes from the original author; local push URL is disabled |
+| `main` / `origin/main` | Default course branch with the demonstrated modernization and Windows bootstrap |
+| `upstream-baseline` / `origin/upstream-baseline` | Pristine original-author baseline, published for comparison |
+| `upstream/master` | Fetch-only reference to the original author's current default branch |
+| `build/windows-startup` | Published checkpoint for the first Windows bootstrap |
 
-`upstream` is a remote, not a development branch. The original default branch is tracked as `upstream/master`; the modernization branch is `Luna-subagents-modernization`. Publishing that branch does not merge it into the fork's default branch or create a pull request to the original repository.
+The local `upstream-baseline` branch tracks `upstream/master`; its push target is `origin`. `upstream` remains a remote, and its push URL is disabled. Publishing a baseline to the fork does not update it automatically when the original author commits. Preserve the full history in `main`; compare using [upstream-baseline...main](https://github.com/LucasMatuszewski/jftp-modernization/compare/upstream-baseline...main).
 
 ## Configure a new clone
 
-Local remote configuration is not copied between clones. After cloning the fork, configure the original repository and push target:
+Remote configuration and tracking relationships are local to each clone:
 
 ```sh
 git clone https://github.com/LucasMatuszewski/jftp-modernization.git
@@ -20,13 +22,35 @@ git remote add upstream https://github.com/sai-pullabhotla/jftp.git
 git config remote.upstream.pushurl DISABLED
 git config remote.pushDefault origin
 git fetch upstream
-git switch --track origin/Luna-subagents-modernization
+git branch --track upstream-baseline upstream/master
+git config branch.upstream-baseline.pushRemote origin
 ```
 
-If using GitHub CLI, set its default API target with `gh repo set-default LucasMatuszewski/jftp-modernization`. Review `git remote -v` before publishing; the disabled upstream push URL is a local safeguard, not a GitHub permission change.
+The default checkout is `main`. Use [Windows startup](windows-startup.md) for the verified isolated build/launch procedure. With GitHub CLI, set the API target using `gh repo set-default LucasMatuszewski/jftp-modernization`.
 
-## Publish and review original-author changes
+## Publish course work
 
-Publish only after verification and explicit user authorization, using `git push -u origin Luna-subagents-modernization`. Push only the intended branch; do not force-push or publish unrelated branches/tags.
+Create a focused branch from current `main`, verify the affected scope, and publish to `origin` only when authorized. Integrate verified history into `main`; use fast-forward when possible, preserving the checkpoints participants need to compare. Confirm the fork's default branch is `main`. Never force-push or publish unrelated branches/tags.
 
-Use `git fetch upstream` to update remote references without changing the working tree. Review `git log --oneline HEAD..upstream/master` and the relevant diff before deciding to merge the original author's changes into the modernization branch. Fetching does not itself integrate them. Any integration must preserve local work, resolve conflicts deliberately, and pass verification for the affected scope.
+Before deleting a branch, fetch current refs and prove its commits are reachable from `main`. Patch-equivalent commits alone do not establish full ancestry. Preserve branches with unique work or open pull requests until their disposition is decided. In particular, PR #2 uses `docs/compact-map-review-results` with base `Luna-subagents-modernization`; retain both while that PR remains open. Changing the repository default does not integrate that PR.
+
+## Review original-author changes
+
+Fetch without changing the working tree, then inspect the new commits and relevant diff:
+
+```sh
+git fetch upstream
+git log --oneline upstream-baseline..upstream/master
+git diff upstream-baseline upstream/master
+```
+
+After review authorizes advancing the pristine baseline:
+
+```sh
+git switch upstream-baseline
+git merge --ff-only upstream/master
+git push origin upstream-baseline
+git switch main
+```
+
+If fast-forward fails, stop and inspect the divergence; do not replace the baseline by force. Separately review `git log --oneline main..upstream-baseline` and the affected files before integrating original-author changes into `main`. Resolve conflicts deliberately and run checks for the affected application scope. Never push to the original author's remote.
