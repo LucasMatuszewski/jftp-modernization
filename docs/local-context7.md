@@ -81,19 +81,68 @@ index operation and saved by the backend. Binary files and files above the
 backend's 256,000-byte input limit are not searchable. Non-UTF-8 locale files
 are reported as skipped; their original encoding is preserved.
 
-Refresh after included file additions, edits or deletions and **after every
-commit**, since the index records HEAD as well as file hashes:
+Agents refresh after included file additions, edits or deletions and **after
+every commit**, since the index records HEAD as well as file hashes. The hooks
+below automate this; when hooks are unavailable, the agent runs:
 
 ```powershell
-python tools/local_context7.py index
+python tools/local_context7.py refresh
 ```
 
 Freshness checks reject stale evidence. HTTP 409, including the official MCP
 client's generic `Request failed with status 409`, means inspect `status` and
-reindex before querying again. Updates reuse unchanged file chunks. Results
+refresh before querying again. Updates reuse unchanged file chunks. Results
 carry relative path, original line range, file SHA-256, revision and corpus ID;
 documentation paths are relative to `docs/`, code paths to the repository.
 Index metadata also reports skipped files and oversized whole-line chunks.
+
+### Incremental indexing
+
+`refresh` checks the saved scope, HEAD and source hashes. A fresh index returns
+`refreshed: false` and performs no index writes. If it is stale, it calls
+`index`, which discovers and hashes the selected corpus but replaces chunks
+only for changed/new files and deletes rows for files that disappeared.
+Unchanged file chunks retain their IDs and contents. A commit with unchanged
+files only updates provenance metadata. A scope change removes or adds the
+affected entries; changing chunking/model configuration can require a rebuild.
+
+There is no single-file indexing flag in this backend. Passing one edited file
+as a new root would select a different corpus, not update this index. Scanning
+the corpus also discovers new/deleted files and changes made outside the current
+tool call. The verified behavior is incremental database updates after a full
+inventory/hash scan, rather than a filesystem watcher or zero-cost refresh.
+
+### Automatic hooks and course demonstration
+
+[Codex hooks](../.codex/hooks.json) and
+[Claude Code hooks](../.claude/settings.json) call the same short
+[Python handler](../tools/context7_refresh_hook.py). `PostToolUse` fires after
+edit/write tools and shell tools; shell coverage catches scripts, deletions and
+commits without trying to interpret arbitrary command text. `Stop` checks once
+more at turn end. Handlers run synchronously, so an immediately following local
+query sees the updated index. Read-only shell calls do not rewrite a fresh index.
+The hook ignores events whose working directory is outside this checkout, never
+executes commands from the input payload and performs no dependency downloads.
+Failure is reported explicitly; the agent must refresh before local search.
+
+Codex requires review of each new or changed hook definition in `/hooks` before
+it executes. The Windows hook uses this checkout's absolute script path; adapt
+it for another machine. Claude uses its `${CLAUDE_PROJECT_DIR}` placeholder.
+Claude's native workspace/MCP approval rules still apply. Reload/restart the
+agent after changing configuration. No trust-bypass setting is added here.
+
+For a course demonstration, open these three files and show the sequence:
+
+1. Save an included source or Markdown change through the agent's edit tool.
+2. The `PostToolUse` handler receives JSON and runs `refresh`.
+3. It adds concise feedback such as `1 changed, 0 deleted` to the agent context.
+4. Search through `context7-local` to retrieve the current source lines.
+5. Run a read-only command: the fresh-index check finishes silently.
+
+The handler and configured commands were exercised with hook JSON inputs; a
+full interactive native hook dispatch requires the client's native trust step.
+Claude Code is not installed in this Windows shell, so its registration is
+verified against the documented config contract, not a live Claude session.
 
 ## MCP and HTTP configuration
 
@@ -111,11 +160,31 @@ while Node owns the protocol stream. Git metadata commands have a ten-second
 timeout; neither the installed skill nor the original repository is patched.
 
 For another checkout/OS, adapt the command and script path in the project
-configuration. For other MCP clients, [mcp.json](../mcp.json) contains a generic
+configuration. Claude Code loads [the project MCP entry](../.mcp.json), which
+adds `context7-local` alongside any globally configured public Context7 server.
+Start Claude from the repository root; its config uses the documented project
+directory placeholder with a `.` fallback. [CLAUDE.md](../CLAUDE.md) imports
+`AGENTS.md`, so both agents receive the same local/public routing instructions.
+For other MCP clients, [mcp.json](../mcp.json) contains a generic
 `mcpServers` entry; configure its working directory as this repository root,
 or replace the script argument with its absolute path. Codex reads
 `.codex/config.toml`; it does not automatically load the generic `mcp.json`.
 Client-specific import/registration is required for other agents.
+
+### What is stored in Git
+
+The repository tracks the launcher, hook handler, tests, client manifest and
+lockfile, backend hash manifest, agent configuration and this guide. These are
+ordinary committed files, not Git-ignored local outputs. A commit is local until
+explicitly pushed; this setup does not publish automatically.
+
+The actual reference backend is supplied by the installed
+`~/.agents/skills/legacy-codebase-workflows` skill and copied with its helpers
+and notices to the external runtime during setup. It is pinned by hashes, not
+vendored as source in this repository. A new clone therefore needs the matching
+skill plus explicit `setup` and `index` steps. The runtime's `jftp.sqlite`,
+copied Python backend, isolated credentials/XDG state and JavaScript
+`node_modules` are outside this repository and are never staged or pushed.
 
 The launcher strips inherited provider keys, proxy settings and Node startup
 options from the client environment. It leaves HOME/CODEX_HOME and user
@@ -150,7 +219,9 @@ with the actual pinned clients. One additional read-only smoke test queries
 the current JFTP index through the configured wrapper. They verify library resolution, original
 source ranges/hashes, the official MCP initialize/list/call contract, HTTP 409
 after edits/deletions or a Git revision change, recovery after explicit reindexing, hostile Host rejection,
-runtime separation, credential/proxy isolation and server shutdown.
+runtime separation, credential/proxy isolation and server shutdown. Additional
+checks verify unchanged chunk preservation, single-file update/deletion counts,
+no writes for a fresh index, and post-edit hook refresh with silent no-op runs.
 They neither build nor start the Swing application.
 
 On 2026-10-08, the initial Windows index included all 182 tracked Java source
@@ -167,3 +238,6 @@ quality or correctness of the application behavior described by a snippet.
 - [Context7 CLI documentation](https://context7.com/docs/clients/cli).
 - [Official OpenAI MCP configuration](https://developers.openai.com/codex/mcp).
 - [Official OpenAI project configuration and trust](https://developers.openai.com/codex/config-basic).
+- [Official OpenAI hook configuration and trust](https://learn.chatgpt.com/docs/hooks).
+- [Claude Code hook configuration](https://code.claude.com/docs/en/hooks).
+- [Claude Code project MCP configuration](https://code.claude.com/docs/en/mcp).

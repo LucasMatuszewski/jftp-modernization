@@ -16,6 +16,7 @@ from urllib.request import Request, urlopen
 TOOLS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(TOOLS))
 import local_context7 as local
+import context7_refresh_hook as hook
 
 
 class LocalContext7Tests(unittest.TestCase):
@@ -27,7 +28,7 @@ class LocalContext7Tests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.base = Path(self.temp.name)
+        self.base = Path(self.temp.name).resolve()
         self.source = self.base / "source"
         self.source.mkdir()
         self.docs = self.source / "docs"
@@ -35,7 +36,7 @@ class LocalContext7Tests(unittest.TestCase):
         self.java = self.source / "Demo.java"
         self.java.write_text("public class Demo {\n  public void retryTransfer() {}\n}\n", encoding="utf-8")
         (self.docs / "api.md").write_text("# Transfer lifecycle\nDemo.retryTransfer retries a transfer.\n", encoding="utf-8")
-        self.database = self.base / "index.sqlite"
+        self.database = self.base / "runtime" / "jftp.sqlite"
         self.reindex()
 
     def reindex(self):
@@ -110,6 +111,51 @@ class LocalContext7Tests(unittest.TestCase):
         for path in (local.ROOT, local.ROOT / "cache", local.ROOT.parent):
             with self.assertRaises(ValueError):
                 local.runtime_path(path)
+
+    def test_incremental_index_preserves_unchanged_chunks(self):
+        other = self.source / "Other.java"
+        other.write_text("public class Other {}\n", encoding="utf-8")
+        self.reindex()
+        with self.backend.connect(self.database) as con:
+            unchanged = [tuple(row) for row in con.execute("SELECT id,kind,path,body FROM chunks WHERE path!='Demo.java' ORDER BY id")]
+        self.java.write_text("public class Demo { public void cancelTransfer() {} }\n", encoding="utf-8")
+        result = self.reindex()
+        self.assertEqual((result["changed"], result["deleted"]), (1, 0))
+        with self.backend.connect(self.database) as con:
+            self.assertEqual(unchanged, [tuple(row) for row in con.execute("SELECT id,kind,path,body FROM chunks WHERE path!='Demo.java' ORDER BY id")])
+        result = self.reindex()
+        self.assertEqual((result["changed"], result["deleted"]), (0, 0))
+        other.unlink()
+        result = self.reindex()
+        self.assertEqual((result["changed"], result["deleted"]), (0, 1))
+
+    def test_refresh_does_not_write_a_fresh_index(self):
+        with patch.object(local, "ROOT", self.source):
+            local.index(self.backend, self.database.parent)
+            before = self.database.stat().st_mtime_ns
+            result = local.refresh(self.backend, self.database.parent)
+            self.assertFalse(result["refreshed"])
+            self.assertEqual(before, self.database.stat().st_mtime_ns)
+
+    def test_hook_refreshes_an_edit_then_is_silent_for_read_only_work(self):
+        with patch.object(local, "ROOT", self.source), patch.object(local, "runtime_path", return_value=self.database.parent), patch.object(local, "load_backend", return_value=self.backend):
+            local.index(self.backend, self.database.parent)
+            self.java.write_text("public class Demo { public void hookUpdatedTransfer() {} }\n", encoding="utf-8")
+            event = {"hook_event_name": "PostToolUse", "cwd": str(self.source), "tool_name": "Edit"}
+            output = hook.handle(event)
+            self.assertIn("1 changed", output["hookSpecificOutput"]["additionalContext"])
+            with self.backend.connect(self.database) as con:
+                self.assertTrue(self.backend.query(con, "hookUpdatedTransfer")["results"])
+            event["tool_name"] = "Bash"
+            self.assertIsNone(hook.handle(event))
+            self.assertIsNone(hook.handle({"hook_event_name": "Stop", "cwd": str(self.source)}))
+
+    def test_hook_never_refreshes_another_checkout(self):
+        with patch.object(local, "refresh") as refresh:
+            self.assertIsNone(hook.handle({"hook_event_name": "PostToolUse", "cwd": str(self.source)}))
+            self.assertIsNone(hook.handle({"hook_event_name": "PreToolUse", "cwd": str(local.ROOT)}))
+            self.assertIsNone(hook.handle({"hook_event_name": "Stop"}))
+            refresh.assert_not_called()
 
     def test_pinned_cli_resolves_library_and_returns_source(self):
         entry = local.client_entry(self.runtime, "ctx7")

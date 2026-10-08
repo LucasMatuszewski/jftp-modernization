@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "context7-local": {
+      "command": "python",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/tools/local_context7.py", "mcp"]
+    }
+  }
+}

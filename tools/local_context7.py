@@ -21,9 +21,9 @@ CONFIG = ROOT / "tools" / "context7"
 LIBRARY_ID = "/local/jftp"
 # Applied to both roots, so include relative docs paths as well as root paths.
 EXCLUDES = (
-    ".agents", ".codex", ".github", ".vscode", "tools", "src/test",
+    ".agents", ".claude", ".codex", ".github", ".vscode", "tools", "src/test",
     "docs/repo-maps", "repo-maps", "docs/RepoMix", "RepoMix",
-    "docs/analysis", "analysis", "mcp.json", "AGENTS.md", "CLAUDE.md",
+    "docs/analysis", "analysis", "mcp.json", ".mcp.json", "AGENTS.md", "CLAUDE.md",
 )
 
 
@@ -171,6 +171,26 @@ def index(backend, runtime: Path) -> dict:
     return backend.index(ROOT, runtime / "jftp.sqlite", LIBRARY_ID, ROOT / "docs", None, None, excludes=EXCLUDES)
 
 
+def refresh(backend, runtime: Path) -> dict:
+    """Check freshness first; write incremental updates only when necessary."""
+    database = runtime / "jftp.sqlite"
+    if database.is_file():
+        with backend.connect(database) as con:
+            metadata = backend.indexed_metadata(con)
+            if (metadata["root"], metadata["docs_root"], metadata["library_id"]) != (str(ROOT), str(ROOT / "docs"), LIBRARY_ID):
+                raise ValueError("Database belongs to another corpus; use a new runtime")
+            # Scope changes need indexing even when the old scope is fresh.
+            same_scope = json.loads(metadata["excludes"]) == list(backend.normalize_excludes(EXCLUDES))
+            if same_scope:
+                try:
+                    backend.assert_fresh(con, metadata)
+                except backend.RetrievalError:
+                    pass
+                else:
+                    return {"libraryId": LIBRARY_ID, "refreshed": False, "changed": 0, "deleted": 0, "revision": metadata["revision"]}
+    return {**index(backend, runtime), "refreshed": True}
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--runtime", type=Path, help="External runtime override; use consistently for all commands")
@@ -178,6 +198,7 @@ def main(argv=None) -> int:
     install = commands.add_parser("setup", help="Copy the pinned backend and install locked clients; network permitted here only")
     install.add_argument("--skill-root", type=Path, default=Path.home() / ".agents" / "skills" / "legacy-codebase-workflows")
     commands.add_parser("index", help="Explicitly refresh original code and docs")
+    commands.add_parser("refresh", help="Check freshness and incrementally update only if stale")
     commands.add_parser("status", help="Verify source freshness and print index metadata")
     serve = commands.add_parser("serve", help="Serve Context7 HTTP compatibility routes until Ctrl+C")
     serve.add_argument("--port", type=int, default=8765)
@@ -195,6 +216,8 @@ def main(argv=None) -> int:
         database = runtime / "jftp.sqlite"
         if args.command == "index":
             print(json.dumps(index(backend, runtime), indent=2))
+        elif args.command == "refresh":
+            print(json.dumps(refresh(backend, runtime), indent=2))
         elif args.command in ("status", "query"):
             with backend.connect(database) as con:
                 if args.command == "status":

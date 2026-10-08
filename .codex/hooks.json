@@ -1,0 +1,30 @@
+{
+  "description": "Refresh local JFTP Context7 after tools and at turn end.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "^(apply_patch|Edit|Write|Bash)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\tools\\context7_refresh_hook.py\"",
+            "timeout": 30,
+            "statusMessage": "Refreshing local Context7"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\tools\\context7_refresh_hook.py\"",
+            "timeout": 30,
+            "statusMessage": "Refreshing local Context7"
+          }
+        ]
+      }
+    ]
+  }
+}

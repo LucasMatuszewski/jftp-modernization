@@ -28,7 +28,7 @@ Use **RepoMap first** for unfamiliar code: its compact inventory lists paths and
 | Find an unfamiliar subsystem or a documentation topic | [README.md](docs/README.md) |
 | Navigate the whole repository, locate declarations, or find a symbol missing from the overview | [Whole-repository structure](docs/repo-maps/jftp.structure.md), [native overview](docs/repo-maps/jftp.compact.rust.md), then search the [complete captured-definition index](docs/repo-maps/jftp.full.compact.rust.md); verify original bodies/callers before editing and refresh after path/signature changes |
 | Read implementation across many Java files in one pack | [RepoMix guide](docs/RepoMix/README.md), then [selective full code](docs/RepoMix/jftp-source.selective-full.xml); use [full source reference](docs/RepoMix/jftp-source.full.xml) when original comments are needed. Helpers, experiments and evidence are in `docs/RepoMix/artifacts/` |
-| Search original JFTP source and focused documentation with local Context7 | [Local Context7](docs/local-context7.md); use MCP `context7-local`, library `/local/jftp`, then verify the cited original lines. Refresh with `python tools/local_context7.py index` after source/docs changes or commits; HTTP 409 means reindex. Keep private repository queries on this local server; use hosted Context7 only for public external libraries. If MCP is unavailable in the current session, use `python tools/local_context7.py docs "ExactIdentifier"` locally. |
+| Search JFTP code and docs locally | [Local Context7](docs/local-context7.md): MCP `context7-local`, library `/local/jftp`; hosted Context7 is for public external libraries. |
 | Change entry points, session ownership, cross-package calls, or threading | [architecture.md](docs/architecture.md) |
 | Repair compilation, resolve artifacts, choose versions, or change Maven configuration | [build-and-dependencies.md](docs/build-and-dependencies.md) |
 | Define observable connection, transfer, command, or saved-settings behavior | [application-workflows.md](docs/application-workflows.md) |
@@ -39,6 +39,8 @@ Use **RepoMap first** for unfamiliar code: its compact inventory lists paths and
 | Evaluate protocol/TLS direction or a replacement FTP library | [security-modernization-options.md](docs/security-modernization-options.md) |
 | Change resource roots, translations, help, launchers, or archive layout | [resources-and-distribution.md](docs/resources-and-distribution.md) |
 | Assess what the original analysis covered and what still needs runtime proof | [analysis-method.md](docs/analysis-method.md) and [analysis/verification.md](docs/analysis/verification.md) |
+
+Local Context7 returns original file/line citations. Hooks refresh it after edits and at turn end; without hooks, agents must run `python tools/local_context7.py refresh` after code/docs changes or commits and on HTTP 409.
 
 ## TDD and modernization workflow
 
