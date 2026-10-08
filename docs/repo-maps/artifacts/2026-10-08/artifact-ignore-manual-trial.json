@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "manual documentation trial; synthetic files, actual Git ignore/index behavior",
+  "cases": [
+    {
+      "case": "artifact-only",
+      "destination": "docs/repo-maps",
+      "primary_reports_visible": 3,
+      "nested_evidence_ignored": true,
+      "unrelated_rule_preserved": true
+    },
+    {
+      "case": "artifact-only",
+      "destination": "docs/code-navigation",
+      "primary_reports_visible": 3,
+      "nested_evidence_ignored": true,
+      "unrelated_rule_preserved": true
+    },
+    {
+      "case": "artifact-only",
+      "destination": "navigation output",
+      "primary_reports_visible": 3,
+      "nested_evidence_ignored": true,
+      "unrelated_rule_preserved": true
+    },
+    {
+      "case": "agent-added-overbroad-rule-corrected",
+      "blocking_pattern": "/docs/repo-maps/",
+      "main_report_visible_after_correction": true
+    },
+    {
+      "case": "explicit-private-report-override",
+      "private_report_ignored": true,
+      "public_main_report_visible": true
+    },
+    {
+      "case": "explicit-whole-directory-override",
+      "all_output_ignored": true
+    },
+    {
+      "case": "external-output",
+      "no_output_rule_added": true,
+      "external_path": "outside temporary repository"
+    },
+    {
+      "case": "previously-tracked-evidence",
+      "tracked_file_preserved": true,
+      "no_automatic_untracking": true
+    }
+  ],
+  "local_links_and_anchors_checked": 20,
+  "source_files_sha256": {
+    "SKILL.md": "3896e60d73999c2e43a465d948f3e62cfd126642d276f3ede467a76b22196602",
+    "references/repo-map.md": "fed6fe3cc95dd56834fbb79eda16af4d0d21136998e98b66151aa144f142c53e"
+  }
+}
