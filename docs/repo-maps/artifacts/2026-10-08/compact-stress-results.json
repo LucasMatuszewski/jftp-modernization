@@ -1,0 +1,271 @@
+[
+  {
+    "implementation": "rust",
+    "mode": "ranked500k",
+    "exit": 0,
+    "elapsed_seconds": 1.0786414809990674,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 1998249,
+    "raw_sha256": "519c30e3657abcb7068e7e11692b6c91237c466c9df8e896351e348880bc6583",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 297,
+      "definitions_omitted": 44,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 87.09677419354838,
+      "effective_max_definitions": 341,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "ranked",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 499563,
+    "failure": null,
+    "stderr": ""
+  },
+  {
+    "implementation": "rust",
+    "mode": "complete500k",
+    "exit": 2,
+    "elapsed_seconds": 0.9929720819927752,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 94,
+    "raw_sha256": "085caa385611f854796c392afbbe7b38f349a3f6c3cbc903ec91b64992ad00c8",
+    "coverage": null,
+    "selection": {
+      "coverage_percent": 0.0,
+      "effective_max_definitions": null,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "all-definitions",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 0,
+    "failure": {
+      "message": "--all-definitions requires 573824 estimated tokens; requested --budget 500000. Increase --budget to 573824 (maximum 1000000) or narrow --subtree.",
+      "required_estimated_tokens": 573824,
+      "stage": "rendering"
+    },
+    "stderr": "legacy-repo-map: --all-definitions requires 573824 estimated tokens; requested --budget 500000. Increase --budget to 573824 (maximum 1000000) or narrow --subtree.\n"
+  },
+  {
+    "implementation": "rust",
+    "mode": "complete600k",
+    "exit": 0,
+    "elapsed_seconds": 1.7282455700915307,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 2295293,
+    "raw_sha256": "d7468b7228104e62b8bcb3a4bcd833a71abbd7dc7da88e30ea98d03a814ff9dd",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 341,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 100.0,
+      "effective_max_definitions": 341,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "all-definitions",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 573824,
+    "failure": null,
+    "stderr": ""
+  },
+  {
+    "implementation": "rust",
+    "mode": "coverage10",
+    "exit": 0,
+    "elapsed_seconds": 1.8764751669950783,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 229551,
+    "raw_sha256": "96363953fbf19ed1a92ca902681a96aefa5fae47de8d341ca627c9261f27b7c2",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 35,
+      "definitions_omitted": 306,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 10.263929618768328,
+      "effective_max_definitions": 35,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "ranked",
+      "requested_coverage_percent": 10.0,
+      "requested_max_definitions": null,
+      "selection_limit_reached": true,
+      "subtrees": []
+    },
+    "estimated_tokens": 57388,
+    "failure": null,
+    "stderr": ""
+  },
+  {
+    "implementation": "python",
+    "mode": "ranked500k",
+    "exit": 0,
+    "elapsed_seconds": 5.060574017930776,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 1998249,
+    "raw_sha256": "519c30e3657abcb7068e7e11692b6c91237c466c9df8e896351e348880bc6583",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 297,
+      "definitions_omitted": 44,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 87.09677419354838,
+      "effective_max_definitions": 341,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "ranked",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 499563,
+    "failure": null,
+    "stderr": ""
+  },
+  {
+    "implementation": "python",
+    "mode": "complete500k",
+    "exit": 2,
+    "elapsed_seconds": 3.9631476388312876,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 94,
+    "raw_sha256": "085caa385611f854796c392afbbe7b38f349a3f6c3cbc903ec91b64992ad00c8",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": null,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 0.0,
+      "effective_max_definitions": null,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "all-definitions",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 0,
+    "failure": {
+      "message": "all-definitions requires 573824 estimated tokens; budget is 500000. Increase --budget to at least 573824, or choose a narrower subtree.",
+      "required_estimated_tokens": 573824,
+      "stage": "rendering"
+    },
+    "stderr": "repo_map: all-definitions requires 573824 estimated tokens; budget is 500000. Increase --budget to at least 573824, or choose a narrower subtree.\n"
+  },
+  {
+    "implementation": "python",
+    "mode": "complete600k",
+    "exit": 0,
+    "elapsed_seconds": 3.6187596491072327,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 2295293,
+    "raw_sha256": "d7468b7228104e62b8bcb3a4bcd833a71abbd7dc7da88e30ea98d03a814ff9dd",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 341,
+      "definitions_omitted": 0,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 100.0,
+      "effective_max_definitions": 341,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "all-definitions",
+      "requested_coverage_percent": null,
+      "requested_max_definitions": null,
+      "selection_limit_reached": false,
+      "subtrees": []
+    },
+    "estimated_tokens": 573824,
+    "failure": null,
+    "stderr": ""
+  },
+  {
+    "implementation": "python",
+    "mode": "coverage10",
+    "exit": 0,
+    "elapsed_seconds": 2.889582260977477,
+    "source_bytes": 2294343,
+    "source_sha256": "dd000c8f8b2ee644c573e0e0396822b1aed35dde8f389e44b626c667a161e103",
+    "raw_chars": 229551,
+    "raw_sha256": "96363953fbf19ed1a92ca902681a96aefa5fae47de8d341ca627c9261f27b7c2",
+    "coverage": {
+      "candidates_seen": 1,
+      "definitions_found": 341,
+      "definitions_in_map": 35,
+      "definitions_omitted": 306,
+      "files_with_definitions": 1,
+      "parsed_files": 1,
+      "selected_files": 1
+    },
+    "selection": {
+      "coverage_percent": 10.263929618768328,
+      "effective_max_definitions": 35,
+      "excludes": [],
+      "focus_files": [],
+      "focus_symbols": [],
+      "mode": "ranked",
+      "requested_coverage_percent": 10.0,
+      "requested_max_definitions": null,
+      "selection_limit_reached": true,
+      "subtrees": []
+    },
+    "estimated_tokens": 57388,
+    "failure": null,
+    "stderr": ""
+  }
+]
