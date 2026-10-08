@@ -1,0 +1,30 @@
+[
+  {
+    "label": "before-status",
+    "command": [
+      "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+      "C:\\Users\\BiuroEdukey\\.agents\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+      "status",
+      "--cache-dir",
+      "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\old-policy-cache"
+    ],
+    "exit": 1,
+    "elapsed_seconds": 0.3678725999779999,
+    "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\old-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\", \"consumer_verified\": false, \"platform\": \"windows-x86_64\", \"publication\": \"pending-first-release\", \"reason\": \"missing, unsafe, or oversized metadata: receipt.json\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"C:\\\\Users\\\\BiuroEdukey\\\\.agents\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\old-policy-cache\"], \"state\": \"needs-setup\", \"version\": \"0.2.0\"}\n",
+    "stderr": ""
+  },
+  {
+    "label": "before-install",
+    "command": [
+      "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+      "C:\\Users\\BiuroEdukey\\.agents\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+      "install",
+      "--cache-dir",
+      "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\old-policy-cache"
+    ],
+    "exit": 2,
+    "elapsed_seconds": 0.6413161000236869,
+    "stdout": "{\"reason\": \"pinned release is not published or this asset is missing; no Rust build or latest-release fallback was attempted\", \"state\": \"error\"}\n",
+    "stderr": ""
+  }
+]

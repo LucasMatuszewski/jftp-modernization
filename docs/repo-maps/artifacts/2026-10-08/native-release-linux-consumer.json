@@ -1,0 +1,95 @@
+{
+  "release_tag": "legacy-tools-v0.2.0",
+  "release_source": "3270766023614f1b30cdcc6d716fff5d49b57c04",
+  "binary_sha256": "ef679e3decd8cc7fcc47b7cbd79484c32c72e528a6d2c772d3828f954cfa301b",
+  "commands": [
+    {
+      "label": "fixed-linux-fresh-status",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py",
+        "status",
+        "--cache-dir",
+        "/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache"
+      ],
+      "exit": 1,
+      "elapsed_seconds": 0.12368569988757372,
+      "stdout": "{\"cache_directory\": \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64\", \"message\": \"Local native package needs setup; install the pinned prebuilt release (no Rust compiler required).\", \"next_action\": \"install\", \"platform\": \"linux-x86_64\", \"reason\": \"missing, unsafe, or oversized metadata: receipt.json\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"/usr/bin/python3\", \"/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py\", \"install\", \"--cache-dir\", \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache\"], \"state\": \"needs-setup\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed-linux-release-install",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py",
+        "install",
+        "--cache-dir",
+        "/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 1.4219615031033754,
+      "stdout": "{\"cache_directory\": \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64\", \"message\": \"Verified local native package is ready to run.\", \"next_action\": \"run\", \"platform\": \"linux-x86_64\", \"program\": \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64/package/legacy-repo-map\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"/usr/bin/python3\", \"/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py\", \"install\", \"--cache-dir\", \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache\"], \"source_commit\": \"3270766023614f1b30cdcc6d716fff5d49b57c04\", \"source_dirty\": false, \"source_kind\": \"release\", \"state\": \"ready\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed-linux-verified-status",
+      "command": [
+        "python3",
+        "/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py",
+        "status",
+        "--cache-dir",
+        "/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.13728790101595223,
+      "stdout": "{\"cache_directory\": \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64\", \"message\": \"Verified local native package is ready to run.\", \"next_action\": \"run\", \"platform\": \"linux-x86_64\", \"program\": \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64/package/legacy-repo-map\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"/usr/bin/python3\", \"/home/lucas/DEV/Projects/agent-toolbox/skills/legacy-codebase-workflows/scripts/setup_native.py\", \"install\", \"--cache-dir\", \"/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache\"], \"source_commit\": \"3270766023614f1b30cdcc6d716fff5d49b57c04\", \"source_dirty\": false, \"source_kind\": \"release\", \"state\": \"ready\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "released-native-rust-self-map",
+      "command": [
+        "/home/lucas/.cache/native-readiness-review-20261008/linux-release-cache/native/0.2.0/linux-x86_64/package/legacy-repo-map",
+        "/home/lucas/DEV/Projects/agent-toolbox",
+        "--output-dir",
+        "/home/lucas/.cache/native-readiness-review-20261008/rust-release-map",
+        "--subtree",
+        "src/legacy-repo-map/src",
+        "--all-definitions",
+        "--budget",
+        "65536"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.07575460011139512,
+      "stdout": "{\"coverage\":{\"candidates_seen\":6,\"definitions_found\":204,\"definitions_in_map\":204,\"definitions_omitted\":0,\"files_with_definitions\":6,\"parsed_files\":6,\"selected_files\":6},\"estimated_tokens\":4046,\"inventory_summary\":{\"languages\":{\"rust\":6},\"modules\":[{\"files\":6,\"path\":\"src/legacy-repo-map\"}],\"modules_omitted\":0},\"map\":\"/home/lucas/.cache/native-readiness-review-20261008/rust-release-map/repo-map.md\",\"metadata\":\"/home/lucas/.cache/native-readiness-review-20261008/rust-release-map/map.meta.json\",\"status\":\"complete\",\"truncated\":false}\n",
+      "stderr": ""
+    }
+  ],
+  "map_summary": {
+    "coverage": {
+      "candidates_seen": 6,
+      "definitions_found": 204,
+      "definitions_in_map": 204,
+      "definitions_omitted": 0,
+      "files_with_definitions": 6,
+      "parsed_files": 6,
+      "selected_files": 6
+    },
+    "estimated_tokens": 4046,
+    "inventory_summary": {
+      "languages": {
+        "rust": 6
+      },
+      "modules": [
+        {
+          "files": 6,
+          "path": "src/legacy-repo-map"
+        }
+      ],
+      "modules_omitted": 0
+    },
+    "map": "/home/lucas/.cache/native-readiness-review-20261008/rust-release-map/repo-map.md",
+    "metadata": "/home/lucas/.cache/native-readiness-review-20261008/rust-release-map/map.meta.json",
+    "status": "complete",
+    "truncated": false
+  }
+}

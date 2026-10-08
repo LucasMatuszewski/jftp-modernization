@@ -1,0 +1,111 @@
+{
+  "release_tag": "legacy-tools-v0.2.0",
+  "release_source": "3270766023614f1b30cdcc6d716fff5d49b57c04",
+  "old_status_marker_is_not_an_install_gate": true,
+  "binary_sha256": "5ba982cc4b5102aeb7bfd8b5de8b484605a808ef01a2baec8ff32777f2683e24",
+  "commands": [
+    {
+      "label": "old-policy-release-install",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "C:\\Users\\BiuroEdukey\\.agents\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "install",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\old-policy-cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 3.9915575000923127,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\old-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\", \"consumer_verified\": false, \"platform\": \"windows-x86_64\", \"program\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\old-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\\\\package\\\\legacy-repo-map.exe\", \"publication\": \"pending-first-release\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"C:\\\\Users\\\\BiuroEdukey\\\\.agents\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\old-policy-cache\"], \"source_commit\": \"3270766023614f1b30cdcc6d716fff5d49b57c04\", \"source_dirty\": false, \"source_kind\": \"release\", \"state\": \"ready\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed-fresh-status",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "status",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\fixed-policy-cache"
+      ],
+      "exit": 1,
+      "elapsed_seconds": 0.6557185999117792,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\", \"message\": \"Local native package needs setup; install the pinned prebuilt release (no Rust compiler required).\", \"next_action\": \"install\", \"platform\": \"windows-x86_64\", \"reason\": \"missing, unsafe, or oversized metadata: receipt.json\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"\\\\\\\\wsl.localhost\\\\Ubuntu-26.04\\\\home\\\\lucas\\\\DEV\\\\Projects\\\\agent-toolbox\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\"], \"state\": \"needs-setup\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed-release-install",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "install",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\fixed-policy-cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 3.584501599892974,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\", \"message\": \"Verified local native package is ready to run.\", \"next_action\": \"run\", \"platform\": \"windows-x86_64\", \"program\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\\\\package\\\\legacy-repo-map.exe\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"\\\\\\\\wsl.localhost\\\\Ubuntu-26.04\\\\home\\\\lucas\\\\DEV\\\\Projects\\\\agent-toolbox\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\"], \"source_commit\": \"3270766023614f1b30cdcc6d716fff5d49b57c04\", \"source_dirty\": false, \"source_kind\": \"release\", \"state\": \"ready\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed-verified-status",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\python-env\\Scripts\\python.exe",
+        "\\\\wsl.localhost\\Ubuntu-26.04\\home\\lucas\\DEV\\Projects\\agent-toolbox\\skills\\legacy-codebase-workflows\\scripts\\setup_native.py",
+        "status",
+        "--cache-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\fixed-policy-cache"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.7443580001126975,
+      "stdout": "{\"cache_directory\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\", \"message\": \"Verified local native package is ready to run.\", \"next_action\": \"run\", \"platform\": \"windows-x86_64\", \"program\": \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\\\\native\\\\0.2.0\\\\windows-x86_64\\\\package\\\\legacy-repo-map.exe\", \"release_tag\": \"legacy-tools-v0.2.0\", \"setup_command\": [\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\python-env\\\\Scripts\\\\python.exe\", \"\\\\\\\\wsl.localhost\\\\Ubuntu-26.04\\\\home\\\\lucas\\\\DEV\\\\Projects\\\\agent-toolbox\\\\skills\\\\legacy-codebase-workflows\\\\scripts\\\\setup_native.py\", \"install\", \"--cache-dir\", \"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\fixed-policy-cache\"], \"source_commit\": \"3270766023614f1b30cdcc6d716fff5d49b57c04\", \"source_dirty\": false, \"source_kind\": \"release\", \"state\": \"ready\", \"version\": \"0.2.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "label": "released-native-jftp-java-full",
+      "command": [
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\fixed-policy-cache\\native\\0.2.0\\windows-x86_64\\package\\legacy-repo-map.exe",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
+        "--output-dir",
+        "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\jftp-java-release",
+        "--subtree",
+        "src/main/java",
+        "--all-definitions",
+        "--budget",
+        "65536"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.7554925999138504,
+      "stdout": "{\"coverage\":{\"candidates_seen\":196,\"definitions_found\":1586,\"definitions_in_map\":1586,\"definitions_omitted\":0,\"files_with_definitions\":179,\"parsed_files\":182,\"selected_files\":196},\"estimated_tokens\":27213,\"inventory_summary\":{\"languages\":{\"java\":182,\"other\":14},\"modules\":[{\"files\":196,\"path\":\"src/main\"}],\"modules_omitted\":0},\"map\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\jftp-java-release\\\\repo-map.md\",\"metadata\":\"C:\\\\Users\\\\BiuroEdukey\\\\AppData\\\\Local\\\\Temp\\\\legacy-skill-review-20261007-05bd\\\\participant-release-20261008\\\\jftp-java-release\\\\map.meta.json\",\"status\":\"complete\",\"truncated\":false}\n",
+      "stderr": ""
+    }
+  ],
+  "map_summary": {
+    "coverage": {
+      "candidates_seen": 196,
+      "definitions_found": 1586,
+      "definitions_in_map": 1586,
+      "definitions_omitted": 0,
+      "files_with_definitions": 179,
+      "parsed_files": 182,
+      "selected_files": 196
+    },
+    "estimated_tokens": 27213,
+    "inventory_summary": {
+      "languages": {
+        "java": 182,
+        "other": 14
+      },
+      "modules": [
+        {
+          "files": 196,
+          "path": "src/main"
+        }
+      ],
+      "modules_omitted": 0
+    },
+    "map": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\jftp-java-release\\repo-map.md",
+    "metadata": "C:\\Users\\BiuroEdukey\\AppData\\Local\\Temp\\legacy-skill-review-20261007-05bd\\participant-release-20261008\\jftp-java-release\\map.meta.json",
+    "status": "complete",
+    "truncated": false
+  }
+}

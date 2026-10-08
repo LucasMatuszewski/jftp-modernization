@@ -1,0 +1,51 @@
+{
+  "tag_name": "legacy-tools-v0.2.0",
+  "html_url": "https://github.com/EdukeyTeam/agent-toolbox/releases/tag/legacy-tools-v0.2.0",
+  "draft": false,
+  "prerelease": false,
+  "published_at": "2026-10-08T10:07:08Z",
+  "source_commit": "3270766023614f1b30cdcc6d716fff5d49b57c04",
+  "release_run": "37760428521",
+  "assets": [
+    {
+      "name": "build-manifest.linux-x86_64.json",
+      "size": 88060,
+      "digest": "sha256:7bd1147e38598e92c898a07efad6615d85b01e6addc9f4a078e1fa034188c131"
+    },
+    {
+      "name": "build-manifest.macos-arm64.json",
+      "size": 85602,
+      "digest": "sha256:c4852ccd244690286923c385401173ce0f854efc447eefdd98d9e05505551dbb"
+    },
+    {
+      "name": "build-manifest.windows-x86_64.json",
+      "size": 72182,
+      "digest": "sha256:a303d6844b05669571931316c0a758f6343467ca5d53f55b92b09f21bba4c6be"
+    },
+    {
+      "name": "legacy-repo-map-linux-x86_64.tar.gz",
+      "size": 2458063,
+      "digest": "sha256:eea70cb26fd36026af77d3ed1eb331cf49b0a0ffce128b35960c694f876f7e06"
+    },
+    {
+      "name": "legacy-repo-map-macos-arm64.tar.gz",
+      "size": 2369343,
+      "digest": "sha256:240edc34c80a4a669eab702e6e9906e66ef36493285c2eb306364dff9299bb50"
+    },
+    {
+      "name": "legacy-repo-map-windows-x86_64.zip",
+      "size": 2472467,
+      "digest": "sha256:dbbd26f2ce0e1a3181c866eaf1419e1f440e4b60d864a66071beaf977ff24223"
+    },
+    {
+      "name": "legacy-tools-release.json",
+      "size": 32516,
+      "digest": "sha256:8a1a5af9b3e266fc4671e280ba6a40ffd97dbc9e73ad9e071121efd5d99cffb0"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 304,
+      "digest": "sha256:150a8bf4c777e2e82b229901c02191c7479c93cf74b766bcaf516de8d5ff9f29"
+    }
+  ]
+}
