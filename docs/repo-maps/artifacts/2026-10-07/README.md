@@ -1,15 +1,17 @@
+> Historical evidence from 2026-10-07. For current maps, implemented setup and PR status, read the [current index](../../README.md).
+
 # Repository map comparisons and distribution follow-up
 
 Review date: 2026-10-07. This continues the first-installation review after the user's request for discoverable files, timings, additional languages, setup guidance and signing analysis.
 
-The [first-installation review](../legacy-codebase-workflows-first-run-review.md) retains the original error and binary-download evidence. Current benchmark binaries came from successful [CI run 37633697013](https://github.com/EdukeyTeam/agent-toolbox/actions/runs/37633697013), source `8d922e517fe81d6fa978b37611e57bd6f1f7bfbc`. The checked Releases API returned an empty list; these are Actions artifacts, not Release assets. Current source instructions did not expose a durable, pinned installation route at first entry, and a historical CI link led to an older source build. That explains the discovery/search detour; it does not establish that Release binaries were silently overlooked.
+The [first-installation review](../../../legacy-codebase-workflows-first-run-review.md) retains the original error and binary-download evidence. Current benchmark binaries came from successful [CI run 37633697013](https://github.com/EdukeyTeam/agent-toolbox/actions/runs/37633697013), source `8d922e517fe81d6fa978b37611e57bd6f1f7bfbc`. The checked Releases API returned an empty list; these are Actions artifacts, not Release assets. Current source instructions did not expose a durable, pinned installation route at first entry, and a historical CI link led to an older source build. That explains the discovery/search detour; it does not establish that Release binaries were silently overlooked.
 
 ## Saved maps
 
 | Examined code | Python report | Rust report | Parsed files | Raw map equality |
 | --- | --- | --- | ---: | --- |
 | JFTP Java, `src/main/java` | [Python](jftp-java.python.md) | [Rust](jftp-java.rust.md) | 182 | Identical |
-| Private TypeScript application | Retained locally; Git-ignored | Retained locally; Git-ignored | 416 | Identical |
+| Private application | Retained locally; Git-ignored | Retained locally; Git-ignored | Not published | Not published |
 | Flask 3.1.2 Python, `src/flask` | [Python](flask-python.python.md) | [Rust](flask-python.rust.md) | 24 | Different; explained below |
 | Toolbox native mapper Rust, `src/legacy-repo-map` | [Python](toolbox-rust.python.md) | [Rust](toolbox-rust.rust.md) | 6 | Identical |
 
@@ -24,13 +26,12 @@ End-to-end subprocess wall time, median of **five cold-output and five warm-outp
 | Corpus / platform | Python cold / warm | Rust cold / warm | Python time divided by Rust, cold / warm |
 | --- | ---: | ---: | ---: |
 | JFTP / Windows x86-64 | 5.155 / 4.970 s | 1.182 / 1.215 s | 4.36x / 4.09x |
-| Edukey Payload / WSL Linux x86-64 | 1.441 / 0.938 s | 0.502 / 0.445 s | 2.87x / 2.11x |
 | Flask / WSL Linux x86-64 | 0.427 / 0.415 s | 0.083 / 0.100 s | 5.13x / 4.16x |
 | Native mapper crate / WSL Linux x86-64 | 0.457 / 0.416 s | 0.097 / 0.093 s | 4.72x / 4.48x |
 
-Raw commands, all 60 public-corpus samples, min/max ranges, medians, output directories, coverage and parity checks are in [benchmark-results.json](benchmark-results.json). The 20 private-corpus samples are retained in a Git-ignored local JSON file. Rust is faster on these inputs; the Flask ratio measures differing extraction output and must not be presented as a speedup for equivalent reference results. Both tools reported no parse failures in these scopes. Their source inventories/hashes remained equal across all samples. This is map-generation verification; none of the target applications was built or run.
+Raw commands, all 60 public-corpus samples, min/max ranges, medians, output directories, coverage and parity checks are in [benchmark-results.json](benchmark-results.json). Private-corpus results are retained locally in ignored files. Rust is faster on these inputs; the Flask ratio measures differing extraction output and must not be presented as a speedup for equivalent reference results. Both tools reported no parse failures in these scopes. Their source inventories/hashes remained equal across all samples. This is map-generation verification; none of the target applications was built or run.
 
-Inputs are pinned in each sidecar. Flask was shallow-cloned from the public Pallets repository at tag `3.1.2`, commit `2c1b30d0503cfb064f1cb252e6614a06915a362a`. The TypeScript source is the existing WSL Edukey application; its dirty working-copy fingerprint identifies the examined bytes. The Rust scope is the toolbox mapper's source, not generated dependencies or Cargo build output.
+Inputs are pinned in each sidecar. Flask was shallow-cloned from the public Pallets repository at tag `3.1.2`, commit `2c1b30d0503cfb064f1cb252e6614a06915a362a`. Private application source/maps are excluded from publication. The Rust scope is the toolbox mapper's source, not generated dependencies or Cargo build output.
 
 ## Python parity result
 

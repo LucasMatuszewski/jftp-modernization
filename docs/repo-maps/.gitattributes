@@ -1,5 +1,6 @@
 # Keep generated evidence hashes valid across platform checkouts.
 *.md -text
 *.json -text
+*.xml -text
 README.md text eol=lf
 .gitattributes text eol=lf
