@@ -11,7 +11,37 @@
 ⠹ Searching for files...
 
 
-⠸ Collecting files...
+⠸ Searching for files...
+
+
+⠼ Searching for files...
+
+
+⠴ Searching for files...
+
+
+⠦ Searching for files...
+
+
+⠧ Searching for files...
+
+
+⠇ Searching for files...
+
+
+⠏ Collecting files...
+
+
+⠋ Collect file... (50/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠙ Processing files...
+
+
+⠹ Processing files...
+
+
+⠸ Processing files...
 
 
 ⠼ Processing files...
@@ -23,45 +53,123 @@
 ⠦ Processing files...
 
 
-⠧ Processing files...
+⠧ Running security check... (50/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
 
 
-⠇ Running security check... (183/183) src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java
+⠇ Processing file... (14/185) src/main/java/com/myjavaworld/gui/MButton.java
 
 
-⠏ Processing file... (25/183) src/main/java/com/myjavaworld/gui/MList.java
+⠏ Processing file... (45/185) src/main/java/com/myjavaworld/gui/SandstoneLargeTheme.java
 
 
-⠋ Processing file... (83/183) src/main/java/com/myjavaworld/jftp/ssl/CertificateManagerDlg.java
+⠋ Processing file... (82/185) src/main/java/com/myjavaworld/jftp/ssl/CertificateDlg.java
 
 
-⠙ Processing file... (109/183) src/main/java/com/myjavaworld/jftp/GeneralConnectionPrefsPanel.java
+⠙ Processing file... (99/185) src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
 
 
-⠹ Processing file... (130/183) src/main/java/com/myjavaworld/jftp/LocalPane.java
+⠹ Processing file... (111/185) src/main/java/com/myjavaworld/jftp/JFTP.java
 
 
-⠸ Processing file... (177/183) src/main/java/com/myjavaworld/util/StringUtilities.java
+⠸ Processing file... (116/185) src/main/java/com/myjavaworld/jftp/FTPSession.java
+
+
+⠼ Processing file... (120/185) src/main/java/com/myjavaworld/jftp/LocaleCellRenderer.java
+
+
+⠴ Processing file... (128/185) src/main/java/com/myjavaworld/jftp/LocalFileTableModel.java
+
+
+⠦ Processing file... (130/185) src/main/java/com/myjavaworld/jftp/LocalPane.java
+
+
+⠧ Processing file... (135/185) src/main/java/com/myjavaworld/jftp/OSXAdapter.java
+
+
+⠇ Processing file... (141/185) src/main/java/com/myjavaworld/jftp/PreferencesDlg.java
+
+
+⠏ Processing file... (144/185) src/main/java/com/myjavaworld/jftp/RemoteFileTableModel.java
+
+
+⠋ Processing file... (145/185) src/main/java/com/myjavaworld/jftp/RemoteHost.java
+
+
+⠙ Processing file... (147/185) src/main/java/com/myjavaworld/jftp/RemotePane.java
+
+
+⠹ Processing file... (148/185) src/main/java/com/myjavaworld/jftp/RemoteSystemPopupMenu.java
+
+
+⠸ Processing file... (154/185) src/main/java/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.java
+
+
+⠼ Processing file... (158/185) src/main/java/com/myjavaworld/jftp/ToolsMenu.java
+
+
+⠴ Processing file... (161/185) src/main/java/com/myjavaworld/jftp/TransferModesPrefsPanel.java
+
+
+⠦ Processing file... (164/185) src/main/java/com/myjavaworld/util/Encoder.java
+
+
+⠧ Processing file... (174/185) src/main/java/com/myjavaworld/util/StatusEvent.java
+
+
+⠇ Processing file... (179/185) src/main/java/com/myjavaworld/zip/Unzip.java
+
+
+⠏ Processing file... (184/185) src/test/java/com/myjavaworld/jftp/StartupStateProbe.java
+
+
+⠋ Processing file... (185/185) pom.xml
+
+
+⠙ Processing file... (185/185) pom.xml
+
+
+⠹ Processing file... (185/185) pom.xml
+
+
+⠸ Writing output file...
 
 
 ⠼ Writing output file...
 
 
-⠴ Calculating metrics... (183/183) src/main/java/com/myjavaworld/zip/ZipListener.java
+⠴ Writing output file...
 
 
-⠦ Calculating metrics... (183/183) src/main/java/com/myjavaworld/zip/ZipListener.java
+⠦ Writing output file...
+
+
+⠧ Writing output file...
+
+
+⠇ Writing output file...
+
+
+⠏ Writing output file...
+
+
+⠋ Writing output file...
+
+
+⠙ Writing output file...
+
+
+⠹ Writing output file...
 
 
 ✔ Packing completed successfully!
 
 📈 Top 5 Files by Token Count:
 ──────────────────────────────
-1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (4,413 tokens, 18,333 chars, 4.5%)
-2.  src/main/java/com/myjavaworld/jftp/JFTP.java (2,948 tokens, 12,330 chars, 3%)
+1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (4,413 tokens, 18,333 chars, 4.4%)
+2.  src/main/java/com/myjavaworld/jftp/JFTP.java (2,948 tokens, 12,330 chars, 2.9%)
 3.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (2,787 tokens, 10,897 chars, 2.8%)
 4.  src/main/java/com/myjavaworld/jftp/ConnectionDlg.java (2,676 tokens, 10,523 chars, 2.7%)
-5.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (2,333 tokens, 8,673 chars, 2.4%)
+5.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (2,333 tokens, 8,673 chars, 2.3%)
 
 🔎 Security Check:
 ──────────────────
@@ -70,10 +178,10 @@
 
 📊 Pack Summary:
 ────────────────
-  Total Files: 183 files
- Total Tokens: 98,697 tokens
-  Total Chars: 392,270 chars
-       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-optimization-tep_6kbx\jftp-source.builtin-no-comments-compressed.xml
+  Total Files: 185 files
+ Total Tokens: 100,335 tokens
+  Total Chars: 398,767 chars
+       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-optimization-cv41b22l\jftp-source.builtin-no-comments-compressed.xml
      Security: ✔ No suspicious files detected
 
 🎉 All Done!

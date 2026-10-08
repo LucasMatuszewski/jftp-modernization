@@ -11,39 +11,69 @@
 ⠹ Searching for files...
 
 
-⠸ Collect file... (150/183) src/main/java/com/myjavaworld/jftp/RemoteSystemPopupMenu.java
+⠸ Searching for files...
 
 
-⠼ Processing files...
+⠼ Searching for files...
 
 
-⠴ Processing files...
+⠴ Collecting files...
 
 
-⠦ Processing files...
+⠦ Collect file... (50/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
 
 
-⠧ Processing file... (39/183) src/main/java/com/myjavaworld/gui/MTextComponent.java
+⠧ Collect file... (130/185) src/main/java/com/myjavaworld/jftp/LocalSystemMenu.java
 
 
-⠇ Processing file... (181/183) src/main/java/com/myjavaworld/zip/ZipListener.java
+⠇ Processing files...
 
 
-⠏ Calculating metrics... (50/183) src/main/java/com/myjavaworld/gui/SwingWorker.java
+⠏ Processing files...
 
 
-⠋ Calculating metrics... (183/183) pom.xml
+⠋ Processing files...
+
+
+⠙ Processing files...
+
+
+⠹ Processing files...
+
+
+⠸ Processing file... (40/185) src/main/java/com/myjavaworld/gui/MTextComponent.java
+
+
+⠼ Processing file... (89/185) src/main/java/com/myjavaworld/jftp/ssl/JFTPSSLContext.java
+
+
+⠴ Processing file... (149/185) src/main/java/com/myjavaworld/jftp/RemotePane.java
+
+
+⠦ Generating output...
+
+
+⠧ Generating output...
+
+
+⠇ Calculating metrics... (185/185) pom.xml
+
+
+⠏ Calculating metrics... (185/185) pom.xml
+
+
+⠋ Calculating metrics... (185/185) pom.xml
 
 
 ✔ Packing completed successfully!
 
 📈 Top 5 Files by Token Count:
 ──────────────────────────────
-1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (10,247 tokens, 40,495 chars, 5.6%)
-2.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (6,349 tokens, 20,285 chars, 3.5%)
+1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (10,247 tokens, 40,495 chars, 5.5%)
+2.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (6,349 tokens, 20,285 chars, 3.4%)
 3.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (6,051 tokens, 20,648 chars, 3.3%)
 4.  src/main/java/com/myjavaworld/jftp/ConnectionDlg.java (5,694 tokens, 19,493 chars, 3.1%)
-5.  src/main/java/com/myjavaworld/jftp/JFTP.java (4,687 tokens, 18,403 chars, 2.6%)
+5.  src/main/java/com/myjavaworld/jftp/JFTP.java (4,687 tokens, 18,403 chars, 2.5%)
 
 🔎 Security Check:
 ──────────────────
@@ -52,10 +82,10 @@
 
 📊 Pack Summary:
 ────────────────
-  Total Files: 183 files
- Total Tokens: 182,982 tokens
-  Total Chars: 684,697 chars
-       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-optimization-tep_6kbx\jftp-source.builtin-no-comments-full.xml
+  Total Files: 185 files
+ Total Tokens: 184,936 tokens
+  Total Chars: 693,435 chars
+       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-optimization-cv41b22l\jftp-source.builtin-no-comments-full.xml
      Security: ✔ No suspicious files detected
 
 🎉 All Done!

@@ -8938,5 +8938,25 @@
     "rule": "empty-javadoc",
     "comment_sha256": "edf8f4df4f0cb26681e2df634317e93818c24d4b6b91b0ae74e36f71d28e4c27",
     "text": "/**\r\n * @author Sai Pullabhotla\r\n */"
+  },
+  {
+    "path": "src/test/java/com/myjavaworld/jftp/StartupStateProbe.java",
+    "source_sha256": "1cf3047e45acbdc6c190bf5a0e51247cc67a1c8ca1992fc93b1ccebf194a1a4e",
+    "start_line": 17,
+    "end_line": 17,
+    "action": "keep",
+    "rule": "behavior-contract",
+    "comment_sha256": "6bd6cd17c87d8fd7fea33a1123705ff9fb6afc9f9faebbd8c06727157e21be5f",
+    "text": "/** Child JVM used so legacy static home snapshots never touch a real profile. */"
+  },
+  {
+    "path": "src/test/java/com/myjavaworld/jftp/StartupStateTest.java",
+    "source_sha256": "dda75de66da5bb4e9699358470073885f2ff354201ca23c132ab59400b331b67",
+    "start_line": 12,
+    "end_line": 12,
+    "action": "keep",
+    "rule": "default-retain",
+    "comment_sha256": "e454aebc1a178f1d6820c555c817b2e7f6e74548d7559ed1eb8704d1cf57126f",
+    "text": "/** Basic startup-state characterization; each probe starts with an isolated home. */"
   }
 ]

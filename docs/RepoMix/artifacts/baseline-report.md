@@ -1,6 +1,6 @@
 # JFTP Repomix source packs
 
-Generated 2026-10-08 from revision `1b5b4f0b26ae85df8ddff09014dd6b547d9c2690` using Repomix **1.18.1**. All Java sources below `src/` plus `pom.xml` are included. This snapshot contains 182 Java sources and one Maven descriptor. Resources, images, help, assembly/launcher files, third-party binaries, agent tooling and documentation are outside this source-code scope.
+Generated 2026-10-08 from revision `c823596cc017cd858326292c7de8976a1e71fbcc` using Repomix **1.18.1**. All Java sources below `src/` plus `pom.xml` are included. This snapshot contains 184 Java sources and one Maven descriptor. Resources, images, help, assembly/launcher files, third-party binaries, agent tooling and documentation are outside this source-code scope.
 
 - [Compressed source](jftp-source.compressed.xml): reduced structural context.
 - [Full source reference](../jftp-source.full.xml): complete text for behavior/signature checks.
@@ -10,10 +10,10 @@ For comment-aware optimization, read [customization and measured profiles](custo
 
 | Pack | Files | o200k_base tokens | UTF-8 bytes | Generation wall time |
 |---|---:|---:|---:|---:|
-| Full | 183 | 230,673 | 905,129 | 0.996 s |
-| Compressed | 183 | 146,244 | 592,874 | 1.347 s |
+| Full | 185 | 232,658 | 914,073 | 3.534 s |
+| Compressed | 185 | 147,913 | 599,608 | 4.641 s |
 
-Compression saved **84,429 tokens (36.60%)** in this source scope. Counts are reported by Repomix using `o200k_base`; they are not model-independent billing/context counts. Timings are individual subprocess measurements with the npm package cache already populated, not a benchmark.
+Compression saved **84,745 tokens (36.42%)** in this source scope. Counts are reported by Repomix using `o200k_base`; they are not model-independent billing/context counts. Timings are individual subprocess measurements with the npm package cache already populated, not a benchmark.
 
 ## Verification and compression limits
 
@@ -31,6 +31,6 @@ python docs/RepoMix/artifacts/generate.py
 python docs/RepoMix/artifacts/optimize.py
 ```
 
-The first command obtains the pinned npm package when absent. The generator uses that cached package's Node entrypoint, validates its version, and applies [the explicit configuration](repomix.config.json). For a custom npm cache, pass `--repomix-cli /path/to/repomix/bin/repomix.cjs`. Generation stages outside the repository and publishes artifacts here only after source/coverage validation. It never builds or launches JFTP. Concurrent edits outside the source scope are excluded; source changes during generation fail verification. Regeneration updates these files and this measured report.
+The first command obtains the pinned npm package when absent. The generator uses that cached package's Node entrypoint, validates its version, and applies [the explicit configuration](repomix.config.json). For a custom npm cache, pass `--repomix-cli /path/to/repomix/bin/repomix.cjs`. Generation stages outside the repository and publishes packs and evidence only after source/coverage validation. It never builds or launches JFTP. Concurrent edits outside the source scope are excluded; source changes during generation fail verification. Regeneration updates these files and this measured report.
 
 Only `docs/RepoMix/` is owned by this task; RepoMap work remains separate. Generated XML and JSON bytes are preserved by this directory's Git attributes so hashes survive platform checkout.

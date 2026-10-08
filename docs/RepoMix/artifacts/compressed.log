@@ -11,7 +11,37 @@
 ⠹ Searching for files...
 
 
-⠸ Collecting files...
+⠸ Searching for files...
+
+
+⠼ Searching for files...
+
+
+⠴ Searching for files...
+
+
+⠦ Searching for files...
+
+
+⠧ Searching for files...
+
+
+⠇ Searching for files...
+
+
+⠏ Searching for files...
+
+
+⠋ Collecting files...
+
+
+⠙ Collecting files...
+
+
+⠹ Collect file... (50/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠸ Collect file... (150/185) src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java
 
 
 ⠼ Processing files...
@@ -23,22 +53,82 @@
 ⠦ Processing files...
 
 
-⠧ Running security check... (100/183) src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
+⠧ Processing files...
 
 
-⠇ Running security check... (183/183) src/main/java/com/myjavaworld/jftp/RenameLocalFileDlg.java
+⠇ Processing files...
 
 
-⠏ Processing file... (24/183) src/main/java/com/myjavaworld/gui/MLabel.java
+⠏ Running security check... (50/185) src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
 
 
-⠋ Processing file... (84/183) src/main/java/com/myjavaworld/jftp/ssl/CertificateManagerDlg.java
+⠋ Running security check... (135/185) pom.xml
 
 
-⠙ Processing file... (110/183) src/main/java/com/myjavaworld/jftp/HelpMenu.java
+⠙ Running security check... (135/185) pom.xml
 
 
-⠹ Processing file... (146/183) src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java
+⠹ Running security check... (185/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠸ Running security check... (185/185) src/main/java/com/myjavaworld/gui/SwingWorker.java
+
+
+⠼ Processing file... (2/185) src/main/java/com/myjavaworld/gui/DefaultTheme.java
+
+
+⠴ Processing file... (8/185) src/main/java/com/myjavaworld/gui/HighContrastTheme.java
+
+
+⠦ Processing file... (15/185) src/main/java/com/myjavaworld/gui/MCheckBox.java
+
+
+⠧ Processing file... (25/185) src/main/java/com/myjavaworld/gui/MList.java
+
+
+⠇ Processing file... (42/185) src/main/java/com/myjavaworld/gui/NumericCellRenderer.java
+
+
+⠏ Processing file... (74/185) src/main/java/com/myjavaworld/jftp/actions/PrintLocalFileAction.java
+
+
+⠋ Processing file... (91/185) src/main/java/com/myjavaworld/jftp/ssl/SecurityWarningDlg.java
+
+
+⠙ Processing file... (103/185) src/main/java/com/myjavaworld/jftp/Favorite.java
+
+
+⠹ Processing file... (107/185) src/main/java/com/myjavaworld/jftp/FTPMenu.java
+
+
+⠸ Processing file... (111/185) src/main/java/com/myjavaworld/jftp/JFTP.java
+
+
+⠼ Processing file... (125/185) src/main/java/com/myjavaworld/jftp/LocalFileFilter.java
+
+
+⠴ Processing file... (135/185) src/main/java/com/myjavaworld/jftp/NewRemoteFileDlg.java
+
+
+⠦ Processing file... (145/185) src/main/java/com/myjavaworld/jftp/RemoteHost.java
+
+
+⠧ Processing file... (157/185) src/main/java/com/myjavaworld/jftp/TransferModeMenu.java
+
+
+⠇ Processing file... (178/185) src/main/java/com/myjavaworld/util/SystemUtil.java
+
+
+⠏ Writing output file...
+
+
+⠋ Writing output file...
+
+
+⠙ Writing output file...
+
+
+⠹ Writing output file...
 
 
 ⠸ Writing output file...
@@ -47,13 +137,22 @@
 ⠼ Writing output file...
 
 
+⠴ Writing output file...
+
+
+⠦ Writing output file...
+
+
+⠧ Writing output file...
+
+
 ✔ Packing completed successfully!
 
 📈 Top 5 Files by Token Count:
 ──────────────────────────────
 1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (4,847 tokens, 20,176 chars, 3.3%)
-2.  src/main/java/com/myjavaworld/jftp/JFTP.java (3,741 tokens, 15,622 chars, 2.6%)
-3.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (3,308 tokens, 12,965 chars, 2.3%)
+2.  src/main/java/com/myjavaworld/jftp/JFTP.java (3,741 tokens, 15,622 chars, 2.5%)
+3.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (3,308 tokens, 12,965 chars, 2.2%)
 4.  src/main/java/com/myjavaworld/jftp/ConnectionDlg.java (2,928 tokens, 11,625 chars, 2%)
 5.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (2,529 tokens, 9,511 chars, 1.7%)
 
@@ -64,10 +163,10 @@
 
 📊 Pack Summary:
 ────────────────
-  Total Files: 183 files
- Total Tokens: 146,244 tokens
-  Total Chars: 584,766 chars
-       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-fji8ju2v\jftp-source.compressed.xml
+  Total Files: 185 files
+ Total Tokens: 147,913 tokens
+  Total Chars: 591,456 chars
+       Output: C:\Users\BIUROE~1\AppData\Local\Temp\jftp-repomix-wa37_2lg\jftp-source.compressed.xml
      Security: ✔ No suspicious files detected
 
 🎉 All Done!

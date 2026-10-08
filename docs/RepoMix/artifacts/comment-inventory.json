@@ -564,7 +564,9 @@
     "39e9dc191bcc9abafe8e4c2a8721d1de175e3d03f6313404ad06944e164be084": "/**\r\n\t * Adds a new entry to this <code>ZipFile</code>.\r\n\t * \r\n\t * @param file\r\n\t * @throws IOException\r\n\t */",
     "f81ca8c833626dc59a30c8e5ef3f29d684d8670972b280607655c4ab5bd5bb53": "// Let's not try to add the file that we are creating to itself.\r",
     "858172763617092797fe52f18f625d164448796b31a9291c9784ce9833992acb": "/**\r\n\t * Adds the given data file to this <code>ZipFile</code>.\r\n\t * \r\n\t * @param file\r\n\t *            data file to add\r\n\t * @throws IOException\r\n\t *             propogated.\r\n\t */",
-    "16fcec811a1d3c55058c65f5af4df567a39a2721920dfa7347cfc15f67a3144e": "/**\r\n\t * Computes and returns the enry name for the given file.\r\n\t * \r\n\t * @param file\r\n\t *            file to add.\r\n\t * @return entry name\r\n\t */"
+    "16fcec811a1d3c55058c65f5af4df567a39a2721920dfa7347cfc15f67a3144e": "/**\r\n\t * Computes and returns the enry name for the given file.\r\n\t * \r\n\t * @param file\r\n\t *            file to add.\r\n\t * @return entry name\r\n\t */",
+    "6bd6cd17c87d8fd7fea33a1123705ff9fb6afc9f9faebbd8c06727157e21be5f": "/** Child JVM used so legacy static home snapshots never touch a real profile. */",
+    "e454aebc1a178f1d6820c555c817b2e7f6e74548d7559ed1eb8704d1cf57126f": "/** Basic startup-state characterization; each probe starts with an isolated home. */"
   },
   "comments": [
     {
@@ -9686,6 +9688,26 @@
       "next_type": "interface_declaration",
       "next_name": "ZipListener",
       "comment_id": "edf8f4df4f0cb26681e2df634317e93818c24d4b6b91b0ae74e36f71d28e4c27"
+    },
+    {
+      "path": "src/test/java/com/myjavaworld/jftp/StartupStateProbe.java",
+      "sha256": "1cf3047e45acbdc6c190bf5a0e51247cc67a1c8ca1992fc93b1ccebf194a1a4e",
+      "type": "block_comment",
+      "start_line": 17,
+      "end_line": 17,
+      "next_type": "class_declaration",
+      "next_name": "StartupStateProbe",
+      "comment_id": "6bd6cd17c87d8fd7fea33a1123705ff9fb6afc9f9faebbd8c06727157e21be5f"
+    },
+    {
+      "path": "src/test/java/com/myjavaworld/jftp/StartupStateTest.java",
+      "sha256": "dda75de66da5bb4e9699358470073885f2ff354201ca23c132ab59400b331b67",
+      "type": "block_comment",
+      "start_line": 12,
+      "end_line": 12,
+      "next_type": "class_declaration",
+      "next_name": "StartupStateTest",
+      "comment_id": "e454aebc1a178f1d6820c555c817b2e7f6e74548d7559ed1eb8704d1cf57126f"
     }
   ]
 }

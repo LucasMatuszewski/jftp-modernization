@@ -1,18 +1,18 @@
 {
-  "java_files_verified": 182,
-  "comments": 912,
+  "java_files_verified": 184,
+  "comments": 914,
   "counts": {
     "remove:repeated-apache-header": 180,
     "rewrite:javadoc-metadata": 107,
-    "keep:default-retain": 482,
+    "keep:default-retain": 483,
     "remove:date-style-constructor-template": 1,
     "remove:empty-javadoc": 53,
     "remove:identity-only-constructor": 23,
-    "keep:behavior-contract": 43,
+    "keep:behavior-contract": 44,
     "remove:copied-action-template": 12,
     "remove:empty-or-decoration": 11
   },
-  "non_comment_token_count": 141001,
+  "non_comment_token_count": 142419,
   "selective_full_preserves_all_non_comment_tokens_and_ast": true,
   "selective_full_preserves_all_retained_comment_text_after_whitespace_normalization": true,
   "builtin_no_comments_full_preserves_all_non_comment_tokens_and_ast": true,
@@ -1291,6 +1291,20 @@
       "non_comment_tokens": 37,
       "executable_tokens_sha256": "2935d85878296e5c3e44dc2716e49ffefe336550888205710d86a815f5d7321e",
       "ast_structure_sha256": "7e6e5328fc8347c08b706e71d34d86506066b90a08a3a0171a732a8a341dfce6"
+    },
+    {
+      "path": "src/test/java/com/myjavaworld/jftp/StartupStateProbe.java",
+      "source_sha256": "1cf3047e45acbdc6c190bf5a0e51247cc67a1c8ca1992fc93b1ccebf194a1a4e",
+      "non_comment_tokens": 940,
+      "executable_tokens_sha256": "c84862c2e2b3058e53b0ae55cea4ca61b492cecb5297ee430deec7678e174904",
+      "ast_structure_sha256": "9757b1f022bcf469975a21b9db225cac346dddc1bc9a85c2b5516d4607c43522"
+    },
+    {
+      "path": "src/test/java/com/myjavaworld/jftp/StartupStateTest.java",
+      "source_sha256": "dda75de66da5bb4e9699358470073885f2ff354201ca23c132ab59400b331b67",
+      "non_comment_tokens": 478,
+      "executable_tokens_sha256": "bc4a4f4ef16d5fa373522a5f4a047e8318e2bdd19fa6cce9835960e817540a6c",
+      "ast_structure_sha256": "4243cc1b1698f5a82f410329e67927c3941b4d49e37423389f14e66f7ca279b0"
     }
   ],
   "retained_examples": [

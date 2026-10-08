@@ -21,7 +21,7 @@ or other automated processes.</purpose><file_format>The content is organized as 
 - Files matching patterns in .gitignore are excluded
 - Files matching default ignore patterns are excluded
 - Empty lines have been removed from all files
-- Content has been formatted for parsing in xml style</notes></file_summary><user_provided_header>Java notices are consolidated here; original attribution is indexed in docs/RepoMix/license-notices.json. Original source and the full reference retain all notices.
+- Content has been formatted for parsing in xml style</notes></file_summary><user_provided_header>Java notices are consolidated here; original attribution is indexed in docs/RepoMix/artifacts/license-notices.json. Original source and the full reference retain all notices.
 /*
  * Copyright 2012 jMethods, Inc. 
  *
@@ -229,6 +229,13 @@ or other automated processes.</purpose><file_format>The content is organized as 
             Zip.java
             ZipEvent.java
             ZipListener.java
+  test/
+    java/
+      com/
+        myjavaworld/
+          jftp/
+            StartupStateProbe.java
+            StartupStateTest.java
 pom.xml</directory_structure><files>This section contains the contents of the repository&apos;s files.<file path="src/main/java/com/myjavaworld/gui/DateCellRenderer.java">package com.myjavaworld.gui;
 import java.awt.Component;
 import java.text.DateFormat;
@@ -22586,6 +22593,146 @@ import java.util.EventListener;
 public interface ZipListener extends EventListener {
 	public void beginFile(ZipEvent evt);
 	public void endFile(ZipEvent evt);
+}</file><file path="src/test/java/com/myjavaworld/jftp/StartupStateProbe.java">package com.myjavaworld.jftp;
+import java.io.File;
+import java.awt.Rectangle;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
+import javax.help.HelpSet;
+import com.myjavaworld.ftp.FTPConstants;
+import junit.framework.TestCase;
+/** Child JVM used so legacy static home snapshots never touch a real profile. */
+public final class StartupStateProbe extends TestCase {
+    public static void main(String[] args) throws Exception {
+        File home = new File(System.getProperty(&quot;user.home&quot;)).getCanonicalFile();
+        File temporary = new File(System.getProperty(&quot;java.io.tmpdir&quot;)).getCanonicalFile();
+        if (home.equals(temporary) || !home.toPath().startsWith(temporary.toPath())) {
+            throw new IllegalArgumentException(&quot;This fixture requires an isolated home below java.io.tmpdir&quot;);
+        }
+        String operation = args[0];
+        if (&quot;desktop-seed&quot;.equals(operation)) {
+            Path files = Files.createDirectories(home.toPath().resolve(&quot;files&quot;));
+            Files.write(files.resolve(&quot;hello.txt&quot;), &quot;synthetic JFTP startup fixture&quot;.getBytes(&quot;UTF-8&quot;));
+            JFTPPreferences prefs = JFTP.loadPreferences();
+            prefs.setLocale(Locale.ENGLISH);
+            prefs.setCheckForUpdates(false);
+            prefs.setLocalDirectory(files.toString());
+            prefs.setWindowBounds(new Rectangle(80, 80, 1280, 800));
+            JFTP.savePreferences(prefs);
+        } else if (&quot;resources&quot;.equals(operation)) {
+            for (Locale locale : new Locale[] { Locale.ENGLISH, Locale.GERMAN,
+                    Locale.TRADITIONAL_CHINESE }) {
+                ResourceBundle bundle = ResourceBundle.getBundle(&quot;com.myjavaworld.jftp.JFTP&quot;, locale);
+                if (!Locale.ENGLISH.equals(locale)) {
+                    assertEquals(locale, bundle.getLocale());
+                }
+                assertTrue(bundle.getString(&quot;text.notConnected&quot;).length() &gt; 0);
+            }
+            assertTrue(JFTPUtil.getIcon(&quot;jftp16.gif&quot;).getIconWidth() &gt; 0);
+            ClassLoader loader = StartupStateProbe.class.getClassLoader();
+            assertNotNull(HelpSet.findHelpSet(loader, &quot;helpset/helpSet&quot;, &quot;.xml&quot;, Locale.ENGLISH));
+            assertNotNull(Class.forName(RemoteHost.DEFAULT_FTP_CLIENT_CLASS_NAME));
+            assertNotNull(Class.forName(RemoteHost.DEFAULT_LIST_PARSER_CLASS_NAME));
+        } else if (&quot;defaults&quot;.equals(operation)) {
+            JFTPPreferences prefs = JFTP.loadPreferences();
+            assertTrue(prefs.isPassive());
+            assertFalse(prefs.isUseProxy());
+            assertEquals(FTPConstants.TYPE_BINARY, prefs.getDefaultTransferType());
+            assertEquals(Integer.valueOf(FTPConstants.TYPE_ASCII), prefs.getTransferTypes().get(&quot;TXT&quot;));
+            assertTrue(FavoritesManager.getFavorites().isEmpty());
+        } else if (&quot;write&quot;.equals(operation)) {
+            JFTPPreferences prefs = JFTP.loadPreferences();
+            prefs.setLocale(Locale.GERMAN);
+            prefs.setPassive(false);
+            prefs.setCheckForUpdates(false);
+            prefs.setLocalDirectory(new File(System.getProperty(&quot;user.home&quot;), &quot;files&quot;).getAbsolutePath());
+            JFTP.savePreferences(prefs);
+            RemoteHost favorite = new RemoteHost(&quot;Synthetic favorite&quot;, &quot;127.0.0.1&quot;, 2121,
+                    &quot;synthetic-user&quot;, &quot;synthetic-password&quot;, &quot;synthetic-account&quot;);
+            favorite.setInitialRemoteDirectory(&quot;/fixtures&quot;);
+            FavoritesManager.saveFavorites(Collections.singletonList(favorite));
+        } else if (&quot;read&quot;.equals(operation)) {
+            JFTPPreferences prefs = JFTP.loadPreferences();
+            assertEquals(Locale.GERMAN, prefs.getLocale());
+            assertFalse(prefs.isPassive());
+            assertFalse(prefs.getCheckForUpdates());
+            assertEquals(new File(System.getProperty(&quot;user.home&quot;), &quot;files&quot;).getAbsolutePath(),
+                    prefs.getLocalDirectory());
+            List favorites = FavoritesManager.getFavorites();
+            assertEquals(1, favorites.size());
+            RemoteHost favorite = (RemoteHost) favorites.get(0);
+            assertEquals(&quot;Synthetic favorite&quot;, favorite.getName());
+            assertEquals(&quot;127.0.0.1&quot;, favorite.getHostName());
+            assertEquals(2121, favorite.getPort());
+            assertEquals(&quot;synthetic-user&quot;, favorite.getUser());
+            assertEquals(&quot;synthetic-password&quot;, favorite.getPassword());
+            assertEquals(&quot;synthetic-account&quot;, favorite.getAccount());
+            assertEquals(&quot;/fixtures&quot;, favorite.getInitialRemoteDirectory());
+        } else {
+            throw new IllegalArgumentException(operation);
+        }
+        System.out.println(&quot;STARTUP-STATE-PROBE &quot; + operation + &quot; OK&quot;);
+    }
+}</file><file path="src/test/java/com/myjavaworld/jftp/StartupStateTest.java">package com.myjavaworld.jftp;
+import java.io.File;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Comparator;
+import java.util.concurrent.TimeUnit;
+import junit.framework.TestCase;
+/** Basic startup-state characterization; each probe starts with an isolated home. */
+public class StartupStateTest extends TestCase {
+    private Path home;
+    protected void setUp() throws Exception {
+        home = Files.createTempDirectory(&quot;jftp-state-test-&quot;);
+    }
+    protected void tearDown() throws Exception {
+        try (java.util.stream.Stream&lt;Path&gt; paths = Files.walk(home)) {
+            Path[] entries = paths.sorted(Comparator.reverseOrder()).toArray(Path[]::new);
+            for (Path entry : entries) {
+                Files.delete(entry);
+            }
+        }
+    }
+    public void testFirstStartCreatesReadableDefaults() throws Exception {
+        probe(&quot;defaults&quot;);
+        assertTrue(Files.size(home.resolve(&quot;.jftp/data/preferences.ser&quot;)) &gt; 0);
+    }
+    public void testSettingsAndFavoritesSurviveAnotherJvm() throws Exception {
+        probe(&quot;write&quot;);
+        probe(&quot;read&quot;);
+    }
+    public void testStartupResourcesAreOnClasspath() throws Exception {
+        probe(&quot;resources&quot;);
+    }
+    private void probe(String operation) throws Exception {
+        File java = new File(System.getProperty(&quot;java.home&quot;), &quot;bin/java.exe&quot;);
+        if (!java.isFile()) {
+            java = new File(System.getProperty(&quot;java.home&quot;), &quot;bin/java&quot;);
+        }
+        Path log = home.resolve(operation + &quot;.log&quot;);
+        Process process = new ProcessBuilder(java.getAbsolutePath(),
+                &quot;-Duser.home=&quot; + home.toAbsolutePath(), &quot;-Djava.awt.headless=true&quot;,
+                &quot;-cp&quot;, System.getProperty(&quot;surefire.test.class.path&quot;,
+                        System.getProperty(&quot;java.class.path&quot;)),
+                StartupStateProbe.class.getName(), operation)
+                .redirectErrorStream(true).redirectOutput(log.toFile()).start();
+        try {
+            assertTrue(&quot;Probe timed out: &quot; + operation, process.waitFor(30, TimeUnit.SECONDS));
+            String output = new String(Files.readAllBytes(log), StandardCharsets.UTF_8);
+            assertEquals(output, 0, process.exitValue());
+        } finally {
+            if (process.isAlive()) {
+                process.destroyForcibly();
+                process.waitFor(5, TimeUnit.SECONDS);
+            }
+        }
+    }
 }</file><file path="pom.xml">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
 	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
 	&lt;groupId&gt;com.myjavaworld&lt;/groupId&gt;
@@ -22630,7 +22777,7 @@ public interface ZipListener extends EventListener {
 		&lt;repository&gt;
 			&lt;id&gt;jMethods&lt;/id&gt;
 			&lt;name&gt;jMethods Maven Repository&lt;/name&gt;
-			&lt;url&gt;http://www.jMethods.com/mvn-repo&lt;/url&gt;
+			&lt;url&gt;https://www.jmethods.com/mvn-repo&lt;/url&gt;
 		&lt;/repository&gt;
 	&lt;/repositories&gt;
 	&lt;scm&gt;
@@ -22653,7 +22800,7 @@ public interface ZipListener extends EventListener {
 		&lt;dependency&gt;
 			&lt;groupId&gt;junit&lt;/groupId&gt;
 			&lt;artifactId&gt;junit&lt;/artifactId&gt;
-			&lt;version&gt;3.8.1&lt;/version&gt;
+			&lt;version&gt;4.13.2&lt;/version&gt;
 			&lt;scope&gt;test&lt;/scope&gt;
 		&lt;/dependency&gt;
 		&lt;dependency&gt;
@@ -22688,11 +22835,15 @@ public interface ZipListener extends EventListener {
 		&lt;plugins&gt;
 			&lt;plugin&gt;
 				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
+				&lt;version&gt;3.6.0&lt;/version&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
 				&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-				&lt;version&gt;2.4&lt;/version&gt;
+				&lt;version&gt;3.13.0&lt;/version&gt;
 				&lt;configuration&gt;
-					&lt;source&gt;1.5&lt;/source&gt;
-					&lt;target&gt;1.5&lt;/target&gt;
+					&lt;release&gt;8&lt;/release&gt;
 				&lt;/configuration&gt;
 			&lt;/plugin&gt;
 			&lt;plugin&gt;
@@ -22781,4 +22932,25 @@ public interface ZipListener extends EventListener {
 			&lt;/extension&gt;
 		&lt;/extensions&gt;
 	&lt;/build&gt;
+	&lt;profiles&gt;
+		&lt;profile&gt;
+			&lt;id&gt;windows-bootstrap&lt;/id&gt;
+			&lt;activation&gt;
+				&lt;os&gt;&lt;family&gt;Windows&lt;/family&gt;&lt;/os&gt;
+			&lt;/activation&gt;
+			&lt;build&gt;
+				&lt;plugins&gt;
+					&lt;plugin&gt;
+						&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+						&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+						&lt;configuration&gt;
+							&lt;excludes&gt;
+								&lt;exclude&gt;com/myjavaworld/jftp/OSXAdapterOld.java&lt;/exclude&gt;
+							&lt;/excludes&gt;
+						&lt;/configuration&gt;
+					&lt;/plugin&gt;
+				&lt;/plugins&gt;
+			&lt;/build&gt;
+		&lt;/profile&gt;
+	&lt;/profiles&gt;
 &lt;/project&gt;</file></files></repomix>

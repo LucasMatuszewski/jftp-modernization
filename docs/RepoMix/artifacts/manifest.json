@@ -2,8 +2,15 @@
   "tool": "Repomix",
   "version": "1.18.1",
   "date": "2026-10-08",
-  "source_revision": "1b5b4f0b26ae85df8ddff09014dd6b547d9c2690",
-  "source_working_copy_status": [],
+  "source_revision": "c823596cc017cd858326292c7de8976a1e71fbcc",
+  "source_working_copy_status": [
+    " M pom.xml",
+    " M src/main/AGENTS.md",
+    " M src/main/java/AGENTS.md",
+    " M src/main/java/com/myjavaworld/jftp/AGENTS.md",
+    " M src/test/AGENTS.md",
+    "?? src/test/java/com/"
+  ],
   "source_files": {
     "src/main/java/com/myjavaworld/gui/DateCellRenderer.java": {
       "sha256": "2ed458986e3d5257ec794fe38858f570f0cb4d7312d86007a0319e644417008c",
@@ -733,9 +740,17 @@
       "sha256": "528eeed4801d55f801ee66707acb2aa17dddd2f709ca0cf678ef8dd032476ba5",
       "bytes": 857
     },
+    "src/test/java/com/myjavaworld/jftp/StartupStateProbe.java": {
+      "sha256": "1cf3047e45acbdc6c190bf5a0e51247cc67a1c8ca1992fc93b1ccebf194a1a4e",
+      "bytes": 4813
+    },
+    "src/test/java/com/myjavaworld/jftp/StartupStateTest.java": {
+      "sha256": "dda75de66da5bb4e9699358470073885f2ff354201ca23c132ab59400b331b67",
+      "bytes": 2453
+    },
     "pom.xml": {
-      "sha256": "0e4da3203c623e02327c3876bac889c743d73fff27eb2c2c54196796d85f9019",
-      "bytes": 5568
+      "sha256": "d809cb382dc612a666c92bdb81bf0cc745b0bd37d1b7e0884b596c3d47140e96",
+      "bytes": 6209
     }
   },
   "scope": [
@@ -752,7 +767,7 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.config.json",
         "--include",
         "src/**/*.java,pom.xml",
         "--style",
@@ -762,14 +777,14 @@
         "--token-count-encoding",
         "o200k_base",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-fji8ju2v\\jftp-source.full.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-wa37_2lg\\jftp-source.full.xml"
       ],
-      "elapsed_seconds": 0.9956841000821441,
-      "files": 183,
-      "tokens": 230673,
-      "utf8_bytes": 905129,
-      "characters": 905129,
-      "sha256": "dd60a34b79d601385d96c2fbb4caea7632de47b3aff44a691578fa706d78891b",
+      "elapsed_seconds": 3.534222000045702,
+      "files": 185,
+      "tokens": 232658,
+      "utf8_bytes": 914073,
+      "characters": 914073,
+      "sha256": "1f2029e47334dd3cc16232c2e8122c6d64d556520aab68a2f11fa5bad2e0df86",
       "xml_valid": true,
       "exact_file_coverage": true,
       "full_contents_match_source": true,
@@ -781,7 +796,7 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.config.json",
         "--include",
         "src/**/*.java,pom.xml",
         "--style",
@@ -791,15 +806,15 @@
         "--token-count-encoding",
         "o200k_base",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-fji8ju2v\\jftp-source.compressed.xml",
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-wa37_2lg\\jftp-source.compressed.xml",
         "--compress"
       ],
-      "elapsed_seconds": 1.346695699961856,
-      "files": 183,
-      "tokens": 146244,
-      "utf8_bytes": 592874,
-      "characters": 584766,
-      "sha256": "32c601d0ae14cb295fab02757d1fae7da33ce297a80418ef80e3dc1e58401bf7",
+      "elapsed_seconds": 4.64103820011951,
+      "files": 185,
+      "tokens": 147913,
+      "utf8_bytes": 599608,
+      "characters": 591456,
+      "sha256": "0fd660999f08a1e9705d59340e92aa5385789356ae830cc28a26a054a53a71d8",
       "xml_valid": true,
       "exact_file_coverage": true,
       "full_contents_match_source": false,
@@ -807,8 +822,8 @@
     }
   },
   "sources_unchanged_during_generation": true,
-  "tokens_saved": 84429,
-  "token_reduction_percent": 36.60116268483958,
+  "tokens_saved": 84745,
+  "token_reduction_percent": 36.4247092298567,
   "citations": [
     {
       "path": "src/main/java/com/myjavaworld/util/ResourceLoader.java",
@@ -830,5 +845,7 @@
       "in_compressed_pack": false,
       "claim": "Observed retention/omission in these generated packs only"
     }
-  ]
+  ],
+  "revalidated_source_revision": "e8b155806f09a178e3ba19be8a19ef44989a66f6",
+  "source_hashes_revalidated": true
 }

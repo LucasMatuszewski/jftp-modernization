@@ -1,6 +1,6 @@
 {
   "version": "1.18.1",
-  "source_revision": "032772fda4cf26a8e9ccb00096871293e1fff8c8",
+  "source_revision": "c823596cc017cd858326292c7de8976a1e71fbcc",
   "source_files": {
     "src/main/java/com/myjavaworld/gui/DateCellRenderer.java": {
       "sha256": "2ed458986e3d5257ec794fe38858f570f0cb4d7312d86007a0319e644417008c",
@@ -730,16 +730,24 @@
       "sha256": "528eeed4801d55f801ee66707acb2aa17dddd2f709ca0cf678ef8dd032476ba5",
       "bytes": 857
     },
+    "src/test/java/com/myjavaworld/jftp/StartupStateProbe.java": {
+      "sha256": "1cf3047e45acbdc6c190bf5a0e51247cc67a1c8ca1992fc93b1ccebf194a1a4e",
+      "bytes": 4813
+    },
+    "src/test/java/com/myjavaworld/jftp/StartupStateTest.java": {
+      "sha256": "dda75de66da5bb4e9699358470073885f2ff354201ca23c132ab59400b331b67",
+      "bytes": 2453
+    },
     "pom.xml": {
-      "sha256": "0e4da3203c623e02327c3876bac889c743d73fff27eb2c2c54196796d85f9019",
-      "bytes": 5568
+      "sha256": "d809cb382dc612a666c92bdb81bf0cc745b0bd37d1b7e0884b596c3d47140e96",
+      "bytes": 6209
     }
   },
   "sources_unchanged": true,
   "token_encoding": "o200k_base",
   "baseline_tokens": {
-    "full": 230673,
-    "compressed": 146244
+    "full": 232658,
+    "compressed": 147913
   },
   "variants": {
     "builtin-no-comments-full": {
@@ -748,15 +756,15 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.builtin-no-comments-full.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.builtin-no-comments-full.config.json",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-tep_6kbx\\jftp-source.builtin-no-comments-full.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-cv41b22l\\jftp-source.builtin-no-comments-full.xml"
       ],
-      "elapsed_seconds": 1.0822756001725793,
-      "tokens": 182982,
-      "utf8_bytes": 684697,
-      "sha256": "7f161d3e84d9e109a3c008a642f90912900cbee824e4ed8f86e2cd98ee980a07",
-      "files": 183,
+      "elapsed_seconds": 2.3816598998382688,
+      "tokens": 184936,
+      "utf8_bytes": 693435,
+      "sha256": "06fb0c437be57482cf49fb6f15317675249794772c6c4d3c845241dee9456650",
+      "files": 185,
       "xml_valid": true,
       "file_coverage_exact": true,
       "security_no_suspicious_files": true,
@@ -768,15 +776,15 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.builtin-no-comments-compressed.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.builtin-no-comments-compressed.config.json",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-tep_6kbx\\jftp-source.builtin-no-comments-compressed.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-cv41b22l\\jftp-source.builtin-no-comments-compressed.xml"
       ],
-      "elapsed_seconds": 1.433754000114277,
-      "tokens": 98697,
-      "utf8_bytes": 399758,
-      "sha256": "20a197cb93718bacc938b655f5f53e828aa71e3f3535bf127b2c4c2f7d4ae70b",
-      "files": 183,
+      "elapsed_seconds": 5.5672911000438035,
+      "tokens": 100335,
+      "utf8_bytes": 406299,
+      "sha256": "6708883ddd65e5c3252e37e6d66c82915f552331acc97cab07196dd5d6a5f274",
+      "files": 185,
       "xml_valid": true,
       "file_coverage_exact": true,
       "security_no_suspicious_files": true,
@@ -788,15 +796,15 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.selective-full.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.selective-full.config.json",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-tep_6kbx\\jftp-source.selective-full.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-cv41b22l\\jftp-source.selective-full.xml"
       ],
-      "elapsed_seconds": 17.97645920002833,
-      "tokens": 198551,
-      "utf8_bytes": 764320,
-      "sha256": "bcc4009a3ae7e6a47c34ed3013653bd6eafe0b4f99a886398c0bb22b583a2db9",
-      "files": 183,
+      "elapsed_seconds": 32.37570810015313,
+      "tokens": 200538,
+      "utf8_bytes": 773261,
+      "sha256": "200900428d41106228d5cac5d0d65ecd5f4e9a8da88ed2e56ebd8aad4464353d",
+      "files": 185,
       "xml_valid": true,
       "file_coverage_exact": true,
       "security_no_suspicious_files": true,
@@ -808,15 +816,15 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.selective-compressed.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.selective-compressed.config.json",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-tep_6kbx\\jftp-source.selective-compressed.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-cv41b22l\\jftp-source.selective-compressed.xml"
       ],
-      "elapsed_seconds": 18.25620470009744,
-      "tokens": 113395,
-      "utf8_bytes": 457286,
-      "sha256": "6267b7c5937af109f6a8d2bccfbdf9844a92261f9273ba5ae8aa83bf0833e13f",
-      "files": 183,
+      "elapsed_seconds": 25.099816899979487,
+      "tokens": 115066,
+      "utf8_bytes": 464030,
+      "sha256": "324f3aec4542d15503a5dc01ef5efe321ae7047c866382e41945b9f5fd102374",
+      "files": 185,
       "xml_valid": true,
       "file_coverage_exact": true,
       "security_no_suspicious_files": true,
@@ -828,15 +836,15 @@
         "C:\\Users\\BiuroEdukey\\AppData\\Local\\npm-cache\\_npx\\a2dff5e852d624d5\\node_modules\\repomix\\bin\\repomix.cjs",
         "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp",
         "--config",
-        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\repomix.hybrid.config.json",
+        "C:\\Users\\BiuroEdukey\\DEV\\COURSES\\Sages\\jftp\\docs\\RepoMix\\artifacts\\repomix.hybrid.config.json",
         "--output",
-        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-tep_6kbx\\jftp-source.hybrid.xml"
+        "C:\\Users\\BIUROE~1\\AppData\\Local\\Temp\\jftp-repomix-optimization-cv41b22l\\jftp-source.hybrid.xml"
       ],
-      "elapsed_seconds": 20.792568299919367,
-      "tokens": 114182,
-      "utf8_bytes": 460179,
-      "sha256": "bfe56a7df58bd9fe7d8d7dcfc6df7b204fa7ca774c54cf6084b0dcec3bceea74",
-      "files": 183,
+      "elapsed_seconds": 21.58905110019259,
+      "tokens": 115853,
+      "utf8_bytes": 466923,
+      "sha256": "7751aeddc6a88c24b74ff7c43ad8ad46d0c286d65a4514e062feb9bfa92e8985",
+      "files": 185,
       "xml_valid": true,
       "file_coverage_exact": true,
       "security_no_suspicious_files": true,
@@ -865,11 +873,7 @@
       "LocalFile_null_guard_retained": true
     }
   },
-  "rules_sha256": "425568bec77a50f0c2730545f89a8c91f535b3f7f210d294b3de8117327c7f62",
-  "full_file_patterns": [
-    "src/main/java/com/myjavaworld/util/ResourceLoader.java",
-    "src/main/java/com/myjavaworld/jftp/LocalFile.java"
-  ],
-  "current_policy_sha256": "04d40e231f2691e4ebfd068937954156e1a85d7c47664a2b24dc5ad3320fbee3",
-  "post_measurement_policy_extension": "Added full_file_patterns to the editable JSON policy. It reproduces the already measured hybrid config exactly; all comment-filter fields remain identical to measurement. No packing timings/counts were relabeled."
+  "rules_sha256": "04d40e231f2691e4ebfd068937954156e1a85d7c47664a2b24dc5ad3320fbee3",
+  "revalidated_source_revision": "e8b155806f09a178e3ba19be8a19ef44989a66f6",
+  "source_hashes_revalidated": true
 }

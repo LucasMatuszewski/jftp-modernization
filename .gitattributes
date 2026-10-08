@@ -1,3 +1,5 @@
 mvnw text eol=lf
 mvnw.cmd text eol=crlf
 .mvn/wrapper/maven-wrapper.properties text eol=lf
+docs/windows-startup-evidence/** -text whitespace=cr-at-eol
+docs/windows-startup-evidence/*.log whitespace=-blank-at-eol,cr-at-eol
